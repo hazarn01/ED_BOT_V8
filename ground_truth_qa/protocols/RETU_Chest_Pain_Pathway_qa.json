@@ -1,0 +1,86 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for chest pain patients?",
+    "answer": "Required testing prior to RETU admission includes: ECG, CXR, and pregnancy test in women of childbearing age.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What patients with chest pain are not appropriate for RETU?",
+    "answer": "Patients not appropriate for RETU include those with: suspected PE or other serious pathologic process, hemodynamic instability, ACS/diagnostic ECG changes, and associated pulmonary edema.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What initial testing should be done in RETU for chest pain evaluation?",
+    "answer": "Initial testing includes: Labs - CBC, Chem 7, Troponin (others as clinically indicated); Imaging - CXR (others as clinically indicated).",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What areas should be the focus of examination for chest pain patients in RETU?",
+    "answer": "Examination should focus on: Cardiac, Neuro, and Vascular systems.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for chest pain patients in RETU?",
+    "answer": "Monitoring includes: continuous telemetry monitoring and serial troponins.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should you consult cardiology for chest pain patients in RETU?",
+    "answer": "Consult cath team or general cardiology as indicated, particularly for high-risk ECG changes or clinical features.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What constitutes high-risk ECG changes in chest pain patients?",
+    "answer": "High-risk ECG changes include: new ischemic changes, new Q waves, and new LBBB.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the high-risk clinical features for chest pain patients?",
+    "answer": "High-risk clinical features include: symptoms same as with prior MI/ACS, signs of heart failure, and systolic BP <100mm Hg.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should a cath consult be obtained for chest pain patients?",
+    "answer": "Obtain cath consult if there are high-risk ECG or clinical features present.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should cardiology consult be obtained if serial troponins are negative?",
+    "answer": "If serial troponins are negative but high-risk features are absent, consider cardiology consult based on clinical judgment and need for further risk stratification.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What further risk stratification options are available for chest pain patients?",
+    "answer": "Further risk stratification options include stress test vs. coronary CTA, depending on clinical indication.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for chest pain patients?",
+    "answer": "Discharge criteria include: serial troponin negative, symptoms improved/resolved, and patient cleared for discharge by consult service if one was involved.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the admission criteria to hospital for chest pain patients?",
+    "answer": "Admission criteria include: serial troponin positive, symptoms worsening/ischemia identified, or admission requested by consult service if one was involved.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What should be ensured when discharging a chest pain patient from RETU?",
+    "answer": "Ensure the patient has adequate follow-up arranged before discharge.",
+    "source": "RETU Chest Pain Pathway.pdf",
+    "category": "protocol"
+  }
+]

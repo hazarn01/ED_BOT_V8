@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive UI Validation</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background: #f0f0f0;
+        }
+        
+        .test-container {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border: 2px solid #333;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .breakpoint-info {
+            background: #333;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        
+        .mobile { width: 375px; }
+        .tablet { width: 768px; }  
+        .laptop { width: 1024px; }
+        .desktop { width: 1440px; }
+        .ultrawide { width: 2560px; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 ED Bot v8 Responsive UI Validation</h1>
+        <p>Testing the chatbot UI across different breakpoints to verify zero dead space.</p>
+    </div>
+
+    <div class="grid">
+        <div class="iframe-container mobile">
+            <div class="breakpoint-info">Mobile: 375px</div>
+            <iframe src="http://localhost:8001"></iframe>
+        </div>
+        
+        <div class="iframe-container tablet">
+            <div class="breakpoint-info">Tablet: 768px</div>
+            <iframe src="http://localhost:8001"></iframe>
+        </div>
+        
+        <div class="iframe-container laptop">
+            <div class="breakpoint-info">Laptop: 1024px</div>
+            <iframe src="http://localhost:8001"></iframe>
+        </div>
+        
+        <div class="iframe-container desktop">
+            <div class="breakpoint-info">Desktop: 1440px</div>
+            <iframe src="http://localhost:8001"></iframe>
+        </div>
+    </div>
+
+    <div class="test-container">
+        <h2>🎯 How to Test</h2>
+        <ol>
+            <li>Open this page in a web browser</li>
+            <li>Observe each iframe showing the ED Bot UI at different breakpoints</li>
+            <li>Check for any dead space (unused margins on sides)</li>
+            <li>Resize your browser window to test fluid scaling</li>
+            <li>Use browser dev tools to test ultra-wide sizes (2560px+)</li>
+        </ol>
+        
+        <h2>✅ Success Criteria</h2>
+        <ul>
+            <li>No visible dead space at any breakpoint</li>
+            <li>Container fills available width efficiently</li>
+            <li>Smooth scaling when resizing</li>
+            <li>Content remains readable at all sizes</li>
+        </ul>
+    </div>
+
+    <script>
+        // Add resize testing functionality
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            console.log(`Window width: ${width}px`);
+            
+            // Log which breakpoint we're at
+            if (width <= 768) console.log('📱 Mobile/Tablet range');
+            else if (width <= 1024) console.log('💻 Laptop range');
+            else if (width <= 1440) console.log('🖥️ Desktop range');
+            else console.log('🖥️ Ultra-wide range');
+        });
+        
+        console.log('🔍 Responsive UI validation loaded');
+        console.log('📏 Current window:', window.innerWidth + 'x' + window.innerHeight);
+    </script>
+</body>
+</html>

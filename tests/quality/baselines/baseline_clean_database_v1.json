@@ -1,0 +1,9 @@
+{
+  "overall_quality_score": 0.75,
+  "critical_failures": 0,
+  "average_response_time": 0.00967860221862793,
+  "source_attribution_rate": 1.0,
+  "medical_accuracy_score": 1.0,
+  "timestamp": "2025-08-31T20:19:54.392628",
+  "version": "clean_database_v1"
+}

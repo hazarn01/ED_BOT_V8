@@ -1,0 +1,497 @@
+/* Mount Sinai Health System Color Palette */
+:root {
+    --ms-cerulean: #06ABEB;      /* Primary blue */
+    --ms-pink: #DC298D;          /* Accent pink */
+    --ms-navy: #212070;          /* Dark blue */
+    --ms-deep-navy: #00002D;     /* Deepest blue */
+    --ms-white: #FFFFFF;
+    --ms-light-gray: #F8F9FA;
+    --ms-gray: #E9ECEF;
+    --ms-text: #212529;
+    --ms-text-secondary: #6C757D;
+    
+    /* Chat specific colors */
+    --user-message: var(--ms-cerulean);
+    --bot-message: var(--ms-light-gray);
+    --accent: var(--ms-pink);
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--ms-white);
+    color: var(--ms-text);
+    line-height: 1.5;
+}
+
+/* Fluid typography using clamp() for better scaling */
+html {
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+/* Container query fallback support */
+@supports not (container-type: inline-size) {
+    .chat-container {
+        width: 100%;
+        max-width: none;
+        padding: 0 clamp(1rem, 3vw, 3rem);
+    }
+}
+
+.chat-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;                        /* ✅ Full width for ultrawide */
+    max-width: none;                    /* ✅ Remove width constraint */
+    margin: 0;                          /* ✅ No centering margins */
+    padding: 0 clamp(1rem, 3vw, 3rem); /* ✅ Responsive padding */
+    background: var(--ms-white);
+    container-type: inline-size;        /* ✅ Enable container queries */
+}
+
+/* Header */
+.chat-header {
+    background: linear-gradient(135deg, var(--ms-navy) 0%, var(--ms-deep-navy) 100%);
+    color: var(--ms-white);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-placeholder {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.chat-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Messages Area */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background: var(--ms-light-gray);
+}
+
+.message {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.user-message .message-content {
+    background: var(--ms-cerulean);
+    color: white;
+    padding: 0.875rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0.25rem 1.25rem;
+    max-width: clamp(60%, 70vw, 75%);
+    min-width: min(300px, 90vw);
+}
+
+.bot-message .message-content {
+    background: var(--ms-white);
+    color: var(--ms-text);
+    padding: 1.25rem 1.5rem;
+    border-radius: 1.25rem 1.25rem 1.25rem 0.25rem;
+    max-width: clamp(75%, 85vw, 90%);
+    min-width: min(320px, 95vw);
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--ms-gray);
+}
+
+/* Nested Sources (OpenEvidence-style) */
+.sources-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--ms-gray);
+}
+
+.sources-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ms-navy);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.source-item {
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--ms-gray);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.source-header {
+    padding: 0.75rem 1rem;
+    background: var(--ms-light-gray);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ms-navy);
+}
+
+.source-header:hover {
+    background: var(--ms-gray);
+}
+
+.source-content {
+    padding: 0.75rem 1rem;
+    background: var(--ms-white);
+    font-size: 0.8rem;
+    color: var(--ms-text-secondary);
+    border-top: 1px solid var(--ms-gray);
+    display: none; /* Collapsed by default */
+}
+
+.source-content.expanded {
+    display: block;
+}
+
+.source-excerpt {
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.confidence-bar {
+    height: 4px;
+    background: var(--ms-gray);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.confidence-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--ms-pink), var(--ms-cerulean));
+    transition: width 0.3s ease;
+}
+
+/* Quick Query Buttons */
+.quick-queries {
+    margin-top: 1rem;
+}
+
+.quick-queries h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--ms-navy);
+}
+
+.quick-query-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    background: transparent;
+    border: 1px solid var(--ms-cerulean);
+    color: var(--ms-cerulean);
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quick-query-btn:hover {
+    background: var(--ms-cerulean);
+    color: white;
+}
+
+/* Input Area */
+.chat-input-container {
+    padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 4vw, 2rem);
+    background: var(--ms-white);
+    border-top: 1px solid var(--ms-gray);
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: end;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+    max-width: 100%;
+}
+
+#messageInput {
+    flex: 1;
+    padding: clamp(0.75rem, 1.5vw, 0.875rem) clamp(0.875rem, 2vw, 1rem);
+    border: 1px solid var(--ms-gray);
+    border-radius: 1.25rem;
+    font-family: inherit;
+    font-size: clamp(0.9rem, 1.8vw, 0.95rem);
+    resize: none;
+    line-height: 1.4;
+    min-height: 44px;
+    max-height: 120px;
+}
+
+#messageInput:focus {
+    outline: none;
+    border-color: var(--ms-cerulean);
+    box-shadow: 0 0 0 2px rgba(6, 171, 235, 0.1);
+}
+
+.send-button {
+    padding: 0.875rem;
+    background: var(--ms-cerulean);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    min-width: 44px;
+    height: 44px;
+}
+
+.send-button:hover {
+    background: var(--ms-navy);
+    transform: scale(1.05);
+}
+
+.send-button:disabled {
+    background: var(--ms-text-secondary);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 32, 112, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+}
+
+.loading-overlay.show {
+    display: flex;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid var(--ms-cerulean);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Capability List */
+.capability-list {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.capability-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.capability-list li::before {
+    content: '•';
+    color: var(--ms-cerulean);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Message metadata */
+.message-meta {
+    font-size: 0.8rem;
+    color: var(--ms-text-secondary);
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confidence-badge {
+    background: var(--ms-gray);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.confidence-badge.high {
+    background: #d4edda;
+    color: #155724;
+}
+
+.confidence-badge.medium {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.confidence-badge.low {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* PDF Links */
+.pdf-links {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--ms-gray);
+}
+
+.pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--ms-light-gray);
+    border: 1px solid var(--ms-gray);
+    border-radius: 8px;
+    color: var(--ms-navy);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.pdf-link:hover {
+    background: var(--ms-cerulean);
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Loading message animation */
+.loading-message {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ms-text-secondary);
+    font-style: italic;
+}
+
+.loading-dots {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.loading-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ms-cerulean);
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+.loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+.loading-dots span:nth-child(3) { animation-delay: 0s; }
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    40% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Error states */
+.error {
+    background: #f8d7da !important;
+    color: #721c24 !important;
+    border-color: #f5c6cb !important;
+}
+
+.warning {
+    background: #fff3cd !important;
+    color: #856404 !important;
+    border-color: #ffeaa7 !important;
+}
+
+.success {
+    background: #d4edda !important;
+    color: #155724 !important;
+    border-color: #c3e6cb !important;
+}
+
+/* Modern container queries for component-based responsiveness */
+@container (min-width: 768px) {
+    .message-content {
+        font-size: 1.05rem;
+        padding: 1.5rem 1.75rem;
+    }
+    
+    .input-wrapper {
+        gap: 1rem;
+    }
+}
+
+@container (min-width: 1024px) {
+    .chat-messages {
+        padding: 2.5rem;
+    }
+    
+    .sources-section {
+        margin-top: 2rem;
+    }
+}
+
+@container (min-width: 1400px) {
+    .chat-messages {
+        padding: 3rem 4rem;
+    }
+    
+    .message {
+        margin-bottom: 2rem;
+    }
+}

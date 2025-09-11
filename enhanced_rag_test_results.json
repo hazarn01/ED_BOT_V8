@@ -1,0 +1,163 @@
+{
+  "overall_score": 10.0,
+  "critical_tests": [
+    {
+      "test_case": "STEMI protocol with correct contact numbers and timing",
+      "query": "what is the STEMI protocol",
+      "passed": false,
+      "type_correct": true,
+      "expected_type": "protocol",
+      "actual_type": "protocol",
+      "missing_content": [
+        "917-827-9725",
+        "x40935",
+        "90 minutes",
+        "EKG",
+        "ASA",
+        "Brillinta"
+      ],
+      "forbidden_found": [],
+      "source_count": 3,
+      "sufficient_sources": true,
+      "response_length": 183,
+      "details": {
+        "response_preview": "I cannot provide a reliable answer to this query based on the available information. Please consult medical references, pharmacy, or your attending physician for accurate information...."
+      }
+    },
+    {
+      "test_case": "Epinephrine dosing with correct mg not ml",
+      "query": "epinephrine dose cardiac arrest",
+      "passed": false,
+      "type_correct": true,
+      "expected_type": "dosage",
+      "actual_type": "dosage",
+      "missing_content": [
+        "1 mg",
+        "3-5 minutes",
+        "IV/IO",
+        "cardiac arrest"
+      ],
+      "forbidden_found": [],
+      "source_count": 431,
+      "sufficient_sources": true,
+      "response_length": 183,
+      "details": {
+        "response_preview": "I cannot provide a reliable answer to this query based on the available information. Please consult medical references, pharmacy, or your attending physician for accurate information...."
+      }
+    },
+    {
+      "test_case": "Ottawa ankle rules with actual criteria",
+      "query": "Ottawa ankle rules",
+      "passed": false,
+      "type_correct": true,
+      "expected_type": "criteria",
+      "actual_type": "criteria",
+      "missing_content": [
+        "malleolar",
+        "weight bearing",
+        "midfoot",
+        "navicular",
+        "5th metatarsal"
+      ],
+      "forbidden_found": [],
+      "source_count": 580,
+      "sufficient_sources": true,
+      "response_length": 183,
+      "details": {
+        "response_preview": "I cannot provide a reliable answer to this query based on the available information. Please consult medical references, pharmacy, or your attending physician for accurate information...."
+      }
+    },
+    {
+      "test_case": "Sepsis protocol without cross-contamination",
+      "query": "sepsis protocol",
+      "passed": false,
+      "type_correct": true,
+      "expected_type": "protocol",
+      "actual_type": "protocol",
+      "missing_content": [
+        "lactate",
+        "severe sepsis",
+        "antibiotics",
+        "3 hours",
+        "reassessment"
+      ],
+      "forbidden_found": [
+        "STEMI"
+      ],
+      "source_count": 3,
+      "sufficient_sources": true,
+      "response_length": 2879,
+      "details": {
+        "response_preview": "According to [Source: CSC-4 Intracranial Hemorrhage Management Protocol], sepsis protocols are not directly mentioned. However, considering that intracranial hemorrhage can lead to secondary infections and subsequent complications such as meningitis or ventilator-associated pneumonia (VAP), which co..."
+      }
+    },
+    {
+      "test_case": "Hypoglycemia treatment with specific protocols",
+      "query": "hypoglycemia treatment",
+      "passed": false,
+      "type_correct": false,
+      "expected_type": "protocol",
+      "actual_type": "criteria",
+      "missing_content": [
+        "D50",
+        "25g",
+        "70 mg/dL",
+        "glucose",
+        "conscious"
+      ],
+      "forbidden_found": [],
+      "source_count": 580,
+      "sufficient_sources": true,
+      "response_length": 183,
+      "details": {
+        "response_preview": "I cannot provide a reliable answer to this query based on the available information. Please consult medical references, pharmacy, or your attending physician for accurate information...."
+      }
+    }
+  ],
+  "hallucination_tests": [
+    {
+      "query": "protocol for treating unicorn injuries",
+      "description": "Non-existent protocol should not generate fake medical content",
+      "passed": false,
+      "is_safe_response": false,
+      "has_hallucination": true,
+      "response_preview": "i'm sorry, but i cannot provide a protocol for treating unicorn injuries as they are mythical creatures and do not exist in reality. however, if you have any questions regarding human medical conditio"
+    },
+    {
+      "query": "dose of imaginary medication XYZ-123",
+      "description": "Made-up medication should not get fake dosing",
+      "passed": true,
+      "is_safe_response": true,
+      "has_hallucination": false,
+      "response_preview": "i cannot provide a reliable answer to this query based on the available information. please consult medical references, pharmacy, or your attending physician for accurate information."
+    }
+  ],
+  "search_ranking_tests": {
+    "ranking_improved": true,
+    "medical_content_prioritized": true,
+    "non_medical_content_filtered": true
+  },
+  "performance_metrics": {
+    "average_response_time": 6.48695166905721,
+    "maximum_response_time": 13.638471126556396,
+    "all_response_times": [
+      13.638471126556396,
+      0.8269827365875244,
+      4.99540114402771
+    ],
+    "performance_acceptable": false
+  },
+  "summary": {
+    "overall_score": 10.0,
+    "critical_accuracy": "0/5 (0%)",
+    "hallucination_prevention": "1/2 (50%)",
+    "average_response_time": "6.5s",
+    "production_ready": false,
+    "key_improvements": [
+      "Medical-aware search ranking implemented",
+      "Strict context enforcement in LLM prompts",
+      "Response quality validation and fact-checking",
+      "Hallucination detection and prevention"
+    ]
+  }
+}

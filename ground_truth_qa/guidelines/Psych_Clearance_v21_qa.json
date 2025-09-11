@@ -1,0 +1,50 @@
+[
+  {
+    "question": "When should emergency department physicians create a psychiatric clearance note?",
+    "answer": "Emergency department physicians should create a psychiatric clearance note when sending a patient from the Emergency Department to CPEP (Comprehensive Psychiatric Emergency Program) or Psych ED. This note documents the physician's decision and ensures proper documentation of the medical clearance process before psychiatric evaluation or transfer.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "What are the two main SmartPhrase options available for psychiatric clearance documentation?",
+    "answer": "Two SmartPhrase options are available: 1) .edpsychcleartriage - used if medically clearing the patient from triage, and 2) .edpsychcleartransfer - used if medically clearing the patient after ED evaluation. These SmartPhrases make writing the psychiatric clearance note fast while adhering to Mount Sinai's documentation requirements.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "How do you access and use psychiatric clearance SmartPhrases in Epic Hyperspace?",
+    "answer": "In Hyperspace: 1) Open patient's chart and click ED Notes activity, 2) Click Write Progress Note in the ED Notes Narrator menu to open NoteWriter, 3) In the toolbar at the right, enter .edpsychcleartriage or .edpsychcleartransfer in the Progress Note section (you don't need to enter the entire phrase), 4) Select the desired SmartPhrase and double click to add it to your note.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "What is the process for using psychiatric clearance SmartPhrases in Haiku mobile application?",
+    "answer": "In Haiku mobile: 1) Open the patient's chart and click Notes Entry, 2) In the upper right-hand corner, click the paper and pencil icon, 3) Click Select a Template, then SmartPhrases, 4) Enter the SmartPhrase you'd like to use and sign your note. This allows for efficient documentation of psychiatric clearance from mobile devices.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "What are the available SmartPhrase codes and their numeric identifiers for psychiatric clearance?",
+    "answer": "The available SmartPhrase codes are: EDPSYCHCLEARTRANSFER [750965] - for patients evaluated in the Emergency Department by medical staff before psychiatric clearance, and EDPSYCHCLEARTRIAGE [280303] - for patients being medically cleared from triage before psychiatric evaluation. These numeric identifiers help locate the specific templates in the Epic system.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "What is the difference between the triage and transfer psychiatric clearance SmartPhrases?",
+    "answer": "The triage SmartPhrase (.edpsychcleartriage) is used when medically clearing a patient directly from triage before full ED evaluation, while the transfer SmartPhrase (.edpsychcleartransfer) is used when medically clearing a patient after completing ED evaluation. This distinction reflects different levels of medical assessment prior to psychiatric referral.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "How can physicians efficiently search for psychiatric clearance SmartPhrases without typing the complete phrase?",
+    "answer": "Physicians can efficiently search by entering partial text - typing 'edpsych' in the SmartPhrase search will display both EDPSYCHCLEARTRANSFER and EDPSYCHCLEARTRIAGE options. The system will find the SmartPhrase without needing to enter the entire phrase, making documentation faster and more convenient for busy emergency department workflows.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Psych Clearance v2.1"
+  },
+  {
+    "question": "What is the purpose and benefit of using standardized SmartPhrases for psychiatric clearance documentation?",
+    "answer": "Standardized SmartPhrases serve multiple purposes: 1) Ensure compliance with Mount Sinai's documentation requirements, 2) Make writing psychiatric clearance notes as fast as possible, 3) Provide consistent documentation standards across the health system, 4) Support proper medical clearance workflow before psychiatric evaluation. This standardization improves efficiency while maintaining quality documentation for patient safety and continuity of care.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "Psych Clearance v2.1"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the required tests that must be completed prior to RETU admission for pyelonephritis patients?",
+    "answer": "Required testing prior to RETU admission includes: Urinalysis, Urine culture, CBC, creatinine, and pregnancy test in women of childbearing age. These tests help confirm the diagnosis, assess severity of infection, evaluate kidney function, and rule out pregnancy which would change management approach.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "Which pyelonephritis patients are NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Hemodynamic instability, AMS (altered mental status), Pregnancy, Immunocompromised patients, Significant comorbidities, Bacteremia or Sepsis, Acute renal failure, and Urinary tract anatomic abnormality (i.e. solitary kidney). These conditions require higher levels of care due to complexity or increased risk of complications.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What are the IV antibiotic options for pyelonephritis treatment in RETU?",
+    "answer": "IV antibiotics include: Ceftriaxone 1g q24h, Cefepime 2g q12h, Ciprofloxacin 400mg q12h, and Levofloxacin 750mg q24h. The pathway notes to tailor antibiotics to prior microbiology if available, allowing for targeted therapy based on previous urine culture results.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What oral antibiotics are recommended for transition from IV therapy in pyelonephritis patients?",
+    "answer": "Transition to PO antibiotics includes: Ciprofloxacin 500mg BID, Levofloxacin 740mg daily, Bactrim DS 1 tab BID, and Cefpodoxime 200mg BID. These oral options allow for completion of therapy as an outpatient once clinical improvement is demonstrated.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What monitoring is recommended for pyelonephritis patients in RETU?",
+    "answer": "Monitoring includes: Monitor fever curve (to assess response to antibiotics and resolution of infection), and Monitor pain level (to evaluate improvement in flank pain and systemic symptoms). These parameters help determine treatment response and readiness for discharge.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What are the discharge criteria for pyelonephritis patients from RETU?",
+    "answer": "Discharge criteria include: Stable vital signs, Tolerating PO fluids and medications, Resolutions or improvement of systemic symptoms, and WBC count nearly normal or improved. All criteria must be met to ensure the infection is responding to treatment and the patient can complete therapy at home.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What are the indications for hospital admission rather than discharge for pyelonephritis patients?",
+    "answer": "Indications for admission include: Continued T>101°F (persistent fever despite treatment), Unstable vital signs or sepsis, Inability to tolerate PO fluids and medications, and Abnormal imaging (i.e. emphysematous pyelonephritis). These findings indicate treatment failure or complications requiring inpatient management.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What treatment adjuncts are available for symptom management in pyelonephritis patients?",
+    "answer": "Treatment adjuncts include: IV fluid (for hydration), Zofran 4mg IV q4h PRN (for nausea), Reglan 10mg IV q6h PRN (for nausea/vomiting), Tylenol 650mg PO q4h PRN (for fever/pain), Toradol 30mg IV q6h PRN (for pain), and Ibuprofen 800mg PO q8h (for pain/inflammation). These supportive measures improve patient comfort during treatment.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "When should imaging be considered for pyelonephritis patients in RETU?",
+    "answer": "Imaging (CT or US) should be considered if clinically indicated during initial evaluation, and also if there is no clinical improvement during RETU stay. Imaging can help identify complications such as abscess formation, emphysematous pyelonephritis, or other structural abnormalities that may affect treatment decisions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "When should ID (Infectious Disease) consultation be obtained for pyelonephritis patients?",
+    "answer": "ID consult should be obtained as clinically indicated. This may include cases with unusual organisms, multidrug resistant pathogens, recurrent infections, treatment failure, or complicated infections requiring specialized antibiotic management or further evaluation for underlying urologic abnormalities.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "What are the key examination focuses for pyelonephritis patients in RETU?",
+    "answer": "Exam focus areas include: Abdominal examination (to assess for flank tenderness, costovertebral angle tenderness, and abdominal pain), and Genitourinary examination (to evaluate for urinary symptoms and rule out complications). These focused examinations help monitor treatment response and detect complications.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pyelonephritis Pathway"
+  },
+  {
+    "question": "Why are pregnant patients with pyelonephritis not appropriate for RETU admission?",
+    "answer": "Pregnancy is specifically listed as NOT appropriate for RETU. Pregnant patients with pyelonephritis require closer monitoring due to higher risk of complications including preterm labor, sepsis, and maternal/fetal compromise. They typically require inpatient management with obstetric consultation and specialized monitoring that cannot be provided in an observation unit setting.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pyelonephritis Pathway"
+  }
+]

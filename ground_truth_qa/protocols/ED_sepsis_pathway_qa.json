@@ -1,0 +1,91 @@
+{
+  "document": "ED Sepsis Pathway.pdf",
+  "document_type": "protocol", 
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What are the two focused evaluations required for all suspected sepsis patients?",
+      "answer": "1. Initial evaluation - Decide likelihood of sepsis, screen for severe sepsis or septic shock, initiate life-saving interventions. 2. Reassessment - Measure impact of resuscitation with repeat lactate, post-fluid BP, and focused re-exam",
+      "source_section": "Overview section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What lactate level indicates severe sepsis?",
+      "answer": "Lactate > 2",
+      "source_section": "Initial evaluation criteria", 
+      "question_type": "criteria"
+    },
+    {
+      "id": 3,
+      "question": "What lactate level indicates septic shock?",
+      "answer": "Lactate > 4",
+      "source_section": "Initial evaluation criteria",
+      "question_type": "criteria" 
+    },
+    {
+      "id": 4,
+      "question": "What order set should be used for sepsis patients?",
+      "answer": "Adult Sepsis Order Set",
+      "source_section": "Initial evaluation procedure",
+      "question_type": "workflow"
+    },
+    {
+      "id": 5,
+      "question": "What documentation template should be used for initial sepsis evaluation?",
+      "answer": "Initial Sepsis Note template",
+      "source_section": "Initial evaluation documentation",
+      "question_type": "workflow"
+    },
+    {
+      "id": 6,
+      "question": "What documentation template should be used for sepsis reassessment?",
+      "answer": "Sepsis Reassessment Note template",
+      "source_section": "Reassessment documentation",
+      "question_type": "workflow"
+    },
+    {
+      "id": 7,
+      "question": "When should sepsis reassessment be performed?",
+      "answer": "At 3 hours",
+      "source_section": "Epic Trackboard 3:00-4:00 timeframe",
+      "question_type": "timing"
+    },
+    {
+      "id": 8,
+      "question": "What should the RN do immediately upon arrival for suspected sepsis?",
+      "answer": "Draw lactate, start IVF & antibiotics based on verbal orders",
+      "source_section": "0:00-1:00 Evaluate section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 9,
+      "question": "What should be done if the patient is likely NOT sepsis?",
+      "answer": "PA/MD should choose 'SIRS/Other' in sepsis note & enter alternate diagnosis (ex. asthma) to dismiss alert",
+      "source_section": "No, likely not sepsis workflow",
+      "question_type": "workflow"
+    },
+    {
+      "id": 10,
+      "question": "What specific assessments are included in sepsis reassessment?",
+      "answer": "Repeat lactate, post-fluid BP, and focused re-exam (cardiovascular, including skin and capillary refill)",
+      "source_section": "Reassessment procedure",
+      "question_type": "workflow"
+    },
+    {
+      "id": 11,
+      "question": "Who should perform the RN + PA/MD huddle for sepsis patients?",
+      "answer": "RN and PA/MD together at arrival and again at 3 hours for reassessment",
+      "source_section": "Epic Trackboard huddle requirements",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What should be noted in the .edadmit note for sepsis patients?",
+      "answer": "Any outstanding sepsis tasks pending at time of admission should be noted for handoff to the admitting team",
+      "source_section": "Admission handoff requirements",
+      "question_type": "workflow"
+    }
+  ]
+}

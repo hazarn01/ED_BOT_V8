@@ -1,0 +1,42 @@
+{
+  "document": "SAFE_SAVI Roles in the Emergency Department.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "How can you reach a SAFE provider in the Emergency Department?",
+      "answer": "You can reach the SAFE provider by paging AMAC.",
+      "source_section": "Sexual Assault Forensic Examiner (SAFE) section",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "What is the time limit for SAFE providers to respond to sexual assault cases?",
+      "answer": "SAFEs can respond to cases that have occurred up to 120 hours after an assault.",
+      "source_section": "Sexual Assault Forensic Examiner (SAFE) section",
+      "question_type": "criteria"
+    },
+    {
+      "id": 3,
+      "question": "What age range can SAFEs work with?",
+      "answer": "SAFEs are trained to work with patients 12 years and older.",
+      "source_section": "Sexual Assault Forensic Examiner (SAFE) section",
+      "question_type": "criteria"
+    },
+    {
+      "id": 4,
+      "question": "Who can provide SAVI troubleshooter coverage 24/7?",
+      "answer": "The troubleshooter role is covered by SAVI's Executive Director, Assistant Director, SAFE Medical Director, and SAFE program coordinators.",
+      "source_section": "SAVI Troubleshooter section",
+      "question_type": "personnel"
+    },
+    {
+      "id": 5,
+      "question": "How can you contact a SAVI advocate for a sexual assault survivor?",
+      "answer": "Advocates can be activated by calling AMAC. The Troubleshooters also have access to the advocate schedule and can help with any questions or concerns related to advocates.",
+      "source_section": "SAVI Advocate section",
+      "question_type": "contact"
+    }
+  ]
+}

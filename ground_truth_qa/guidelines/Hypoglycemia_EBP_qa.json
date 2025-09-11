@@ -1,0 +1,67 @@
+{
+  "document_info": {
+    "title": "Hypoglycemia Evidence-Based Practice Clinical Guideline",
+    "document_type": "guideline", 
+    "complexity": "medium",
+    "source_file": "Hypoglycemia_EBP_Final_10_2024.pdf",
+    "topic": "Hypoglycemia management and treatment protocols"
+  },
+  "qa_pairs": [
+    {
+      "id": "hypo_001",
+      "question": "What defines hypoglycemia in adults, and what are the key symptoms that emergency providers should recognize?",
+      "answer": "Hypoglycemia is defined as blood glucose <70 mg/dL or symptomatic hypoglycemia regardless of glucose level. Key symptoms include shaking, sweating, nausea, vomiting, palpitations, dizziness, irritability, anxiety, tingling, lightheadedness, visual changes, slurred speech, confusion, loss of consciousness, and seizures. Recognition of these symptoms is critical even when glucose levels may not be severely low.",
+      "category": "Clinical Assessment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hypo_002",
+      "question": "What is the initial treatment approach for an unconscious patient presenting with hypoglycemia who has no IV access?",
+      "answer": "For unconscious patients without IV access: Give Glucagon 1mg IM, which can be repeated once every 15 minutes while establishing IV access. Check ABCs, place on monitor, and obtain IV access. Once IV is established, give 50mL (25g) D50 IV over 2-5 minutes. Note that glucagon may not work effectively in malnourished patients due to lack of glycogen stores.",
+      "category": "Emergency Treatment",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hypo_003", 
+      "question": "How should conscious patients with symptomatic hypoglycemia be treated when they are NPO versus when they can take oral intake?",
+      "answer": "NPO patients: Obtain IV access and give 200mL of D10 over 15 minutes, or if difficult to obtain IV, give 50mL (25g) D50 IV over 2-5 minutes, then initiate D5 maintenance fluids. Non-NPO patients: Give 15-20 grams of rapid-acting carbohydrates, repeat every 15 minutes until symptoms resolve or POCG >100, then give 15-20 grams of long-acting carbohydrates.",
+      "category": "Treatment Protocols",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hypo_004",
+      "question": "What are examples of appropriate rapid-acting and long-acting carbohydrates for treating hypoglycemia?",
+      "answer": "Rapid-acting carbohydrates (15-20g): 4 glucose tablets, 8 saltine crackers, 1/2 cup fruit juice, 1/2 can regular soda, or 1 tablespoon sugar. Long-acting carbohydrates: slice of whole grain bread, 300mL of milk, or small apple. The rapid-acting options provide quick glucose absorption, while long-acting carbs help maintain glucose levels.",
+      "category": "Treatment Protocols",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hypo_005",
+      "question": "What is the monitoring protocol for NPO patients after initial hypoglycemia treatment?",
+      "answer": "After treating NPO patients and achieving POCG >100: Initiate D5 maintenance fluids and recheck point-of-care glucose (POCG) at hours 1, 3, 5, and 7. Continue monitoring until glucose levels remain stable. If glucose drops below 70 mg/dL, repeat the treatment algorithm. This ensures sustained glucose levels in patients who cannot take oral intake.",
+      "category": "Monitoring",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hypo_006",
+      "question": "What special considerations should be made for malnourished patients presenting with hypoglycemia?",
+      "answer": "In malnourished patients: 1) Glucagon may not work effectively due to lack of glycogen stores, so prioritize IV glucose administration. 2) Add thiamine supplementation, but do not delay glucose administration while obtaining thiamine. 3) Consider higher risk of prolonged or recurrent hypoglycemia. 4) These patients may require more aggressive glucose monitoring and potentially longer observation periods.",
+      "category": "Special Populations",
+      "difficulty": "high"
+    },
+    {
+      "id": "hypo_007",
+      "question": "When should octreotide be considered in hypoglycemia management, and what other refractory treatments are available?",
+      "answer": "Octreotide should be initiated if sulfonylurea overdose is suspected, as it inhibits insulin release from pancreatic beta cells. For refractory hypoglycemia that doesn't respond to standard treatment, consider IV glucocorticoids for suspected adrenal insufficiency. Also consider underlying causes such as insulin overdose, oral hypoglycemic agents, or endocrine disorders that may require specific interventions.",
+      "category": "Advanced Treatment",
+      "difficulty": "high"
+    },
+    {
+      "id": "hypo_008",
+      "question": "What additional laboratory workup should be considered for non-diabetic patients presenting with hypoglycemia?",
+      "answer": "For non-diabetic patients with hypoglycemia, add serum glucose, serum insulin, C-peptide, and oral hypoglycemic agent screen in addition to routine hypoglycemia workup. This helps differentiate between exogenous insulin administration, sulfonylurea ingestion, insulinoma, or other causes of endogenous hyperinsulinemia. The C-peptide level is particularly important as it remains elevated with endogenous insulin production but is suppressed with exogenous insulin administration.",
+      "category": "Diagnostic Workup",
+      "difficulty": "high"
+    }
+  ]
+}

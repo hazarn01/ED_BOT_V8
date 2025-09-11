@@ -1,0 +1,47 @@
+{
+  "document_name": "Pain Assessment and Management.pdf", 
+  "document_type": "reference",
+  "total_pairs": 5,
+  "qa_pairs": [
+    {
+      "id": "pain_wf_001",
+      "question": "What are the key components required for pain screening, assessment, and reassessment in the emergency department?",
+      "answer": "All patients will be screened, assessed, and reassessed for pain, including patients in the emergency department. During assessment, the patient's identified needs and pain management goals are discussed. The primary objective is to obtain information to identify the cause of pain and guide management through patient history, physical examination, and appropriate diagnostic studies. Talking to patients and obtaining a 'pain history' is integral to pain assessment.",
+      "source_file": "Pain Assessment and Management.pdf",
+      "complexity": "medium",
+      "category": "assessment"
+    },
+    {
+      "id": "pain_wf_002",
+      "question": "What information should be included in a comprehensive pain history?",
+      "answer": "The pain history should include: the patient's past medical history, medications, habits (e.g., smoking, alcohol intake), family history, and psychosocial history. This information is typically obtained as part of the patient history and helps identify the cause of pain and guide appropriate management decisions.",
+      "source_file": "Pain Assessment and Management.pdf",
+      "complexity": "low",
+      "category": "documentation"
+    },
+    {
+      "id": "pain_wf_003",
+      "question": "What monitoring requirements exist for patients receiving opioid treatment?",
+      "answer": "Patients will be reassessed in a timely manner for their response to treatment. Patients will be monitored to identify high risk for adverse outcomes related to opioid treatment. Hospital leadership works with clinical staff to identify and acquire equipment needed to monitor patients at high risk for adverse outcomes from opioid treatment (e.g., patients with sleep apnea, those receiving continuous intravenous opioids, or those on supplemental oxygen).",
+      "source_file": "Pain Assessment and Management.pdf",
+      "complexity": "medium",
+      "category": "monitoring"
+    },
+    {
+      "id": "pain_wf_004",
+      "question": "What elements must be included in a patient's pain treatment plan?",
+      "answer": "A pain treatment plan based on evidence-based practices and the patient's clinical condition, past medical history, and pain management goals will be developed. The plan will include developing realistic expectations and measurable goals understood by the patient for the degree, duration, and reduction of pain. Objectives to evaluate treatment progress (for example, relief of pain and improved physical and psychosocial function) will be discussed. Non-pharmacologic pain treatment modalities will be offered when available.",
+      "source_file": "Pain Assessment and Management.pdf",
+      "complexity": "medium",
+      "category": "treatment_planning"
+    },
+    {
+      "id": "pain_wf_005",
+      "question": "What patient and caregiver education requirements exist for pain management?",
+      "answer": "Education regarding pain management begins at admission or initial encounter for patients, family, and/or significant others. Education includes treatment options and safe use of opioid and non-opioid medications when prescribed. Patients and family will be educated on discharge regarding pain management treatment, side effects, activities of daily living, including the home environment, that might exacerbate pain or reduce effectiveness of the pain management plan of care, as well as strategies to address these issues, and the safe use, storage, and disposal of opioids when prescribed.",
+      "source_file": "Pain Assessment and Management.pdf",
+      "complexity": "medium",
+      "category": "patient_education"
+    }
+  ]
+}

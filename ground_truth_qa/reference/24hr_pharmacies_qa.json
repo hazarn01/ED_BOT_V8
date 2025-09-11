@@ -1,0 +1,49 @@
+{
+  "document": "24hrPharmacies.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What 24-hour pharmacies are available on the Upper East Side?",
+      "answer": "CVS Upper East Side: 1396 2nd Ave – (212) 249-5699, Walgreens Upper East Side: 1328 2nd Ave – (212) 734-6081, Duane Reade 74th & 3rd: 1279 3rd Ave – (212) 744-2668",
+      "source_section": "Upper East Side section",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "What is the phone number for CVS Midtown East?",
+      "answer": "(917) 369-8687",
+      "source_section": "Midtown section",
+      "question_type": "contact"
+    },
+    {
+      "id": 3,
+      "question": "Which 24-hour pharmacies are located in Queens?",
+      "answer": "CVS Astoria: 2280 31st Street – (718) 204-5333, Walgreens Forest Hills: 104-25 Queens Blvd (718) 896-7901",
+      "source_section": "Queens section",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What is the address of Windsor Pharmacy?",
+      "answer": "1419 6th Ave",
+      "source_section": "Midtown section",
+      "question_type": "contact"
+    },
+    {
+      "id": 5,
+      "question": "How many 24-hour pharmacies are listed for the Upper West Side?",
+      "answer": "Four pharmacies: Duane Reade 94th & Broadway, Rite Aid Upper West Side (2833 Broadway), CVS Upper West Side, and Rite Aid Upper West Side (210 Amsterdam Ave)",
+      "source_section": "Upper West Side section",
+      "question_type": "contact"
+    },
+    {
+      "id": 6,
+      "question": "What is the phone number for Walgreens Union Square?",
+      "answer": "(212) 677-0054",
+      "source_section": "Union Square section",
+      "question_type": "contact"
+    }
+  ]
+}

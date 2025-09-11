@@ -1,0 +1,355 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "EDBotv8 - Medical Safety & Quality",
+    "tags": ["edbot", "medical", "safety", "clinical"],
+    "timezone": "browser",
+    "time": {
+      "from": "now-4h",
+      "to": "now"
+    },
+    "refresh": "1m",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Safety Alert Summary",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(edbot_safety_alerts_total{severity=\"critical\"}[1h])",
+            "legendFormat": "Critical Alerts (1h)"
+          },
+          {
+            "expr": "increase(edbot_safety_alerts_total{severity=\"warning\"}[1h])",
+            "legendFormat": "Warning Alerts (1h)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 5},
+                {"color": "red", "value": 20}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 8, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Clinical Confidence Score",
+        "type": "gauge",
+        "targets": [
+          {
+            "expr": "avg(edbot_clinical_confidence)",
+            "legendFormat": "Average Confidence"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.7},
+                {"color": "green", "value": 0.85}
+              ]
+            },
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0
+          }
+        },
+        "gridPos": {"h": 8, "w": 8, "x": 8, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "PHI Scrubbing Events",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(edbot_phi_scrubbing_total[1h])",
+            "legendFormat": "{{ component }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"}
+          }
+        },
+        "gridPos": {"h": 8, "w": 8, "x": 16, "y": 0}
+      },
+      {
+        "id": 4,
+        "title": "Safety Alerts by Type Over Time",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_safety_alerts_total[5m])",
+            "legendFormat": "{{ alert_type }} - {{ severity }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "events/sec"
+          }
+        },
+        "gridPos": {"h": 10, "w": 24, "x": 0, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Medication Safety Checks",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_dosage_safety_checks_total[5m])",
+            "legendFormat": "{{ medication }} - {{ check_type }} ({{ result }})"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "checks/sec"
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 18}
+      },
+      {
+        "id": 6,
+        "title": "High-Risk Medication Queries",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "topk(10, increase(edbot_medication_dosage_queries{medication=~\"insulin|heparin|warfarin|morphine|epinephrine\"}[1h]))",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "transformations": [
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {
+                "__name__": true,
+                "instance": true,
+                "job": true
+              },
+              "renameByName": {
+                "medication": "Medication",
+                "route": "Route",
+                "Value": "Queries (1h)"
+              }
+            }
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 18}
+      },
+      {
+        "id": 7,
+        "title": "Clinical Confidence by Specialty",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "avg by (clinical_area) (edbot_clinical_confidence)",
+            "legendFormat": "{{ clinical_area }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-BlPu"
+            }
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 28}
+      },
+      {
+        "id": 8,
+        "title": "Emergency Department Metrics",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_emergency_department_queries_total[5m])",
+            "legendFormat": "{{ urgency_level }} - {{ query_category }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "queries/sec"
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 28}
+      },
+      {
+        "id": 9,
+        "title": "Critical Protocol Access Patterns",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_critical_protocol_access_total[5m])",
+            "legendFormat": "{{ protocol }} - {{ time_of_day }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "accesses/sec"
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 38}
+      },
+      {
+        "id": 10,
+        "title": "Medical Abbreviation Usage",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "topk(15, increase(edbot_medical_abbreviation_usage_total[4h]))",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "transformations": [
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {
+                "__name__": true,
+                "instance": true,
+                "job": true
+              },
+              "renameByName": {
+                "abbreviation": "Abbreviation",
+                "specialty": "Specialty",
+                "Value": "Usage Count (4h)"
+              }
+            }
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 38}
+      },
+      {
+        "id": 11,
+        "title": "Protocol Adherence Scores",
+        "type": "bargauge",
+        "targets": [
+          {
+            "expr": "edbot_protocol_adherence_score",
+            "legendFormat": "{{ protocol_name }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.8},
+                {"color": "green", "value": 0.95}
+              ]
+            },
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 48}
+      },
+      {
+        "id": 12,
+        "title": "Source Citation Quality",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(edbot_source_citation_quality_bucket[5m]))",
+            "legendFormat": "Citation Quality (95th) - {{ query_type }}"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(edbot_source_citation_quality_bucket[5m]))",
+            "legendFormat": "Citation Quality (median) - {{ query_type }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 48}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "specialty",
+          "type": "query",
+          "query": "label_values(edbot_clinical_confidence, clinical_area)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "urgency",
+          "type": "query", 
+          "query": "label_values(edbot_emergency_department_queries_total, urgency_level)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "medication",
+          "type": "query",
+          "query": "label_values(edbot_medication_dosage_queries, medication)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "annotations": {
+      "list": [
+        {
+          "name": "Critical Safety Alerts",
+          "datasource": "Prometheus",
+          "expr": "increase(edbot_safety_alerts_total{severity=\"critical\"}[1m]) > 0",
+          "titleFormat": "Critical Safety Alert",
+          "textFormat": "{{ $labels.alert_type }} triggered",
+          "iconColor": "red"
+        },
+        {
+          "name": "Low Confidence Events",
+          "datasource": "Prometheus",
+          "expr": "edbot_clinical_confidence < 0.6",
+          "titleFormat": "Low Clinical Confidence",
+          "textFormat": "Confidence below 60% for {{ $labels.clinical_area }}",
+          "iconColor": "yellow"
+        }
+      ]
+    }
+  }
+}

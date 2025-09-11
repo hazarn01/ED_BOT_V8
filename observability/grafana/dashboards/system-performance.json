@@ -1,0 +1,301 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "EDBotv8 - System Performance",
+    "tags": ["edbot", "performance", "system"],
+    "timezone": "browser",
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "10s",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Request Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_queries_total[2m])",
+            "legendFormat": "{{ query_type }} - {{ status }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "reqps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Response Time Percentiles",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(edbot_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.90, rate(edbot_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "90th percentile"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(edbot_query_duration_seconds_bucket[5m]))",
+            "legendFormat": "Median"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "LLM Backend Performance",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_llm_requests_total[2m])",
+            "legendFormat": "{{ backend }} - {{ status }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "reqps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "LLM Response Time",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(edbot_llm_duration_seconds_bucket[5m]))",
+            "legendFormat": "{{ backend }} (95th)"
+          },
+          {
+            "expr": "histogram_quantile(0.50, rate(edbot_llm_duration_seconds_bucket[5m]))",
+            "legendFormat": "{{ backend }} (median)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 5,
+        "title": "Hybrid Search Performance",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(edbot_hybrid_retrieval_seconds_bucket[5m]))",
+            "legendFormat": "{{ component }} (95th)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 16}
+      },
+      {
+        "id": 6,
+        "title": "Cache Operations",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_cache_operations_total[2m])",
+            "legendFormat": "{{ operation }} - {{ result }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "ops"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 16}
+      },
+      {
+        "id": 7,
+        "title": "Database Connection Pool",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "edbot_database_connections_active",
+            "legendFormat": "Active Connections"
+          },
+          {
+            "expr": "edbot_database_connections_idle",
+            "legendFormat": "Idle Connections"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "short"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 8,
+        "title": "Elasticsearch Operations",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_elasticsearch_operations_total[2m])",
+            "legendFormat": "{{ operation }} - {{ status }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "ops"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      },
+      {
+        "id": 9,
+        "title": "Token Usage",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_llm_tokens_total[5m])",
+            "legendFormat": "{{ backend }} - {{ type }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "tps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 32}
+      },
+      {
+        "id": 10,
+        "title": "Table Extraction Performance",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(edbot_table_extraction_seconds_bucket[5m]))",
+            "legendFormat": "{{ extraction_method }} (95th)"
+          },
+          {
+            "expr": "rate(edbot_tables_extracted_total[2m])",
+            "legendFormat": "Tables/sec - {{ confidence_bucket }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 32}
+      },
+      {
+        "id": 11,
+        "title": "Concurrent Requests",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "edbot_concurrent_requests",
+            "legendFormat": "Concurrent Requests"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "short"
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 40}
+      },
+      {
+        "id": 12,
+        "title": "Error Rate by Component",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(edbot_queries_total{status=\"error\"}[5m]) / rate(edbot_queries_total[5m])",
+            "legendFormat": "Query Errors"
+          },
+          {
+            "expr": "rate(edbot_llm_requests_total{status=\"error\"}[5m]) / rate(edbot_llm_requests_total[5m])",
+            "legendFormat": "LLM Errors"
+          },
+          {
+            "expr": "rate(edbot_elasticsearch_operations_total{status=\"error\"}[5m]) / rate(edbot_elasticsearch_operations_total[5m])",
+            "legendFormat": "Elasticsearch Errors"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0
+          }
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 40}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "backend",
+          "type": "query",
+          "query": "label_values(edbot_llm_requests_total, backend)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "query_type",
+          "type": "query",
+          "query": "label_values(edbot_queries_total, query_type)",
+          "current": {
+            "selected": false,
+            "text": "All", 
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "annotations": {
+      "list": [
+        {
+          "name": "Performance Issues",
+          "datasource": "Prometheus", 
+          "expr": "histogram_quantile(0.95, edbot_query_duration_seconds_bucket) > 5",
+          "titleFormat": "High Latency",
+          "textFormat": "95th percentile response time exceeded 5s",
+          "iconColor": "orange"
+        }
+      ]
+    }
+  }
+}

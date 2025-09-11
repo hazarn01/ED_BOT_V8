@@ -1,0 +1,67 @@
+{
+  "document_title": "MSH ED Discharge Education",
+  "document_type": "reference",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What is the first step an attending must take when approving a patient for discharge in the MSH ED?",
+      "answer": "When the Attending approves the plan for discharge, they must change the Plan column to 'Discharge Anticipated' by clicking 'Quick Doc' then 'Dispo plan' in Epic, and selecting 'Discharge Anticipated' under Provider's anticipated disposition. This changes the plan column to an orange house signaling the intended disposition to the rest of the team.",
+      "category": "discharge_process"
+    },
+    {
+      "question": "What key information must providers discuss with patients before discharge according to the MSH ED protocol?",
+      "answer": "Providers must discuss the anticipated discharge with the patient including review of test results and plan for post discharge care. They must tell the patient that before they depart: RN will bring discharge paperwork, BA will come to discharge them and verify contact information, ask if they have questions and remind them results are available in MyChart, and ask if they require a work note.",
+      "category": "patient_education"
+    },
+    {
+      "question": "When should social work be contacted during the discharge process and what is the proper protocol?",
+      "answer": "If any psychosocial barriers to discharge are identified, send an Epic Secure Chat to 'MSH ED CORE Social Work' and/or contact SW in the assigned zone. The nurse must be included in the chat. For nurses, if near change of shift, the incoming nurse should also be included.",
+      "category": "interdisciplinary_coordination"
+    },
+    {
+      "question": "What is the MSHEDDISCHARGE Smartphrase and how should it be accessed?",
+      "answer": "The MSHEDDISCHARGE Smartphrase is used to document discharge precautions and provide nursing with parts of the written discharge instructions to point patients to during bedside discharge. Access it by clicking the 'Epic' Button, selecting 'Smartphrase Manager' with Level: User, typing 'Milgrim' into the user search box, selecting MSHEDDISCHARGE from the list, and adding it to smartphrases.",
+      "category": "documentation"
+    },
+    {
+      "question": "What transportation options are indicated in the discharge order system and how are they visually represented?",
+      "answer": "Transportation options include Ambulance, Ambulette, and Livery. When Ambulance or Ambulette is selected, an ambulance icon appears next to 'Discharge'. When Livery is selected, a car icon appears next to 'Discharge'. This selection notifies the care team that the patient is waiting for transportation.",
+      "category": "discharge_logistics"
+    },
+    {
+      "question": "What is the proper sequence for nurses when conducting the AVS review with patients?",
+      "answer": "Nurses should first print the AVS once ambulance arrives or the green discharge order appears if no transport needed. Then conduct review of the AVS with the patient, reviewing discharge instructions entered by the provider. If questions arise or instructions are incomplete, huddle with provider. Lab and Radiology results are printed with the AVS, and patients should be referred to MyChart for additional information.",
+      "category": "patient_education"
+    },
+    {
+      "question": "What are the key responsibilities of the Emergency Room Technician during patient discharge?",
+      "answer": "The Emergency Room Technician must obtain discharge vital signs from the patient once ambulance arrives or the green discharge order appears. If there is an abnormal vital sign, they must escalate to the patient's nurse. They also ensure the patient has their belongings after the nurse has completed AVS review and IV removal.",
+      "category": "clinical_monitoring"
+    },
+    {
+      "question": "What pharmacy verification steps must the Business Associate complete during the pre-disposition phase?",
+      "answer": "The BA must verify pharmacy information by opening the patient's chart in Epic and clicking Pharmacy on the left banner. If Pharmacy shows 'Yes', confirm it's still valid and open (especially weekends/holidays). If Pharmacy shows 'None', use the green pharmacy information form to select preferred pharmacy, look it up, select from the list, and click 'Accept', confirming with phone number when possible.",
+      "category": "medication_management"
+    },
+    {
+      "question": "What critical rule must be followed regarding patient room status during discharge?",
+      "answer": "Do not room the patient in 'Discharge' status until the RN has completed their discharge process. The provider should not room the patient in 'Discharge' as this will falsely signal to the BA that the visit is ready to be closed. Only the discharging RN should room the patient in 'Discharge' after they review the AVS with the patient.",
+      "category": "workflow_coordination"
+    },
+    {
+      "question": "How should work notes be handled in the MSH ED discharge process?",
+      "answer": "Providers should ask if the patient requires a work note during the initial discharge discussion and print it if needed (noting that nurses cannot currently print lab/radiology results or work notes). Nurses can generate work notes by clicking 'Forms' under the Discharge tab, then 'New Communication' for a new work note or 'Print Now' for a pended note.",
+      "category": "documentation"
+    },
+    {
+      "question": "What patient verification steps must the Business Associate complete before final discharge?",
+      "answer": "The BA must verify demographic, insurance, emergency contact/NoK/COVID screen, and employer information based on data forms. They must collect the patient's email address for MyChart registration, verify contact information, collect copay if possible, and verify that the patient has completed their AVS attestation before discharging from Epic.",
+      "category": "administrative_processes"
+    },
+    {
+      "question": "What MyChart education should be provided to patients during discharge?",
+      "answer": "Patients should be reminded that their test results are available in MyChart. The discharge paperwork includes a MyChart activation code. If patients request additional information about their stay beyond what's in the AVS, they should be referred to MyChart. The BA collects the patient's email address for MyChart registration automessage during the discharge process.",
+      "category": "patient_education"
+    }
+  ]
+}

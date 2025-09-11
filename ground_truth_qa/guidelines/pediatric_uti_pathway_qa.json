@@ -1,0 +1,42 @@
+{
+  "document_name": "Pediatric Urinary Tract Infection Pathway.pdf",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "What are the age-specific exclusion criteria for the pediatric UTI pathway?",
+      "answer": "The pediatric UTI pathway excludes: patients less than 2 months old, immunocompromised patients, pregnant patients, patients on antibiotics in the last 2 weeks, those receiving UTI prophylaxis, known or suspected GU abnormality, prior GU surgery, presence of Foley catheter, history of chronic kidney disease, and suspected sepsis or meningitis.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "For a 15 kg child with pyelonephritis requiring IV antibiotics, what is the appropriate ceftriaxone dosing?",
+      "answer": "For a 15 kg child with pyelonephritis, ceftriaxone should be dosed at 50 mg/kg/dose IV daily. This would be 750 mg IV daily (15 kg × 50 mg/kg = 750 mg). Ceftriaxone is indicated for patients unable to tolerate oral antibiotics or with severe illness requiring IV therapy.",
+      "query_type": "DOSAGE_LOOKUP"
+    },
+    {
+      "question": "What clinical criteria determine if a pediatric patient with suspected UTI should receive the inpatient versus outpatient pathway?",
+      "answer": "The inpatient pathway is indicated for patients with clinical suspicion for UTI who require admission. Key factors include: age less than 3 months, toxic appearance, inability to maintain adequate oral intake, concern for pyelonephritis with severe symptoms, and patients requiring IV antibiotics. The outpatient pathway is for stable patients who can tolerate oral antibiotics and have reliable follow-up.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "For a 20 kg child requiring oral antibiotic therapy for UTI, what is the appropriate amoxicillin-clavulanate dosing?",
+      "answer": "For a 20 kg child with UTI requiring oral antibiotics, amoxicillin-clavulanate should be dosed at 45 mg/kg/day divided twice daily. This would be 450 mg twice daily (20 kg × 45 mg/kg ÷ 2 doses = 450 mg BID). The pathway notes this is effective against common uropathogens and provides good urinary tract penetration.",
+      "query_type": "DOSAGE_LOOKUP"
+    },
+    {
+      "question": "What is the decision algorithm for antibiotic selection in pediatric patients with positive urine cultures?",
+      "answer": "The antibiotic selection algorithm depends on culture results and patient factors: If anaphylaxis to β-lactams, use ciprofloxacin or levofloxacin. If cephalosporin resistance in last 12 months, avoid cephalexin and consider alternatives. For outpatient therapy, first-line options include cephalexin, amoxicillin-clavulanate, or trimethoprim-sulfamethoxazole based on local resistance patterns and patient allergies.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "What are the specific discharge criteria and follow-up requirements for pediatric UTI patients?",
+      "answer": "Discharge criteria include: clinically improving patient, tolerating oral intake, afebrile for adequate time, and reliable follow-up arranged. Follow-up requirements include: PCP visit within 2-3 days, antibiotic duration of 7-10 days for cystitis and 10-14 days for pyelonephritis. Patients should be instructed to return for fever, worsening symptoms, or inability to tolerate medications.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "For a 8 kg infant with suspected pyelonephritis requiring IV therapy, what is the appropriate cefazolin dosing and monitoring plan?",
+      "answer": "For an 8 kg infant with pyelonephritis, cefazolin should be dosed at 50 mg/kg/dose IV every 8 hours. This would be 400 mg IV every 8 hours (8 kg × 50 mg/kg = 400 mg q8h). The patient requires monitoring for clinical improvement, tolerance of oral intake, and fever resolution before transitioning to oral antibiotics and discharge planning.",
+      "query_type": "DOSAGE_LOOKUP"
+    }
+  ]
+}

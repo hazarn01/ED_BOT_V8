@@ -1,0 +1,172 @@
+# Prometheus Alert Rules for EDBotv8
+# Medical AI safety and system monitoring alerts
+
+groups:
+  - name: edbot_medical_safety
+    interval: 10s
+    rules:
+      - alert: HighMedicalSafetyAlerts
+        expr: increase(edbot_safety_alerts_total[5m]) > 5
+        for: 1m
+        labels:
+          severity: critical
+          component: medical_safety
+        annotations:
+          summary: "High number of medical safety alerts"
+          description: "{{ $value }} medical safety alerts triggered in the last 5 minutes. This requires immediate investigation."
+          runbook_url: "https://docs.edbot.com/runbooks/medical-safety-alerts"
+
+      - alert: CriticalMedicationSafetyCheck
+        expr: increase(edbot_dosage_safety_checks_total{result="warning"}[1m]) > 0
+        for: 0s
+        labels:
+          severity: critical
+          component: medication_safety
+        annotations:
+          summary: "Critical medication safety warning detected"
+          description: "A medication safety warning was triggered for {{ $labels.medication }}. Review immediately."
+          runbook_url: "https://docs.edbot.com/runbooks/medication-safety"
+
+      - alert: LowConfidenceMedicalResponse
+        expr: rate(edbot_clinical_confidence{clinical_area=~"cardiology|emergency"}[5m]) < 0.7
+        for: 2m
+        labels:
+          severity: warning
+          component: clinical_confidence
+        annotations:
+          summary: "Low confidence in critical medical responses"
+          description: "Clinical confidence for {{ $labels.clinical_area }} has been consistently low ({{ $value }}) for 2 minutes."
+          runbook_url: "https://docs.edbot.com/runbooks/low-confidence"
+
+      - alert: TimeSensitiveProtocolSlow
+        expr: histogram_quantile(0.95, edbot_time_sensitive_response_seconds_bucket{protocol_type=~"STEMI|stroke|sepsis"}) > 2.0
+        for: 1m
+        labels:
+          severity: warning
+          component: time_sensitive_protocols
+        annotations:
+          summary: "Time-sensitive protocol responses are slow"
+          description: "95th percentile response time for {{ $labels.protocol_type }} is {{ $value }}s, exceeding 2s threshold."
+          runbook_url: "https://docs.edbot.com/runbooks/slow-protocols"
+
+  - name: edbot_system_health
+    interval: 30s
+    rules:
+      - alert: SystemHealthDegraded
+        expr: edbot_system_health < 0.8
+        for: 2m
+        labels:
+          severity: warning
+          component: system_health
+        annotations:
+          summary: "System health is degraded"
+          description: "Overall system health score is {{ $value }}, below 0.8 threshold for 2 minutes."
+          runbook_url: "https://docs.edbot.com/runbooks/system-health"
+
+      - alert: SystemHealthCritical
+        expr: edbot_system_health < 0.5
+        for: 30s
+        labels:
+          severity: critical
+          component: system_health
+        annotations:
+          summary: "System health is critical"
+          description: "Overall system health score is {{ $value }}, system may be failing."
+          runbook_url: "https://docs.edbot.com/runbooks/system-critical"
+
+      - alert: ComponentDown
+        expr: edbot_component_health{component=~"database|llm"} == 0
+        for: 30s
+        labels:
+          severity: critical
+          component: "{{ $labels.component }}"
+        annotations:
+          summary: "Critical component {{ $labels.component }} is down"
+          description: "Critical system component {{ $labels.component }} is not healthy."
+          runbook_url: "https://docs.edbot.com/runbooks/component-down"
+
+  - name: edbot_performance
+    interval: 30s
+    rules:
+      - alert: HighQueryLatency
+        expr: histogram_quantile(0.95, edbot_query_duration_seconds_bucket) > 5.0
+        for: 2m
+        labels:
+          severity: warning
+          component: query_performance
+        annotations:
+          summary: "High query response latency"
+          description: "95th percentile query response time is {{ $value }}s, exceeding 5s threshold."
+          runbook_url: "https://docs.edbot.com/runbooks/high-latency"
+
+      - alert: LLMBackendDown
+        expr: increase(edbot_llm_requests_total{status="error"}[5m]) > increase(edbot_llm_requests_total{status="success"}[5m])
+        for: 1m
+        labels:
+          severity: critical
+          component: llm_backend
+        annotations:
+          summary: "LLM backend experiencing high error rate"
+          description: "LLM backend {{ $labels.backend }} has more errors than successes in the last 5 minutes."
+          runbook_url: "https://docs.edbot.com/runbooks/llm-backend-down"
+
+      - alert: CacheHitRateLow
+        expr: edbot_cache_hit_rate < 0.3
+        for: 5m
+        labels:
+          severity: warning
+          component: cache_performance
+        annotations:
+          summary: "Low cache hit rate"
+          description: "Cache hit rate for {{ $labels.query_type }} is {{ $value }}, below 30% for 5 minutes."
+          runbook_url: "https://docs.edbot.com/runbooks/low-cache-hit-rate"
+
+  - name: edbot_data_quality
+    interval: 1m
+    rules:
+      - alert: HighPHIScrubbing
+        expr: increase(edbot_phi_scrubbing_total[10m]) > 100
+        for: 0s
+        labels:
+          severity: warning
+          component: data_quality
+        annotations:
+          summary: "High PHI scrubbing activity detected"
+          description: "{{ $value }} PHI scrubbing events in the last 10 minutes in {{ $labels.component }}."
+          runbook_url: "https://docs.edbot.com/runbooks/high-phi-scrubbing"
+
+      - alert: ElasticsearchClusterRed
+        expr: edbot_search_backend_status{backend="hybrid",state="failed"} == 1
+        for: 1m
+        labels:
+          severity: critical
+          component: elasticsearch
+        annotations:
+          summary: "Elasticsearch cluster is in red state"
+          description: "Elasticsearch cluster is not healthy, affecting search capabilities."
+          runbook_url: "https://docs.edbot.com/runbooks/elasticsearch-red"
+
+  - name: edbot_feature_flags
+    interval: 1m
+    rules:
+      - alert: ProductionSafetyFlagDisabled
+        expr: edbot_feature_usage_total{feature_name=~"enable_phi_scrubbing|enable_response_validation",enabled="false"} > 0
+        for: 0s
+        labels:
+          severity: critical
+          component: feature_flags
+        annotations:
+          summary: "Critical safety feature flag disabled"
+          description: "Safety feature {{ $labels.feature_name }} has been disabled in production."
+          runbook_url: "https://docs.edbot.com/runbooks/safety-flag-disabled"
+
+      - alert: ExperimentalFlagEnabledInProduction
+        expr: edbot_feature_usage_total{feature_name=~"enable_streamlit_demo|enable_pdf_viewer",enabled="true"} > 0 and on() (edbot_system_info{environment="production"} == 1)
+        for: 5m
+        labels:
+          severity: warning
+          component: feature_flags
+        annotations:
+          summary: "Experimental feature enabled in production"
+          description: "Experimental feature {{ $labels.feature_name }} is enabled in production environment."
+          runbook_url: "https://docs.edbot.com/runbooks/experimental-in-production"

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for dialysis patients?",
+    "answer": "Required testing includes: EKG, venous panel/BMP potassium level, CXR (if concerns of fluid overload), pregnancy test in women of childbearing age, and nephrology (dialysis) consult.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Which dialysis patients are not appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: hemodynamic instability, cardiac arrhythmias of immediate concern, encephalopathy (severe or persistent AMS), clinically significant electrolyte abnormality (hyperkalemia with severe ECG findings), vascular access not previously established/not useable or temporary access needed not appropriate for discharge (i.e. Shiley), patient needs more than one dialysis session in RETU, or new hypoxia (O2 sat <92%).",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What examination focus is required for dialysis patients?",
+    "answer": "Examination focus should be: vascular, pulmonary, and cardiac systems.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What initial testing should be performed for dialysis patients in RETU?",
+    "answer": "Initial testing includes: potassium level (repeat as needed), hepatitis serologies (as indicated), EKG (repeat as needed), and CXR (as indicated).",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for dialysis patients in RETU?",
+    "answer": "Monitoring includes: vital signs, telemetry, pulse oximetry (as indicated), and volume status.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should urgent/emergent dialysis be arranged for RETU patients?",
+    "answer": "Call nephrology fellow for urgent/emergent dialysis and admit to inpatient if there are acute EKG changes or worsening hyperkalemia, or evidence of fluid overload or pulmonary edema.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Where can dialysis be performed for RETU patients?",
+    "answer": "Location of dialysis: In dialysis unit (order/add-on hepatitis serologies from 'Dialysis' orderset if none available within past 30 days) or in RETU (move patient to rooms 3 to 6).",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for dialysis patients?",
+    "answer": "Discharge criteria: completed adequate hemodialysis, stable vital signs, labs stable/improved, and hemostasis at site of dialysis ensured.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should dialysis patients be admitted to the hospital from RETU?",
+    "answer": "Admission criteria: deterioration of condition, unstable vital signs after dialysis, unable to complete hemodialysis, or nephrology team evaluation recommends admission.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What discharge planning is required for dialysis patients?",
+    "answer": "Discharge with proper medication reconciliation and plans for next dialysis. Confirm with nephrology when and where dialysis will take place.",
+    "source": "RETU Dialysis Pathway.pdf",
+    "category": "protocol"
+  }
+]

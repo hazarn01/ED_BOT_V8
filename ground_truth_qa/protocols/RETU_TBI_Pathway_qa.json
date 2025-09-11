@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the required tests that must be completed prior to RETU admission for TBI patients?",
+    "answer": "Required testing prior to RETU admission includes: Non-contrast head CT, C-Spine CT if unable to clear spine clinically, CBC (Complete Blood Count), Basic Metabolic Panel, PT/PTT (coagulation studies), and pregnancy test in women of childbearing age. Additionally, ALL patients with CTH showing intracranial hemorrhage MUST have a neurosurgical consult prior to RETU admission.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "Which types of traumatic brain injuries are NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Altered mental status that is severe or persistent, Subdural Hematoma >5mm thickness, Complex Traumatic Hemorrhage (>1 contusion + SDH), Epidural Hematoma, Suspicion for Non-Traumatic ICH or SAH, Multiple (≥3) discrete traumatic contusions, patients currently taking systemic anticoagulation or P2Y12 antagonists with ICH, GCS <13, new focal neurologic weakness, recurrent seizures, basilar/depressed/open skull fracture, CSF leak, INR >1.7 or Platelets <100, hemodynamic instability, new oxygen requirement or O2 sat <92%, or patients requiring drip antihypertensives.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What monitoring protocols are required for TBI patients in RETU?",
+    "answer": "TBI patients in RETU require: Continuous telemetry monitoring, Q2H neurochecks (neurological assessments), and Q4H vital signs. The neurological checks involve repeating GCS, having patient count backwards 20 to 1, and checking arm/leg drift bilaterally to assess for any neurological deterioration.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What are the specific anticoagulant and antiplatelet medications that preclude RETU admission for patients with ICH?",
+    "answer": "Patients currently taking systemic anticoagulation (NOAC, Warfarin, Heparin, lovenox) or P2Y12 antagonist (clopidogrel, prasugrel, ticagrelor) are not appropriate for RETU if they have intracranial hemorrhage (ICH). These medications significantly increase bleeding risk and require higher level of care for monitoring and management.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "When is a repeat non-contrast head CT required in the RETU TBI pathway?",
+    "answer": "A repeat non-contrast head CT is required 8-12 hours after the initial CT for TBI patients in RETU. This follow-up imaging is essential to assess for any expansion of intracranial hemorrhage or development of new bleeding that might require neurosurgical intervention or transfer to higher level of care.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What are the criteria for discharge from RETU for TBI patients?",
+    "answer": "Discharge criteria from RETU include: Neuro exam remains unchanged, if repeat CT done shows no expansion of hemorrhage, mental status remains at baseline, no deterioration in clinical status, and cleared by consulting service (if applicable). All these criteria must be met to ensure patient safety for discharge home.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What are the indications for hospital admission rather than discharge for TBI patients in RETU?",
+    "answer": "Indications for admission to hospital (MSSL or MSH) include: Hemodynamic instability, worsening neuro exam, worsening hemorrhage on CT, or deterioration in clinical status. Any of these findings indicate the patient requires a higher level of care than can be provided in the observation unit setting.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What follow-up is recommended for TBI patients discharged from RETU?",
+    "answer": "TBI patients discharged from RETU should have follow-up in TBI clinic within 1 week. The TBI (Rehabilitation Neuropsychology) clinic can be contacted at 212-241-2221 during daytime hours for appointments. This ensures appropriate monitoring of post-concussive symptoms and neurological recovery.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "When is prophylactic anti-epileptic medication recommended for TBI patients?",
+    "answer": "One week of prophylactic anti-epileptic medication is recommended for traumatic subdural hematoma or contusion. This decision should be discussed with neurosurgery. The medication helps prevent early post-traumatic seizures which can worsen brain injury and outcomes.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What action should be taken if there is neurologic worsening or CT shows expansion of hemorrhage?",
+    "answer": "If there is neurologic worsening OR repeat CT demonstrates expansion of initial hemorrhage, the protocol requires: Consult neurosurgery + admit. Consider transfer to MSSL Trauma Service, which should be arranged by neurosurgery. This represents a significant change requiring immediate neurosurgical evaluation and higher level of care.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What are the key laboratory values that would exclude a TBI patient from RETU admission?",
+    "answer": "Laboratory exclusion criteria for RETU admission include: INR >1.7 or Platelets <100. These coagulation abnormalities indicate increased bleeding risk and require closer monitoring and potential correction before the patient can safely be managed in an observation unit setting.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU TBI Pathway"
+  },
+  {
+    "question": "What specific neurological assessments are included in the Q2H neurochecks for TBI patients?",
+    "answer": "The Q2H neurochecks include: Repeat GCS (Glasgow Coma Scale), have patient count backwards from 20 to 1, and check arm/leg drift bilaterally. These assessments evaluate level of consciousness, cognitive function, and motor strength to detect any neurological deterioration that might indicate expanding brain injury.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU TBI Pathway"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "question": "A patient with a history of mild contrast reaction needs an urgent CTA for acute limb ischemia. What is the minimum pre-medication timing required?",
+    "answer": "For high urgency imaging (such as CTA Lower Extremity for acute limb ischemia) in patients with mild previous contrast reactions, the minimum pre-medication timing is 1 hour. This applies to both mild and moderate previous reaction severities for high urgency cases.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "What clinical signs would classify a contrast reaction as moderate rather than mild according to ACR criteria?",
+    "answer": "Moderate reactions include: diffuse urticaria/pruritis (vs limited), diffuse erythema with stable vital signs, facial edema without dyspnea, throat tightness or hoarseness without dyspnea, and wheezing/bronchospasm with mild or no hypoxia. The key distinction is the diffuse nature and involvement of airways without significant respiratory compromise.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "A patient presents with diffuse erythema and hypotension after contrast administration. How should this reaction be classified and what does this mean for future contrast use?",
+    "answer": "This reaction should be classified as severe/anaphylaxis due to diffuse erythema with hypotension. For future contrast use, the recommendation is to consider alternate imaging modality. If contrast is absolutely necessary, it requires provider accompaniment to CT and appropriate monitoring in the post-injection period.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "What is the recommended pre-medication timing for a patient with moderate previous contrast reaction requiring CT A/P for acute abdominal pain?",
+    "answer": "For medium urgency imaging (CT A/P for acute abdominal pain) in a patient with moderate previous contrast reaction, the recommended pre-medication timing is 5 hours. Medium urgency cases allow for 5-hour pre-medication protocols for both mild and moderate previous reactions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "How do you differentiate between laryngeal edema requiring severe classification versus throat symptoms in moderate reactions?",
+    "answer": "Moderate reactions include throat tightness or hoarseness WITHOUT dyspnea. Severe/anaphylaxis reactions involve laryngeal edema WITH stridor and/or hypoxia. The presence of dyspnea, stridor, or hypoxia elevates the reaction from moderate to severe classification, indicating airway compromise requiring immediate intervention.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "What specific monitoring requirements must be implemented when giving contrast to a patient with previous anaphylaxis?",
+    "answer": "When contrast is given to a patient with previous severe/anaphylaxis reactions, two specific requirements must be met: 1) Provider accompaniment to CT during the procedure, and 2) Appropriate monitoring in the post-injection period. This ensures immediate medical intervention is available for rapid treatment of any severe reaction.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "A patient has facial edema and wheezing after contrast but maintains normal oxygen saturation. How should this reaction be classified?",
+    "answer": "This should be classified as a moderate reaction. Facial edema without dyspnea and wheezing/bronchospasm with mild or no hypoxia (normal oxygen saturation) fall under moderate classification. If there were significant hypoxia or dyspnea with the facial edema, it would be classified as severe.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  },
+  {
+    "question": "What is the maximum pre-medication time available for low urgency imaging in patients with previous contrast reactions?",
+    "answer": "For low urgency imaging (such as CT Chest for malignancy), the maximum pre-medication time available is 13 hours. This applies to both mild and moderate previous contrast reactions. Low urgency cases allow the longest pre-medication window, enabling the most comprehensive preparation protocols.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)",
+    "document_type": "guideline",
+    "complexity": "medium"
+  }
+]

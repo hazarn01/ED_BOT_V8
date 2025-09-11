@@ -1,0 +1,35 @@
+{
+  "document_name": "Pediatric Appendicitis Antibiotic Pathway",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "A 12-year-old patient weighing 40kg presents with suspected appendicitis. What are the exclusion criteria that would prevent using this antibiotic pathway?",
+      "answer": "Exclusions include: >18 years old, previous appendectomy, pregnancy, chronic IBD, malignancy, organ transplant, and neutropenia. This 12-year-old patient meets the age criteria and would be eligible for the pathway unless they have any of the other exclusions."
+    },
+    {
+      "question": "For a 25kg child with non-perforated appendicitis and no penicillin allergy, what are the first-line antibiotic choices and specific dosing?",
+      "answer": "First-line options are: Ceftriaxone 50 mg/kg/dose q24h (1250mg for 25kg child, max 2g/dose) AND Metronidazole 30mg/kg/dose IV q24h (750mg for 25kg child, max 1.5g/dose). Alternative: Ciprofloxacin 15mg/kg/dose IV q12h (375mg for 25kg child, max 400mg/dose) AND Metronidazole."
+    },
+    {
+      "question": "What is the complete pain management protocol for a 20kg pediatric patient with appendicitis?",
+      "answer": "Pain management includes: Acetaminophen 10mg/kg/dose PO/PR q4h (200mg for 20kg child, max 650mg/dose); Ketorolac 0.5mg/kg/dose IV q6h (10mg for 20kg child, max 30g x 20 doses); Morphine 0.05mg/kg/dose IV q4h prn (1mg for 20kg child, max 1-2g/dose)."
+    },
+    {
+      "question": "When should a patient with non-perforated appendicitis be transitioned to the perforated appendicitis algorithm?",
+      "answer": "Patients should transition to perforated algorithm if: they have operative contraindications AND cannot tolerate ≤5 days of symptoms, OR if they choose the plan for appendectomy, OR if perforation is identified during surgery."
+    },
+    {
+      "question": "For a 30kg child with perforated appendicitis, what are the IV antibiotic options and their weight-based dosing?",
+      "answer": "IV antibiotic options: Ceftriaxone 50 mg/kg q24h (1500mg for 30kg child, max 2g) AND Metronidazole 30mg/kg IV q24h (900mg for 30kg child, max 1.5g/dose); OR Piperacillin/tazobactam 80 mg/kg IV q8h (2400mg for 30kg child, max 3g/dose); OR Ampicillin/clavulanate 22.5 mg/kg q12h (675mg for 30kg child, max 875mg/dose)."
+    },
+    {
+      "question": "What are the discharge criteria and follow-up requirements for non-perforated appendicitis managed non-operatively?",
+      "answer": "Discharge criteria: no further antibiotics needed, patient clinically stable. Follow-up: pediatric surgery appointment in 2 weeks. Use PEDSAPPYDC or PEDSAPPYDCSP discharge instruction forms. Patient should return if symptoms worsen or new concerning symptoms develop."
+    },
+    {
+      "question": "For perforated appendicitis with abscess formation, what is the drainage management approach and discharge planning?",
+      "answer": "Drainage management: Surgery attending discussion required to plan drain placement if indeterminate ultrasound, consider CT. Discharge planning: provide 7-day antibiotic refill, schedule pediatric surgery telehealth appointment on last day of antibiotics. Monitor for complications and ensure appropriate follow-up for drain removal if placed."
+    }
+  ]
+}

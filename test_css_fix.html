@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fix Validation</title>
+    <style>
+        body { font-family: monospace; margin: 20px; background: #f5f5f5; }
+        .test-result { 
+            background: white; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 5px;
+            border-left: 4px solid #007acc;
+        }
+        .pass { border-left-color: #28a745; }
+        .fail { border-left-color: #dc3545; }
+        .warning { border-left-color: #ffc107; }
+        h1 { color: #333; }
+        pre { background: #f8f9fa; padding: 10px; border-radius: 3px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>🔧 CSS Dead Space Fix Validation</h1>
+    
+    <div class="test-result">
+        <h3>📋 Issues Identified & Fixed:</h3>
+        <ol>
+            <li><strong>@supports fallback conflict</strong> - Fixed ✅</li>
+            <li><strong>Ultra-wide max-width constraint</strong> - Removed ✅</li>
+            <li><strong>Container width behavior</strong> - Optimized ✅</li>
+        </ol>
+    </div>
+
+    <div class="test-result">
+        <h3>🔍 Testing Current CSS Rules:</h3>
+        <p>Loading ED Bot CSS and checking for dead space issues...</p>
+        <div id="css-analysis"></div>
+    </div>
+
+    <div class="test-result">
+        <h3>📐 Simulated Breakpoint Testing:</h3>
+        <div id="breakpoint-tests"></div>
+    </div>
+
+    <script>
+        async function validateCSS() {
+            const analysisDiv = document.getElementById('css-analysis');
+            
+            try {
+                // Test CSS fetching
+                const cssResponse = await fetch('http://localhost:8001/static/css/chatbot.css');
+                const cssText = await cssResponse.text();
+                
+                analysisDiv.innerHTML = '<div class="pass">✅ CSS loaded successfully</div>';
+                
+                // Check for problematic rules
+                const issues = [];
+                
+                if (cssText.includes('max-width: 1200px')) {
+                    issues.push('❌ Found max-width: 1200px (should be removed)');
+                } else {
+                    issues.push('✅ No max-width: 1200px found');
+                }
+                
+                if (cssText.includes('width: min(100%, 1400px)')) {
+                    issues.push('✅ Found improved width: min(100%, 1400px)');
+                } else {
+                    issues.push('❌ Missing improved width rule');
+                }
+                
+                if (cssText.includes('clamp(1rem, 5vw, 4rem)')) {
+                    issues.push('✅ Found responsive padding with clamp()');
+                } else {
+                    issues.push('❌ Missing responsive padding');
+                }
+                
+                analysisDiv.innerHTML += issues.map(issue => 
+                    `<div class="${issue.startsWith('✅') ? 'pass' : 'fail'}">${issue}</div>`
+                ).join('');
+                
+            } catch (error) {
+                analysisDiv.innerHTML = `<div class="fail">❌ Error loading CSS: ${error.message}</div>`;
+            }
+        }
+
+        function simulateBreakpoints() {
+            const testsDiv = document.getElementById('breakpoint-tests');
+            const breakpoints = [320, 768, 1024, 1440, 1920, 2560, 3440];
+            
+            let html = '';
+            
+            breakpoints.forEach(width => {
+                // Simulate container behavior at each breakpoint
+                const containerWidth = Math.min(width, 1400); // Our new rule: min(100%, 1400px)
+                const deadSpace = width > 1400 ? 0 : width - containerWidth; // Should be 0 with proper padding
+                const utilization = (containerWidth / width) * 100;
+                
+                const status = utilization > 95 ? 'pass' : utilization > 80 ? 'warning' : 'fail';
+                
+                html += `
+                    <div class="${status}">
+                        <strong>${width}px viewport:</strong> 
+                        Container ${containerWidth}px, 
+                        Utilization ${utilization.toFixed(1)}%
+                        ${utilization < 95 ? ' (with responsive padding)' : ''}
+                    </div>
+                `;
+            });
+            
+            testsDiv.innerHTML = html;
+        }
+
+        // Run tests
+        validateCSS();
+        simulateBreakpoints();
+
+        console.log('🔍 CSS validation complete - check the page for results');
+    </script>
+</body>
+</html>

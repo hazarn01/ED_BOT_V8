@@ -1,0 +1,80 @@
+{
+  "document_name": "MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf",
+  "document_type": "reference",
+  "total_pairs": 12,
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What are the three key obligations hospitals must fulfill under EMTALA for emergency medical screening?",
+      "answer": "Under EMTALA, hospitals must: 1) Provide a medical screening examination (MSE) performed by a qualified medical person, 2) Conduct the examination in accordance with Emergency Department/Hospital policies and procedures, and 3) Ensure the screening is appropriate for determining whether an emergency medical condition exists. The MSE must use services and facilities available in the Emergency Department and appropriate ancillary services routinely available.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 2,
+      "question": "What constitutes an Emergency Medical Condition (EMC) under EMTALA?",
+      "answer": "An Emergency Medical Condition is a medical condition manifested by acute symptoms of sufficient severity (including severe pain, psychiatric disturbances, and/or symptoms of substance abuse) such that the absence of immediate medical attention could reasonably be expected to result in: 1) Placing the health of the individual (or unborn child) in serious jeopardy, 2) Serious impairment of bodily functions, or 3) Serious dysfunction of any bodily organ or part. For pregnant women with contractions, it includes inadequate time for safe transfer before delivery or if transfer poses a threat to the woman and/or unborn child.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 3,
+      "question": "Under what circumstances can a patient with an unstabilized emergency medical condition be transferred from an MSHS facility?",
+      "answer": "An EMTALA-compliant transfer of an unstabilized patient can ONLY occur in two instances: 1) The attending physician determines and documents that the patient's emergency medical condition exceeds the facility's capabilities to stabilize the patient and the medical benefits reasonably expected from appropriate treatment at the receiving facility outweigh the transfer risks, OR 2) The patient (or legally responsible person) makes a written request for transfer after being informed of the hospital's obligations to stabilize the patient and the risks and benefits of transfer.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 4,
+      "question": "What are the four requirements that must be met for a transfer to be considered 'appropriate' under EMTALA?",
+      "answer": "For an appropriate transfer under EMTALA, all four conditions must be met: 1) The sending facility first provides medical treatment within its capacity that minimizes risks to the individual's health, 2) The receiving facility has available space, necessary equipment, and qualified personnel for treatment and has agreed to accept the transfer, 3) The sending facility provides all available medical records related to the emergency medical condition to the receiving facility, and 4) The transfer is conducted by qualified personnel using appropriate transportation equipment with necessary and medically appropriate life support measures.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 5,
+      "question": "What information must be included in the Emergency Central Log for EMTALA compliance?",
+      "answer": "The Emergency Central Log must contain specific patient information including: 1) Patient name, 2) Patient age, 3) Patient gender, 4) Date and time patient presented, 5) Means of arrival, 6) Chief complaint, 7) Medical record and encounter number, 8) Discharge date and time, 9) Attending physician, and 10) Disposition (categorized as treated and released, treated and admitted, stabilized and transferred, transferred, discharged, refusal of treatment, against medical advice, elopement, or expired).",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 6,
+      "question": "What are the on-call physician response time requirements under EMTALA?",
+      "answer": "When an Emergency Department physician determines that a patient requires input from an on-call attending physician, the on-call physician or designee must respond by telephone within 10 minutes. If in-person consultation is deemed necessary by the Emergency Department physician, the on-call attending physician/designee must arrive within 60 minutes by default, or sooner if necessary. For stable patients where the input is not emergent, the Emergency Department physician may determine that an arrival time greater than 60 minutes is acceptable based on the case nature.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 7,
+      "question": "Where does EMTALA apply within the Mount Sinai Health System?",
+      "answer": "EMTALA applies to anyone seeking emergency medical treatment on: 1) MSHS Hospital campus, including parking lots, sidewalks and driveways, 2) MSHS Hospital's Emergency Department, 3) On-campus or off-campus departments perceived as providing emergency care without scheduled appointments (e.g., Labor & Delivery, psychiatric units), 4) Departments providing at least one-third of outpatient visits for emergency conditions without appointments, 5) All MSHS Hospital's Offsite Provider Based Facilities, 6) MSHS Hospital-owned ambulances (with exceptions for community-wide EMS protocols), and 7) Non-MSHS ambulances once the individual is brought onto Hospital grounds.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 8,
+      "question": "What constitutes patient stabilization under EMTALA for pregnant women in labor?",
+      "answer": "For pregnant women with contractions presenting to a hospital lacking delivery services: If the attending physician determines there is insufficient time for safe transfer before delivery OR if transfer itself may pose a threat to the health or safety of the woman or unborn child, then stabilization means delivery of the fetus/infant and placenta at the presenting facility. For hospitals without post-partum and nursery units, patients and infants must be transferred to an appropriate facility after delivery following EMTALA-compliant transfer procedures.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 9,
+      "question": "What documentation must the sending attending physician complete for an EMTALA-compliant transfer?",
+      "answer": "The sending attending physician must: 1) Document that an attending physician at the receiving facility has agreed to accept and treat the patient, available space/bed exists, and qualified personnel/equipment are available, 2) Participate in physician-to-physician telephone handoff, 3) Issue a physician's order for transfer, 4) Document why the patient cannot receive necessary care locally, the patient's medical condition at transfer, and specific risks/benefits of transfer, 5) Complete relevant transfer forms with witnessed signature if possible, 6) Perform/document reassessment within one hour prior to transfer, and 7) Complete the provider section of the Patient Transfer Summary.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 10,
+      "question": "What is considered an 'inappropriate transfer' under EMTALA?",
+      "answer": "An inappropriate transfer occurs when a patient: 1) Arrives from another medical facility, 2) Has an emergency medical condition, 3) Is unstable upon arrival, AND 4) One or more of the following is true: the patient was refused examination/treatment at the prior facility, was discharged in unstable condition (unless voluntary), was transferred without prior acceptance, had their condition intentionally misrepresented, was transferred with inadequate personnel/equipment, was transferred without accompanying medical records (unless delay would jeopardize the patient), or was transferred due to failure of an on-call physician to attend when requested.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 11,
+      "question": "What non-discrimination requirements does EMTALA impose on emergency medical screening?",
+      "answer": "EMTALA requires that all persons seeking emergency care receive their medical screening examination without regard to ethnicity, religion, national origin, citizenship, age, gender, sexual orientation, preexisting medical condition(s), physical or mental disability, insurance status, economic status, or ability to pay for medical treatment. Medicare-participating hospitals must screen and treat individuals for emergency medical conditions in a non-discriminatory manner, regardless of their ability to pay, insurance status, gender, sexual orientation, national origin, race, creed or color.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    },
+    {
+      "id": 12,
+      "question": "What are the reporting requirements when an inappropriate transfer is suspected under EMTALA?",
+      "answer": "When an inappropriate transfer is suspected, clinical, administrative, or medical staff must complete an incident report and submit it to Department Leadership before the end of the shift during which the patient was received. Department Leadership reviews with Quality Management, which works with Risk Management, Corporate Compliance, and Legal Affairs as appropriate. If a violation is confirmed, Quality Management submits a report to the CMS Regional Office within 72 hours of the improper transfer. Notice of CMS reports must be given to the hospital's Chief Medical Officer, and all EMTALA-related incident reports must be maintained for at least five years.",
+      "citations": ["MSHS EMTALA Emergency Treatment Stabilization Transfer of Patients.pdf"]
+    }
+  ]
+}

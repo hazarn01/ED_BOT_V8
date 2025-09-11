@@ -1,0 +1,92 @@
+{
+  "document_name": "MSH PED MIS-C Guideline.pdf",
+  "document_type": "protocol",
+  "domain": "emergency_medicine",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": "misc_001",
+      "question": "What are the vasopressor recommendations for children with MIS-C presenting with different types of shock?",
+      "answer": "For septic/vasodilatory shock (flash capillary refill, warm extremities): norepinephrine infusion at 0.05-0.1 mcg/kg/min after 60mL/kg isotonic fluids. For cardiogenic shock (poor capillary refill, cool extremities): epinephrine infusion at 0.1-0.5 mcg/kg/min, with cautious fluid boluses at 10mL/kg. Epinephrine and dopamine are acceptable alternatives. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "critical_care",
+      "subcategory": "shock_management"
+    },
+    {
+      "id": "misc_002",
+      "question": "What are the key laboratory criteria for Tier 2 MIS-C workup and their significance?",
+      "answer": "Tier 2 labs include: LDH, Troponin, BNP, Procalcitonin, PT/PTT, D-Dimer, Fibrinogen, VBG with lactate, Ferritin, Cytokine Panel, Blood Culture, COVID-19 Antibodies, Urinalysis, Urine Culture. These assess multi-organ involvement, cardiac dysfunction, coagulopathy, and hyperinflammation typical of MIS-C. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "diagnostic_workup",
+      "subcategory": "laboratory_studies"
+    },
+    {
+      "id": "misc_003",
+      "question": "What are the specific SSU admission criteria for MIS-C patients?",
+      "answer": "SSU admission criteria: ≤5 days of fever, NO more than 2 of following (conjunctivitis, lymphadenopathy, rash, abdominal pain/diarrhea/vomiting), stable BPs x3 during ED course with no significant fluid resuscitation needed, CRP <150, D-Dimer <1.5, absolute lymphocyte count >1,500, normal EKG/BNP/Troponin. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "disposition",
+      "subcategory": "admission_criteria"
+    },
+    {
+      "id": "misc_004",
+      "question": "What isolation precautions are required for MIS-C patients based on SARS-CoV-2 PCR results?",
+      "answer": "SARS-CoV-2 PCR NEGATIVE: Standard precautions (varies if other infectious causes present). SARS-CoV-2 PCR POSITIVE: Special droplet and contact precautions, with airborne isolation room preferred for aerosolizing procedures. COVID-19 antibody testing is NOT used to determine isolation requirements. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "infection_control",
+      "subcategory": "isolation_protocols"
+    },
+    {
+      "id": "misc_005",
+      "question": "What are the specific clinical criteria that should trigger MIS-C evaluation in pediatric patients?",
+      "answer": "Evaluate MIS-C for: Patient <21 years with ≥2 days fever plus lymphadenopathy (≥1.5cm unilateral anterior cervical), palms/soles erythema or swelling, rash (maculopapular/erythroderma), red cracked lips/strawberry tongue, bilateral bulbar conjunctivitis without discharge, OR ≥3 days persistent fever without obvious source, OR ≥2 days fever with non-specific symptoms. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "clinical_criteria",
+      "subcategory": "screening_criteria"
+    },
+    {
+      "id": "misc_006",
+      "question": "What PICU inclusion criteria differentiate hemodynamically compensated, myocarditis, and shock categories?",
+      "answer": "Hemodynamically compensated: Normotensive, no decreased cardiac function, normal troponin/ECG. Myocarditis: Normotensive but BNP >1,000 OR elevated troponin >1 OR decreased cardiac function. Shock: Hypotensive OR impaired end organ function (altered mental status, increasing respiratory support, worsening kidney/liver function). Source: MSH PED MIS-C Guideline.pdf",
+      "category": "critical_care",
+      "subcategory": "severity_classification"
+    },
+    {
+      "id": "misc_007",
+      "question": "What specific monitoring and evaluation is required for PICU myocarditis patients?",
+      "answer": "Myocarditis patients require: continuous telemetry monitoring, cardiology consult on admission, repeat BNP/troponin/ECG every 12-24 hours until consistent improvement, IVIG on admission, consider milrinone, frequent fluid status reassessment, thromboprophylaxis per MIS-C guidelines. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "monitoring",
+      "subcategory": "cardiac_monitoring"
+    },
+    {
+      "id": "misc_008",
+      "question": "What are the key medication dosing guidelines for MIS-C immunomodulatory therapy?",
+      "answer": "IVIG: 2 gm/kg/dose (requires Pediatric ID approval). Anakinra: Starting dose 2 mg/kg SQ q24h (max 100 mg), may titrate to 400 mg SQ q24h with Rheumatology. Tocilizumab: <30 kg: 12 mg/kg/dose, ≥30 kg: 8 mg/kg/dose (max 800 mg), up to 3 doses 8-24 hours apart. All require ID approval. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "medications",
+      "subcategory": "immunomodulatory_therapy"
+    },
+    {
+      "id": "misc_009",
+      "question": "What anticoagulation strategy should be used for MIS-C patients and what are the monitoring requirements?",
+      "answer": "Anticoagulation per MSH Pediatrics COVID-19 VTE guidelines: LMWH prophylaxis if high VTE risk, low-dose aspirin if not on prophylactic LMWH, LMWH treatment for evidence of thrombosis/giant coronary aneurysm (z-score ≥10) plus aspirin. Monitor anti-Xa levels for treatment dose LMWH (goal 0.6-1.0 units/mL). Source: MSH PED MIS-C Guideline.pdf",
+      "category": "medications",
+      "subcategory": "anticoagulation"
+    },
+    {
+      "id": "misc_010",
+      "question": "What discharge criteria and follow-up requirements are specified for MIS-C patients?",
+      "answer": "Discharge criteria: No fever x 48H, off pressors x 48H with stable BP, off supplemental oxygen x 48H, eating/drinking adequately and off IV fluids, 2-3 days of decreasing CRP, decreasing troponin, therapeutic anti-Xa if on treatment LMWH. Follow-up: PCP within 3 days, Rheumatology 1 week, Hematology 2 weeks if on anticoagulation, Cardiology 1-2 weeks then 4-6 weeks. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "disposition",
+      "subcategory": "discharge_planning"
+    },
+    {
+      "id": "misc_011",
+      "question": "When can isolation precautions be discontinued for MIS-C patients with positive SARS-CoV-2 PCR?",
+      "answer": "Discontinue precautions when: Test-based (inpatient): 2 consecutive negative PCRs 24 hours apart AND symptom improvement AND afebrile x 72 hours, OR Time-based: 10 days from first positive test (14d if immunocompromised) AND symptom improvement AND afebrile x 72 hours. Outpatient: Non-test based strategy with same time/symptom criteria. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "infection_control",
+      "subcategory": "precaution_discontinuation"
+    },
+    {
+      "id": "misc_012",
+      "question": "What are the discharge activity restrictions and warning signs for MIS-C patients?",
+      "answer": "Activity restrictions: No strenuous activity or competitive athletics until cleared by Cardiology, no contact sports if on therapeutic anticoagulation, activity restrictions ≥6 months for ventricular dysfunction/coronary abnormalities/myocarditis. Return to ED for: abdominal pain, fever, diarrhea, vomiting, chest pain, respiratory distress, severe headache, extensive bruising or bleeding. Continue infection control/masks. Source: MSH PED MIS-C Guideline.pdf",
+      "category": "discharge_instructions",
+      "subcategory": "activity_restrictions"
+    }
+  ]
+}

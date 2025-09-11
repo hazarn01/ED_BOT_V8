@@ -1,0 +1,32 @@
+{
+  "document_type": "reference",
+  "source_document": "MSH ED Clinical Guide (4).pdf",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the key contact numbers for emergency department operations and escalation?",
+      "answer": "Key ED contacts include: ED Charge Nurse for operational issues and bed assignments, House Supervisor for hospital-wide capacity management, Risk Management for adverse events and safety concerns, and Administration for policy questions. The ED maintains a comprehensive contact directory with extensions for rapid communication during emergencies and operational needs.",
+      "source_context": "Emergency department contact information and communication protocols"
+    },
+    {
+      "question": "What is the standard triage protocol for patient flow and initial assessment in the MSH Emergency Department?",
+      "answer": "The MSH ED uses a structured triage system where patients are initially assessed by triage nurses using standardized protocols. Patients are categorized by acuity level (ESI 1-5), with ESI 1-2 patients requiring immediate attention and direct placement in treatment areas. The triage process includes vital signs, chief complaint documentation, and pain assessment to ensure appropriate prioritization and resource allocation.",
+      "source_context": "Emergency department triage protocols and patient flow management"
+    },
+    {
+      "question": "What are the standard safety protocols for managing agitated or potentially violent patients in the ED?",
+      "answer": "Safety protocols for agitated patients include: immediate assessment for medical causes of agitation, de-escalation techniques by trained staff, security notification when appropriate, consideration of chemical restraints per protocol, and documentation of all interventions. The ED maintains a safe environment through proper staffing ratios, panic buttons, and clear escalation procedures to security and administration when patient or staff safety is at risk.",
+      "source_context": "Emergency department safety protocols for patient and staff protection"
+    },
+    {
+      "question": "What is the workflow for managing patients who require admission but are boarding in the ED due to bed availability?",
+      "answer": "For boarding patients awaiting admission: maintain appropriate monitoring per admission orders, ensure timely medication administration, coordinate with bed management for updates on room availability, provide regular updates to patients and families about delays, and escalate to House Supervisor if boarding time exceeds established thresholds. The ED maintains protocols for extended boarding situations to ensure continued quality care.",
+      "source_context": "Emergency department boarding protocols and patient flow management"
+    },
+    {
+      "question": "What are the key operational procedures for end-of-shift handoffs and patient care transitions?",
+      "answer": "End-of-shift handoffs require structured communication including: current patient census review, outstanding orders and pending results, patient disposition plans, any safety concerns or changes in condition, and family communication status. Handoffs should be face-to-face when possible, with written documentation of key points. The receiving team must acknowledge understanding and ask clarifying questions to ensure continuity of care.",
+      "source_context": "Emergency department shift change and patient handoff procedures"
+    }
+  ]
+}

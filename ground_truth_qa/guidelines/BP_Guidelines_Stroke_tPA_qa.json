@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What are the blood pressure targets for stroke patients receiving IV alteplase (tPA)?",
+    "answer": "Pre-tPA bolus target: BP <185/110 mmHg. During infusion and post-tPA target: BP <180/105 mmHg. Additionally, call MD if systolic BP drops below 90 mmHg. These targets are critical to minimize the risk of hemorrhagic complications while ensuring adequate cerebral perfusion during thrombolytic therapy.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What is the blood pressure monitoring schedule for stroke patients receiving tPA?",
+    "answer": "BP monitoring schedule: BP checks every 15 minutes × 2 hours, then every 30 minutes × 6 hours, then hourly for 16 hours. This intensive monitoring schedule ensures early detection of blood pressure changes that could lead to complications during the critical period following tPA administration.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What is the escalation process when blood pressure is above target in tPA patients?",
+    "answer": "Escalation process: 1) If BP above target, recheck in 5 minutes. 2) If repeat is above target, escalate to Resus Resident and ED attending. 3) Resus Resident will page the Stroke Team. 4) ED and Stroke Team will meet at bedside and discuss plan of care. 5) If unable to obtain reliable BP, escalate as outlined above. Early escalation is emphasized to ensure patient safety.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What are the IV access requirements and management protocols for tPA patients?",
+    "answer": "IV access requirements: 1) All patients with tPA MUST have 2 good working IVs. 2) If unable to maintain or obtain 2 IVs after two attempts, escalate to Resus Resident, ED attending and Stroke team. 3) Consider USGIV (ultrasound-guided IV) insertion early for patients with difficult access. 4) ED and Stroke Team will huddle at bedside and discuss the best options for IV access.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What should be done if there are issues reaching the Stroke Team?",
+    "answer": "If page to Stroke team is unanswered, activate a Stroke Code on 33333. If you feel that you are not getting the support or response that you need to safely care for your patient, escalate to ED nursing leadership. This ensures that critical stroke patients receive timely specialist consultation and management.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What is the general approach to escalation for other concerns regarding tPA patient care?",
+    "answer": "For other issues or concerns regarding care of the patient: Escalate to Resus Resident and Stroke Team, request bedside huddle to address concerns and/or issues and develop a plan. The key principle emphasized is: 'Remember – do not hesitate or delay escalation. Early escalation is always the best.' This promotes proactive communication and patient safety.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What is the significance of the different blood pressure targets before versus during/after tPA?",
+    "answer": "The BP targets are slightly different: Pre-tPA bolus <185/110 mmHg vs During/post-tPA <180/105 mmHg. The pre-tPA target is slightly higher to ensure it's safe to administer thrombolytics, while the during/post-tPA target is slightly lower to minimize hemorrhage risk once the medication is active. Both targets balance the risk of hemorrhagic transformation against maintaining adequate cerebral perfusion.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  },
+  {
+    "question": "What specific threshold requires immediate physician notification regarding systolic blood pressure?",
+    "answer": "Call MD if systolic BP drops below 90 mmHg. This hypotensive threshold is critical because severe hypotension can compromise cerebral perfusion in stroke patients, potentially worsening neurological outcomes. Unlike the upper BP limits that focus on hemorrhage prevention, this lower limit ensures adequate perfusion pressure is maintained.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "BP Guidelines for Stroke Patients Receiving tPA"
+  }
+]

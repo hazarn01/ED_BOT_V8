@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the clinical criteria for evaluating a pediatric patient for MIS-C?",
+    "answer": "A patient under age 21 with 2+ days of fever plus any one of: lymphadenopathy (usually anterior cervical & unilateral, ≥1.5 cm diameter), erythema/swelling of palms and soles (or periungal desquamation), rash (maculopapular, erythroderma, erythema multiforme-like), red cracked lips and/or strawberry tongue, bilateral bulbar conjunctivitis without discharge (limbic sparing). Also consider any child with 3+ days persistent fever without obvious source, or 2+ days fever with non-specific symptoms (fatigue, headache, cough, SOB, abdominal pain, vomiting, diarrhea).",
+    "query_type": "CRITERIA_CHECK",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What is the tiered laboratory workup approach for suspected MIS-C?",
+    "answer": "TIER 1: CBC with platelet & differential, ESR/CRP, CMP, SARS-CoV2-PCR (+RVP if admission). TIER 2 (if Tier 1 abnormal): LDH, Troponin, BNP, Procalcitonin, PT/PTT, D-Dimer, Fibrinogen, VBG with lactate, Ferritin, Cytokine Panel, Blood Culture, COVID-19 Antibodies, Urinalysis, Urine Culture. Imaging: Chest X-Ray. Other studies: ECG, Echocardiogram.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What are the specific criteria for considering MIS-C diagnosis based on laboratory results?",
+    "answer": "Consider MIS-C if results include: CRP ≥50 mg/L OR ESR ≥40 mm/hr AND one of the following: Absolute Lymphocyte Count <1000/μl, Platelet count <150,000/μl, D-dimer >1.5 mg/L, Neutrophilia, or Hypoalbuminemia. These abnormal laboratory values combined with clinical presentation support the diagnosis.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "How should septic shock be managed in suspected MIS-C patients?",
+    "answer": "For sepsis/vasoactive shock (flash capillary refill, warm extremities, tachycardia, fever): Give IV fluids and antibiotics per stop sepsis protocol. If hypotensive after 60mL/kg isotonic fluids, start norepinephrine infusion at 0.05-0.1 mcg/kg/min (epinephrine and dopamine are alternatives). Monitor closely and consult PICU for admission consideration.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "How should cardiogenic shock be managed in MIS-C patients?",
+    "answer": "For cardiogenic shock (poor capillary refill, cool extremities, tachycardia, hypotension): Give IV fluids cautiously at 10mL/kg NS with frequent reassessment for increased work of breathing, lung crackles, and hepatosplenomegaly. If present and still hypotensive, give epinephrine infusion at 0.1-0.5 mcg/kg/min. Also give epinephrine for persistent hypotension despite 60mL/kg total fluid administration. Dopamine and norepinephrine are acceptable alternatives.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What are the SSU (Short Stay Unit) admission criteria for MIS-C patients?",
+    "answer": "SSU criteria: ≤5 days of fever, NO more than 2 of the following (conjunctivitis, lymphadenopathy, rash, abdominal pain/diarrhea/vomiting), stable BPs x3 during ED course with no need for significant fluid resuscitation, CRP <150, D-Dimer <1.5, Absolute Lymphocyte count >1,500, normal EKG/BNP/Troponin. Patients meeting these criteria can be considered for SSU for closer monitoring.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "When should pediatric subspecialty consultations be obtained for MIS-C patients?",
+    "answer": "Pediatric Infectious Disease consult: for all patients with abnormal laboratory values and concern for Kawasaki-like illness to determine if IVIG administration is appropriate. Pediatric Cardiology consult: for any abnormal troponin or BNP levels, or abnormal ECG to determine if emergent echocardiogram is indicated. PICU consult: for patients with signs of shock, hypotension, or need for fluid boluses for frequent blood pressure monitoring.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What isolation precautions are required for MIS-C patients?",
+    "answer": "Isolation depends on SARS-CoV-2 PCR results: If NEGATIVE - varies based on other infectious causes requiring specific isolation. If POSITIVE - Special droplet and contact precautions required. Airborne isolation room preferred for aerosolizing procedures. Important: COVID-19 antibody testing is NOT used to determine isolation requirements.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What are the PICU admission criteria for different MIS-C presentations?",
+    "answer": "Hemodynamically Compensated/Vasculitis only: Normotensive, no decreased cardiac function, normal troponin/ECG. Myocarditis: Normotensive but BNP >1,000 OR elevated troponin >1 OR decreased cardiac function by echo/exam. Shock: Hypotensive OR impaired end organ function including altered mental status, increasing respiratory support, or worsening kidney/liver function.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What medications are used for MIS-C treatment and what are the key dosing considerations?",
+    "answer": "Antibiotics: Ceftriaxone 50 mg/kg IV q24h (max 2000mg), consider adding vancomycin for MRSA or linezolid for toxic shock. IVIG: 2 g/kg/dose (requires Pediatric ID approval). Anticoagulation: LMWH prophylaxis if high VTE risk, low-dose aspirin if not on LMWH. Steroids: Consider for shock patients requiring RRT. Immunomodulators: Anakinra, Tocilizumab (up to 3 doses, 8-24 hours apart) - discuss with ID and Rheumatology.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What are the discharge criteria and follow-up requirements for MIS-C patients?",
+    "answer": "Discharge when: 2-3 days of decreasing CRP, decreasing troponin, no fever x 48h, off pressors x 48h with stable BP, off supplemental oxygen x 48h, eating/drinking adequately & off IV fluids. Follow-up: Primary care within 3 days, Rheumatology at 1 week, Hematology at 2 weeks if on anticoagulation, Cardiology at 1-2 weeks (ECG/echo), 4-6 weeks, and 6 months (cardiac MRI in select patients).",
+    "query_type": "CRITERIA_CHECK",
+    "source": "MSH PED MIS-C Guideline"
+  },
+  {
+    "question": "What activity restrictions and discharge instructions should be given to MIS-C patients?",
+    "answer": "Return to ED for: abdominal pain, fever, diarrhea, vomiting, chest pain, respiratory distress, severe headache, extensive bruising/bleeding. Activity restrictions: No strenuous activity or competitive athletics until cleared by Cardiology, no contact sports if on therapeutic anticoagulation, activity restrictions for at least 6 months for anyone with ventricular dysfunction, coronary abnormalities, or myocarditis evidence. Return slowly to normal activities and continue infection control/mask wearing even if PCR negative.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "MSH PED MIS-C Guideline"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for atrial fibrillation patients?",
+    "answer": "Required testing includes: ECG, troponin, and pregnancy test in women of childbearing age.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Which atrial fibrillation patients are not appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: hemodynamic instability, myocardial infarction, AMS, syncope, heart failure, suspected accessory pathway, or initiation of IV antiarrhythmic drug therapy.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What initial laboratory testing should be performed for AFib patients in RETU?",
+    "answer": "Initial labs include: CBC, Chem 7, troponin, PT/PTT, TSH/FT4, LFTs, BNP (as clinically indicated).",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What rate control agents should be used for uncontrolled atrial fibrillation?",
+    "answer": "Rate control agents include: calcium channel blocker (caution in hypotension or EF <40%) or beta blocker (caution in hypotension or reactive airway disease).",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the indications for EP consult in RETU AFib patients?",
+    "answer": "EP consult indications: rate remains uncontrolled (HR >110 despite IV and PO AV nodal blocking agents), patient remains symptomatic, newly diagnosed EF <35%, concern for valvular a-fib, or consider in patients with contraindications to anticoagulation.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should an echocardiogram be ordered for new onset atrial fibrillation?",
+    "answer": "Order TTE if there is no echo within the past 6 months for new onset atrial fibrillation. Call x41718 to expedite.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for AFib patients in RETU?",
+    "answer": "Monitoring includes: continuous telemetry monitoring and serial troponin.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for atrial fibrillation patients?",
+    "answer": "Discharge criteria: serial troponin negative, rate remains controlled, rate control agent and need for anticoagulation agent addressed, and patient cleared for discharge by consult service if one was involved.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should AFib patients be admitted to the hospital from RETU?",
+    "answer": "Admission criteria: deterioration of clinical condition, serial troponin positive, rate remains uncontrolled, or admission requested by consult service if one was involved.",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What anticoagulation assessment should be performed for AFib patients?",
+    "answer": "Calculate stroke risk using CHA2DS2-VASc score and review relative/absolute contraindications to anticoagulation. Ensure proper discharge medication reconciliation and cardiology follow up within 1 week (call 855-674-3278 for general cardiology fellows clinic if no cardiologist).",
+    "source": "RETU AFib Pathway final.pdf",
+    "category": "protocol"
+  }
+]

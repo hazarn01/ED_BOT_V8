@@ -1,0 +1,47 @@
+{
+  "document_name": "ED to Medicine Admission Guide.pdf",
+  "document_type": "reference",
+  "total_pairs": 5,
+  "qa_pairs": [
+    {
+      "id": "med_wf_001",
+      "question": "What are the 6 required steps for admitting a patient to MSH Medicine?",
+      "answer": "The 6 required steps are: 1) Complete Provider Note text & key tests before placing admit order, 2) In Updates, use .EDADMIT note for admissions triage summary, 3) Use 'ED Admit to IP - Medicine' order, 4) Don't call the MAPA - Do answer focused questions if MAPA calls you, 5) Give verbal hand-off to Medicine team (phone or in-person), 6) Document handoff in Progress Notes -> IP Handoff Documentation.",
+      "source_file": "ED to Medicine Admission Guide.pdf",
+      "complexity": "medium",
+      "category": "workflow"
+    },
+    {
+      "id": "med_wf_002",
+      "question": "What key tests and documentation must be completed before placing an admit order?",
+      "answer": "Labs/tests that could affect triage (ADS vs Teaching vs MPCU) must be resulted. The free text portion of the provider note must contain sufficient information for the MAPA to triage without a phone call. Include important updates (e.g., CTA negative for PE) and reason for admission. Sign out if not completed by end of your shift.",
+      "source_file": "ED to Medicine Admission Guide.pdf",
+      "complexity": "medium",
+      "category": "documentation"
+    },
+    {
+      "id": "med_wf_003",
+      "question": "What are the designated pathways that bypass regular Medicine admission?",
+      "answer": "The designated pathways are: Cardiology, GI (non-Liver), and Liver. If the primary medical problem is GI/Liver or Cardiology, the patient should be routed to these specialized pathways instead of regular Medicine admission. There is also assessment for Saint Luke's Admission Pathway for appropriate patients.",
+      "source_file": "ED to Medicine Admission Guide.pdf",
+      "complexity": "medium",
+      "category": "workflow"
+    },
+    {
+      "id": "med_wf_004",
+      "question": "When should a patient be considered for MICU Consult or Medicine Stepdown instead of regular Medicine admission?",
+      "answer": "Patients who are high risk for clinical deterioration or unstable should be considered for MICU Consult or admission to Medicine Stepdown. This assessment should be made before proceeding with regular Medicine admission. The patient must warrant admission to a Medicine service and be unfit for a RETU stay or admission to a surgical service.",
+      "source_file": "ED to Medicine Admission Guide.pdf",
+      "complexity": "medium", 
+      "category": "criteria"
+    },
+    {
+      "id": "med_wf_005",
+      "question": "What is the proper communication protocol with MAPA during Medicine admissions?",
+      "answer": "For Medicine admissions: Don't call the MAPA directly. However, you should answer focused questions if MAPA calls you. The MAPA will use your .EDADMIT note and completed provider documentation to perform triage. Ensure your documentation is sufficient for MAPA to triage without needing a phone call.",
+      "source_file": "ED to Medicine Admission Guide.pdf",
+      "complexity": "low",
+      "category": "communication"
+    }
+  ]
+}

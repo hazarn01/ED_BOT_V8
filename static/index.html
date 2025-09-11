@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self';">
+    <title>ED Bot v8 - Mount Sinai Emergency Medicine AI</title>
+    <link rel="stylesheet" href="/static/css/chatbot.css">
+    <link rel="stylesheet" href="/static/css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-content">
+                <div class="logo-placeholder">🏥</div>
+                <h1>ED Bot v8</h1>
+                <span class="subtitle">Emergency Medicine AI Assistant</span>
+            </div>
+        </header>
+
+        <!-- Chat Messages Area -->
+        <main class="chat-messages" id="chatMessages">
+            <div class="welcome-message">
+                <div class="bot-message">
+                    <div class="message-content">
+                        <h3>👋 Welcome to ED Bot v8</h3>
+                        <p>I can help you with:</p>
+                        <ul class="capability-list">
+                            <li><strong>Clinical Protocols</strong> - STEMI, sepsis, stroke procedures</li>
+                            <li><strong>Medical Forms</strong> - Consent forms, transfer documents</li>
+                            <li><strong>Medication Dosing</strong> - Emergency drug protocols</li>
+                            <li><strong>Decision Criteria</strong> - Diagnostic thresholds</li>
+                            <li><strong>Contact Information</strong> - On-call physician lookup</li>
+                        </ul>
+                        <div class="quick-queries">
+                            <h4>Quick Queries:</h4>
+                            <button class="quick-query-btn" data-query="What is the ED STEMI protocol?">STEMI Protocol</button>
+                            <button class="quick-query-btn" data-query="Show me the blood transfusion form">Blood Transfusion Form</button>
+                            <button class="quick-query-btn" data-query="Who is on call for cardiology?">Cardiology On-Call</button>
+                            <button class="quick-query-btn" data-query="What are the criteria for sepsis?">Sepsis Criteria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Area -->
+        <div class="chat-input-container">
+            <form class="chat-input-form" id="chatForm">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask a medical question..."
+                        rows="1"
+                        maxlength="1000"
+                    ></textarea>
+                    <button type="submit" id="sendButton" class="send-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading spinner -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Processing your medical query...</p>
+    </div>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/sources.js"></script>
+    <script src="/static/js/chatbot.js"></script>
+</body>
+</html>

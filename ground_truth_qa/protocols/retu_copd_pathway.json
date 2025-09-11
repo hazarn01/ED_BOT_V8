@@ -1,0 +1,82 @@
+{
+  "document_name": "RETU COPD Pathway",
+  "document_type": "Observation Unit Pathway",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/RETU COPD Pathway.pdf",
+  "qa_pairs": [
+    {
+      "question": "What testing is required prior to RETU admission for COPD patients?",
+      "answer": "Required testing includes: Room air oxygen saturation (or with baseline oxygen rate if on home oxygen therapy), CXR, and EKG.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What conditions make a COPD patient NOT appropriate for RETU admission?",
+      "answer": "Patients are not appropriate for RETU if they have: High-risk active acute comorbidity (eg, pneumonia, heart failure, pleural effusion, pneumothorax, etc), altered mental status, or acute respiratory failure.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What should be included in the RETU intake evaluation for COPD patients?",
+      "answer": "RETU intake evaluation includes: Exam Focus on Pulmonary and Cardiac systems, Initial Testing with Labs (CBC, Chem 7, pCO2, troponin, BNP, d-dimer as indicated), Imaging (CXR). Do not repeat testing if already done in ED.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What monitoring should be performed for COPD patients in RETU?",
+      "answer": "Monitoring includes continuous pulse oximetry as indicated.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "When should pulmonary consultation be considered for RETU COPD patients?",
+      "answer": "Pulmonary consultation should be considered as indicated for COPD patients in RETU.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What is the standard treatment protocol for COPD patients in RETU?",
+      "answer": "Standard treatment includes: Nebulized albuterol q2-4h + Nebulized ipratropium q4-6h + Prednisone + Antibiotics.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What is the primary antibiotic regimen for COPD exacerbations in RETU?",
+      "answer": "Primary antibiotic regimen: Azithromycin 500mg PO x1 on day 1, then 250mg PO q24h x4 days. Alternative: Azithromycin 500mg PO q24h x3 days.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What antibiotic should be used for COPD patients allergic to azithromycin?",
+      "answer": "If allergic to azithromycin: levofloxacin 500mg PO q24h x5-7 days.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What additional testing should be considered if COPD patients are not improving?",
+      "answer": "If not improving, consider pCO2, CXR, troponin, BNP, d-dimer as clinically indicated.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What are the criteria for discharge from RETU for COPD patients?",
+      "answer": "Discharge criteria include: Acceptable vital signs, resolution of symptoms or return to near baseline respiratory status, return to baseline pulse oximetry or FiO2.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What are the criteria for admission to hospital from RETU for COPD patients?",
+      "answer": "Admission criteria include: Deterioration of clinical condition or unstable vital signs, uncompensated pCO2 retention, persistent new oxygen requirement despite treatment, development of new high-risk active acute comorbidity (eg, pneumonia, heart failure, pleural effusion, pneumothorax, etc).",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What discharge medications should COPD patients receive when leaving RETU?",
+      "answer": "Patients should be discharged with prednisone + antibiotics.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "How often should albuterol nebulizations be given to COPD patients in RETU?",
+      "answer": "Nebulized albuterol should be given every 2-4 hours.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "How often should ipratropium nebulizations be given to COPD patients in RETU?",
+      "answer": "Nebulized ipratropium should be given every 4-6 hours.",
+      "source": "RETU COPD Pathway"
+    },
+    {
+      "question": "What key laboratory values should be monitored in COPD patients who are not improving?",
+      "answer": "Key laboratory values to monitor include: pCO2 (for CO2 retention), troponin (for cardiac involvement), BNP (for heart failure), and d-dimer (for pulmonary embolism) as clinically indicated.",
+      "source": "RETU COPD Pathway"
+    }
+  ]
+}

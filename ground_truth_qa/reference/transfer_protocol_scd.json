@@ -1,0 +1,47 @@
+{
+  "document_name": "Transfer protocol SCD 10.21.22 FINAL.pdf",
+  "document_type": "reference", 
+  "total_pairs": 5,
+  "qa_pairs": [
+    {
+      "id": "scd_wf_001",
+      "question": "What are the clinical criteria for Level 1 transfer protocol for sickle cell disease patients?",
+      "answer": "Level 1 criteria (offer transfer to MSM, no approval needed): Acute vaso-occlusive pain episode (VOE) without fever (fever = temp ≥38.5), acute on chronic pain not manageable at home, does not meet Level II and III criteria, chest x-ray shows no signs of acute pulmonary disease, room air oxygen saturation ≥94% (or if baseline <94% then no more than 3% less than baseline), and serum creatinine ≤ 0.8 mg/dL (or if baseline > 0.8 mg/dL, then no more than 1.5 mg/dL).",
+      "source_file": "Transfer protocol SCD 10.21.22 FINAL.pdf",
+      "complexity": "medium",
+      "category": "criteria"
+    },
+    {
+      "id": "scd_wf_002",
+      "question": "What action should be taken for Level 2 sickle cell disease patients and what are the clinical criteria?",
+      "answer": "Level 2 action: Consider transfer but obtain consult from a member of the sickle cell team (MD/APP) or benign hematology (MD/APP) for transfer. Clinical criteria include any complication other than vaso-occlusive pain episode (VOE) or complications listed in Level 3, specifically priapism and leg ulcers.",
+      "source_file": "Transfer protocol SCD 10.21.22 FINAL.pdf",
+      "complexity": "medium",
+      "category": "workflow"
+    },
+    {
+      "id": "scd_wf_003",
+      "question": "What are the absolute contraindications for transfer in Level 3 sickle cell disease patients?",
+      "answer": "Level 3 - DO NOT transfer. Absolute contraindications include: acute chest syndrome (pneumonia, pulmonary edema, infiltrates - any trouble breathing), acute coronary syndrome, acute stroke, acute vision loss, acute hearing loss, history of hyper hemolysis syndrome, pregnancy, splenic or hepatic sequestration, thrombocytopenia (Platelets ≤50k), and patients acutely ill with unstable vital signs and severe symptomatic lab abnormalities.",
+      "source_file": "Transfer protocol SCD 10.21.22 FINAL.pdf", 
+      "complexity": "high",
+      "category": "contraindications"
+    },
+    {
+      "id": "scd_wf_004",
+      "question": "What specific laboratory and clinical parameters define severe illness requiring Level 3 protocol?",
+      "answer": "Patients acutely ill with unstable vital signs and severe, symptomatic lab abnormalities presenting as: acute kidney failure, acute liver failure, acute mental status change/neurologic symptoms, cord compression, splenic sequestration requiring Hgb checks > q8 hours, or multifocal pneumonia with SpO2 ≤ 94%. These patients require sickle cell team/benign hematology consult and admission as soon as possible (may need ICU admission).",
+      "source_file": "Transfer protocol SCD 10.21.22 FINAL.pdf",
+      "complexity": "high",
+      "category": "criteria"
+    },
+    {
+      "id": "scd_wf_005",
+      "question": "What is the overall goal and approach for sickle cell disease patient transfers from the ED?",
+      "answer": "All patients being admitted to the hospital should be considered for transfer to expedite bed assignment and decrease boarding time in the Emergency Department. Patients with sickle cell disease should be considered for transfer to Mount Sinai Morningside based on specific three-level criteria (Level 1: offer transfer, Level 2: consider with consult, Level 3: do not transfer). This systematic approach ensures appropriate triage and optimal patient care.",
+      "source_file": "Transfer protocol SCD 10.21.22 FINAL.pdf",
+      "complexity": "medium",
+      "category": "workflow"
+    }
+  ]
+}

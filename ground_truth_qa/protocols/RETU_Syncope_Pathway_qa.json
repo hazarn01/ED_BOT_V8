@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for syncope patients?",
+    "answer": "Required testing includes: ECG and pregnancy test in women of childbearing age.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Which syncope patients are not appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: arrhythmia related syncope, suspected PE or other serious non-rhythm based pathologic process, hemodynamic instability, or positive troponin.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the high-risk ECG findings in syncope patients?",
+    "answer": "High-risk ECG findings include: QTc >500ms, delta wave, PR <120ms, and Brugada pattern.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the high-risk clinical features for syncope?",
+    "answer": "High-risk features include: occurred during exertion, occurred at rest, family history of SCD, absence of prodrome, and new murmur.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What defines arrhythmia-related syncope?",
+    "answer": "Arrhythmia-related syncope includes: sinus brady <40 beats/min, sinus pauses >3 seconds, Mobitz II or third degree AVB, alternating LBBB and RBBB, or non-sustained VT.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What initial laboratory testing should be performed for syncope patients?",
+    "answer": "Initial labs include: CBC, electrolytes, glucose (others as clinically indicated).",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What examination focus is required for syncope patients?",
+    "answer": "Examination focus should be: cardiac, neuro, and vascular systems.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should EP consult be obtained for syncope patients?",
+    "answer": "EP consult should be obtained if high-risk ECG findings or clinical features are present.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for syncope patients?",
+    "answer": "Discharge criteria: at least 12 hours of uneventful telemetry monitoring, symptoms significantly improved, and associated serious process excluded.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should syncope patients be admitted to the hospital from RETU?",
+    "answer": "Admission criteria: concerning rhythm identified during telemetry monitoring or admission requested by consult service if one was involved.",
+    "source": "RETU Syncope Pathway.pdf",
+    "category": "criteria"
+  }
+]

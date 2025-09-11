@@ -1,0 +1,92 @@
+{
+  "document_name": "Current Protocol for ED EVD placement PDF.pdf",
+  "document_type": "protocol",
+  "domain": "emergency_medicine",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": "evd_001",
+      "question": "What are the mandatory requirements before starting an EVD procedure in the ED?",
+      "answer": "EVD placement requirements: 1) Patient must be in RESUS AREA only, 2) Obtain informed consent from next of kin or use two physician consent if emergency, 3) TWO IVs must be in place, 4) Mandatory HUDDLE with bedside RN, neurosurgery resident, and ED attending to discuss airway, sedation, analgesia, positioning, and hemodynamic management. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "procedures",
+      "subcategory": "pre_procedure_requirements"
+    },
+    {
+      "id": "evd_002",
+      "question": "What are the sedation and analgesia requirements for EVD placement?",
+      "answer": "All patients undergoing EVD placement should receive at least some sedative medication (Versed, Ativan, Propofol, Precedex), even if requiring concomitant vasopressors to maintain goal blood pressures. Fentanyl or morphine for analgesia should be in addition to sedative use, not substituted as sedative. Pain control plan must be discussed in pre-procedure huddle. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "medications",
+      "subcategory": "sedation_analgesia"
+    },
+    {
+      "id": "evd_003",
+      "question": "What blood pressure management is required during EVD procedures?",
+      "answer": "Discuss BP goals pre-procedure with drugs immediately available: phenylephrine for raising BP, Nicardipine/Clevidipine for lowering BP. Typical goals: SBP <140mmHg to reduce aneurysm re-rupture risk, MAP >65 for perfusion. Arterial line placement strongly recommended for close monitoring. Team must plan hemodynamic management before procedure start. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "critical_care",
+      "subcategory": "hemodynamic_management"
+    },
+    {
+      "id": "evd_004",
+      "question": "What monitoring requirements are mandatory during EVD procedures?",
+      "answer": "Required monitoring: heart rate, BP, pulse oximetry throughout procedure, End-Tidal CO2 if patient not intubated. BP checked at least q3 minutes if no arterial line. Use portable monitor during procedure to minimize wires at head of bed that could contaminate procedure area. Either ED attending or ED resident must be present for entirety of EVD procedure. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "monitoring",
+      "subcategory": "intraoperative_monitoring"
+    },
+    {
+      "id": "evd_005",
+      "question": "What airway management decisions must be made before EVD placement?",
+      "answer": "Each case should be discussed between providers regarding intubation. ED attending makes final decision on whether patient needs intubation prior to EVD placement. Many cases should have intubation performed prior to EVD placement, but there may be cases where EVD placement can proceed safely without intubation, depending on clinical assessment. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "airway_management",
+      "subcategory": "intubation_decisions"
+    },
+    {
+      "id": "evd_006",
+      "question": "What ICP management measures should be discussed before EVD placement?",
+      "answer": "Team should discuss elevated intracranial pressure management including adequate sedation and pain control, use of mannitol, and temporary hyperventilation PRIOR to EVD procedure. Most patients will have elevated ICP requiring proactive management during the procedure to prevent deterioration. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "critical_care",
+      "subcategory": "intracranial_pressure"
+    },
+    {
+      "id": "evd_007",
+      "question": "What safety protocols are required during the EVD procedure?",
+      "answer": "Safety protocols: All staff in curtained RESUS bay must wear mask and hat, perform Time-Out before procedure start, give pre-procedural antibiotics per Neurosurgery order. ED nurse monitors vitals regularly and administers medications. ED physician ensures airway stability, manages ventilation, and maintains hemodynamic parameters. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "safety",
+      "subcategory": "procedural_safety"
+    },
+    {
+      "id": "evd_008",
+      "question": "What are the post-procedure EVD management requirements?",
+      "answer": "Post-procedure: EVD catheter attached to drain apparatus, typically set at 20cmH2O above tragus of ear, drain always clamped during transport/turning, post-procedure CT always ordered. Conduct post-procedure huddle between neurosurgery resident, ED physician, and ED nurse to discuss ongoing BP goals, EVD level/drainage, ICP treatment needs. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "procedures",
+      "subcategory": "post_procedure_care"
+    },
+    {
+      "id": "evd_009",
+      "question": "What qualifications are required for physicians performing EVDs in the ED?",
+      "answer": "EVD placement most often performed by neurosurgery resident who has been approved to place EVDs independently, having been proctored and observed performing minimum number of procedures by neurosurgery faculty. Under no circumstances should medical student or resident who has not completed required number of proctored EVDs be allowed to insert EVD in resuscitation area. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "credentials",
+      "subcategory": "operator_qualifications"
+    },
+    {
+      "id": "evd_010",
+      "question": "What nursing requirements and support are available for EVD procedures?",
+      "answer": "Nurses assisting in EVD placement should have undergone training in EVD drainage apparatus management from MSH-NSICU Nursing Supervisor. If EVD needed in ED prior to NSICU transfer, NSICU nurse may be called to assist ED nurses or provide just-in-time training, but cannot guarantee availability due to NSICU personnel needs. Contact Ms Elka Riley (elka.riley@mountsinai.org) for EVD training. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "nursing",
+      "subcategory": "training_support"
+    },
+    {
+      "id": "evd_011",
+      "question": "What specific positioning and room setup is required for EVD procedures?",
+      "answer": "Operator discusses proper patient bed setup, need for restraints, monitors, and equipment tables. Patient requires continuous HR, BP, and pulse oximetry monitoring, plus ETCO2 if not intubated. Recommend detaching from wall monitor and using portable monitor during procedure to minimize wires at head of bed that could contaminate sterile field. Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "procedures",
+      "subcategory": "positioning_setup"
+    },
+    {
+      "id": "evd_012",
+      "question": "What post-procedure discussion topics must be covered in the huddle?",
+      "answer": "Post-procedure huddle between neurosurgery resident, ED physician, and ED nurse must cover: ongoing BP goals, EVD level and drainage plan, necessity of additional ICP treatment, need for specialized neuro-imaging (CTA, MRI), surgical or interventional treatment plan for primary hemorrhage cause (angiography vs operating room vs NSICU admission). Source: Current Protocol for ED EVD placement PDF.pdf",
+      "category": "communication",
+      "subcategory": "post_procedure_planning"
+    }
+  ]
+}

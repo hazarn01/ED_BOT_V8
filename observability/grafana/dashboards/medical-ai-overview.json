@@ -1,0 +1,308 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "EDBotv8 - Medical AI Overview",
+    "tags": ["edbot", "medical", "ai", "overview"],
+    "timezone": "browser",
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "refresh": "30s",
+    "panels": [
+      {
+        "id": 1,
+        "title": "System Health Score",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "edbot_system_health",
+            "legendFormat": "Health Score"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.7},
+                {"color": "green", "value": 0.9}
+              ]
+            },
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0
+          }
+        },
+        "gridPos": {"h": 8, "w": 6, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Query Volume",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(edbot_queries_total[5m])",
+            "legendFormat": "Queries/sec"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "reqps"
+          }
+        },
+        "gridPos": {"h": 8, "w": 6, "x": 6, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Response Time (95th percentile)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, edbot_query_duration_seconds_bucket)",
+            "legendFormat": "95th percentile"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 2},
+                {"color": "red", "value": 5}
+              ]
+            },
+            "unit": "s"
+          }
+        },
+        "gridPos": {"h": 8, "w": 6, "x": 12, "y": 0}
+      },
+      {
+        "id": 4,
+        "title": "Medical Safety Alerts",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(edbot_safety_alerts_total[1h])",
+            "legendFormat": "Safety Alerts (1h)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 5},
+                {"color": "red", "value": 20}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 6, "x": 18, "y": 0}
+      },
+      {
+        "id": 5,
+        "title": "Queries by Medical Specialty",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (specialty) (increase(edbot_medical_queries_by_specialty[1h]))",
+            "legendFormat": "{{ specialty }}"
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 6,
+        "title": "Query Types Distribution",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum by (query_type) (increase(edbot_queries_total[1h]))",
+            "legendFormat": "{{ query_type }}"
+          }
+        ],
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 7,
+        "title": "Component Health Status",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "edbot_component_health",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "transformations": [
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {
+                "__name__": true,
+                "instance": true,
+                "job": true
+              },
+              "renameByName": {
+                "component": "Component",
+                "Value": "Healthy"
+              }
+            }
+          }
+        ],
+        "fieldConfig": {
+          "overrides": [
+            {
+              "matcher": {"id": "byName", "options": "Healthy"},
+              "properties": [
+                {
+                  "id": "custom.cellOptions",
+                  "value": {
+                    "type": "color-background",
+                    "mode": "basic"
+                  }
+                },
+                {
+                  "id": "thresholds",
+                  "value": {
+                    "steps": [
+                      {"color": "red", "value": 0},
+                      {"color": "green", "value": 1}
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "gridPos": {"h": 10, "w": 24, "x": 0, "y": 18}
+      },
+      {
+        "id": 8,
+        "title": "Time-Sensitive Protocol Response Times",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, edbot_time_sensitive_response_seconds_bucket)",
+            "legendFormat": "{{ protocol_type }} (95th)"
+          },
+          {
+            "expr": "histogram_quantile(0.50, edbot_time_sensitive_response_seconds_bucket)",
+            "legendFormat": "{{ protocol_type }} (median)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "s",
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 2},
+                {"color": "red", "value": 5}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 10, "w": 24, "x": 0, "y": 28}
+      },
+      {
+        "id": 9,
+        "title": "Clinical Confidence Distribution",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "rate(edbot_clinical_confidence_bucket[5m])",
+            "legendFormat": "{{ clinical_area }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "continuous-BlYlRd"
+            }
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 0, "y": 38}
+      },
+      {
+        "id": 10,
+        "title": "Cache Hit Rate by Query Type",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "edbot_cache_hit_rate",
+            "legendFormat": "{{ query_type }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "percentunit",
+            "max": 1,
+            "min": 0,
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 0.3},
+                {"color": "green", "value": 0.7}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 10, "w": 12, "x": 12, "y": 38}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "environment",
+          "type": "query",
+          "query": "label_values(edbot_queries_total, environment)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "specialty",
+          "type": "query",
+          "query": "label_values(edbot_medical_queries_by_specialty, specialty)",
+          "current": {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "annotations": {
+      "list": [
+        {
+          "name": "Safety Alerts",
+          "datasource": "Prometheus",
+          "expr": "increase(edbot_safety_alerts_total[1m]) > 0",
+          "titleFormat": "Safety Alert",
+          "textFormat": "{{ $labels.alert_type }} - {{ $labels.severity }}",
+          "iconColor": "red"
+        }
+      ]
+    }
+  }
+}

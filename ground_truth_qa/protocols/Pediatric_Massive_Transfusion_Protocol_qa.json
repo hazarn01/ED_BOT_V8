@@ -1,0 +1,98 @@
+{
+  "document_name": "Pediatric Massive Transfusion Protocol.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "total_qa_pairs": 10,
+  "qa_pairs": [
+    {
+      "id": "PMTP_001",
+      "question": "What are the two criteria that define massive transfusion in pediatric patients?",
+      "answer": "Massive transfusion is defined as: 1) Transfusion of blood components equaling one or more blood volumes within a 24-hour period, OR 2) Half a blood volume in 3-12 hours. Blood volumes are calculated based on age: premature neonates 100 mL/kg, mature neonates 90 mL/kg, infants 80 mL/kg, and children 70-80 mL/kg.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 1,
+      "category": "criteria",
+      "subcategory": "age_specific_criteria"
+    },
+    {
+      "id": "PMTP_002",
+      "question": "For a 15 kg child requiring massive transfusion, how much blood volume would constitute half a blood volume that would trigger MTP activation?",
+      "answer": "For a 15 kg child (using 75 mL/kg average for children), the total blood volume would be 1,125 mL. Half a blood volume would be approximately 563 mL. If this amount is lost in 3-12 hours, it would meet the criteria for massive transfusion protocol activation.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "weight_based_calculations"
+    },
+    {
+      "id": "PMTP_003",
+      "question": "What are the four specific criteria for activating the Massive Transfusion Protocol in pediatric patients?",
+      "answer": "The four criteria for MTP activation are: 1) Hemodynamic instability with large blood loss in < 4 hours, 2) Large blood volume loss with ongoing blood loss, 3) Major gastrointestinal or surgical bleeding, and 4) Severe thoracic, abdominal, pelvic, or multiple long bone trauma, and/or major head trauma.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 2,
+      "category": "criteria",
+      "subcategory": "activation_criteria"
+    },
+    {
+      "id": "PMTP_004",
+      "question": "Who can initiate the Massive Transfusion Protocol and what information must be provided to the Blood Bank?",
+      "answer": "Only a physician or physician appointed designee (licensed medical practitioner: MD, RN, NP, PA) can initiate MTP. Required information for Blood Bank includes: patient name, MRN, location, weight if < 25 kg, initiating physician name (who will sign the blood bank form), designee name, and contact number.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "initiation_requirements"
+    },
+    {
+      "id": "PMTP_005",
+      "question": "What is the blood product composition for Pack 1 in a pediatric patient weighing 20 kg?",
+      "answer": "For a pediatric patient weighing 20 kg (< 25 kg), Pack 1 contains: 2 units PRBC, 2 units FFP, and 1 apheresis platelet unit. Cryoprecipitate (1 pooled unit) is thawed immediately after MTP activation and issued when ready. The ratio is maintained at 1:1:1 for PRBC:FFP:Platelets.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "weight_based_product_allocation"
+    },
+    {
+      "id": "PMTP_006",
+      "question": "How does the blood product allocation differ between pediatric patients < 25 kg versus ≥ 25 kg for each pack?",
+      "answer": "For patients < 25 kg: each pack contains 2 units PRBC, 2 units FFP, 1 apheresis platelet. For patients ≥ 25 kg: each pack contains 5 units PRBC, 5 units FFP, 1 apheresis platelet. Cryoprecipitate is 1 pooled unit for both weight categories, with larger patients receiving it in both Pack 1 and Pack 2.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 2-3,
+      "category": "dosage",
+      "subcategory": "weight_based_protocols"
+    },
+    {
+      "id": "PMTP_007",
+      "question": "What are the target laboratory values to maintain during pediatric massive transfusion?",
+      "answer": "Target laboratory values during MTP: Hemoglobin 7-8 g/dL (neonates 9-10 g/dL), Fibrinogen 150-200 mg/dL, PT/PTT < 1.5x normal, and Platelets 50,000-100,000. Laboratory tests to send include arterial blood gas, hematocrit, electrolytes, fibrinogen, platelets, PT, and PTT.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 3,
+      "category": "monitoring",
+      "subcategory": "laboratory_targets"
+    },
+    {
+      "id": "PMTP_008",
+      "question": "What is the dosing for calcium chloride and calcium gluconate in a 12 kg child with hypocalcemia during massive transfusion?",
+      "answer": "For a 12 kg child with hypocalcemia (Ca++ < 1.14 mmol/L): Calcium chloride 10-20 mg/kg = 120-240 mg total dose, OR Calcium gluconate 30-50 mg/kg = 360-600 mg total dose. These doses help correct the hypocalcemia commonly seen during massive transfusion.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 3,
+      "category": "dosage",
+      "subcategory": "electrolyte_correction"
+    },
+    {
+      "id": "PMTP_009",
+      "question": "What is the tranexamic acid dosing protocol for pediatric patients during massive transfusion?",
+      "answer": "Tranexamic acid dosing for pediatric patients: Loading dose 10-30 mg/kg (maximum 2g), followed by maintenance infusion of 5-10 mg/kg/hour. For example, a 25 kg child would receive 250-750 mg loading dose, then 125-250 mg/hour infusion. Tranexamic acid should be considered to help control bleeding.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 3,
+      "category": "dosage",
+      "subcategory": "antifibrinolytic_therapy"
+    },
+    {
+      "id": "PMTP_010",
+      "question": "What steps are required for discontinuation of the Massive Transfusion Protocol?",
+      "answer": "MTP discontinuation requires: 1) Initiating physician or designee notifies Blood Bank by phone, 2) Unused blood components returned immediately to Blood Bank, 3) Debriefing with initiating physician/designee and Blood Bank physician to review delays, component issues, form completion, and potential process improvements.",
+      "source": "Pediatric Massive Transfusion Protocol.pdf",
+      "page": 4,
+      "category": "protocol_steps",
+      "subcategory": "discontinuation_procedures"
+    }
+  ]
+}

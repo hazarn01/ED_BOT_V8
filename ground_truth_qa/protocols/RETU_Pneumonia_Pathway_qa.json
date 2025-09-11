@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the required tests that must be completed prior to RETU admission for pneumonia patients?",
+    "answer": "Required testing prior to RETU admission includes: CBC with differential, BMP or venous panel, CXR (chest X-ray), and Pregnancy test in women of childbearing age. These tests help assess the severity of infection, metabolic status, and provide baseline imaging to monitor treatment response.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "Which pneumonia patients are NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Hemodynamic instability or hypoxemia, AMS (altered mental status), Severe dehydration, Outpatient treatment failure, PSI score IV or V, CURB-65 score 3 or greater, Complicated pleural effusions (i.e. empyema, exudative, loculated), and Bacteremia. These criteria identify patients requiring higher levels of care due to severity of illness.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What is the initial antibiotic regimen for community acquired pneumonia in RETU?",
+    "answer": "Initial antibiotic guide for community acquired pneumonia: Ceftriaxone 1gm IV daily PLUS Azithromycin 500mg PO/IV daily. For prolonged QTc >500: can substitute Doxycycline 100mg PO BID for atypical coverage. For severe beta-lactam allergy: can use Levofloxacin 750mg PO/IV daily. This combination provides broad spectrum coverage for typical and atypical pathogens.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What monitoring is recommended for pneumonia patients in RETU?",
+    "answer": "Monitoring includes: Continuous pulse oximetry (as clinically indicated), Respiratory status monitoring, and Temperature monitoring. This allows for early detection of respiratory deterioration, hypoxemia, or persistent fever that might indicate treatment failure or complications.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What are the discharge criteria for pneumonia patients from RETU?",
+    "answer": "Discharge criteria include: Hemodynamic stability, Hypoxemia absent (or baseline if on home O2), Tachypnea absent, Mental status baseline, and Ability to obtain outpatient antibiotics. All criteria must be met to ensure the patient can safely complete treatment as an outpatient.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What are the discharge antibiotic options for community acquired pneumonia?",
+    "answer": "Discharge antibiotics (total 5 day course): Azithromycin 250mg PO daily for 4 days PLUS either Amoxicillin 1 gram TID if drug-resistant S. pneumoniae suspected, OR Amoxicillin 500mg TID or 875mg BID if drug-resistant S. pneumoniae not suspected. Alternatives: Cefpodoxime 200mg BID (verify with insurance), or Levofloxacin 750mg daily (for beta-lactam allergy). Renal adjustment advised for levofloxacin, amoxicillin, and cefpodoxime.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What factors indicate suspicion for drug-resistant S. pneumoniae?",
+    "answer": "Drug-resistant S. pneumoniae should be suspected in patients with: Age >65, antibiotics in past 3-6 months, immunocompromised status, significant comorbidities, or exposure to child in daycare. These patients require higher dose amoxicillin (1 gram TID) rather than standard dosing for adequate coverage.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What are the indications for hospital admission rather than discharge for pneumonia patients?",
+    "answer": "Indications for admission include: Deterioration of clinical condition, Worsening respiratory/mental status, Worsening labs or pertinent vitals, and Inability to tolerate PO medications. Any of these findings indicate the patient requires continued inpatient management and cannot safely be discharged home.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What consultations may be indicated for pneumonia patients in RETU?",
+    "answer": "Consultations as indicated include: Pulmonary consultation (for complex respiratory issues or treatment failure), and Infectious disease consultation (for complicated infections, unusual pathogens, or immunocompromised patients). These specialists can provide guidance on complex cases requiring specialized management.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What additional laboratory tests may be indicated for pneumonia patients in RETU?",
+    "answer": "Initial testing includes CBC, BMP, legionella order set as standard. Additional labs as indicated: Blood cultures x2, HIV test, Influenza/RSV PCR, and sputum culture. The specific additional tests depend on clinical presentation, risk factors, and epidemiological considerations.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What is the step-by-step discharge evaluation process for pneumonia patients in RETU?",
+    "answer": "Discharge evaluation follows sequential criteria: 1) Improved respiratory status (work of breathing, ability to ambulate, etc.), 2) Ability to tolerate PO medications, 3) If initially abnormal, repeat labs and vitals improved, 4) Mental status remains baseline. Each step must be satisfied before proceeding to the next, with failure at any step resulting in continued admission.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Pneumonia Pathway"
+  },
+  {
+    "question": "What severity scoring systems are used to determine RETU appropriateness for pneumonia patients?",
+    "answer": "Patients with PSI score IV or V, or CURB-65 score 3 or greater are NOT appropriate for RETU. These validated severity scoring systems help identify patients with higher mortality risk who require inpatient management rather than observation unit care. Lower scores indicate patients appropriate for RETU management.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Pneumonia Pathway"
+  }
+]

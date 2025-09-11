@@ -1,0 +1,98 @@
+{
+  "document_name": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "total_qa_pairs": 10,
+  "qa_pairs": [
+    {
+      "id": "PCAPP_001",
+      "question": "What are the exclusion criteria for the Pediatric Community-Acquired Pneumonia (CAP) pathway?",
+      "answer": "Exclusion criteria include: <2 months old, immunocompromised, IV antibiotics in last 2 weeks, known aspiration pneumonia, risk for hospital-acquired pneumonia, tracheostomy, chronic lung disease (not asthma), and suspected sepsis. These exclusions ensure the pathway is used for appropriate community-acquired cases without complicating factors.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1-2,
+      "category": "criteria",
+      "subcategory": "patient_selection"
+    },
+    {
+      "id": "PCAPP_002",
+      "question": "How are pediatric CAP patients categorized by clinical severity and what defines each category?",
+      "answer": "MILD: All criteria - age >3 months, no retractions/grunting, nasal flaring, O2 saturation >90% RA, tolerating orals, no severe illness. MODERATE: (>1 criterion) - age <3 months, retractions/grunting/nasal flaring, O2 saturation <90% RA, not tolerating orals, concern for poor follow-up, moderate pleural effusion. SEVERE: requires admission to inpatient pneumonia pathway.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1-2,
+      "category": "criteria",
+      "subcategory": "severity_classification"
+    },
+    {
+      "id": "PCAPP_003",
+      "question": "What antibiotic is used for suspected Mycoplasma pneumonia and what is the dosing for a 30 kg child?",
+      "answer": "For suspected Mycoplasma pneumonia: Azithromycin or Doxycycline. Azithromycin dosing for a 30 kg child: 10 mg/kg/dose on day 1 (max 500 mg) = 300 mg, then 5 mg/kg/dose on days 2-5 (max 250 mg) = 150 mg. Alternative is Doxycycline for children ≥8 years: 2.2 mg/kg/dose PO/IV q12h (max 100 mg/dose).",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "atypical_pathogen_coverage"
+    },
+    {
+      "id": "PCAPP_004",
+      "question": "What factors determine if a pediatric CAP patient should receive Levofloxacin, and what is the dosing?",
+      "answer": "Levofloxacin is indicated for: β-lactam allergy AND anaphylaxis. Dosing: 6 months to <5 years: 10 mg/kg/dose PO/IV q12h (max 375 mg/dose); ≥5 years: 10 mg/kg/dose PO/IV q24h (max 750 mg/dose). For a 20 kg, 4-year-old child: 200 mg q12h. For a 25 kg, 7-year-old: 250 mg q24h. Reserved for severe penicillin allergies.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "alternative_therapy"
+    },
+    {
+      "id": "PCAPP_005",
+      "question": "What is the Amoxicillin dosing for pediatric CAP and when should high-dose be considered?",
+      "answer": "Standard Amoxicillin: 30 mg/kg/dose PO q8h or 45 mg/kg/dose PO q12h (max 1000 mg/dose). High-dose: Consider max 2000 mg/dose if β-lactam resistance suspected. For a 25 kg child: Standard = 750 mg q8h or 1125 mg q12h. High-dose = up to 2000 mg per dose if resistance concerns. High-dose considered for treatment failure or amp resistance.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "first_line_oral_therapy"
+    },
+    {
+      "id": "PCAPP_006",
+      "question": "What IV antibiotic options are available for inpatient pediatric CAP and their weight-based dosing?",
+      "answer": "IV options include: Amoxicillin/clavulanate: <40 kg: 90 mg/kg/dose q8h; ≥40 kg: 45 mg/kg/dose PO q12h using ES-600 suspension (600 mg/5mL). Ceftriaxone: 75-100 mg/kg/day divided q12-24h (max 2000-4000 mg/dose). Levofloxacin: as above. For suspected Mycoplasma: ADD Azithromycin 10 mg/kg/dose PONV q24h (max 500 mg/dose) or Doxycycline (≥8 years).",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "inpatient_iv_therapy"
+    },
+    {
+      "id": "PCAPP_007",
+      "question": "What testing considerations are included in the pediatric CAP pathway and when should they be obtained?",
+      "answer": "Testing considerations: CXR +/- US or CT if large effusion, CBC, BMP, CRP/procalcitonin, consider RPP, consider MRSA nasal PCR, consider respiratory culture, consider blood culture. Generally, extensive testing not routinely recommended for outpatients. Blood cultures and other tests more indicated for moderate-severe cases requiring admission or with complications.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 1-2,
+      "category": "monitoring",
+      "subcategory": "diagnostic_testing"
+    },
+    {
+      "id": "PCAPP_008",
+      "question": "What are the discharge criteria and follow-up instructions for pediatric CAP patients?",
+      "answer": "Discharge Criteria: No oxygen need, no respiratory distress, tolerating PO meds. DC Criteria must be met for discharge. Discharge Instructions: Moderate cases get antibiotics for 7d, Severe cases get antibiotics for 10d, Follow up with PCP within 2-3 days. Remember to review cultures and antibiotic susceptibilities and tailor to narrowest appropriate therapy.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "discharge_planning"
+    },
+    {
+      "id": "PCAPP_009",
+      "question": "When should ID consultation be considered in the inpatient pediatric CAP pathway?",
+      "answer": "ID consultation should be considered for severe cases and specifically when there is: Treatment failure after appropriate antibiotic therapy for >3 days, complicated pneumonia (empyema, large effusions), suspected resistant organisms, or immunocompromised patients. The pathway shows 'Consult ID' for both moderate and severe cases that meet specific criteria.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "specialist_consultation"
+    },
+    {
+      "id": "PCAPP_010",
+      "question": "What is the treatment approach for immunized patients versus those with treatment failure after ampicillin in the inpatient setting?",
+      "answer": "For immunized patients against Hib: Consider Amoxicillin/clavulanate, Amoxicillin or Ampicillin, Sulbactam or Ceftriaxone. For treatment failure after amp or amox in last 30d: Use Amoxicillin. The pathway differentiates treatment based on vaccination status and recent antibiotic exposure to optimize coverage and minimize resistance development.",
+      "source": "Pediatric Community Acquired Pneumonia Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "treatment_algorithm"
+    }
+  ]
+}

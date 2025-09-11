@@ -1,0 +1,35 @@
+{
+  "document_name": "Pediatric Skin and Soft Tissue Infection Pathway",
+  "document_type": "guideline", 
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "A 4-month-old infant presents with suspected SSTI. What exclusions would prevent using this pathway and what special considerations apply?",
+      "answer": "Exclusions include: <2 months old immunocompromised, hospitalization in last 2 weeks, peri-anal or peri-orbital abscess, lymphadenitis, surgical site infection, pressure injury, water immersion injury, associated septic joint or osteomyelitis, suspected necrotizing fasciitis, animal or human bite, and suspected sepsis. This 4-month-old would be eligible but requires careful evaluation for sepsis and consideration of appropriate consultation."
+    },
+    {
+      "question": "How do you differentiate between purulent and non-purulent SSTI, and why is this distinction clinically important?",
+      "answer": "Purulent SSTI has associated drainage/purulence, while non-purulent SSTI lacks drainage. This distinction is crucial because: purulent infections require MRSA coverage with antibiotics like clindamycin or TMP/SMX, while non-purulent infections can typically be treated with β-lactam antibiotics like cephalexin targeting Streptococcus and Staphylococcus aureus."
+    },
+    {
+      "question": "For a 18kg child with purulent SSTI and β-lactam allergy, what are the antibiotic options and weight-based dosing?",
+      "answer": "For purulent SSTI with β-lactam allergy: Clindamycin 10 mg/kg/dose PO q8h (180mg for 18kg child, max 450mg/dose); TMP/SMX 5 mg/kg/dose of TMP component PO q12h (90mg TMP component for 18kg child, max 320mg TMP/dose); or Doxycycline 2.2 mg/kg/dose PO q12h (40mg for 18kg child, max 100mg/dose) if ≥8 years old."
+    },
+    {
+      "question": "When should I&D (incision and drainage) be performed for pediatric SSTI, and what culture considerations apply?",
+      "answer": "I&D should be performed for drainable abscesses. Send fluid for culture when I&D is performed. The pathway indicates to send culture fluid and consider infectious disease consultation if needed, especially for moderate/severe cases, MRSA concerns, or treatment failures."
+    },
+    {
+      "question": "For a 25kg child requiring inpatient treatment for severe SSTI, what IV antibiotic options are available and what are the weight-based doses?",
+      "answer": "IV antibiotic options: Cefazolin 33 mg/kg/dose IV q8h (825mg for 25kg child, max 2000mg/dose); Clindamycin 10 mg/kg/dose IV q8h (250mg for 25kg child, max 450mg/dose); Ceftriaxone 50 mg/kg/dose IV q24h (1250mg for 25kg child, max 1000mg - note: exceeds max, so use 1000mg); Vancomycin - consult ID for dosing."
+    },
+    {
+      "question": "What clinical criteria determine if a pediatric SSTI patient should be admitted versus discharged home?",
+      "answer": "Inpatient criteria include: moderate/severe SSTI with purulent drainage, clinical suspicion for MRSA, rapid progression requiring IV antibiotics, need for I&D, inability to tolerate oral medications. Discharge criteria: patient eating, drinking, voiding, and taking PO medications effectively. Consider patient reliability for follow-up and severity of infection."
+    },
+    {
+      "question": "What discharge instructions and follow-up are required for pediatric SSTI patients treated as outpatients?",
+      "answer": "Discharge instructions: Follow up with PCP within 2 days, complete 5-7 day antibiotic course. Important reminder: Review cultures and antibiotic susceptibilities when available, and tailor therapy to narrowest appropriate antibiotic. Return precautions include worsening redness, increased drainage, fever, or spreading infection despite appropriate treatment."
+    }
+  ]
+}

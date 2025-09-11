@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What are the Level 1 clinical criteria for offering transfer to HIV patients without approval needed?",
+    "answer": "Level 1 criteria (offer transfer, no approval needed): Patient has well controlled HIV (CD4 >200, undetectable viral load) and is being admitted for an unrelated issue such as: Cellulitis, CHF, Fluid overload, Osteomyelitis, Chronic ulcer/wound infection, or Bacterial community acquired pneumonia. These patients have stable immune function and conditions unrelated to their HIV status.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "When should HIV patients be considered for transfer but require HIV attending consultation?",
+    "answer": "Level 2 criteria (consider transfer but obtain HIV attending consult): CD4 <200 at risk for opportunistic infection, including: ESRD with suspected line infection, Decompensated cirrhosis, Immunosuppressive therapy (high dose steroids, biologics for autoimmune diseases), Suspected PCP pneumonia, or Suspected viral or fungal pneumonia. These patients have compromised immune systems requiring specialist input.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "Which HIV patients should NOT be approached for transfer under any circumstances?",
+    "answer": "Level 3 criteria (do NOT approach for transfer): Patients unstable or at high risk for decompensation, High suspicion for Opportunistic Infection requiring ID consult at another facility, Age under 18, Pregnant patients (must be cleared by OB prior to transfer), HIV transplant patients regardless of transplant timing, Patients on MSH Clinical Trial, or If closely followed by a service other than Silver Medicine with specialty contraindication for transfer.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "What CD4 count thresholds are used to determine HIV transfer appropriateness?",
+    "answer": "CD4 count thresholds: CD4 >200 with undetectable viral load qualifies for Level 1 (automatic transfer offer without approval). CD4 <200 places patients at Level 2 (consider transfer but requires HIV attending consultation due to increased risk for opportunistic infections). The CD4 count directly correlates with immune function and transfer risk stratification.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "What consultation is required for Level 2 HIV transfer decisions?",
+    "answer": "Level 2 HIV transfer decisions require consultation from an HIV attending physician. This consultation is mandatory before proceeding with transfer for patients with CD4 <200 who are at risk for opportunistic infections. The HIV attending provides specialized assessment of the patient's immune status and infection risk before transfer approval.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "Why are HIV transplant patients specifically excluded from transfer consideration?",
+    "answer": "HIV transplant patients are excluded from transfer regardless of when they received the transplant due to their complex medical needs and specialized care requirements. These patients require expertise in both HIV management and transplant medicine. Additionally, patients who received an organ transplant within the past two years are specifically admitted to the transplant team, emphasizing the specialized care needs.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "What special considerations apply to pregnant HIV patients regarding transfer?",
+    "answer": "Pregnant HIV patients fall under Level 3 (do NOT approach for transfer) criteria. However, if transfer is being considered, they must be cleared by Obstetrics prior to any transfer. This ensures both maternal and fetal safety are adequately assessed and that appropriate obstetric care will be available at the receiving facility.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "HIV Transfer Criteria"
+  },
+  {
+    "question": "What is the overall goal and rationale for having HIV transfer criteria in the Emergency Department?",
+    "answer": "The overall goal is to expedite bed assignment and decrease boarding time in the Emergency Department while ensuring patient safety. All patients being admitted should be considered for transfer, including those with potentially communicable illnesses like respiratory conditions or tuberculosis, provided appropriate beds are available at other sites. The criteria ensure HIV patients receive appropriate care while optimizing ED throughput and resource utilization.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "HIV Transfer Criteria"
+  }
+]

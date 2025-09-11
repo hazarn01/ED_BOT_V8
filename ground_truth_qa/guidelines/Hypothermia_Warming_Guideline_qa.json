@@ -1,0 +1,74 @@
+[
+  {
+    "question": "How are the different levels of hypothermia classified by core temperature?",
+    "answer": "Hypothermia is classified into three categories by core temperature: Mild hypothermia: Core temperature 32 to 35°C (89.6-95°F), Moderate hypothermia: Core temperature 28 to 32°C (82.4-89.6°F), Severe hypothermia: Core temperature below 28°C (below 82.4°F). These temperature ranges determine the appropriate treatment approach and urgency of interventions.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What is the preferred method for measuring core temperature in hypothermic patients?",
+    "answer": "Temperatures in well-appearing patients should be made rectally. In sicker patients or patients undergoing invasive rewarming techniques, esophageal temperature probes are preferred. The method of temperature measurement depends on the patient's clinical status and the interventions being performed.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What underlying causes should be investigated when a patient presents with hypothermia?",
+    "answer": "Efforts should be made to identify why patients are hypothermic. The following causes should all be considered: environmental exposure, CNS (central nervous system) causes, septic causes, adrenal insufficiency, and thyroid-related causes. Identifying the underlying etiology is crucial for appropriate treatment and preventing recurrence.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "How should unwell-appearing patients with mild hypothermia be initially managed?",
+    "answer": "Unwell-appearing patients in mild hypothermia should be undressed completely and placed in a hospital gown. This allows for proper assessment and facilitates rewarming interventions. Sicker patients in mild hypothermia typically will need more aggressive rewarming techniques such as forced air warming blankets (e.g. the Bair Hugger device), rather than just warmed blankets.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What is the difference in rewarming approach between well-appearing and sicker patients with mild hypothermia?",
+    "answer": "Well appearing patients with mild hypothermia will often benefit from warmed blankets as a simple rewarming method. However, sicker patients in mild hypothermia typically will need more aggressive rewarming techniques such as forced air warming blankets (e.g. the Bair Hugger device). The patient's clinical appearance and stability determine the aggressiveness of rewarming interventions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What diagnostic tests should be considered for patients with mild hypothermia who do not appear well?",
+    "answer": "Fingerstick glucose measurement, serum laboratory testing, and ECG should be considered in all patients with mild hypothermia who otherwise do not appear well. These tests help identify underlying metabolic derangements, electrolyte abnormalities, and cardiac effects that may be associated with hypothermia or its underlying causes.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What rewarming technique is specifically contraindicated in hypothermic patients?",
+    "answer": "Under no circumstance should warmed IV fluid bags be placed on patients' skin or clothing in an attempt to rewarm patients. This method is specifically contraindicated and could potentially cause burns or other injury to hypothermic patients whose sensation may be impaired.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What is the target temperature for resuscitation efforts in patients with moderate or severe hypothermia?",
+    "answer": "Patients with moderate or severe hypothermia should be resuscitated—including invasive rewarming techniques, ICU consultation consideration and CPR—until they reach a temperature between 32 to 35°C (89.6-95°F). This means continuing aggressive resuscitation efforts until the patient reaches the mild hypothermia temperature range.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What types of invasive interventions may be required for patients with moderate or severe hypothermia?",
+    "answer": "Depending on presenting circumstances, patients with moderate or severe hypothermia should be resuscitated with invasive rewarming techniques, ICU consultation consideration, and CPR as needed. These more aggressive interventions are necessary for patients with core temperatures below 32°C and should continue until core temperature reaches 32-35°C.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What is the purpose and scope of the Mount Sinai hypothermia management guidelines?",
+    "answer": "The purpose is to provide a process to expedite the timely identification and treatment of hypothermic patients in the Emergency Department. This guideline is not meant to be comprehensive, particularly for sicker patients; rather this document is designed to provide physicians and nurses a standardized basis for the initial treatment of mild hypothermia specifically.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "When should esophageal temperature probes be used instead of rectal temperature measurement?",
+    "answer": "Esophageal temperature probes are preferred in sicker patients or patients undergoing invasive rewarming techniques. While rectal temperatures are appropriate for well-appearing patients, the more invasive esophageal probes provide more accurate core temperature monitoring in critically ill patients or those requiring aggressive rewarming interventions.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Hypothermia (Warming) Guideline"
+  },
+  {
+    "question": "What specific rewarming device is mentioned as an example of forced air warming for sicker hypothermic patients?",
+    "answer": "The Bair Hugger device is mentioned as an example of forced air warming blankets that should be used for sicker patients in mild hypothermia. This represents a more aggressive rewarming technique compared to simple warmed blankets, which are sufficient for well-appearing patients with mild hypothermia.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Hypothermia (Warming) Guideline"
+  }
+]

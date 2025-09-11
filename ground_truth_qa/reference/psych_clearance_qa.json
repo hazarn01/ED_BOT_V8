@@ -1,0 +1,32 @@
+{
+  "document_type": "reference",
+  "source_document": "Psych Clearance v2.1.pdf",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the two SmartPhrases available for writing psychiatric clearance notes in Epic?",
+      "answer": "The two SmartPhrases for psychiatric clearance notes are .edpsychcleartriage (for medically clearing patients from triage) and .edpsychcleartransfer (for medically clearing patients after ED evaluation). These SmartPhrases help write psychiatric clearance notes quickly while adhering to Mount Sinai's documentation requirements when sending patients from the Emergency Department to CPEP or Psych ED.",
+      "source_context": "SmartPhrases for psychiatric clearance documentation in Epic EHR system"
+    },
+    {
+      "question": "How do you access and use psychiatric clearance SmartPhrases in Hyperspace?",
+      "answer": "In Hyperspace: 1) Open the patient's chart and click the ED Notes activity, 2) Click Write Progress Note in the ED Notes Narrator menu to open NoteWriter, 3) In the toolbar at the right of the screen, enter .edpsychcleartriage or .edpsychcleartransfer in the Progress Note section - you don't need to enter the entire phrase for the system to find it, 4) Select the desired SmartPhrase and double click to add it to your note.",
+      "source_context": "Step-by-step workflow for using psychiatric clearance SmartPhrases in Epic Hyperspace"
+    },
+    {
+      "question": "What is the workflow for using psychiatric clearance SmartPhrases in Haiku mobile?",
+      "answer": "In Haiku: 1) Open the patient's chart and click Notes Entry, 2) In the upper right-hand corner, click the paper and pencil icon, 3) Click Select a Template, then SmartPhrases, 4) Enter the SmartPhrase you'd like to use (.edpsychcleartriage or .edpsychcleartransfer) and sign your note. This allows providers to complete psychiatric clearance documentation on mobile devices.",
+      "source_context": "Mobile workflow for psychiatric clearance documentation using Haiku"
+    },
+    {
+      "question": "When should you use the .edpsychcleartriage versus .edpsychcleartransfer SmartPhrase?",
+      "answer": "Use .edpsychcleartriage when you're medically clearing the patient from triage (before full ED evaluation), and use .edpsychcleartransfer when you're medically clearing the patient after ED evaluation. Both SmartPhrases are designed to document your decision when sending a patient from the Emergency Department to CPEP or Psych ED while ensuring proper documentation requirements are met.",
+      "source_context": "Clinical decision criteria for selecting appropriate psychiatric clearance SmartPhrase"
+    },
+    {
+      "question": "Why is it important to create a psychiatric clearance note when transferring patients to CPEP or Psych ED?",
+      "answer": "Creating a psychiatric clearance note is essential to document your medical decision when sending a patient from the Emergency Department to CPEP or Psych ED. This documentation ensures compliance with Mount Sinai's requirements, provides continuity of care, establishes that medical clearance was appropriately obtained, and creates a proper record of the clinical decision-making process for the transfer.",
+      "source_context": "Clinical documentation requirements for psychiatric patient transfers"
+    }
+  ]
+}

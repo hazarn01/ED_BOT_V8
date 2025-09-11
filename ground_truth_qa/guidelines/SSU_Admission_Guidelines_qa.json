@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What conditions are considered appropriate for pediatric Short Stay Unit admission at Mount Sinai Beth Israel?",
+    "answer": "The following conditions are considered for SSU admission: 1) Respiratory Illnesses (Asthma, Bronchiolitis, Croup, Pneumonia), 2) Dehydration, 3) Skin and Soft Tissue Infections (Cellulitis; Abscess s/p PED drainage), 4) Anaphylaxis, 5) Febrile Infants <56 days old, 6) Urinary tract infection/pyelonephritis, 7) Head Trauma (Closed Head Injury, Concussion), 8) Hyperbilirubinemia, 9) Toxic Ingestion, Toxic Exposures and Drug Overdoses.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What are the admission and exclusion criteria for respiratory illnesses in the pediatric Short Stay Unit?",
+    "answer": "Admission criteria: >3 months old, not requiring nebulized therapy more frequently than every 90 minutes, likely to transition to PO medications in 24h, and does not have more than two symptoms (persistent hypoxia, persistent tachypnea/retractions/nasal flaring, pleural effusion on imaging, requiring IV antibiotics or rehydration). Exclusion criteria: Suspicion for airway foreign body/epiglottitis/tracheitis/deep neck space infection, received >2 epinephrine IM doses or >2 racemic epinephrine treatments in 2h or Terbutaline SC, or significant comorbidities (extreme prematurity, chronic lung disease, congenital heart disease).",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What transfer process should be followed for pediatric patients being considered for SSU admission?",
+    "answer": "Transfer process: The Attending Physician in the originating Emergency Department should call the transfer center at 1-800-TO-SINAI, who will then connect them with the appropriate receiving physician at MSBI. The disposition of patients is ultimately at the discretion of the PED attending at MSBI, as these criteria serve as guidelines for appropriate pediatric transfers for evaluation in the Pediatric Emergency Department and potential admission to the Pediatric Short Stay Unit.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What are the specific laboratory requirements for febrile infants less than 56 days old for SSU admission?",
+    "answer": "Laboratory requirements for febrile infants <56 days: CBC WBC >5K and <15K, absolute bands <1000, Immature to Total neutrophil ratio (I/T) <0.2, UA <10 WBC/hpf with Nit/LE negative, blood and urine cultures pending. If done: CSF WBC <8 with no pleocytosis after RBC correction, stool leukocytes <5 WBC/hpf, CXR normal. Additional requirements: ≥29 days old, non-toxic appearing, no signs focal bacterial infection, and parental/social concern or unable to follow up with PMD within 24 hours.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What are the exclusion criteria for skin and soft tissue infections in the pediatric Short Stay Unit?",
+    "answer": "Exclusion criteria for skin and soft tissue infections: Suspicion for bacteremia, necrotizing fasciitis, Fournier's gangrene, or Ludwig's angina; potentially requiring surgical intervention (circumferential, tenosynovitis); involves neck, genital/perineum/perianal area, trunk, or joints; or significant comorbidities (sickle cell, chemotherapy, immunocompromise). Admission requires >6 months old with primary vaccination series completed, no significant residual abscess collection following I&D, and likely transition to PO medications in 24-36 hours.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What are the admission and exclusion criteria for head trauma patients in the pediatric Short Stay Unit?",
+    "answer": "Head trauma admission criteria: >1 year old, presenting GCS >13, negative CT in clinically stable patient with persistent headache or vomiting, non-displaced linear skull fracture without intracranial hemorrhage with agreement of neurosurgical attending. Exclusion criteria: Presents with seizure (not contact), persistent visual deficits, or other focal neurological deficits; concern for non-accidental trauma; or significant comorbidities (bleeding disorder, OI). This allows for observation of minor head injuries while excluding those requiring intensive monitoring.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What are the criteria for hyperbilirubinemia admission to the pediatric Short Stay Unit?",
+    "answer": "Hyperbilirubinemia admission criteria: ≥37 weeks gestational age, no other medical conditions, <14 days old, well-appearing, tolerating feeds, no signs of infection, required labs (CBC with differential, reticulocyte count, blood type, Coombs test, total and direct bilirubin). Exclusion criteria: Suspected sepsis, metabolic derangement, abnormal newborn screen, direct hyperbilirubinemia >20% of total bilirubin level, significant risk to require exchange transfusion (within 2 mg/dL of exchange transfusion level for age), focal neurological signs, or poor feeding with IVF requirement.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  },
+  {
+    "question": "What contact information and notification requirements apply to toxic ingestion cases for SSU admission?",
+    "answer": "For toxic ingestion cases: NYC Poison Control must be notified (212-764-7667 / 212-POISONS). Admission criteria include low suspicion for actual ingestion, mild toxicity with projected recovery within 24-48 hours, alcohol/caustic/poison ingestions not requiring specialty care, low suspicion for acute decompensation, and stable vital signs. This ensures appropriate poison control consultation and monitoring for patients who can be safely managed in an observation setting rather than intensive care.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "SSU Admission Guidelines 12-10-2018"
+  }
+]

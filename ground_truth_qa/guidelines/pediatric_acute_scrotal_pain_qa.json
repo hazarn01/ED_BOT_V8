@@ -1,0 +1,42 @@
+{
+  "document_name": "Pediatric Acute Scrotal Pain Pathway.pdf",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "What are the components and scoring criteria of the TWIST score for evaluating testicular torsion in pediatric patients?",
+      "answer": "The TWIST score includes: Testicular swelling (2 points), Firm/hard testicles (2 points), No cremasteric reflex (1 point), High-riding testis (1 point), and Nausea/vomiting (1 point). Total possible score is 7 points. This validated scoring system helps stratify risk for testicular torsion and guides management decisions.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "What is the management algorithm for a pediatric patient with a TWIST score of 0-1 versus 2-4 versus 5-7?",
+      "answer": "TWIST score 0-1 (Low risk): Treat based on clinical diagnosis, ultrasound at ED discretion with normal flow expected. TWIST score 2-4 (Intermediate risk): Obtain scrotal ultrasound with Doppler to assess flow. TWIST score 5-7 (High risk): Immediate urology consultation, stat Doppler ultrasound, and prepare for emergent surgical intervention as testicular torsion is highly likely.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "What are the immediate contact procedures for urology consultation in acute scrotal pain cases?",
+      "answer": "For urology consultation: If no response within 15 minutes, call the attending. If unable to reach attending, call attending on call for next day. If still unable, call 3rd attending. If no answer, call adult attending on-call. The next step would be Urology Chair. Specific contact numbers are provided: Jeff Stock (973-715-8030), Ferd Ferrer (860-922-8250), Neha Malhotra (847-710-4674).",
+      "query_type": "CONTACT_LOOKUP"
+    },
+    {
+      "question": "For a 30 kg adolescent with intermediate TWIST score and equivocal ultrasound findings, what is the clinical decision-making process?",
+      "answer": "For a 30 kg adolescent with intermediate TWIST score (2-4) and equivocal ultrasound (no flow or equivocal findings), immediate urology consultation is required. The clinical decision should not rely solely on imaging - if clinical suspicion remains high despite intermediate scoring, urgent surgical exploration may be indicated as testicular salvage is time-dependent and imaging can be falsely reassuring.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "What are the differential diagnoses and clinical features that distinguish them in pediatric acute scrotal pain?",
+      "answer": "Key differential diagnoses include: Epididymitis (gradual onset, positive cremasteric reflex, dysuria, no nausea/vomiting), Appendix testis torsion (acute onset, positive cremasteric reflex, superior pole point tenderness, blue dot sign), and Testicular torsion (acute onset, firm swelling, absent cremasteric reflex, high-riding testis, nausea/vomiting). Clinical features help guide TWIST scoring and management.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "What is the time-sensitive nature and surgical urgency considerations for testicular torsion in pediatric patients?",
+      "answer": "Testicular torsion is a urological emergency requiring immediate intervention. Testicular salvage rates decrease significantly after 6 hours of torsion, with rates dropping to <10% after 24 hours. High TWIST scores (5-7) require immediate urology consultation and preparation for emergent detorsion surgery. Any delay in diagnosis or treatment can result in testicular loss, making rapid evaluation and decision-making critical.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "For a 18 kg child with acute scrotal pain and trauma history, what specific assessment and management considerations apply?",
+      "answer": "For an 18 kg child with acute scrotal pain and trauma history, immediate urology consultation is indicated regardless of TWIST score. Trauma can cause testicular rupture, hematoma, or secondary torsion. The pathway directs immediate urology evaluation for any trauma-related scrotal pain. Standard TWIST scoring may not apply, and imaging should focus on assessing testicular integrity and blood flow. Weight-based pain management and age-appropriate examination techniques are important.",
+      "query_type": "PROTOCOL_STEPS"
+    }
+  ]
+}

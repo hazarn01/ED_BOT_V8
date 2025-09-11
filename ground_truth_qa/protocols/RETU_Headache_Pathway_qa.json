@@ -1,0 +1,67 @@
+{
+  "document_name": "RETU Headache Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the absolute contraindications for RETU admission in patients with headache?",
+      "answer": "Patients should not be admitted to RETU if there is suspicion for CNS bleed, suspicion for meningitis/encephalitis, or if they are pregnant or postpartum. These conditions require immediate inpatient evaluation and management.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What testing is required prior to RETU admission for headache patients?",
+      "answer": "No testing is specifically required prior to RETU admission for headache patients. This differs from other RETU pathways that may require pregnancy testing or other specific labs.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What is the first-line treatment approach for headache in RETU?",
+      "answer": "First-line treatment includes APAP 650mg every 6 hours with or without NSAIDs (Motrin 600mg every 6 hours or Ketorolac 15mg every 6 hours), plus Metoclopramide 10-20mg IV every 6 hours for antiemetic and headache relief.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What are the specific medication options in second-line headache treatment?",
+      "answer": "Second-line options include oral opiates (Percocet 1-2 tabs every 6 hours PRN) with or without Dexamethasone 10mg IV and/or Sumatriptan (100mg PO or 6mg subcutaneous).",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "How should Sumatriptan be administered for headache patients in RETU?",
+      "answer": "Sumatriptan can be given as 100mg orally or 6mg subcutaneously as part of second-line treatment. It's specifically indicated for migraine-type headaches.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "What is the role of Dexamethasone in headache treatment in RETU?",
+      "answer": "Dexamethasone 10mg IV is used as part of second-line treatment and can help with headache relief and inflammation reduction, particularly useful for severe or refractory headaches.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "When should neurology consultation be considered for headache patients?",
+      "answer": "Neurology consultation should be considered as third-line treatment when first and second-line treatments are inadequate, or as clinically indicated for complex headache presentations requiring specialist evaluation.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "consultation_criteria"
+    },
+    {
+      "question": "What examination focus is essential for headache patients in RETU?",
+      "answer": "The examination should focus on the neurologic system to identify any concerning findings such as focal deficits, altered mental status, or signs suggesting secondary headache causes.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What are the criteria for discharge from RETU for headache patients?",
+      "answer": "Patients can be discharged when symptoms are resolved or greatly improved, they are tolerating PO fluids and medications, and they are able to ambulate and care for themselves.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "discharge_criteria"
+    },
+    {
+      "question": "What would prompt hospital admission for a headache patient in RETU?",
+      "answer": "Hospital admission is required if symptoms are worsening or failing to improve, there is a change in neurological examination, or the patient is unable to ambulate or care for themselves.",
+      "source": "RETU Headache Pathway.pdf",
+      "category": "admission_criteria"
+    }
+  ]
+}

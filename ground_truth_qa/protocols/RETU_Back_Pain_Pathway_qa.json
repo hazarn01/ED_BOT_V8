@@ -1,0 +1,67 @@
+{
+  "document_name": "RETU Back Pain Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the absolute contraindications for RETU admission in patients with back pain?",
+      "answer": "Patients should not be admitted to RETU if there is high suspicion for cord pathology, progressive neurologic deficit, or suspicion for aortic dissection. These conditions require immediate inpatient management and cannot be safely managed in an observation unit.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What required testing must be completed prior to RETU admission for back pain patients?",
+      "answer": "Pregnancy test is required in women of reproductive age prior to RETU admission. Other testing should be done as clinically indicated but is not mandatory.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What is the first-line treatment approach for back pain in RETU?",
+      "answer": "First-line treatment includes APAP 650mg every 6 hours and NSAIDs (Motrin 600mg every 6 hours or Ketorolac 15mg every 6 hours). These can be used with or without muscle relaxants (Valium 5-10mg every 8 hours) and topical agents (Lidocaine 5% patch 1-2 every 12 hours).",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What are the age-specific morphine dosing guidelines for back pain in RETU?",
+      "answer": "For morphine IV initial dose: patients over 65 years old receive 4mg, while patients under 65 years old receive 6mg. If pain is controlled after 30 minutes, continue the same morphine dose every 3 hours as needed.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "How should Dilaudid be dosed for back pain patients in RETU?",
+      "answer": "Dilaudid IV dosing is weight-based: for patients over 65 years old, give 0.01 mg/kg, and for patients under 65 years old, give 0.02 mg/kg. If effective, continue the same dilaudid dose every 3 hours as needed.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "What is the escalation pathway if first and second-line treatments fail for back pain?",
+      "answer": "If oral medications and initial IV opioids fail to control pain after 30 minutes, proceed to third-line IV opiates (morphine or dilaudid every 3 hours). If pain remains uncontrolled, fourth-line treatment involves PCA pump with Pain Service consultation.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What neurologic examination components are emphasized for back pain patients in RETU?",
+      "answer": "The examination should focus on neurologic and vascular components. Particular attention should be paid to identifying any progressive neurologic deficits or changes in neurological examination that would warrant admission.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What are the criteria for discharge from RETU for back pain patients?",
+      "answer": "Patients can be discharged when symptoms are resolved or greatly improved, they are tolerating PO fluids and medications, and they are able to ambulate and care for themselves.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "discharge_criteria"
+    },
+    {
+      "question": "What conditions would necessitate hospital admission for a back pain patient in RETU?",
+      "answer": "Hospital admission is required if symptoms are worsening or failing to improve, there is a change in neurological examination, or the patient is unable to ambulate or care for themselves.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "When should Pain Service consultation be considered for back pain patients in RETU?",
+      "answer": "Pain Service consultation should be obtained when a PCA pump is needed (fourth-line treatment) or as clinically indicated for complex pain management cases that are not responding to standard protocols.",
+      "source": "RETU Back Pain Pathway.pdf",
+      "category": "consultation_criteria"
+    }
+  ]
+}

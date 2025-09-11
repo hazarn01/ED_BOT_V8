@@ -1,0 +1,98 @@
+{
+  "document_name": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "total_qa_pairs": 10,
+  "qa_pairs": [
+    {
+      "id": "PAAP_001",
+      "question": "What are the exclusion criteria for the pediatric appendicitis antibiotic protocol?",
+      "answer": "Exclusion criteria include: >18 years old, previous appendectomy, pregnancy, chronic IBD, malignancy, organ transplant, and neutropenia. These exclusions ensure the protocol is used only for appropriate pediatric patients without complicating comorbidities that would require different antibiotic management strategies.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1-2,
+      "category": "criteria",
+      "subcategory": "patient_selection"
+    },
+    {
+      "id": "PAAP_002",
+      "question": "What antibiotic regimens are used for non-perforated appendicitis based on penicillin allergy status?",
+      "answer": "For NON-allergic to penicillin: Ceftriaxone 50 mg/kg/dose q24h (max 2g/dose) AND Metronidazole 30mg/kg/dose IV q24h (max 1.5g/dose). For penicillin ALLERGIC: Ciprofloxacin 15mg/kg/dose IV q12h (max 400mg/dose) AND Metronidazole 30mg/kg/dose IV q24h (max 1.5g/dose). Both regimens provide broad-spectrum coverage against typical appendicitis pathogens.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "weight_based_antibiotics"
+    },
+    {
+      "id": "PAAP_003",
+      "question": "What is the operative antibiotic dosing for a 25 kg child undergoing appendectomy, and what are the timing requirements?",
+      "answer": "For a 25 kg child: If NOT allergic to penicillin: Cefoxitin 40mg/kg/dose IV = 1000mg unless ceftriaxone given within prior 8h. If allergic to penicillin: Ciprofloxacin 15mg/kg/dose IV = 375mg if >12h from prior dose. Operative dosing should be given within 60 minutes prior to incision (cefoxitin) or within 120 minutes prior to incision (ciprofloxacin).",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "perioperative_antibiotics"
+    },
+    {
+      "id": "PAAP_004",
+      "question": "What pain management options are available for pediatric appendicitis patients and their dosing?",
+      "answer": "Pain management options include: Acetaminophen 10mg/kg/dose PO/PR q4h (max 650g/dose), Ketorolac 0.5mg/kg/dose IV q6h max 30g x 20 doses, and Morphine 0.05mg/kg/dose IV q4h prn (max 1-2g/dose). Multimodal pain management is preferred to optimize comfort while minimizing opioid requirements.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "pain_management"
+    },
+    {
+      "id": "PAAP_005",
+      "question": "What determines whether a patient proceeds to the perforated appendicitis algorithm versus continuing with non-perforated management?",
+      "answer": "After appendectomy, if perforation is identified during surgery, the patient should follow the perforated appendicitis algorithm on page 2. If no perforation is found, the patient can be discharged home with appropriate follow-up. The surgical finding of perforation determines the antibiotic duration and monitoring requirements.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1,
+      "category": "protocol_steps",
+      "subcategory": "surgical_decision_algorithm"
+    },
+    {
+      "id": "PAAP_006",
+      "question": "What are the IV antibiotic options for perforated appendicitis and their dosing in a 20 kg patient?",
+      "answer": "For a 20 kg patient with perforated appendicitis: If NOT allergic to penicillin: Ceftriaxone 50 mg/kg q24h = 1000mg (max 2g) AND Metronidazole 30mg/kg IV q24h = 600mg (max 1.5g/dose). If allergic: Ciprofloxacin 15mg/kg IV q12h = 300mg (max 400mg/dose) AND Metronidazole as above. Alternative: Piperacillin/tazobactam 80 mg/kg IV q 8h = 1600mg (max 3g/dose).",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "perforated_appendicitis_antibiotics"
+    },
+    {
+      "id": "PAAP_007",
+      "question": "What are the discharge criteria (DC Criteria) that must be met by day 7 for perforated appendicitis patients?",
+      "answer": "DC Criteria that must be met by day 7: 1) Tolerates 2 consecutive meals before day 5, 2) No drainable abscess, 3) Tolerates 2 consecutive doses of PO antibiotics, and 4) Output <0.5 ml/kg/day from drain. All criteria must be satisfied for safe discharge. If criteria aren't met, continue IV antibiotics and reassess.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 2,
+      "category": "criteria",
+      "subcategory": "discharge_requirements"
+    },
+    {
+      "id": "PAAP_008",
+      "question": "What is the oral antibiotic regimen for perforated appendicitis and how long should it be continued?",
+      "answer": "PO Antibiotic Dosing for perforated appendicitis: Amoxicillin/clavulanate 22.5 mg/kg q 12h (max 875mg/dose) OR if Penicillin Allergy: Ciprofloxacin 15 mg/kg PO q12h (max 750mg/dose) AND Metronidazole 10mg/kg PO q8h (max 500g/dose). Continue antibiotics for total of 7d if no abscess, or 14d if abscess was present. Total antibiotic duration depends on presence of abscess.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "oral_antibiotic_continuation"
+    },
+    {
+      "id": "PAAP_009",
+      "question": "When should drains be placed and managed in pediatric patients with perforated appendicitis?",
+      "answer": "Drainability assessment: Surgery should determine if drainage is needed for IR (interventional radiology). If indeterminate on ultrasound, consider CT. Consult Child Life prior to drainage and prior to drain removal. Drains should be managed by monitoring output (<0.5 ml/kg/day is criteria for removal). Remove drain when DC criteria are met and output is minimal.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "drain_management"
+    },
+    {
+      "id": "PAAP_010",
+      "question": "What follow-up instructions should be provided at discharge for both non-perforated and perforated appendicitis cases?",
+      "answer": "Discharge Instructions: For non-perforated: No further antibiotics, Pediatric Surgery follow-up appointment in 2 weeks, use PEDSAPPYDC or PEDSAPPYDCSP. For perforated: Complete prescribed antibiotics (7d total if no abscess, 14d if abscess present), Pediatric Surgery Telehealth appointment on last day of antibiotics. Special notes: May discharge home with drain if other criteria met, do not repeat CBC.",
+      "source": "Pediatric Appendicitis Antibiotic Pathway.pdf",
+      "page": 1-2,
+      "category": "protocol_steps",
+      "subcategory": "discharge_planning"
+    }
+  ]
+}

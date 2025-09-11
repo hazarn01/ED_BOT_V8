@@ -1,0 +1,82 @@
+{
+  "document_name": "RETU Asthma Pathway",
+  "document_type": "Observation Unit Pathway",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/RETU Asthma Pathway.pdf",
+  "qa_pairs": [
+    {
+      "question": "What testing is required prior to RETU admission for asthma patients?",
+      "answer": "None. No specific testing is required prior to RETU admission for asthma patients.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What are the criteria that make a patient NOT appropriate for RETU admission?",
+      "answer": "Patients are not appropriate for RETU if they have: ventilatory support required, peak flow <40% of predicted after ED treatment, oxygen sat <92%, or respiratory distress after ED treatment (at least 3 albuterol nebs).",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What should be included in the RETU intake evaluation for asthma patients?",
+      "answer": "RETU intake evaluation includes: Exam Focus on Pulmonary and Cardiac systems, Initial Testing with Labs as clinically indicated, Imaging with CXR, ECG as clinically indicated. Do not repeat testing if already done in ED.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What monitoring should be performed for asthma patients in RETU?",
+      "answer": "Monitoring includes: pulse ox as indicated, peak flow after each neb treatment.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "When should pulmonary consultation be considered for RETU asthma patients?",
+      "answer": "Pulmonary consultation should be considered as clinically indicated for asthma patients in RETU.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What is the treatment protocol for Phase 1 (RETU hour 1-6) of the asthma pathway?",
+      "answer": "Phase 1 treatment includes: nebulized albuterol Q 3 hours, nebulized ipratropium Q 6 hours, prednisone (if not given in ED), consider magnesium/terbutaline if not improving.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What is the treatment protocol for Phase 2 (RETU hour 7-24) of the asthma pathway?",
+      "answer": "Phase 2 treatment includes: nebulized albuterol Q 6 hours, nebulized ipratropium Q 6 hours, reassess for discharge Q 2 hours.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "When should a patient progress from Phase 1 to Phase 2 in RETU?",
+      "answer": "Patients should progress from Phase 1 to Phase 2 when they are improving. If not improving, repeat Phase 1 treatment.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What are the criteria for discharge from RETU for asthma patients?",
+      "answer": "Discharge criteria include: wheeze absent or at baseline, treatment response sustained for 1 hour, resolution of symptoms, pulse ox >92% with exertion.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What are the criteria for admission to hospital from RETU for asthma patients?",
+      "answer": "Admission criteria include: symptoms worsening or failing to improve, pulse oximetry <92% with exertion, persistent tachypnea/respiratory distress.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "How often should asthma patients be reassessed for discharge in Phase 2?",
+      "answer": "In Phase 2, patients should be reassessed for discharge every 2 hours.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What additional treatments should be considered if a patient is not improving in Phase 1?",
+      "answer": "If not improving in Phase 1, consider magnesium or terbutaline therapy.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What is the maximum time frame for RETU observation in the asthma pathway?",
+      "answer": "The RETU asthma pathway covers up to 24 hours (Phase 1: hours 1-6, Phase 2: hours 7-24).",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "When should prednisone be given to asthma patients in RETU?",
+      "answer": "Prednisone should be given in Phase 1 if it was not already given in the ED.",
+      "source": "RETU Asthma Pathway"
+    },
+    {
+      "question": "What key clinical assessments are required before discharge from RETU?",
+      "answer": "Before discharge, ensure: wheeze is absent or at baseline, treatment response is sustained for 1 hour, symptoms have resolved, and pulse oximetry is >92% with exertion.",
+      "source": "RETU Asthma Pathway"
+    }
+  ]
+}

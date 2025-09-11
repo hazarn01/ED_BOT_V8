@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the required tests that must be completed prior to RETU admission for alcohol intoxication patients?",
+    "answer": "Required testing prior to RETU admission includes: Serum EtOH level, Electrolytes (including magnesium), Blood glucose level, Pregnancy test in women of childbearing age, and Assessment of co-ingestion. These tests help establish the severity of intoxication and identify potential complications or co-ingestants that may affect management.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What are the criteria that make alcohol intoxication patients NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Delirium, or Severe alcohol or sedative withdrawal indicated by 1 or more of the following: Persistent HR >120bpm despite treatment, Severe vomiting despite treatment, Grossly visible tremor despite treatment, Profuse perspiration despite treatment, Persistent temperature >101°F despite treatment, Other marked physical signs of alcohol or sedative withdrawal not responding to treatment.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What specific IV fluids and electrolyte supplementation are recommended for alcohol intoxication patients in RETU?",
+    "answer": "Treatment includes: IV fluids with Isolyte or D5 1/2NS, Electrolyte repletion with Magnesium IVPB and Potassium chloride IV/PO, Thiamine 100mg IV/PO (to prevent Wernicke encephalopathy), and Folic acid 1mg PO. The CIWA Orderset should also be deployed for standardized withdrawal assessment and management.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What monitoring is required for alcohol intoxication patients in RETU?",
+    "answer": "Monitoring includes: Continuous telemetry (as indicated), Continuous oximetry (as indicated), Monitor for signs of withdrawal, and Monitor mental status. The focus is on detecting withdrawal symptoms early and monitoring for cardiovascular or respiratory complications that may arise during recovery.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What are the discharge criteria for alcohol intoxication patients from RETU?",
+    "answer": "Discharge criteria include: Withdrawal symptoms absent or manageable, Metabolic abnormalities (electrolyte abnormality, dehydration) absent, No functional status impairment, and Psych stable (no hallucinations, SI or HI - suicidal ideation or homicidal ideation). All criteria must be met to ensure safe discharge home.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What are the indications for hospital admission rather than discharge for alcohol intoxication patients?",
+    "answer": "Indications for admission to hospital include: Deterioration of condition, Evidence of lethal co-ingestant, Severe withdrawal despite treatment, and Unstable vitals. Any of these findings indicate the patient requires a higher level of care than can be provided in the observation unit setting.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What should be done if there is no clinical improvement in an alcohol intoxication patient in RETU?",
+    "answer": "If there is no clinical improvement, providers should: Investigate other causes of prolonged intoxication and Admit the patient. This may include looking for co-ingestants, underlying medical conditions, or complications that are preventing expected recovery from alcohol intoxication.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What consultations may be indicated for alcohol intoxication patients in RETU?",
+    "answer": "Consultations as indicated include: Social work consult (especially for patients interested in detox), and Psychiatry consult (for mental health evaluation). Social work should be engaged early for those interested in detox, as patients may go to detox with mild withdrawal symptoms.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What is the management approach for patients who desire alcohol detox?",
+    "answer": "For patients who desire detox: Social work consult should be obtained, Provide detox info sheet (Epic documents), and Consider librium taper. The pathway emphasizes engaging social work early for those interested in detox, as patients may go to detox facilities with mild withdrawal symptoms rather than requiring full medical detox.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What initial testing is recommended in the ED for alcohol intoxication patients being considered for RETU?",
+    "answer": "Initial testing in the ED includes: Labs (CBC, BMP, LFTs, Mg, EtOH level, urine tox as indicated), CIWA-Ar score (Clinical Institute Withdrawal Assessment for Alcohol), EKG, and Imaging with CTH (head CT as indicated). This comprehensive workup helps assess the severity of intoxication and identify complications.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What are the key examination focuses for alcohol intoxication patients in RETU?",
+    "answer": "Exam focus areas include: Neuro/Mental status assessment (to evaluate level of consciousness, cognition, and neurological function), Cardiac examination (to assess for arrhythmias or other cardiac effects), and GI examination (to evaluate for complications like GI bleeding or liver issues). These systems are most commonly affected by alcohol intoxication.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Alcohol Intox Pathway"
+  },
+  {
+    "question": "What specific medications are recommended for nutritional support in alcohol intoxication patients?",
+    "answer": "Nutritional support includes: Thiamine 100mg IV/PO (to prevent Wernicke encephalopathy - a serious neurological complication of thiamine deficiency common in chronic alcohol users), and Folic acid 1mg PO (to address folate deficiency common in chronic alcohol use). These vitamins are essential to prevent serious neurological complications.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Alcohol Intox Pathway"
+  }
+]

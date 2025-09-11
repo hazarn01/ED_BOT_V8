@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the conditions that make cellulitis patients NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Immunosuppression, Suspected necrotizing fasciitis, and Orbital cellulitis. These conditions require higher levels of care due to increased risk of complications, rapid progression, or potential for serious systemic infection that cannot be adequately managed in an observation unit setting.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What specific monitoring is recommended for cellulitis patients in RETU?",
+    "answer": "Monitoring includes: Outline area of cellulitis with pen and monitor Q4-6 hours. This allows healthcare providers to objectively assess whether the cellulitis is improving, stable, or spreading by comparing the marked boundaries over time. Progressive expansion beyond the marked lines would indicate treatment failure or worsening infection.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What are the MRSA risk factors that influence antibiotic selection for cellulitis?",
+    "answer": "MRSA risk factors include: Recent hospitalization, Nursing home resident, Recent antibiotics, HIV infection, IVDU (intravenous drug use), Incarceration, Hemodialysis, and Sharing sports equipment. Patients with these risk factors should be treated with MRSA coverage (vancomycin) rather than standard anti-streptococcal antibiotics.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What IV antibiotics are recommended for non-purulent cellulitis with low MRSA risk?",
+    "answer": "For non-purulent cellulitis with low MRSA risk (covering strep species and MSSA), IV antibiotics include: Cefazolin, Nafcillin, or Clindamycin. These antibiotics provide coverage against the most common causative organisms in cellulitis without MRSA coverage, which is appropriate for low-risk patients.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What IV antibiotic is recommended for purulent cellulitis or high MRSA risk patients?",
+    "answer": "For purulent cellulitis or high risk for MRSA patients, the recommended IV antibiotic is Vancomycin. This provides MRSA coverage which is essential in patients with risk factors or purulent infections that are more likely to be caused by methicillin-resistant Staphylococcus aureus.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "When should ID (Infectious Disease) consultation be considered for cellulitis patients?",
+    "answer": "Consider ID consult if the following criteria are present: Immunocompromised status, Transplant recipient, Cirrhosis, Travel history, or Facial cellulitis. These conditions represent complex clinical scenarios that may require specialized antibiotic management or consideration of unusual pathogens.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What oral antibiotics are recommended for transition from IV therapy in low MRSA risk cellulitis patients?",
+    "answer": "For non-purulent cellulitis/low MRSA risk patients showing clinical improvement, transition to PO antibiotics includes: Dicloxacillin, Cephalexin, or Doxycycline. These oral antibiotics maintain coverage against streptococci and MSSA while allowing for outpatient completion of therapy.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What oral antibiotics are recommended for transition from IV therapy in high MRSA risk cellulitis patients?",
+    "answer": "For purulent cellulitis/high MRSA risk patients showing clinical improvement, transition to PO antibiotics includes: TMP-SMZ (trimethoprim-sulfamethoxazole) or Doxycycline. These oral antibiotics provide MRSA coverage for outpatient completion of therapy.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What are the discharge criteria for cellulitis patients from RETU?",
+    "answer": "Discharge criteria include: Symptoms improved and Vital signs normalized. Both criteria must be met to ensure the infection is responding appropriately to treatment and the patient is stable for outpatient management with oral antibiotics.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What are the indications for hospital admission rather than discharge for cellulitis patients?",
+    "answer": "Indications for admission to hospital include: Symptoms worsening or failing to improve. This indicates treatment failure and the need for either more aggressive antibiotic therapy, surgical intervention, or evaluation for complications such as abscess formation or necrotizing infection.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "What laboratory tests are recommended for cellulitis patients in RETU?",
+    "answer": "Initial testing includes: Labs such as CBC, electrolytes, glucose (others as clinically indicated), and Imaging as clinically indicated. The specific tests ordered depend on the clinical presentation and severity of infection, with basic labs helping to assess for systemic infection or metabolic abnormalities.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Cellulitis Pathway"
+  },
+  {
+    "question": "Are there any required tests prior to RETU admission for cellulitis patients?",
+    "answer": "Required testing prior to RETU admission: None. Unlike other RETU pathways that require specific tests, cellulitis patients do not need any mandatory testing before observation unit admission, allowing for flexible clinical decision-making based on individual patient presentations.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Cellulitis Pathway"
+  }
+]

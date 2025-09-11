@@ -1,0 +1,42 @@
+{
+  "document_name": "Pediatric Nephrolithiasis Pathway.pdf",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "What is the initial evaluation protocol for a pediatric patient presenting with flank pain or suspected kidney stones?",
+      "answer": "The initial evaluation includes: making the patient NPO, checking urinalysis and urine culture, implementing pain control measures, and proceeding to renal and bladder ultrasound. This systematic approach helps determine the presence of stones and guides subsequent imaging and management decisions.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "What are the imaging decision criteria based on ultrasound findings in pediatric nephrolithiasis?",
+      "answer": "The imaging algorithm is based on ultrasound results: If stone is visible on ultrasound, proceed with size-based management. If SONO is positive for hydronephrosis but stone not visible, or SONO is negative but high clinical suspicion persists, refer to nephrology. If SONO is negative with low clinical suspicion, pursue further evaluation of symptoms for alternative diagnoses.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "What are the specific criteria that warrant immediate urology consultation versus nephrology referral?",
+      "answer": "Immediate urology consultation is indicated for: stones ≥4mm, fever, elevated WBC, urinalysis showing infection, persistent pain, persistent nausea/vomiting, or gross hematuria. If ANY of these criteria are met, urgent urology consultation is required. Nephrology referral is appropriate for diagnostic uncertainty or stones <4mm without complications.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "For a 25 kg child with a 3mm kidney stone and moderate pain, what is the appropriate pain management approach?",
+      "answer": "For a 25 kg child with a 3mm stone and moderate pain, pain control should be implemented while monitoring for complications. Since the stone is <4mm without fever, elevated WBC, infection, persistent pain, or gross hematuria, the patient may be managed conservatively with pain control and nephrology referral for outpatient follow-up rather than immediate urology consultation.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "What are the discharge instructions and follow-up requirements for pediatric patients diagnosed with kidney stones?",
+      "answer": "Discharge instructions include: outpatient nephrology referral, urine strainer to bring stone to clinic in Ziploc bag if caught, instructions to push PO fluids, and clear return precautions for fever/chills, nausea/vomiting, severe pain, etc. Discussion of tamsulosin may be appropriate for larger stones. Patients should understand when to return for emergency care.",
+      "query_type": "PROTOCOL_STEPS"
+    },
+    {
+      "question": "When is the decision made between AKI/obstructing stone workup versus routine stone management?",
+      "answer": "The decision point occurs after ultrasound evaluation. If imaging shows evidence of AKI or obstructing stone (typically larger stones with hydronephrosis, signs of obstruction, or clinical deterioration), immediate urology consultation is required. For non-obstructing stones without AKI, standard nephrology referral and conservative management is appropriate.",
+      "query_type": "CRITERIA_CHECK"
+    },
+    {
+      "question": "For a 12 kg toddler with confirmed nephrolithiasis, what weight-based considerations affect the treatment approach?",
+      "answer": "For a 12 kg toddler with nephrolithiasis, weight-based considerations include: careful fluid management appropriate for the child's size and kidney function, weight-appropriate pain medication dosing, consideration that smaller children may have difficulty with urine straining compliance, and recognition that very young children may present with nonspecific symptoms requiring careful clinical assessment rather than relying solely on reported pain patterns.",
+      "query_type": "PROTOCOL_STEPS"
+    }
+  ]
+}

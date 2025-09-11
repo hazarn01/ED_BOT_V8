@@ -1,0 +1,77 @@
+{
+  "document": "CT_Consent_SMARTEM.pdf",
+  "document_type": "reference",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the risk of mild allergic reaction with nonionic contrast dye?",
+      "answer": "1 in 150 (100-200), including nausea/vomiting, hives, flushing, pain, urticaria, vasovagal, bronchospasm, tachycardia",
+      "source_section": "Risk of allergic reaction",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 2,
+      "question": "What is the risk of severe allergic reaction with nonionic contrast dye?",
+      "answer": "1 in 2500 (2500-7000), including anaphylaxis, severe bronchospasm, laryngeal edema, seizure, hypotension, pulmonary edema",
+      "source_section": "Risk of allergic reaction",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 3,
+      "question": "What is the risk of death from contrast dye allergic reaction?",
+      "answer": "1 in 100,000",
+      "source_section": "Risk of allergic reaction",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 4,
+      "question": "What is the risk of kidney damage from contrast?",
+      "answer": "1 in 100 (0-2) risk of kidney failure (dialysis) or creatinine elevation > 3mg/dL; 2/3 of cases are fatal",
+      "source_section": "Kidney damage",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 5,
+      "question": "What is the radiation cancer risk for a 20-year-old female receiving a chest CT?",
+      "answer": "1 in 390 patients exposed would develop radiation-induced cancer",
+      "source_section": "Radiation table - Age 20 female chest",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 6,
+      "question": "What is the radiation cancer risk for a 40-year-old male receiving an abdominal/pelvis CT?",
+      "answer": "1 in 1002 patients exposed would develop radiation-induced cancer",
+      "source_section": "Radiation table - Age 40 male abd/pelvis",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 7,
+      "question": "What is the risk of false positive findings on CT?",
+      "answer": "1 in 4 (a finding that could lead to unnecessary further care)",
+      "source_section": "False Positives",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 8,
+      "question": "What is the lifetime cancer death risk for a newborn receiving a head CT?",
+      "answer": "1 in 1400",
+      "source_section": "Pediatric CT risks - Head CT Age 0",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 9,
+      "question": "What is the lifetime cancer death risk for a 5-year-old receiving an abdominal/pelvis CT?",
+      "answer": "1 in 1100",
+      "source_section": "Pediatric CT risks - Abd/pelvis CT Age 5",
+      "question_type": "risk_assessment"
+    },
+    {
+      "id": 10,
+      "question": "How do pediatric cumulative cancer risks compare to the death-only risks listed?",
+      "answer": "For cumulative cancer risk in children, most numbers should be doubled (the listed risks are death only, excluding nonfatal cancer)",
+      "source_section": "Pediatric note",
+      "question_type": "risk_assessment"
+    }
+  ]
+}

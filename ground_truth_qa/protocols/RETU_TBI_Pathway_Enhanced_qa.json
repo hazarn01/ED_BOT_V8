@@ -1,0 +1,71 @@
+{
+  "document_name": "RETU TBI Pathway.pdf", 
+  "document_type": "protocol",
+  "domain": "emergency_medicine",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": "retu_tbi_001",
+      "question": "What are the criteria that make a patient NOT appropriate for RETU admission with traumatic brain injury?",
+      "answer": "Not appropriate for RETU: Altered mental status that is severe or persistent, subdural hematoma >5mm thickness, complex traumatic hemorrhage (>1 contusion + SDH), epidural hematoma, suspicion for non-traumatic ICH or SAH, multiple (≥3) discrete traumatic contusions, GCS <13, new focal neurologic weakness, recurrent seizures, basilar/depressed/open skull fracture, CSF leak, INR >1.7 or platelets <100, hemodynamic instability, new oxygen requirement or O2 sat <92%, any patient requiring drip antihypertensives. Source: RETU TBI Pathway.pdf",
+      "category": "disposition",
+      "subcategory": "exclusion_criteria"
+    },
+    {
+      "id": "retu_tbi_002",
+      "question": "What testing is required prior to RETU admission for TBI patients?",
+      "answer": "Required testing prior to RETU admission: Non-contrast head CT, C-Spine CT if unable to clear spine clinically, CBC, Basic Metabolic Panel, PT/PTT, pregnancy test in women of childbearing age. ALL patients with CTH showing intracranial hemorrhage MUST have a neurosurgical consult prior to RETU. Source: RETU TBI Pathway.pdf",
+      "category": "diagnostic_workup",
+      "subcategory": "pre_admission_testing"
+    },
+    {
+      "id": "retu_tbi_003",
+      "question": "What specific monitoring protocols are required for RETU TBI patients?",
+      "answer": "RETU TBI monitoring: Q2H neurochecks (repeat GCS, count backwards 20 to 1, check arm/leg drift bilaterally), Q4H vital signs, continuous telemetry monitoring. Focus on neurologic examination for changes in mental status, motor function, and cognitive ability. Source: RETU TBI Pathway.pdf",
+      "category": "monitoring",
+      "subcategory": "neurologic_monitoring"
+    },
+    {
+      "id": "retu_tbi_004",
+      "question": "When should repeat head CT be performed for RETU TBI patients and what determines timing?",
+      "answer": "Repeat non-contrast head CT should be performed 8-12 hours after initial CT if initial head CT showed intracranial hemorrhage. If neurologic worsening occurs or repeat CT demonstrates expansion of initial hemorrhage, consult neurosurgery and admit (consider transfer to MSSL Trauma Service, arranged by neurosurgery). Source: RETU TBI Pathway.pdf",
+      "category": "imaging",
+      "subcategory": "repeat_imaging"
+    },
+    {
+      "id": "retu_tbi_005",
+      "question": "What are the discharge criteria from RETU for TBI patients?",
+      "answer": "Discharge from RETU when: Neuro exam remains unchanged, if repeat CT done no expansion of hemorrhage, mental status remains baseline, no deterioration in clinical status, cleared by consulting service. Follow up in TBI clinic within 1 week. TBI clinic contact: 212-241-2221 during daytime hours. Source: RETU TBI Pathway.pdf",
+      "category": "disposition",
+      "subcategory": "discharge_criteria"
+    },
+    {
+      "id": "retu_tbi_006",
+      "question": "What are the admission criteria from RETU to the hospital for TBI patients?",
+      "answer": "Admission to Hospital (MSSL or MSH) for: Hemodynamic instability, worsening neuro exam, worsening hemorrhage on CT, deterioration in clinical status. These represent signs of clinical deterioration requiring higher level of care and closer monitoring. Source: RETU TBI Pathway.pdf",
+      "category": "disposition",
+      "subcategory": "admission_criteria"
+    },
+    {
+      "id": "retu_tbi_007",
+      "question": "What specific neurologic assessment components are included in Q2H neurochecks?",
+      "answer": "Q2H neurochecks include: Repeat GCS assessment, have patient count backwards from 20 to 1 (cognitive assessment), check arm and leg drift bilaterally (motor function assessment). These components assess level of consciousness, cognitive function, and motor strength systematically. Source: RETU TBI Pathway.pdf",
+      "category": "assessment",
+      "subcategory": "neurologic_examination"
+    },
+    {
+      "id": "retu_tbi_008",
+      "question": "What anti-epileptic medication recommendations exist for traumatic brain injury patients?",
+      "answer": "One week of prophylactic anti-epileptic medication is recommended for traumatic subdural or contusion. This should be discussed with neurosurgery service. The recommendation is for seizure prophylaxis rather than treatment of established seizures in the acute post-traumatic period. Source: RETU TBI Pathway.pdf",
+      "category": "medications",
+      "subcategory": "seizure_prophylaxis"
+    },
+    {
+      "id": "retu_tbi_009",
+      "question": "What follow-up arrangements are required for discharged TBI patients from RETU?",
+      "answer": "Follow up in TBI (Rehabilitation Neuropsychology) clinic within 1 week. Patient or provider can call 212-241-2221 during daytime hours for appointments. This specialized follow-up addresses cognitive and functional recovery after traumatic brain injury. Source: RETU TBI Pathway.pdf",
+      "category": "follow_up",
+      "subcategory": "specialty_clinic"
+    }
+  ]
+}

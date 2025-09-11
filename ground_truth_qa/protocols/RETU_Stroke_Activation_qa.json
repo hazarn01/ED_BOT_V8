@@ -1,0 +1,86 @@
+[
+  {
+    "question": "What symptoms trigger stroke activation in RETU?",
+    "answer": "BE-FAST symptoms trigger stroke activation in RETU patients.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What is the stroke code number to call for RETU patients?",
+    "answer": "Call Stroke Code 333333 and state 'RETU meet in ED CT'.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What overhead page should be made for RETU stroke activation?",
+    "answer": "Overhead page 'Stroke Code RETU Bed #' should be made.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Who brings the RETU patient to ED CT during stroke activation?",
+    "answer": "The Primary RN and PA bring the patient to ED CT, where the stroke team meets the patient.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What order set should the 2nd RETU PA order for RETU stroke patients?",
+    "answer": "The 2nd RETU PA should order the 'ED Ischemic Stroke' order set.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What order set should be used for admitted stroke patients?",
+    "answer": "For admitted patients, the 2nd RETU PA should order the 'IP CT Stroke' order set.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Who should the RETU Charge RN notify for a RETU stroke patient?",
+    "answer": "The RETU Charge RN should notify: ED Resus Team, ANM on duty, ED Charge RN. The ED Resus RN goes to ED CT.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Who should the RETU Charge RN notify for an admitted stroke patient?",
+    "answer": "For admitted patients, notify: ED Resus Team, ED Charge RN, ED Resus RN goes to ED CT, pages Primary Team, and Primary team responds to ED CT to relieve RETU PA.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What happens if a RETU stroke patient receives tPA?",
+    "answer": "If RETU patient receives tPA: stroke resident/fellow notifies attending Hospitalist, and patient goes to Resus post tPA.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What happens if a RETU stroke patient does not receive tPA?",
+    "answer": "If RETU patient does not receive tPA: patient returns to RETU.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What happens if an admitted stroke patient receives tPA?",
+    "answer": "If admitted patient receives tPA: stroke resident/fellow notifies attending physician, ED Resus RN goes to CT to assume care, and patient goes to Resus post tPA.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What happens if an admitted stroke patient does not receive tPA?",
+    "answer": "If admitted patient does not receive tPA: patient returns to RETU.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Where do stroke patients go after receiving tPA?",
+    "answer": "Stroke patients go to Resus post tPA administration.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Who assumes care of admitted stroke patients receiving tPA in CT?",
+    "answer": "For admitted patients receiving tPA, the ED Resus RN goes to CT to assume care from the RETU team.",
+    "source": "RETU Stroke Activation.pdf",
+    "category": "protocol"
+  }
+]

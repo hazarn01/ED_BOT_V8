@@ -1,0 +1,91 @@
+{
+  "document": "STEMI.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the door-to-balloon time goal for STEMI patients?",
+      "answer": "90 minutes",
+      "source_section": "Door to Balloon timing",
+      "question_type": "timing"
+    },
+    {
+      "id": 2,
+      "question": "What is the rapid EKG goal time?",
+      "answer": "Less than 10 minutes",
+      "source_section": "RAPID EKG GOAL",
+      "question_type": "timing"
+    },
+    {
+      "id": 3,
+      "question": "What is the STEMI pager number?",
+      "answer": "917-827-9725",
+      "source_section": "Contact information",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What are the Cath Lab operating hours?",
+      "answer": "7AM – 10PM",
+      "source_section": "CATH LAB hours",
+      "question_type": "timing"
+    },
+    {
+      "id": 5,
+      "question": "What is the Cath Lab extension number?",
+      "answer": "x40935",
+      "source_section": "CATH LAB contact",
+      "question_type": "contact"
+    },
+    {
+      "id": 6,
+      "question": "What medications are included in the STEMI pack?",
+      "answer": "ASA 324mg PO, Brillanta 180mg PO, Crestor 80mg PO, and Heparin 4000 units IVP",
+      "source_section": "STEMI pack contents",
+      "question_type": "medication"
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between CODE STEMI and STEMI ALERT?",
+      "answer": "CODE STEMI: ER MD activates cath lab IMMEDIATELY. STEMI ALERT: MD reviews EKG first before deciding on activation.",
+      "source_section": "Pre-Notification section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 8,
+      "question": "What happens when a walk-in patient arrives with signs/symptoms of MI?",
+      "answer": "EKG to be ordered at triage and completed in less than 10 minutes, then EKG reviewed by MD",
+      "source_section": "Walk-In Patient procedure",
+      "question_type": "workflow"
+    },
+    {
+      "id": 9,
+      "question": "What are the EKG criteria age ranges for STEMI evaluation?",
+      "answer": "Ages 22-50: chest pain or shortness of breath. Ages 50+: chest pain, shortness of breath, or upper abdominal pain",
+      "source_section": "EKG criteria",
+      "question_type": "criteria"
+    },
+    {
+      "id": 10,
+      "question": "Who activates the Cath Lab for CODE STEMI?",
+      "answer": "RESUS resident or attending",
+      "source_section": "CODE STEMI procedure",
+      "question_type": "workflow"
+    },
+    {
+      "id": 11,
+      "question": "Who transports the STEMI patient to Cath Lab?",
+      "answer": "Cardiac Fellow or IR Fellow transports patient, with RN accompanying to provide handoff while patient is on monitor",
+      "source_section": "CODE STEMI transport",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What should be upgraded to RESUS for STEMI patients?",
+      "answer": "All STEMI patients should be upgraded to RESUS",
+      "source_section": "UPGRADE TO RESUS",
+      "question_type": "workflow"
+    }
+  ]
+}

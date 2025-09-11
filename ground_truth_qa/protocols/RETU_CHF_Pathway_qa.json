@@ -1,0 +1,92 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for CHF patients?",
+    "answer": "Required testing includes: ECG, CXR, and room air pulse oximetry.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What CHF patients are not appropriate for RETU?",
+    "answer": "Not appropriate for RETU: patients requiring NIPPV or IV NTG, associated cardiac ischemia, anasarca, pulmonary edema, or acute renal failure.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What should be the examination focus for CHF patients in RETU?",
+    "answer": "Examination focus should be: Cardiac, Pulmonary, and Vascular systems.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What initial testing should be performed for CHF patients in RETU?",
+    "answer": "Initial testing includes: Labs - CBC, Chem 7, troponin, BNP (others as clinically indicated); Imaging - as clinically indicated.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for CHF patients in RETU?",
+    "answer": "Monitoring includes: continuous telemetry monitoring, serial troponins, strict ins and outs, and daily weights.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the high-risk features for CHF patients?",
+    "answer": "High-risk features include: >1 hospitalization in past year, elevated troponin, worsening renal failure, and ventricular tachy-arrhythmia.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should Heart Failure Team consultation be obtained?",
+    "answer": "Heart Failure Team consultation should be obtained as indicated by presence of high-risk features.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should an echocardiogram be considered for CHF patients?",
+    "answer": "Consider TTE (transthoracic echocardiogram) if there is no echo within the past 6 months.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What is the Lasix dosing for CHF patients in RETU?",
+    "answer": "Lasix 80mg Q8 if patient is hypertensive.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "dosage"
+  },
+  {
+    "question": "What medications should be considered for volume and loading conditions in CHF?",
+    "answer": "Consider: Lasix 80mg Q8 (if patient hypertensive), NTG, and consider ACE/ARB.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "How should nitroglycerin be delivered for CHF patients?",
+    "answer": "Nitroglycerin delivery: sublingual for acute worsening, paste if remains hypertensive.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What timeframe determines readiness for discharge in CHF patients?",
+    "answer": "Assess if patient is ready for discharge within 24 hours. If not, admit as inpatient.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for CHF patients?",
+    "answer": "Discharge criteria include: symptoms significantly improved, associated serious process excluded, and acceptable pulse oximetry.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the admission criteria for CHF patients?",
+    "answer": "Admission criteria include: symptoms failed to significantly improve, associated serious process identified, or desaturation with exertion or lying flat.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What consultation pathway should be followed if high-risk features are present?",
+    "answer": "If high-risk features are present, obtain Heart Failure consult. Then assess if echo is within past 6 months - if not, consider TTE.",
+    "source": "RETU CHF Pathway.pdf",
+    "category": "protocol"
+  }
+]

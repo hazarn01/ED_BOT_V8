@@ -1,0 +1,47 @@
+{
+  "document_name": "ED to Cardiology Admission Workflow.pdf",
+  "document_type": "reference",
+  "total_pairs": 5,
+  "qa_pairs": [
+    {
+      "id": "card_wf_001",
+      "question": "What are the specific steps to admit a patient to Cardiology when they have a Sinai subspecialist cardiologist?",
+      "answer": "When a patient has a Sinai subspecialist cardiologist: 1) Confirm Attending Name & Teaching vs ADS, 2) Open Admit to NON-IP Medicine Order, 3) Admit to Cardiology Medicine, 4) MAPA Triages ADS vs Teaching, 5) Give verbal handoff to inpatient MD/PA/NP when called. The patient must either name a cardiologist on the provided list or have an outpatient note from them (IP consults and cath interventions do not count).",
+      "source_file": "ED to Cardiology Admission Workflow.pdf",
+      "complexity": "medium",
+      "category": "workflow"
+    },
+    {
+      "id": "card_wf_002", 
+      "question": "What phone numbers should be used for Electrophysiology (EP) and Interventional Cardiology (IC) consultations?",
+      "answer": "For Electrophysiology (EP): Call Fellow at 646-477-6969. For Interventional Cardiology (IC): Page IC fellow at 0289. For CHF/VAD/Transplant cases: Call Attending at 347-758-2973. For Dr. Fuster cases: Call Fuster Fellow at 646-438-3814.",
+      "source_file": "ED to Cardiology Admission Workflow.pdf",
+      "complexity": "low",
+      "category": "contact"
+    },
+    {
+      "id": "card_wf_003",
+      "question": "What documentation is required when admitting a patient to Cardiology Medicine?",
+      "answer": "Required documentation includes: Write .EDADMIT note in Updates for admissions triage summary. MAPA will triage to Cardiology (ADS or Teaching). Provider must give verbal handoff to inpatient MD/PA/NP when called. The admit order should be 'Admit to Cardiology Medicine'.",
+      "source_file": "ED to Cardiology Admission Workflow.pdf", 
+      "complexity": "medium",
+      "category": "documentation"
+    },
+    {
+      "id": "card_wf_004",
+      "question": "What conditions allow a patient to be admitted to Medicine instead of Cardiology?",
+      "answer": "Patients can be admitted to Medicine for: non-cardiac volume overload, mild demand ischemia, atrial fibrillation with rapid ventricular response concurrent with medical illness, shortness of breath/dyspnea not otherwise specified, and mild congestive heart failure unable to go to observation. If the admission diagnosis is unrelated to the specialty area, follow MAPA Triage Admission instead.",
+      "source_file": "ED to Cardiology Admission Workflow.pdf",
+      "complexity": "medium", 
+      "category": "criteria"
+    },
+    {
+      "id": "card_wf_005",
+      "question": "What is the STEMI activation contact information and what level of care options exist for Cardiology patients?",
+      "answer": "STEMI Activation: Weekday/Weekend: Back-up page 917-827-9725, Night/Weekend: Page 917-827-9725, CCU Consult: x47222 or x0146. Important note: There is NO STEPDOWN level of care for Cardiology. Patients can ONLY be admitted to Floor (ADS or Teaching) or CCU.",
+      "source_file": "ED to Cardiology Admission Workflow.pdf",
+      "complexity": "medium",
+      "category": "contact"
+    }
+  ]
+}

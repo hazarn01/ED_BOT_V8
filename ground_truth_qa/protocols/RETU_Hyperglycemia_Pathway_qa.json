@@ -1,0 +1,67 @@
+{
+  "document_name": "RETU Hyperglycemia Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What comprehensive testing is required prior to RETU admission for hyperglycemia patients?",
+      "answer": "Required testing includes: EKG, CBC, Chem 7, GEM, POC glucose, UA, CXR, and pregnancy test in females of childbearing age. This comprehensive workup helps identify complications and precipitating causes.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What are the specific criteria that exclude hyperglycemia patients from RETU admission?",
+      "answer": "Patients should not be admitted to RETU if they have hemodynamic instability (hypoxia, bradycardia, tachycardia, tachypnea), altered mental status, suspected DKA (pH <7.3, AG >15, CO2 <18, +urine ketones), suspected HHS (BG >600 with neurological symptoms), unknown precipitating cause, social problems preventing outpatient management, or expected observation time <6 hours.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "When is endocrine consultation mandatory for hyperglycemia patients in RETU?",
+      "answer": "Endocrine consultation is mandatory for all type 1 diabetic patients and all pregnant patients with hyperglycemia. These populations require specialized management due to higher complexity and risk.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "consultation_criteria"
+    },
+    {
+      "question": "What is the HgbA1c testing requirement for hyperglycemia patients?",
+      "answer": "HgbA1c should be ordered for all new onset diabetic patients or patients who have not had an HgbA1c within the last 3 months. This provides important information about glycemic control over the preceding 2-3 months.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What is the glucose monitoring protocol for hyperglycemia patients in RETU?",
+      "answer": "Check POC glucose every 2 hours throughout the RETU stay. Use Lispro sliding scale via the Diabetic Agent orderset for glucose management. Target glucose range is 80-300mg/dL for clinical improvement.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What are the fluid management guidelines for hyperglycemia patients?",
+      "answer": "Provide IV hydration with normal saline at 150-250cc/hr or bolus as needed. Monitor fluid status closely to avoid fluid overload while ensuring adequate hydration for glucose management.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What examination systems should be prioritized for hyperglycemia patients?",
+      "answer": "Examination focus should emphasize neurological and infectious systems. This helps identify complications like altered mental status or precipitating infections that may have triggered hyperglycemia.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What are the specific discharge criteria for hyperglycemia patients from RETU?",
+      "answer": "Patients can be discharged when they have stable vital signs with blood glucose <300mg/dL, resolution of symptoms, successful identification and/or treatment of precipitating cause, tolerating PO intake, and appropriate home care and follow-up plan established.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "discharge_criteria"
+    },
+    {
+      "question": "What conditions would necessitate hospital admission for hyperglycemia patients?",
+      "answer": "Hospital admission is required for deterioration of condition, unstable vital signs, signs of DKA with widening anion gap/acidosis, inability to tolerate PO intake, or unsafe home environment with inability to carry out diabetes management plan.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What discharge education and follow-up requirements exist for hyperglycemia patients?",
+      "answer": "Discharge includes insulin teaching by RETU nurse (as indicated), medication reconciliation, establishing follow-up care, and considering social work for visiting nurse services to teach diabetes management at home.",
+      "source": "RETU Hyperglycemia Pathway.pdf",
+      "category": "discharge_criteria"
+    }
+  ]
+}

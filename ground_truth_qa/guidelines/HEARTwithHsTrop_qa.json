@@ -1,0 +1,67 @@
+{
+  "document_info": {
+    "title": "Use of the HEART Pathway with High Sensitivity Cardiac Troponins: A Secondary Analysis",
+    "document_type": "guideline",
+    "complexity": "medium",
+    "source_file": "HEARTwithHsTrop.pdf",
+    "topic": "Cardiac risk assessment and troponin interpretation"
+  },
+  "qa_pairs": [
+    {
+      "id": "heart_001",
+      "question": "What HEART Score range with negative troponins qualifies a patient as low-risk for early discharge using the HEART Pathway?",
+      "answer": "A HEART Score of 0-3 with normal serial troponin measures at 0 and 3 hours qualifies a patient as low-risk for early discharge. This combination achieves >99% sensitivity for major adverse cardiac events (MACE) at 30 days and allows for safe early discharge from the ED without stress testing or coronary angiography.",
+      "category": "Risk Stratification",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heart_002", 
+      "question": "How do high-sensitivity cardiac troponin assays (hs-cTn) compare to contemporary troponin assays in terms of sensitivity and specificity for myocardial infarction detection?",
+      "answer": "High-sensitivity troponin assays are more sensitive for early detection and rule out of MI than contemporary troponin assays, but this improved sensitivity comes at the cost of decreased specificity. hs-cTn assays detect more patients with non-ACS conditions who have troponin elevations that would be missed by contemporary assays, leading to potential diagnostic and therapeutic dilemmas.",
+      "category": "Diagnostic Testing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heart_003",
+      "question": "What are the performance characteristics of the HEART Pathway when using high-sensitivity troponin I (hs-cTnI) compared to contemporary troponin I?",
+      "answer": "The HEART Pathway using serial contemporary cTnI or single 3-hour hs-cTnI showed identical test characteristics: 100% sensitivity (95% CI: 72-100%), 49% specificity (95% CI: 40-58%), 100% NPV (95% CI: 94-100%), and 45% early discharge rate (95% CI: 37-54%). Both approaches identified the same 60/133 patients (45.1%) as low-risk with no MACE events at 30 days.",
+      "category": "Risk Stratification", 
+      "difficulty": "medium"
+    },
+    {
+      "id": "heart_004",
+      "question": "What happened when high-sensitivity troponin T (hs-cTnT) was used with the HEART Pathway, and how did it differ from hs-cTnI results?",
+      "answer": "The HEART Pathway using hs-cTnT missed one MACE event (myocardial infarction), resulting in 91% sensitivity (95% CI: 59-100%), 48% specificity (95% CI: 39-57%), 98% NPV (95% CI: 91-100%), and 45% early discharge rate. The missed case was a Type II NSTEMI in a patient with HEART score of 2 and undetectable hs-cTnT despite elevated conventional cTnI and hs-cTnI.",
+      "category": "Risk Stratification",
+      "difficulty": "high"
+    },
+    {
+      "id": "heart_005",
+      "question": "What are the gender-specific upper reference limits (URLs) used for high-sensitivity troponin assays in this study?",
+      "answer": "For hs-cTnI (Abbott): 34 ng/L for males and 16 ng/L for females. For hs-cTnT (Roche): 20 ng/L for males and 13 ng/L for females were used in the primary analysis. A sensitivity analysis also used different URLs of 15.5 ng/L for males and 9 ng/L for females for hs-cTnT. Any value above these gender-specific URLs was considered consistent with myocardial injury.",
+      "category": "Diagnostic Testing",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heart_006",
+      "question": "Why is it important to use high-sensitivity troponin assays within the context of an accelerated diagnostic pathway rather than alone?",
+      "answer": "Using hs-cTn assays alone yields poor sensitivity for 30-day MACE (60-65% in this study), mostly missing revascularization events without MI. When combined with the HEART Pathway clinical decision aid, sensitivity improves to >90%. This demonstrates that hs-cTn should be used within structured protocols that incorporate clinical history, ECG findings, and risk factors rather than as standalone biomarkers.",
+      "category": "Clinical Decision Making",
+      "difficulty": "high"
+    },
+    {
+      "id": "heart_007",
+      "question": "What is the definition of Major Adverse Cardiac Events (MACE) used in the HEART Pathway studies?",
+      "answer": "MACE is defined as the composite of death, myocardial infarction (MI), or coronary revascularization within 30 days of presentation. MI is defined using the Universal Definition: gradual rise of troponin above the URL with gradual fall plus ischemic symptoms, new pathologic Q waves, acute ischemic ECG changes, or new regional wall motion abnormalities. Coronary revascularization includes bypass grafting, stent placement, or other percutaneous interventions.",
+      "category": "Outcome Measures",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heart_008",
+      "question": "What clinical implications does this study have for emergency departments considering implementation of high-sensitivity troponin assays with the HEART Pathway?",
+      "answer": "The study suggests that the HEART Pathway can be implemented without modification whether using contemporary cTnI or hs-cTnI assays, maintaining >99% sensitivity for MACE while achieving ~45% early discharge rates. However, hs-cTnT may have slightly lower sensitivity. The findings support that lack of hs-cTn availability should not significantly hamper chest pain risk stratification when using structured pathways like HEART, and facilities can transition to hs-cTn without protocol changes.",
+      "category": "Clinical Implementation",
+      "difficulty": "high"
+    }
+  ]
+}

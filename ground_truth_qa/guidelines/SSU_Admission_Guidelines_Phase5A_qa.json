@@ -1,0 +1,60 @@
+{
+  "document_name": "SSU Admission Guidelines 12-10-2018.pdf",
+  "document_type": "guideline",
+  "qa_pairs": [
+    {
+      "question": "What are the nine main diagnostic categories considered appropriate for Pediatric Short Stay Unit admission?",
+      "answer": "1) Respiratory illnesses (asthma, bronchiolitis, croup, pneumonia), 2) Dehydration, 3) Skin and soft tissue infections (cellulitis, abscess s/p PED drainage), 4) Anaphylaxis, 5) Febrile infants <56 days old, 6) Urinary tract infection/pyelonephritis, 7) Head trauma (closed head injury, concussion), 8) Hyperbilirubinemia, 9) Toxic ingestion, toxic exposures and drug overdoses.",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "What are the admission and exclusion criteria for respiratory illnesses in the SSU?",
+      "answer": "Admission: >3 months old, not requiring nebulized therapy more frequently than every 90 min, likely to transition to PO medications in 24h, does not have more than two exclusion symptoms. Exclusions: suspicion for airway foreign body/epiglottitis/tracheitis/deep neck space infection, received >2 epinephrine IM doses or >2 racemic epinephrine treatments in 2h or terbutaline SC, significant comorbidities.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "What respiratory symptoms would exclude a patient from SSU admission?",
+      "answer": "Persistent hypoxia, persistent tachypnea/retractions/nasal flaring, pleural effusion on imaging (CXR not mandatory), or requiring IV antibiotics or rehydration therapy. Having more than two of these symptoms excludes SSU admission.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "What are the criteria for dehydration patients to be admitted to the SSU?",
+      "answer": "Admission: >3 months old, inability to maintain hydration by PO intake alone, hemodynamically stable throughout PED course, parents able to care for child upon discharge. Exclusions: significant metabolic derangements, requires >40cc/kg isotonic fluid resuscitation, suspicion for surgical condition, significant comorbidity, or concurrently has acute respiratory condition, UTI, or head trauma.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "Which anatomical locations of skin and soft tissue infections exclude SSU admission?",
+      "answer": "Infections involving the neck, genital/perineum/perianal area, trunk, or joints are excluded from SSU admission due to higher complexity requiring inpatient management.",
+      "complexity": "medium",
+      "source_page": 2
+    },
+    {
+      "question": "What are the admission and exclusion criteria for anaphylaxis in the SSU?",
+      "answer": "Admission: following initial management, asymptomatic for 2 hours in PED, likely to be discharged in 24 hours, parents with ability to obtain maintenance medications. Exclusions: requires >2 doses of epinephrine in PED, primary reaction involves upper airway or hypotension, persistent hypoxia, or significant comorbidities.",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "What laboratory criteria must be met for febrile infants <56 days to be admitted to SSU?",
+      "answer": "CBC WBC >5K and <15K, absolute bands <1000, Immature to Total neutrophil ratio (I/T) <0.2, UA <10 WBC/hpf with negative nitrites/LE. If done: CSF WBC <8 with no pleocytosis after RBC correction, stool leukocytes <5 WBC/hpf, normal CXR.",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "What conditions exclude febrile infants from SSU admission?",
+      "answer": "Ill appearance/concern for SBI, <36 week GA, significant comorbidity, concern for HSV infection, condition requiring surgical intervention, requiring >20cc/kg fluid resuscitation, or persistent supplemental oxygen requirement.",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "What are the key exclusion criteria for head trauma patients in the SSU?",
+      "answer": "Presents with seizure (not contact), persistent visual deficits, other focal neurological deficits, concern for non-accidental trauma, or significant comorbidities (bleeding disorder, osteogenesis imperfecta).",
+      "complexity": "high",
+      "source_page": 3
+    }
+  ]
+}

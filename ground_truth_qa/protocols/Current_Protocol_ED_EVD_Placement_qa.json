@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the medical conditions that typically require emergent EVD placement in the ED?",
+    "answer": "Acute hydrocephalus and intraventricular hemorrhage (IVH) are life-threatening emergencies requiring EVD placement. Specific conditions include: Aneurysmal Subarachnoid Hemorrhage (aSAH), intracerebral hemorrhage (ICH), and acute ischemic stroke affecting the posterior fossa. These rapidly progressive processes may precipitate hydrocephalus, leading to intracranial hypertension and cerebral herniation. EVD placement allows diversion of cerebrospinal fluid outside the cranium and rapidly lowers elevated ICP.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "Who is qualified to perform EVD placement in the ED and what are the training requirements?",
+    "answer": "The physician performing EVD procedures will most often be a resident physician from neurosurgery. Residents approved to place EVDs independently have been proctored and observed performing a minimum number of procedures by neurosurgery faculty. Under no circumstance should a medical student or resident who has not completed the required number of proctored EVDs be allowed to insert an EVD in a patient located in the resuscitation area.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What are the essential pre-procedure requirements for EVD placement in the ED?",
+    "answer": "Essential pre-procedure requirements: 1) EVDs must only be placed with patient in the RESUS AREA of the ED. 2) Neurosurgery resident attempts to obtain informed consent from next of kin/surrogate, or uses two-physician consent in emergency. 3) TWO IVs must be in place prior to procedure start. 4) Pre-procedural huddle with at least bedside nurse, neurosurgery resident, and ED attending. 5) All staff in resus bay must wear mask and hat. 6) Time-out performed prior to start. 7) Pre-procedural antibiotics given per neurosurgery order.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What are the key elements that must be discussed in the pre-procedure huddle for EVD placement?",
+    "answer": "Pre-procedure huddle must cover: AIRWAY CONTROL - decide if intubation needed (ED attending makes final decision). SEDATION - understand sedation plan and dosing (Versed, Ativan, Propofol, Precedex), may require concomitant vasopressors. ANALGESIA - plan for pain control (Fentanyl or morphine in addition to, not substituted for, sedatives). POSITIONING & ROOM SETUP - bed setup, restraints, monitors, tables for equipment. INTRACRANIAL PRESSURE CONTROL - discuss mannitol and temporary hyperventilation. HEMODYNAMIC MANAGEMENT - establish BP goals and have drugs ready for BP control.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What are the specific blood pressure management goals for EVD patients with subarachnoid hemorrhage?",
+    "answer": "For subarachnoid hemorrhage patients, typical BP goals prioritize maintaining SBP < 140mmHg to reduce potential for aneurysm re-rupture, while keeping MAP > 65 for global perfusion. Drugs for raising BP (phenylephrine) or lowering BP (Nicardipine, Clevidipine) should be immediately available PRIOR to procedure start. Placement of an arterial line for close blood pressure monitoring is strongly recommended prior to beginning the procedure.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What monitoring equipment and vital sign parameters are required during EVD placement?",
+    "answer": "Required monitoring includes: heart rate, BP, and pulse oximetry monitoring throughout procedure, plus End-Tidal CO2 monitoring if patient not already intubated. Patient should be detached from wall monitor and placed on portable monitor to minimize wires at head of bed. During procedure: BP at least every 3 minutes if no arterial line, Heart Rate, SpO2, ETCO2 continuously. Recommend portable monitor to minimize contamination of procedure area.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What are the specific roles and responsibilities of ED staff during EVD placement?",
+    "answer": "ED NURSE responsibilities: Check vitals regularly (BP q3min if no arterial line), monitor HR, SpO2, ETCO2 continuously, administer medications ordered by ED attending or resident. ED PHYSICIAN responsibilities: Ensure airway stability, manage ventilation status, keep hemodynamic variables within established parameters, order sedative/analgesic/hemodynamically active medications. Either ED resus attending or ED resident must be present for the entirety of the EVD procedure.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What are the immediate post-procedure steps for EVD management?",
+    "answer": "Immediate post-procedure steps: 1) EVD catheter attached to Drain Apparatus. 2) In most cases, EVD set at 20cmH2O above the tragus of the ear. 3) Drain should always be clamped during patient transport or turning. 4) Post-procedure CT should always be ordered. 5) Post-procedure huddle between neurosurgery resident, ED physician, and ED nurse to discuss ongoing care.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What topics must be covered in the post-procedure huddle?",
+    "answer": "Post-procedure huddle must discuss: ongoing BP goals, EVD level and drainage plan, necessity of additional treatment for elevated intracranial pressure, need for specialized neuro-imaging (CTA, MRI, etc), surgical or interventional treatment plan for primary cause of hemorrhage (angiography vs Operating room vs NSICU admission). This huddle includes the neurosurgery resident, ED physician, and ED nurse.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What sedation and analgesia protocols are recommended for EVD placement?",
+    "answer": "With few exceptions, all patients undergoing EVD placement should receive at least some sedative medication (Versed, Ativan, Propofol, Precedex), even if this requires concomitant administration of vasopressors to maintain goal blood pressures. For analgesia, Fentanyl or morphine should generally be used in addition to sedative use and not substituted as a sedative. All physicians and nurses must understand the sedation and analgesia plan and drug dosing expected prior to, during, and after the procedure.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What nursing training and support is available for ED nurses assisting with EVD placement?",
+    "answer": "Nurses assisting in EVD placement should have undergone training in EVD drainage apparatus management provided by the MSH-NSICU Nursing Supervisor (Ms Elka Riley - elka.riley@mountsinai.org). If emergent EVD placement occurs in ED, a NSICU-nurse may be called to assist ED nurses in EVD drainage apparatus management or provide just-in-time training. However, due to NSICU's busy nature and personnel needs, a NSICU nurse cannot be guaranteed to be available under all circumstances.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "Current Protocol for ED EVD placement"
+  },
+  {
+    "question": "What intracranial pressure management strategies should be considered before and during EVD placement?",
+    "answer": "For elevated intracranial pressure management: In addition to adequate sedation and pain control, team members should discuss use of mannitol and temporary hyperventilation PRIOR to the EVD procedure. Most EVD patients will have elevated intracranial pressure, so these interventions should be planned and available. The team should establish protocols for managing ICP elevation during the procedure as part of the pre-procedure huddle discussion.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Current Protocol for ED EVD placement"
+  }
+]

@@ -1,0 +1,187 @@
+# Prometheus configuration for EDBotv8 medical AI monitoring
+# Comprehensive monitoring with medical safety focus
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+  external_labels:
+    cluster: 'edbot'
+    environment: '${ENVIRONMENT:-development}'
+
+rule_files:
+  - "alerts.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+scrape_configs:
+  # EDBotv8 API Application Metrics
+  - job_name: 'edbot-api'
+    static_configs:
+      - targets: ['api:8001']
+    scrape_interval: 10s
+    metrics_path: '/metrics'
+    params:
+      format: ['prometheus']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-api'
+
+  # System metrics from node_exporter
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node_exporter:9100']
+    scrape_interval: 30s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-system'
+
+  # PostgreSQL database metrics
+  - job_name: 'postgres-exporter'
+    static_configs:
+      - targets: ['postgres_exporter:9187']
+    scrape_interval: 30s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-postgres'
+
+  # Redis cache metrics
+  - job_name: 'redis-exporter'
+    static_configs:
+      - targets: ['redis_exporter:9121']
+    scrape_interval: 30s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-redis'
+
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 30s
+
+  # AlertManager monitoring
+  - job_name: 'alertmanager'
+    static_configs:
+      - targets: ['alertmanager:9093']
+    scrape_interval: 30s
+
+  # Grafana monitoring
+  - job_name: 'grafana'
+    static_configs:
+      - targets: ['grafana:3000']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+
+  # Elasticsearch monitoring (if enabled)
+  - job_name: 'elasticsearch'
+    static_configs:
+      - targets: ['elasticsearch:9200']
+    scrape_interval: 30s
+    metrics_path: '/_prometheus/metrics'
+    honor_labels: true
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-elasticsearch'
+
+  # Ollama LLM backend (if enabled)
+  - job_name: 'ollama'
+    static_configs:
+      - targets: ['ollama:11434']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+    honor_labels: true
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-ollama'
+
+  # vLLM backend (if enabled)
+  - job_name: 'vllm'
+    static_configs:
+      - targets: ['llm:8000']
+    scrape_interval: 30s
+    metrics_path: '/metrics'
+    honor_labels: true
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        replacement: 'edbot-vllm'
+
+# Medical AI specific recording rules for performance optimization
+recording_rules:
+  - name: 'edbot_aggregations'
+    interval: 30s
+    rules:
+      # Medical specialty query rates
+      - record: edbot:medical_queries_rate5m
+        expr: rate(edbot_medical_queries_by_specialty[5m])
+        labels:
+          rule_type: medical_aggregation
+
+      # Overall system health score aggregation  
+      - record: edbot:system_health_score
+        expr: avg(edbot_system_health)
+        labels:
+          rule_type: system_aggregation
+
+      # Critical component availability
+      - record: edbot:critical_components_up
+        expr: avg by (component) (edbot_component_health{component=~"database|llm"})
+        labels:
+          rule_type: availability_aggregation
+
+      # Query response time percentiles by type
+      - record: edbot:query_duration_p95_5m
+        expr: histogram_quantile(0.95, rate(edbot_query_duration_seconds_bucket[5m]))
+        labels:
+          rule_type: performance_aggregation
+
+      # Safety alert rate
+      - record: edbot:safety_alert_rate5m
+        expr: rate(edbot_safety_alerts_total[5m])
+        labels:
+          rule_type: safety_aggregation
+
+      # Clinical confidence by area
+      - record: edbot:clinical_confidence_by_area
+        expr: avg by (clinical_area) (edbot_clinical_confidence)
+        labels:
+          rule_type: clinical_aggregation
+
+      # Cache effectiveness
+      - record: edbot:cache_hit_rate_avg
+        expr: avg by (query_type) (edbot_cache_hit_rate)
+        labels:
+          rule_type: cache_aggregation
+
+      # LLM backend performance
+      - record: edbot:llm_response_time_p95_5m
+        expr: histogram_quantile(0.95, rate(edbot_llm_duration_seconds_bucket[5m]))
+        labels:
+          rule_type: llm_aggregation
+
+      # Time-sensitive protocol performance
+      - record: edbot:time_sensitive_protocol_p95_5m
+        expr: histogram_quantile(0.95, rate(edbot_time_sensitive_response_seconds_bucket[5m]))
+        labels:
+          rule_type: protocol_aggregation
+
+      # Error rates by component
+      - record: edbot:error_rate_by_component
+        expr: |
+          (
+            rate(edbot_queries_total{status="error"}[5m]) /
+            rate(edbot_queries_total[5m])
+          ) or vector(0)
+        labels:
+          rule_type: error_aggregation

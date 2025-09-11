@@ -1,0 +1,39 @@
+{
+  "document_name": "Ectopic Pregnancy Guidelines_7_18_24",
+  "document_type": "guideline",
+  "complexity": "medium", 
+  "qa_pairs": [
+    {
+      "question": "What are the clinical criteria that should prompt evaluation for ectopic pregnancy?",
+      "answer": "Childbearing age female with any of the following: (1) abdominal/pelvic pain, (2) adnexal mass, (3) vaginal bleeding, (4) syncope, or (5) dizziness should be evaluated for ectopic pregnancy."
+    },
+    {
+      "question": "What defines a heterotopic pregnancy risk and when should it be considered?",
+      "answer": "Heterotopic pregnancy risk includes patients with a history of assisted reproductive fertility (including in vitro fertilization or ovulation induction agents). It should be considered even in patients with documented intrauterine pregnancy on ultrasound."
+    },
+    {
+      "question": "What defines a definitive intrauterine pregnancy (IUP) versus definitive ectopic pregnancy on ultrasound?",
+      "answer": "Definitive IUP is a gestational sac with yolk sac/fetal pole within the endometrial cavity. Definitive ectopic pregnancy is a gestational sac containing clearly defined yolk sac or fetal pole outside of endometrial cavity (including cornua)."
+    },
+    {
+      "question": "What are the criteria for methotrexate treatment of ectopic pregnancy?",
+      "answer": "All of the following must be present: (1) Stable vital signs, (2) Unruptured mass < 3.5 cm, (3) Able to follow up in 48 hours, (4) Quantitative βHCG < 5000, and (5) No contraindications to methotrexate."
+    },
+    {
+      "question": "What is the methotrexate dosing for ectopic pregnancy treatment?",
+      "answer": "Methotrexate dosing is 50 mg/m² intramuscularly (IM) for ectopic pregnancy treatment."
+    },
+    {
+      "question": "What RhoGAM dosing should be given for vaginal bleeding in Rh-negative patients?",
+      "answer": "RhoGAM should be given as 50 mcg IM if < 12 weeks gestation, or 300 mcg IM if > 12 weeks gestation for Rh-negative patients with vaginal bleeding."
+    },
+    {
+      "question": "What are the high-risk features that require OB/GYN consultation?",
+      "answer": "High-risk features include: history of tubal ligation or tubal surgery, PID, previous ectopic pregnancy, technically inadequate ultrasound, adnexal masses, moderate to large amount of free fluid in the cul de sac, and βHCG > 3500."
+    },
+    {
+      "question": "What are the contraindications to methotrexate treatment?",
+      "answer": "Contraindications include: hemodynamically unstable, intrauterine/heterotopic desired pregnancy, breastfeeding, immunodeficiency or immunosuppression, inability to follow up, alcoholism, pre-existing liver disease or dysfunction, hypersensitivity to methotrexate, active pulmonary disease, peptic ulcer disease, renal dysfunction, severe anemia, leukopenia, thrombocytopenia, and ectopic >3.5cm (relative contraindication)."
+    }
+  ]
+}

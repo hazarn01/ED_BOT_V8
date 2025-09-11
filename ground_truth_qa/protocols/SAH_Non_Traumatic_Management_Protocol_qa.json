@@ -1,0 +1,92 @@
+{
+  "document_name": "SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+  "document_type": "protocol",
+  "domain": "emergency_medicine",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": "sah_nt_001",
+      "question": "What is the preferred blood pressure target for subarachnoid hemorrhage patients and which antihypertensive agents should be used?",
+      "answer": "For SAH patients, maintain SBP ≤140 mmHg using Nicardipine drip (preferred), Clevidipine drip, or Labetalol drip. Avoid nitroprusside as this can raise ICP. Also maintain SBP ≥90 mmHg with neosynephrine if needed. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "critical_care",
+      "subcategory": "hemodynamic_management"
+    },
+    {
+      "id": "sah_nt_002", 
+      "question": "What is the correct Nimodipine dosing protocol for SAH patients based on systolic blood pressure?",
+      "answer": "Nimodipine dosing for SAH: 60 mg PO q 4h for SBP≥140 mmHg, 30 mg PO q 4h for SBP 120-140 mmHg, hold for SBP ≤120 mmHg. If patient is NPO, place NGT to ensure administration. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "medications",
+      "subcategory": "calcium_channel_blockers"
+    },
+    {
+      "id": "sah_nt_003",
+      "question": "When should mannitol or hypertonic saline be administered in SAH patients and what are the correct doses?",
+      "answer": "Administer Mannitol 20% 1-1.5 g/kg bolus (100g if weight unknown) or 30cc 23% saline for suspected elevated intracranial pressure if patient is not following commands and/or CT is suggestive of elevated ICP. 23% saline must be pushed over 10-20 min via central line by MD. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "critical_care",
+      "subcategory": "intracranial_pressure"
+    },
+    {
+      "id": "sah_nt_004",
+      "question": "What are the critical contact numbers for SAH patient transfers and neurosurgical consultation?",
+      "answer": "TRANSFER HOTLINE: 1-800-TO-SINAI, Neuroemergencies Hotline: 1-800-748-6445, Neurocritical Care fellow: 42100, MSH Neuroradiology: 44261, MSH CT: 47412. Contact neurointensivist attending through these numbers for immediate consultation. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "communication",
+      "subcategory": "emergency_contacts"
+    },
+    {
+      "id": "sah_nt_005",
+      "question": "What initial laboratory and imaging studies are required for SAH evaluation in the ED?",
+      "answer": "Initial studies: Head CT, CBC, chem 7, PT/PTT/INR, LFTs, Troponin, type and hold, EKG, CXR. If high suspicion for SAH and HCT negative, LP should be performed. Make sure plain film or CD copy of HCT is transferred with patient. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "diagnostic_workup",
+      "subcategory": "initial_evaluation"
+    },
+    {
+      "id": "sah_nt_006",
+      "question": "What seizure prophylaxis should be given to SAH patients and what is the dosing?",
+      "answer": "Give Fosphenytoin (or phenytoin equivalent) 20 mg/kg IV load or Levetiracetam (Keppra) 1 g PO/IV. Continue phenytoin 300 mg IV qd after initial load, or consider switching from dilantin to Keppra 1000 mg IV BID if antiepileptics are continued. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "medications",
+      "subcategory": "antiepileptics"
+    },
+    {
+      "id": "sah_nt_007",
+      "question": "When should EVD placement be considered and what antibiotic prophylaxis is required?",
+      "answer": "Assess for emergent EVD for non-command following exam. If EVD placed, give Ancef 1 g prior to EVD insertion then D/C antibiotics (do not continue prophylactic antibiotics). If ready to D/C EVD, give Ancef 1 g IV prior to pulling EVD. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "procedures",
+      "subcategory": "neurosurgical"
+    },
+    {
+      "id": "sah_nt_008",
+      "question": "What is the management protocol for vasospasm in SAH patients?",
+      "answer": "For symptomatic vasospasm: Increase IVF or frequency of albumin dosing, ensure Ins ≥ Outs, trial of Phenylephrine or Norepinephrine to increase SBP by 20-30 mmHg, recheck exam in 20-30 min, titrate per exam to max BP 220/110 mmHg, hold nimodipine if patient receiving pressors. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "critical_care",
+      "subcategory": "vasospasm_management"
+    },
+    {
+      "id": "sah_nt_009",
+      "question": "What monitoring parameters are required for SAH patients on pressors?",
+      "answer": "Check daily EKG and troponin on pressors. Check TTE if not already done. If patient on pressors institute PICOO to follow cardiac output and index. Consider screening HCT and LP after EVD D/C'd to assess for elevated ICP. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "monitoring",
+      "subcategory": "cardiac_monitoring"
+    },
+    {
+      "id": "sah_nt_010",
+      "question": "When should CTA imaging be performed and what precautions are needed for contrast administration?",
+      "answer": "HCT baseline with follow up CTA should be ordered between day 5-8. MUST BE DONE AS SOON AS PATIENT IS STABILIZED. If Cr elevated >1.0 give Mucomyst 600 mg PO BID x 2d and HCO3 drip (3 amps NaHCO3 in 1 liter D5W at 1cc/kg/h for 1 hour prior to CT and 6 hours after CT). Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "imaging",
+      "subcategory": "contrast_protocols"
+    },
+    {
+      "id": "sah_nt_011",
+      "question": "What information is critical to communicate to the neurosurgery consultant for SAH patients?",
+      "answer": "Critical information for neurosurgery: HPI, age, date/time of SAH onset (or last time seen normal), h/o head trauma/seizure/syncope at onset, past history of stroke/MI/PVD/cocaine use, clinical exam location of SAH, presence of hydrocephalus/IVH/ICH, evidence of trauma, lab findings (Plt count, PT/PTT/INR), EKG findings. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "communication",
+      "subcategory": "consultation"
+    },
+    {
+      "id": "sah_nt_012",
+      "question": "What are the DVT prophylaxis and feeding protocols for SAH patients after aneurysm securing?",
+      "answer": "Order Lovenox 40 mg SQ to begin immediately after aneurysm coiling, continue compression boots if craniotomy was performed and start lovenox 40 SQ qd 48 hours after craniotomy. Start feeds according to feeding protocol. Assess for early PEG and/or trach as needed. Source: SAH (Non-Traumatic) Managment Procotol CSC-3.pdf",
+      "category": "prevention",
+      "subcategory": "thromboprophylaxis"
+    }
+  ]
+}

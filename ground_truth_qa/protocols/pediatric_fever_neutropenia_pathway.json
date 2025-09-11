@@ -1,0 +1,82 @@
+{
+  "document_name": "Pediatric Fever And Neutropenia Pathway",
+  "document_type": "Clinical Pathway",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/Pediatric Fever And Neutropenia Pathway.pdf",
+  "qa_pairs": [
+    {
+      "question": "What is the first step in evaluating a pediatric patient at risk for neutropenia presenting with fever?",
+      "answer": "Check vital signs and determine if the patient is VS ALERT. If YES, evaluate for possible sepsis. If NO, proceed with the neutropenia pathway assessment.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What key information should the RN obtain and communicate to the provider for neutropenia patients?",
+      "answer": "RN should obtain: History and PE (notify provider if history concerning for neutropenia), Central line and/or PIV access (blood cultures from every lumen of central line, periphery attempt), and communicate this information to the provider.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What laboratory studies should the provider order for febrile neutropenia patients?",
+      "answer": "Febrile neutropenia order set: CBC (with platelet & differential), CRP, CMP (need electrolytes & LFT's), blood cultures, antibiotics. Optional: VBG, IV fluids, antipyretics, other studies as indicated. Consult Pediatric Hematology/Oncology (pathway should not be delayed if response is delayed).",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What factors determine high-risk versus low-risk categorization for neutropenic patients?",
+      "answer": "HIGH RISK: PICC, Broviac line OR Recent** ANC <500 OR History of SCT, BMT, CART. LOW RISK: Port or no line AND No history of SCT, BMT, CART (if recent ANC >500).",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What antibiotic should be given to high-risk neutropenic patients?",
+      "answer": "High-risk patients should receive CEFEPIME as the initial antibiotic therapy.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What antibiotic should be given to low-risk neutropenic patients?",
+      "answer": "Low-risk patients should receive CEFTRIAXONE as the initial antibiotic therapy.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What blood culture requirements are specified for neutropenic patients?",
+      "answer": "Obtain 2 cultures: 1 peripheral culture & a culture from 1 lumen of the CVC. If unable to get peripheral culture, draw 1 culture from each lumen of CVC (usually 2 total cultures). Draw 1-3 mL of blood from lumen(s) of central line and send culture in pediatric bottle(s).",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What should be done if a patient has signs of shock or unstable vital signs?",
+      "answer": "If at any point patient appears ill, has signs of shock / unstable vital signs: PLACE ON SEPSIS PATHWAY. For <18 years old: STOP SEPSIS PEDIATRIC. For 18 years and above: ED ADULT SEPSIS. Add vancomycin and zosyn (or gentamicin) along with cefepime. Admit patient. Consider ICU consult.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What is the management for patients with ANC <500?",
+      "answer": "Continue or transition to cefepime (50 mg/kg [max 2g] IV q8h). ADMIT TO INPATIENT.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What is the management for well-appearing patients with ANC >500?",
+      "answer": "If still well-appearing: Administer ceftriaxone*** IF received cefepime in Step 3. May be DISCHARGED HOME with outpatient follow-up in 24 hrs if no other clinical concerns.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What are the weight-based dosing guidelines for cefepime?",
+      "answer": "Cefepime 1st Dose: >40 kg = 2g, 30-40 kg = 1.5g, 20-30 kg = 1g, 10-20 kg = 500 mg, <10 kg = 50mg/kg/dose.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What is the ceftriaxone dosing for pediatric patients?",
+      "answer": "Ceftriaxone dosing: 50 mg/kg IV/IM.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What do the abbreviations SCT, BMT, and CART stand for in this pathway?",
+      "answer": "SCT = Stem Cell Transplant, BMT = Bone Marrow Transplant, CART = Chimeric Antigen Receptor T-Cell Therapy.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "How is 'recent' defined in the context of ANC and transplant history?",
+      "answer": "Recent is defined as within 30 Days for ANC measurements and transplant procedures.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    },
+    {
+      "question": "What additional antibiotics should be considered for unstable patients?",
+      "answer": "For unstable patients or those with signs of shock, add vancomycin and zosyn (or gentamicin) along with cefepime.",
+      "source": "Pediatric Fever And Neutropenia Pathway"
+    }
+  ]
+}

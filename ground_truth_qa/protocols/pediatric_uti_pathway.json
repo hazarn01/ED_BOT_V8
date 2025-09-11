@@ -1,0 +1,47 @@
+{
+  "document_name": "Pediatric Urinary Tract Infection Pathway",
+  "document_type": "protocol",
+  "complexity": "high", 
+  "qa_pairs": [
+    {
+      "question": "What are the exclusion criteria that prevent a pediatric patient from following the standard UTI pathway?",
+      "answer": "Exclusion criteria include: <2 months old immunocompromised, pregnancy, IV antibiotics in last 2 weeks, receiving UTI prophylaxis, known suspected GU abnormality, prior GU surgery, presence of Foley catheter, history of chronic kidney disease, and suspected sepsis or meningitis. These patients require individualized management."
+    },
+    {
+      "question": "How do you differentiate between unlikely UTI, possible UTI, and probable UTI based on urinalysis findings?",
+      "answer": "Unlikely UTI: UA negative. Possible UTI: High clinical suspicion and/or persistent fevers without identified infectious source AND either elevated leukocyte esterase or positive UA AMO. Probable UTI: UA positive >5 WBC/hpf, +leukocyte esterase, +nitrite and/or AMO, culture growth of single bacteria (Gram: ≥50,000 CFU/mL in catheterized specimen or ≥100,000 CFU/mL clean catch), positive culture from bagged urine specimen cannot be used to diagnose UTI."
+    },
+    {
+      "question": "For a 15kg child with probable UTI requiring admission, what are the first-line IV antibiotic options and dosing?",
+      "answer": "For admitted patients with probable UTI, first-line IV antibiotics include: Aztreonam 30 mg/kg/dose IV q8h (max 1000 mg/dose) = 450mg q8h for 15kg patient, Cefazolin 34 mg/kg/dose IV q8h (max 1000 mg/dose) = 510mg q8h, or Cephalexin 50 mg/kg/dose IV q8h (max 1000 mg/dose) = 750mg q8h."
+    },
+    {
+      "question": "What specific criteria determine when a pediatric UTI patient should be admitted versus treated as outpatient?",
+      "answer": "Admission criteria include: inadequate concern for poor follow-up, high clinical suspicion for UTI in patient <3 months, and clinical deterioration. The pathway emphasizes that patients meeting admission criteria should follow the inpatient UTI pathway with IV antibiotics and closer monitoring."
+    },
+    {
+      "question": "For an 8kg infant with UTI and anaphylaxis to β-lactams, what is the appropriate antibiotic choice and dosing?",
+      "answer": "For β-lactam anaphylaxis, use Ciprofloxacin 10mg/kg/dose IV q12h (max 400mg/dose). For an 8kg infant, this would be 80mg IV every 12 hours. Alternatively, Levofloxacin 6 mg/kg IV q12h (max 375 mg/dose) = 48mg q12h for 8kg patient can be used."
+    },
+    {
+      "question": "What are the empiric antibiotic options for outpatient treatment of pediatric UTI and their dosing?",
+      "answer": "Outpatient empiric antibiotics include: Cephalexin 33 mg/kg/dose PO q8h (max 1000 mg/dose), Ciprofloxacin 20 mg/kg/dose PO q12h (max 750 mg/dose), TMP/SMX (5-10 mg/kg TMP component PO q12h max 320 mg/dose), Amoxicillin/clavulanate 45 mg/kg/dose PO q12h (max 875 mg/dose), and Ceftibuten 9 mg/kg/dose PO q24h (max 400 mg/dose)."
+    },
+    {
+      "question": "When should cephalosporin resistance be considered and what alternative should be used?",
+      "answer": "Cephalosporin resistance should be considered when there's inadequate clinical improvement after 48-72 hours of appropriate therapy. The pathway recommends consulting ID (Infectious Diseases) if cephalosporin resistance is suspected and considering alternative agents like TMP/SMX or fluoroquinolones based on culture sensitivities."
+    },
+    {
+      "question": "For a 20kg child with UTI, what is the appropriate Ceftazidime dosing and when might it be indicated?",
+      "answer": "Ceftazidime is dosed at 50 mg/kg/dose IV q8h (max 1000 mg/dose). For a 20kg patient, this would be 1000mg IV every 8 hours (reaching the maximum dose). Ceftazidime may be indicated for suspected Pseudomonas infections or when broader gram-negative coverage is needed based on local resistance patterns."
+    },
+    {
+      "question": "What are the discharge criteria and follow-up requirements for pediatric UTI patients?",
+      "answer": "Discharge criteria include: eating, drinking, voiding, and PO medications tolerated. Follow-up requirements are: PCP within 2-3 days for cystitis, antibiotics for 3 days for cystitis and 7-10 days for pyelonephritis. The pathway emphasizes ensuring adequate oral intake and medication tolerance before discharge."
+    },
+    {
+      "question": "How should urine collection method affect UTI diagnosis, and what cultures are acceptable for diagnosis?",
+      "answer": "For UTI diagnosis, clean catch specimens require ≥100,000 CFU/mL of single bacteria, while catheterized specimens require ≥50,000 CFU/mL. Importantly, positive culture from bagged urine specimens cannot be used to diagnose UTI due to high contamination rates. The pathway emphasizes obtaining appropriate specimens for accurate diagnosis."
+    }
+  ]
+}

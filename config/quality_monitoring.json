@@ -1,0 +1,27 @@
+{
+  "monitoring": {
+    "api_url": "http://localhost:8001/api/v1/query",
+    "check_interval": 300,
+    "quality_threshold": 80,
+    "failure_threshold": 3,
+    "alert_cooldown": 300,
+    "critical_queries": [
+      "what is the STEMI protocol",
+      "standard levophed dosing",
+      "pediatric epinephrine dose",
+      "sepsis lactate criteria",
+      "RETU chest pain pathway",
+      "hypoglycemia treatment"
+    ]
+  },
+  "alerting": {
+    "log_file": "/tmp/quality_monitor.log",
+    "alert_file": "/tmp/quality_alert.json",
+    "data_file": "/tmp/quality_monitoring_data.json"
+  },
+  "deployment": {
+    "service_name": "edbot-quality-monitor",
+    "log_retention_days": 7,
+    "data_retention_hours": 24
+  }
+}

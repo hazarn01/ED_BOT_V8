@@ -1,0 +1,98 @@
+{
+  "document_name": "Pediatric Asthma Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "total_qa_pairs": 10,
+  "qa_pairs": [
+    {
+      "id": "PAP_001",
+      "question": "What are the five components of the Pediatric Respiratory Assessment Measure (PRAM) and their scoring criteria?",
+      "answer": "The PRAM has 5 components: 1) Suprasternal Retractions (0=absent, 2=present), 2) Scalene Muscle Contraction (0=absent, 2=present), 3) Air Entry (0=normal, 1=decreased at base, 2=diffusely decreased, 3=absent/minimal), 4) Wheezing (0=absent, 1=expiratory only, 2=inspiratory and expiratory, 3=audible without stethoscope/minimal air entry), 5) Oxygen Saturation (0=≥95% RA and no O2, 1=92-94% RA and no O2, 3=<92% RA or on O2). Total score ranges 0-12.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 1,
+      "category": "criteria",
+      "subcategory": "severity_assessment"
+    },
+    {
+      "id": "PAP_002",
+      "question": "What is the albuterol dosing for a 20 kg child in the pediatric asthma pathway?",
+      "answer": "For a 20 kg child (15-25 kg weight range): 6 puffs MDI or 5 mg nebulized. For continuous albuterol via nebulizer, since the child is ≥20 kg, the dose would be 15 mg/hr. The dosing is weight-based: <15kg gets 4 puffs MDI/2.5mg neb, 15-25kg gets 6 puffs MDI/5mg neb, ≥25kg gets 8 puffs MDI/7.5mg neb.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "weight_based_bronchodilators"
+    },
+    {
+      "id": "PAP_003",
+      "question": "What is the dexamethasone dosing for a 12 kg pediatric patient, and how does it compare to prednisone equivalence?",
+      "answer": "For a 12 kg pediatric patient: Dexamethasone 0.6 mg/kg = 7.2 mg (oral/IM), with a maximum dose of 16 mg. Two days of dexamethasone is equivalent to 5 days of prednisone/prednisolone. This makes dexamethasone a convenient alternative with fewer doses required for the same therapeutic effect.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2,
+      "category": "dosage",
+      "subcategory": "corticosteroid_equivalence"
+    },
+    {
+      "id": "PAP_004",
+      "question": "What are the treatment protocols for PRAM scores 1-3, 4-7, and 8-12 in the initial ED assessment?",
+      "answer": "PRAM 1-3: Albuterol + ipratropium (max 3 doses back to back), consider corticosteroid. PRAM 4-7: Albuterol + ipratropium (max 3 doses back to back), corticosteroid. PRAM 8-12: Albuterol + ipratropium (3 doses back to back), continuous or q1H albuterol, corticosteroid, magnesium. Consider terbutaline, epinephrine, BiPAP/HFNC for severe cases.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "severity_based_treatment"
+    },
+    {
+      "id": "PAP_005",
+      "question": "What is the magnesium sulfate dosing for pediatric asthma and when should it be considered?",
+      "answer": "Magnesium sulfate dosing: 50-75 mg/kg (maximum 2g) given IV over 20 minutes. For example, a 25 kg child would receive 1.25-1.875g (using the max of 2g). Magnesium should be considered for PRAM 8-12 (severe asthma), patients requiring continuous albuterol, and as part of the escalation pathway for refractory cases.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2-3,
+      "category": "dosage",
+      "subcategory": "adjunct_therapy"
+    },
+    {
+      "id": "PAP_006",
+      "question": "What are the inclusion and exclusion criteria for the pediatric asthma pathway?",
+      "answer": "INCLUDE: Patients treated for asthma in ED, ≥2 years of age. EXCLUDE: Children <2 years, bronchiolitis, pneumonia, chronic lung disease, airway anomalies, history of arrhythmias or heart disease, immune disorder, sickle cell disease. These exclusions ensure the pathway is used only for appropriate asthma cases without complicating comorbidities.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2,
+      "category": "criteria",
+      "subcategory": "patient_selection"
+    },
+    {
+      "id": "PAP_007",
+      "question": "What is the terbutaline dosing protocol for pediatric patients with severe asthma?",
+      "answer": "Terbutaline SQ: <12y: 0.005-0.01 mg/kg/dose (max 0.4 mg/dose) q20 min x 3 doses; >12y: 0.25 mg/dose q20 min x 3 doses (max total 0.75mg). Terbutaline IV: Bolus 2-10mcg/kg over 10 min (if >50kg, max 5mcg/kg), followed by continuous 0.08-0.4mcg/kg/min, titrate every 30 min. For a 30 kg child: SQ dose would be 0.15-0.3 mg.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2-3,
+      "category": "dosage",
+      "subcategory": "beta_agonist_escalation"
+    },
+    {
+      "id": "PAP_008",
+      "question": "What are the disposition criteria after the ED Phase 1b reassessment in pediatric asthma?",
+      "answer": "After hourly reassessment x 2h minimum: PRAM 1-3 with O2 sat >92% on room air = Discharge with albuterol, consider corticosteroid. PRAM 4-7 = Admit to Floor. PRAM 8-12 = Admit to PICU. If patient requires continuous albuterol or q1H treatment, admit to PICU. If albuterol q2H, admit to floor. Consider BI Short Stay Unit for admissions anticipated <48h.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2,
+      "category": "protocol_steps",
+      "subcategory": "disposition_criteria"
+    },
+    {
+      "id": "PAP_009",
+      "question": "What are the criteria for ED Observation admission and the progression through observation phases?",
+      "answer": "ED Observation criteria: ED arrival after 7PM, PRAM 4-7 after ED Phase 1a. Exclusions: O2 requirement or clinically unlikely to improve by next morning. Progression: Phase 2 (albuterol q2h) → Phase 3 (albuterol q3h) → Phase 4 (albuterol q4h) → Discharge. Each phase requires PRAM 1-3 after one treatment to advance. PRAM 8-12 triggers escalation/admission. Consider admission if on ED Observation >9:00 AM.",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 3,
+      "category": "protocol_steps",
+      "subcategory": "observation_protocols"
+    },
+    {
+      "id": "PAP_010",
+      "question": "What are the key components of the discharge checklist for pediatric asthma patients?",
+      "answer": "Discharge checklist includes: 1) Nebulizer/MDI frequency doable at home, 2) Consider step-up therapy, 3) Prescriptions, 4) PMD and Pulmonology appointments with contact numbers, 5) Place asthma action plan in AVS (.pedsasthmaplaneng or .pedsasthmaplanspan), 6) Consider asthma MAF, 7) Consider AIRnyc referral (718-577-2794) for home-based education, 8) Tobacco smoke exposure counseling with NY State Quitline (1-800-697-8487).",
+      "source": "Pediatric Asthma Pathway.pdf",
+      "page": 2-3,
+      "category": "protocol_steps",
+      "subcategory": "discharge_planning"
+    }
+  ]
+}

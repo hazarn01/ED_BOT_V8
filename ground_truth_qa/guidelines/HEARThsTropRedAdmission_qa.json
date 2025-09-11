@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What was the primary outcome and result of the 1-hour high-sensitivity troponin and HEART score strategy study?",
+    "answer": "The primary outcome was admission rate reduction. The study showed a significant decrease in admission rate from 59% to 33% (risk ratio 0.55, 95% CI 0.48 to 0.63; odds ratio 0.33, 95% CI 0.26 to 0.42; adjusted odds ratio 0.33, 95% CI 0.25 to 0.42). This represents a 26 percentage point reduction in hospital admissions when using the combined 1-hour hs-cTn algorithm and HEART score strategy.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What are the criteria for ruling out acute coronary syndrome using the 1-hour hs-cTn and HEART score algorithm?",
+    "answer": "Patients are considered ruled out for acute coronary syndrome if they have: 1) A non-elevated baseline high-sensitivity cardiac troponin level (within normal reference range), 2) A 1-hour change (Δ value) in hs-cTnT <3 ng/L OR hs-cTnI <6 ng/L, AND 3) A HEART score ≤3. All three criteria must be met to safely rule out acute coronary syndrome and consider discharge from the emergency department.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What were the secondary outcomes and their results in the HEART score study?",
+    "answer": "Secondary outcomes showed significant improvements: Median hospital stay was reduced from 23.2 to 4.7 hours (95% CI of difference -20.4 to -11.4 hours). Median healthcare costs decreased from $1,748 to $1,079 (95% CI of difference -$953 to -$391). The number of clinical events was very low in both groups, with excellent safety profile maintained including very low rates of myocardial infarction after discharge, unplanned revascularizations, and deaths.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What was the adherence rate to the new diagnostic algorithm and how was it measured?",
+    "answer": "Adherence to the new decision algorithm during phase 2 was 87%. Of 308 patients determined as being at low risk (those with hs-cTn within normal range, 1-hour change <3 ng/L for hs-cTnT or <6 ng/L for hs-cTnI, and HEART score ≤3), 269 were discharged from the ED as recommended. This high adherence rate demonstrates good clinical acceptance and implementation of the algorithm.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What high-sensitivity troponin assays and cutoff values were used in the study?",
+    "answer": "The study used different hs-cTn assays: Five centers used Elecsys hs-cTnT assay (Roche) with limit of detection 5 ng/L and 99th percentile 14 ng/L. One center used Architect hs-cTnI assay (Abbott) with limit of detection 1.2-1.9 ng/L and sex-specific 99th percentiles of 34.2 ng/L (men) and 15.6 ng/L (women). Normal reference range was defined as hs-cTnT ≤14 ng/L, hs-cTnI ≤35 ng/L (men), or hs-cTnI ≤16 ng/L (women).",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What were the key patient safety outcomes regarding missed diagnoses and adverse events?",
+    "answer": "Safety outcomes were excellent: No deaths occurred among patients discharged from the ED in either phase. Myocardial infarction after discharge occurred in 3 patients (0.5%) in each phase. Among patients with baseline troponin within normal range who were discharged from ED, 2/232 patients (0.9%) in phase 1 and 2/363 patients (0.6%) in phase 2 had subsequent MI within 30 days. Notably, both phase 2 patients who had subsequent MI had elevated Δ troponin levels and HEART score >3 (were not deemed low-risk by protocol).",
+    "query_type": "CRITERIA_CHECK",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "How did the implementation strategy affect resource utilization and diagnostic testing?",
+    "answer": "The strategy significantly reduced resource utilization: There were fewer inhospital procedures including chest radiography (10% vs 5%), exercise ECG tests (18% vs 8%), and coronary angiography (19% vs 12%). Any stress testing decreased from 20.6% to 11.0%, and any test for ischemia reduced from 37.6% to 22.1%. This reduction in testing occurred without compromising safety and contributed to the overall cost savings of the approach.",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "HEARThsTropRedAdmission"
+  },
+  {
+    "question": "What was the study design and what were the baseline characteristics of the patient populations?",
+    "answer": "This was a prospective observational multicenter before-after study conducted at 6 centers in Sweden from 2013-2016, including 1,233 patients total. Phase 1 (612 patients): median age 64 years, 57% men. Phase 2 (621 patients): median age 63 years, 54% men. The groups were similar for most risk factors, though Phase 1 patients more often had history of angina pectoris, revascularization, and certain medications. Median HEART score in Phase 2 was 3 (IQR 2 to 5).",
+    "query_type": "SUMMARY_REQUEST",
+    "source": "HEARThsTropRedAdmission"
+  }
+]

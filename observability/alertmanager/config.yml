@@ -1,0 +1,259 @@
+# AlertManager configuration for EDBotv8
+# Medical safety alert routing and escalation
+
+global:
+  # SMTP configuration for alert notifications
+  smtp_smarthost: '${SMTP_HOST:-localhost:587}'
+  smtp_from: '${SMTP_FROM:-alerts@edbot.local}'
+  smtp_auth_username: '${SMTP_USER}'
+  smtp_auth_password: '${SMTP_PASSWORD}'
+  smtp_require_tls: true
+
+# Inhibition rules - suppress redundant alerts
+inhibit_rules:
+  # Suppress system health alerts if system is critical
+  - source_matchers:
+      - alertname="SystemHealthCritical"
+    target_matchers:
+      - alertname="SystemHealthDegraded"
+    equal: ['cluster']
+
+  # Suppress component alerts if entire system is down
+  - source_matchers:
+      - alertname="SystemHealthCritical"
+    target_matchers:
+      - alertname="ComponentDown"
+    equal: ['cluster']
+
+  # Suppress low confidence alerts if there are safety alerts
+  - source_matchers:
+      - alertname="HighMedicalSafetyAlerts"
+    target_matchers:
+      - alertname="LowConfidenceMedicalResponse"
+    equal: ['cluster']
+
+# Alert routing configuration
+route:
+  # Default settings
+  group_by: ['cluster', 'alertname', 'severity']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 12h
+  receiver: 'default-receiver'
+
+  # Route hierarchy for different alert types
+  routes:
+    # CRITICAL MEDICAL SAFETY - Immediate escalation
+    - matchers:
+        - alertname=~"HighMedicalSafetyAlerts|CriticalMedicationSafetyCheck"
+        - severity="critical"
+      group_wait: 0s
+      group_interval: 1m
+      repeat_interval: 5m
+      receiver: 'medical-emergency'
+      continue: true
+
+    # SYSTEM CRITICAL - Infrastructure team
+    - matchers:
+        - alertname=~"SystemHealthCritical|ComponentDown"
+        - severity="critical"
+      group_wait: 30s
+      group_interval: 5m
+      repeat_interval: 30m
+      receiver: 'infrastructure-critical'
+      continue: true
+
+    # PRODUCTION SAFETY FLAGS - Security team
+    - matchers:
+        - alertname="ProductionSafetyFlagDisabled"
+        - severity="critical"
+      group_wait: 0s
+      group_interval: 1m
+      repeat_interval: 10m
+      receiver: 'security-team'
+      continue: true
+
+    # PERFORMANCE ISSUES - Operations team
+    - matchers:
+        - alertname=~"HighQueryLatency|LLMBackendDown|TimeSensitiveProtocolSlow"
+      group_wait: 2m
+      group_interval: 10m
+      repeat_interval: 2h
+      receiver: 'operations-team'
+
+    # DATA QUALITY ISSUES - Data team
+    - matchers:
+        - alertname=~"HighPHIScrubbing|ElasticsearchClusterRed"
+      group_wait: 5m
+      group_interval: 15m
+      repeat_interval: 4h
+      receiver: 'data-team'
+
+    # CLINICAL WARNINGS - Medical review team
+    - matchers:
+        - alertname=~"LowConfidenceMedicalResponse"
+        - severity="warning"
+      group_wait: 10m
+      group_interval: 30m
+      repeat_interval: 8h
+      receiver: 'clinical-review'
+
+    # GENERAL WARNINGS - Default team
+    - matchers:
+        - severity="warning"
+      group_wait: 5m
+      group_interval: 15m
+      repeat_interval: 6h
+      receiver: 'general-warnings'
+
+# Receiver definitions
+receivers:
+  - name: 'default-receiver'
+    email_configs:
+      - to: '${DEFAULT_EMAIL:-admin@edbot.local}'
+        subject: '[EDBotv8] {{ .GroupLabels.alertname }}'
+        body: |
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Severity:** {{ .Labels.severity }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ if .Annotations.runbook_url }}
+          **Runbook:** {{ .Annotations.runbook_url }}
+          {{ end }}
+          {{ end }}
+
+  - name: 'medical-emergency'
+    email_configs:
+      - to: '${MEDICAL_EMERGENCY_EMAIL:-medical-safety@edbot.local}'
+        subject: '🚨 [MEDICAL EMERGENCY] {{ .GroupLabels.alertname }}'
+        body: |
+          **IMMEDIATE MEDICAL SAFETY ALERT**
+          
+          This is an URGENT medical safety alert requiring immediate investigation.
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ if .Annotations.runbook_url }}
+          **Runbook:** {{ .Annotations.runbook_url }}
+          {{ end }}
+          {{ end }}
+          
+          Please investigate immediately and follow medical safety protocols.
+    slack_configs:
+      - api_url: '${SLACK_WEBHOOK_URL}'
+        channel: '${MEDICAL_ALERTS_CHANNEL:-#medical-alerts}'
+        title: '🚨 Medical Safety Emergency'
+        text: |
+          Medical safety alert requiring immediate investigation:
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          {{ end }}
+
+  - name: 'infrastructure-critical'
+    email_configs:
+      - to: '${INFRASTRUCTURE_EMAIL:-infra@edbot.local}'
+        subject: '🔥 [CRITICAL] System Infrastructure Alert'
+        body: |
+          **CRITICAL INFRASTRUCTURE ALERT**
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ if .Annotations.runbook_url }}
+          **Runbook:** {{ .Annotations.runbook_url }}
+          {{ end }}
+          {{ end }}
+    pagerduty_configs:
+      - service_key: '${PAGERDUTY_SERVICE_KEY}'
+        description: '{{ .GroupLabels.alertname }}: {{ .CommonAnnotations.summary }}'
+
+  - name: 'security-team'
+    email_configs:
+      - to: '${SECURITY_EMAIL:-security@edbot.local}'
+        subject: '🔒 [SECURITY] Production Safety Flag Disabled'
+        body: |
+          **SECURITY ALERT - PRODUCTION SAFETY COMPROMISE**
+          
+          A critical safety feature has been disabled in production:
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Feature:** {{ .Labels.feature_name }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ end }}
+          
+          This requires immediate security review and remediation.
+
+  - name: 'operations-team'
+    email_configs:
+      - to: '${OPERATIONS_EMAIL:-ops@edbot.local}'
+        subject: '⚠️ [OPERATIONS] Performance Alert'
+        body: |
+          **PERFORMANCE ALERT**
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ if .Annotations.runbook_url }}
+          **Runbook:** {{ .Annotations.runbook_url }}
+          {{ end }}
+          {{ end }}
+
+  - name: 'data-team'
+    email_configs:
+      - to: '${DATA_EMAIL:-data@edbot.local}'
+        subject: '📊 [DATA] Data Quality Alert'
+        body: |
+          **DATA QUALITY ALERT**
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ end }}
+
+  - name: 'clinical-review'
+    email_configs:
+      - to: '${CLINICAL_EMAIL:-clinical@edbot.local}'
+        subject: '🩺 [CLINICAL] Clinical Quality Review Required'
+        body: |
+          **CLINICAL QUALITY REVIEW REQUIRED**
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Specialty:** {{ .Labels.clinical_area }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ end }}
+          
+          Please review clinical response quality and update protocols as needed.
+
+  - name: 'general-warnings'
+    email_configs:
+      - to: '${WARNING_EMAIL:-warnings@edbot.local}'
+        subject: '⚠️ [WARNING] {{ .GroupLabels.alertname }}'
+        body: |
+          **WARNING ALERT**
+          
+          {{ range .Alerts }}
+          **Alert:** {{ .Annotations.summary }}
+          **Description:** {{ .Annotations.description }}
+          **Component:** {{ .Labels.component }}
+          **Time:** {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}
+          {{ end }}
+
+# Templates for custom message formatting
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'

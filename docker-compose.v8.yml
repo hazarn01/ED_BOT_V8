@@ -1,0 +1,141 @@
+services:
+  db:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+      POSTGRES_DB: ${DB_NAME:-edbotv8}
+    ports:
+      - "5433:5432" # Use different port to avoid conflict
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER:-postgres}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6380:6379" # Use different port to avoid conflict
+
+  # Ollama for CPU inference (optimized for Apple Silicon M4)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: edbotv8-ollama
+    volumes:
+      - ollama-data:/root/.ollama
+    ports:
+      - "11434:11434"
+    deploy:
+      resources:
+        limits:
+          memory: 20G # Optimized for M4 Pro with 24GB
+          cpus: '10' # Leave some cores for system
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:11434/api/tags" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    profiles: [ "cpu" ]
+
+  elasticsearch:
+    image: elasticsearch:8.11.1
+    container_name: edbot-elasticsearch
+    profiles: [ "search" ] # Optional profile
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false # Dev only
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - cluster.name=edbot-cluster
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9200/_cluster/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.v8
+    command: uvicorn src.api.app:app --host 0.0.0.0 --port 8001 --forwarded-allow-ips '*'
+    ports:
+      - "8001:8001" # API on 8001
+    env_file: EDBOTv8.env.simple
+    environment:
+      - LLM_BACKEND=ollama # Use Ollama backend optimized for M4
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - db
+      - redis
+      - ollama # Depend on Ollama for local inference
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8001/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    profiles: [ "cpu" ]
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.v8
+    command: python -m src.ingestion.tasks run --batch /app/docs
+    env_file: EDBOTv8.env.simple
+    environment:
+      - LLM_BACKEND=ollama # Use Ollama backend optimized for M4
+      - OLLAMA_BASE_URL=http://ollama:11434
+    depends_on:
+      - db
+      - redis
+      - ollama # Depend on Ollama for processing
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+    profiles: [ "cpu" ]
+
+  # Ollama model puller (optimized for M4)
+  ollama-pull:
+    image: ollama/ollama:latest
+    container_name: edbotv8-ollama-pull
+    volumes:
+      - ollama-data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    command: /bin/sh -c "sleep 10 && ollama pull llama3.1:8b && ollama pull mistral:7b"
+    depends_on:
+      - ollama
+    profiles: [ "cpu" ]
+
+  # Streamlit UI Demo (optimized for M4)
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.v8
+    command: streamlit run streamlit_app/app.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+    ports:
+      - "8501:8501"
+    env_file: EDBOTv8.env.simple
+    environment:
+      - API_BASE_URL=http://api:8001
+    depends_on:
+      - api
+    volumes:
+      - ./streamlit_app:/app/streamlit_app
+    profiles: [ "ui", "cpu" ]
+
+volumes:
+  db_data:
+  gpt-oss-cache: # Renamed from vllm-cache
+  es_data:
+  ollama-data: # For Ollama models 

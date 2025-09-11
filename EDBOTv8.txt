@@ -1,0 +1,721 @@
+# ED Bot v8: Complete Implementation Blueprint
+
+Version: 1.0
+Owner: ED Engineering
+Status: Ready for Execution
+
+## 0) Executive Summary
+
+ED Bot v8 is a ground‑up, reproducible implementation of the Emergency Department medical AI assistant with:
+- Local/open‑source LLM backend using GPT‑OSS 20B (on‑prem) for privacy, control, and predictable cost
+- Structured extraction powered by LangExtract on top of Unstructured parsing to improve accuracy and preserve citations
+- Reproducible infrastructure (Docker Compose, Makefile, Alembic) with health checks, observability, and CI‑friendly test harness
+- Intent‑aware 3‑step pipeline (Classify → Retrieve → Respond) with strict FORM handling and robust contact/protocol flows
+
+Primary success criteria:
+- <1.5s median response for non‑LLM-heavy queries; <2.5s P95 with local LLM on recommended hardware
+- ≥90% classification accuracy across 6 query types; 100% preservation of source citations
+- Forms always return actual PDFs with correct links; protocols retain steps, doses, and timing
+- HIPAA compliance by design: zero PHI to external services; logs scrubbed; audit trails
+
+References:
+- GPT‑OSS 20B model: https://huggingface.co/openai/gpt-oss-20b
+- LangExtract install/usage: https://github.com/google/langextract#installation
+- Unstructured docs: https://docs.unstructured.io/
+
+---
+
+## 1) Architecture Decisions (ADRs)
+
+ADR‑001: Local LLM Backend
+- Decision: Use GPT‑OSS 20B served locally (vLLM preferred; TGI or Ollama as alternatives). Azure OpenAI retained as explicit fallback only.
+- Rationale: HIPAA, privacy, cost control, deterministic operations.
+- Implications: GPU provisioning, quantization (AWQ/INT4) for throughput, pinned versions, monitoring.
+
+ADR‑002: Structured Extraction with LangExtract
+- Decision: Unstructured parse → LangExtract schema‑guided extraction with citations → Persist structured JSON next to raw text.
+- Rationale: Reduce custom rules, improve accuracy, enable entity‑level validation and analytics.
+- Implications: Add extraction schemas, storage columns/tables, tests, visualization hooks.
+
+ADR‑003: Reproducible Infra from Day 0
+- Decision: Docker Compose for api/db/redis/llm/worker; Makefile for common tasks; Alembic for DB migrations.
+- Rationale: Eliminate environment drift; fast onboarding; CI automation.
+- Implications: Project layout, .env templates, health checks, CI workflows.
+
+ADR‑004: Intent‑Aware Retrieval
+- Decision: Keep 3‑step pipeline with strict per‑type strategies; always bypass caches for FORM queries; inject PDF refs if needed.
+- Rationale: Fix misalignment; ensure PDF correctness.
+- Implications: Cache policy, formatter guarantees, tests.
+
+ADR‑005: Compliance & Observability First
+- Decision: PHI scrubbing, audit logs, metrics (latency, cache hit rate, tokens/sec), SLOs and error budgets.
+- Rationale: Clinical safety and operations readiness.
+- Implications: Logging filters, metrics exporters, dashboards.
+
+---
+
+## 2) High‑Level System Architecture
+
+Services (Docker Compose):
+- api: FastAPI app (ED Bot v8)
+- db: PostgreSQL + pgvector
+- redis: Redis for caching
+- llm: GPT‑OSS 20B server (vLLM recommended) or Ollama/TGI
+- worker: Ingestion worker for Unstructured + LangExtract
+- frontend: static asset server (optional; dev mode can serve via api)
+
+Data Flow:
+- Ingestion: docs/* → Unstructured parse (hi_res + OCR + tables) → LangExtract (local model) → store raw text + structured entities with citations
+- Query: Classify → Retrieve (registry/semantic/contact) → Format (with citations, PDFs) → Validate (medical + HIPAA) → Respond
+
+---
+
+## 3) Project Structure (v8)
+
+```
+EDBotv8/
+  Makefile
+  docker-compose.yml
+  .env.example
+  alembic.ini
+  alembic/
+    versions/
+  src/
+    api/
+      app.py
+      endpoints.py
+      dependencies.py
+    ai/
+      __init__.py
+      gpt_oss_client.py
+      azure_fallback_client.py
+      prompts.py
+    ingestion/
+      unstructured_runner.py
+      langextract_runner.py
+      tasks.py
+    models/
+      entities.py
+      document_models.py
+      query_types.py
+      schemas.py
+    pipeline/
+      classifier.py
+      router.py
+      query_processor.py
+      response_formatter.py
+    services/
+      amion_client.py
+      contact_lookup.py
+    cache/
+      manager.py
+      redis_client.py
+    validation/
+      hipaa.py
+      medical_validator.py
+    config/
+      settings.py
+    utils/
+      logging.py
+      observability.py
+  tests/
+    unit/
+    integration/
+    e2e/
+  scripts/
+    seed_registry.py
+    backfill_entities.py
+  static/
+    index.html
+    js/
+    css/
+```
+
+---
+
+## 4) Environment & Infra
+
+.env.example
+```
+APP_ENV=development
+PORT=8001
+
+DB_HOST=db
+DB_PORT=5432
+DB_USER=edbot
+DB_PASSWORD=edbot
+DB_NAME=edbot
+
+REDIS_HOST=redis
+REDIS_PORT=6379
+
+# LLM backend selection and endpoints
+LLM_BACKEND=gpt-oss   # gpt-oss | ollama | azure
+VLLM_BASE_URL=http://llm:8000   # if vLLM
+OLLAMA_BASE_URL=http://llm:11434 # if Ollama
+AZURE_OPENAI_ENDPOINT=
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_DEPLOYMENT=
+
+# LangExtract
+LANGEXTRACT_API_KEY=   # not required when using local models
+
+# Security/Compliance
+DISABLE_EXTERNAL_CALLS=true
+LOG_SCRUB_PHI=true
+```
+
+Makefile (targets)
+```
+.PHONY: bootstrap up down logs fmt lint test migrate upgrade downgrade ingest
+bootstrap: ## install deps, create venv, pre-commit
+up:        ## docker compose up -d
+down:      ## docker compose down -v
+logs:      ## docker compose logs -f --tail=200
+fmt:       ## black/isort/ruff
+lint:      ## ruff/pylint
+test:      ## pytest -q
+migrate:   ## alembic revision --autogenerate -m "msg"
+upgrade:   ## alembic upgrade head
+downgrade: ## alembic downgrade -1
+ingest:    ## python -m src.ingestion.tasks run --batch docs/
+```
+
+docker-compose.yml (topology summary)
+- db: postgres:16 with pgvector extension; volumes; healthchecks
+- redis: latest; persistence off for dev
+- llm: vLLM with mounted model weights (or Ollama with pulled model); health endpoint
+- api: depends_on db, redis, llm; mounts src; environment from .env
+- worker: same image as api; CMD to run ingestion tasks
+
+---
+
+## 5) Database Schema (Alembic‑Managed)
+
+Core tables:
+- documents(id, filename, content_type['protocol','form','contact','reference'], file_type['pdf','docx','txt','md'], content text, metadata jsonb, created_at, updated_at)
+- document_chunks(id, document_id→documents.id, chunk_text, chunk_index, embedding vector(384), chunk_type, medical_category, urgency_level, contains_contact, contains_dosage, created_at)
+- document_registry(document_id→documents.id, keywords text[], display_name, file_path, quick_access, created_at)
+- extracted_entities(id, document_id, page_no int, span jsonb, entity_type, payload jsonb, created_at)
+- chat_sessions(session_id, user_id, session_name, created_at, last_activity)
+- chat_messages(id, session_id→chat_sessions.session_id, message_type['user','assistant'], content, query_type, response_time, confidence_score, sources text[], created_at)
+
+Indexes:
+- ivfflat index on document_chunks.embedding
+- GIN on document_registry.keywords
+- GIN on extracted_entities.payload
+
+Migration workflow:
+- alembic init; baseline v8
+- create versions for initial schema; subsequent changes for LangExtract entity additions
+
+---
+
+## 6) LLM Serving (GPT‑OSS 20B)
+
+Recommended: vLLM
+- Pull model weights to a local volume (documented per HF)
+- Start vLLM server with GPT‑OSS 20B, set max throughput, tensor parallelism by GPU
+- Quantization: AWQ/INT4 or GPTQ where available to reduce VRAM
+- Health endpoint: /health; Metrics: /metrics if available
+
+Client settings:
+- Temperature=0.0, top_p=0.1, max_tokens=1500 (cap), stop sequences for formatting
+- Timeouts (connect/read), retries with backoff
+- Request budget per query type (e.g., forms using fallback formatter, not LLM)
+
+Fallback: Azure OpenAI
+- Only when explicitly allowed and with PHI‑safe routing
+
+---
+
+## 7) LangExtract Integration
+
+Install (local):
+```
+pip install langextract
+```
+Reference: https://github.com/google/langextract#installation
+
+Extraction flow:
+- Input: Unstructured elements (text, tables, images metadata)
+- LangExtract invocation: use local model adapter (Ollama/vLLM) with configured prompts and examples
+- Schemas: entities for contacts, dosages, protocol steps, criteria, forms, section headers
+- Output: JSONL or JSON with citations (page, char spans, element ids)
+- Storage: `extracted_entities` (entity_type, payload jsonb, span jsonb, page_no)
+
+Usage patterns:
+- For clinical text: protocol step+timing; dosage entity (drug, dose, route, frequency); contact (name, role, phone/pager)
+- For forms: detect title, required signatures, usage instructions; ensure registry linkage
+
+---
+
+## 8) Ingestion Pipeline
+
+Worker responsibilities:
+- Enumerate docs/ and watch for new files
+- Unstructured parse with:
+  - strategy="hi_res"
+  - infer_table_structure=True
+  - include_page_breaks=True
+  - OCR for scanned PDFs (Tesseract)
+- Persist documents and chunks; generate embeddings for chunks used in semantic lookup
+- Run LangExtract with locally served model to produce entities with citations
+- Persist entities; link to document_id and page spans
+- Update document_registry from precategorized mapping + detected features
+
+Batching & retries:
+- Exponential backoff; dead‑letter queue for failures
+- Idempotent by filename hash
+
+---
+
+## 9) Query Pipeline (Runtime)
+
+Steps:
+1) Classify intent (CONTACT, FORM, PROTOCOL, CRITERIA, DOSAGE, SUMMARY)
+2) Retrieve with per‑type strategy
+   - CONTACT: Amion lookup + keyword fallback; prioritize current on‑call
+   - FORM: Document registry pre‑filter; exact/keyword matching; return PDF links
+   - PROTOCOL: Hybrid hierarchical + keyword; boost step/criteria sections
+   - CRITERIA: Semantic with threshold; cite sources
+   - DOSAGE: Exact + validation vs safety ranges
+   - SUMMARY: Hybrid search with citations
+3) Respond
+   - FORM responses must include `[PDF:/api/v1/documents/pdf/{filename}|{display_name}]`
+   - Always include citations; add medical warnings if applicable
+
+Caching rules:
+- Redis cache by query type; BYPASS for FORM
+- Post‑processing: inject PDF refs to cached responses as safety net
+
+Validation:
+- MedicalValidator checks (dosage, contraindications, timing completeness)
+- HIPAA: PHI scan and log scrubbing before persistence
+
+---
+
+## 10) API Endpoints (FastAPI)
+
+- POST /query { query, session_id } → { response, query_type, confidence, sources, warnings, processing_time }
+- GET  /health → { status, db, redis, llm }
+- GET  /documents/pdf/{filename} → FileResponse with proper headers
+- GET  /documents/registry → list/search (admin/dev)
+- POST /validate/medical → validator utilities (admin/dev)
+- POST /validate/hipaa → HIPAA scanning utilities (admin/dev)
+
+Security:
+- CORS allowlist (env‑based); Trusted hosts; Security headers
+
+---
+
+## 11) Observability & SLOs
+
+Metrics:
+- p50/p95 latency by query type
+- cache hit ratio
+- tokens/sec and queue depth for llm
+- ingestion throughput and failure counts
+
+SLOs:
+- Availability ≥ 99%
+- Latency: p50 < 1.5s (non‑LLM heavy), p95 < 2.5s
+- Cache hit ≥ 70% for protocol/summary
+
+Dashboards & Alerts:
+- Health endpoints; basic Grafana stack optional in future
+
+---
+
+## 12) Security & Compliance (HIPAA by design)
+
+- All inference local unless explicitly configured otherwise
+- PHI scrubbing in logs; audit trails for content processing
+- Secret management via .env/.env.local; never commit secrets
+- Access controls for admin endpoints
+
+---
+
+## 13) Testing Strategy
+
+- Unit: classifier, registry, formatter, validators, ingestion runners
+- Integration: end‑to‑end critical flows (form retrieval, Amion contacts, protocol)
+- Golden tests: LangExtract entity extraction on curated documents
+- Performance: response time benchmarks; ingestion throughput
+- CI: mock LLM adapters; deterministic outputs; seed minimal fixture docs
+
+---
+
+## 14) Migration & Data
+
+- Import v7 docs into v8 DB via `scripts/seed_registry.py`
+- Re‑ingest using Unstructured + LangExtract to build entities cleanly
+- Validate forms and registry correctness with scripted checks
+
+---
+
+## 15) Risks & Mitigations
+
+- GPU capacity: quantify VRAM; use quantization and batch control → Track tokens/sec; autoscale plan if needed
+- Extraction drift: pin versions; add regression tests; weekly upgrade window
+- Compliance: enforce local inference; gate Azure fallback; verify log scrubbing in CI
+- Document drift: scheduled re‑ingestion and registry sync
+
+---
+
+## 16) Execution Plan (2–3 weeks)
+
+Week 1
+- Infra skeleton (Compose, Makefile, Alembic, .env.example)
+- DB schema baseline and health routes
+- LLM serving (vLLM) and client
+
+Week 2
+- Ingestion pipeline (Unstructured + LangExtract local)
+- Document registry seeding; PDF endpoints
+- Query pipeline (3‑step) and validators
+
+Week 3
+- Caching policies; performance tuning
+- Tests (golden, integration, perf); CI wiring
+- Observability; harden security; final polish
+
+---
+
+## 17) Appendices
+
+A) Example LangExtract (local model)
+```
+import langextract as lx
+
+result = lx.extract(
+    text_or_documents=input_text,
+    prompt_description="Extract protocol steps, timing, and contact information with citations",
+    examples=[{"text": "Activate STEMI protocol within 10 minutes", "attributes": {"step": 1, "timing_min": 10}}],
+    language_model_type=lx.inference.OllamaLanguageModel,
+    model_id="gemma2:2b",
+    model_url="http://llm:11434",
+    fence_output=False,
+    use_schema_constraints=False
+)
+```
+
+B) Alembic commands
+```
+alegra upgrade head
+alembic downgrade -1
+alembic revision --autogenerate -m "add extracted_entities"
+```
+
+C) Cache TTLs (defaults)
+- protocol: 600s, contact: 300s, form: bypass, dosage: 450s, criteria: 600s, summary: 900s
+
+D) Coding Standards
+- Type hints, explicit exceptions, early returns, small functions, tests first for pipeline changes 
+
+---
+
+## 18) Quickstart (Zero-to-Run)
+
+Prereqs
+- Docker Desktop (with GPU pass-through if using vLLM on Linux/WSL2)
+- Python 3.11+, Poetry or pip, Git
+- GPU: 1× A100 40GB or 2× 24GB cards recommended (see quantization notes)
+
+Setup
+```
+cp .env.example .env
+# Edit .env for local paths and LLM backend choice (gpt-oss | ollama | azure)
+make up
+make upgrade  # create DB schema
+python -m scripts.seed_registry --path docs/
+```
+
+Smoke tests
+```
+# Health
+curl http://localhost:8001/health | jq
+# PDF endpoint
+curl -I http://localhost:8001/documents/pdf/24hrPharmacies.pdf
+# Form query
+curl -s -X POST http://localhost:8001/query -H 'Content-Type: application/json' -d '{"query":"show me the blood transfusion form"}' | jq
+```
+
+Troubleshooting
+- If LLM is warming up, expect slower first responses; verify `llm:/health`
+- If PDF not found, ensure `docs/` volume is mounted and filenames are correct
+
+---
+
+## 19) Platform Prerequisites & Dependencies
+
+System packages (Linux/WSL2 recommended for OCR)
+```
+sudo apt-get update && sudo apt-get install -y \
+  tesseract-ocr \
+  poppler-utils \
+  libmagic1 \
+  build-essential \
+  libxml2-dev libxslt1-dev \
+  libjpeg-dev zlib1g-dev
+```
+
+Python deps
+```
+pip install -U "unstructured[pdf,ocr]>=0.15.0" pytesseract pdf2image langextract fastapi uvicorn[standard] \
+  pydantic[dotenv] sqlalchemy alembic psycopg2-binary redis rq \
+  numpy scipy scikit-learn "pgvector~=0.2"
+```
+
+Windows notes
+- Prefer WSL2 for Unstructured OCR pathways and vLLM GPU access
+- On pure Windows, use pre-parsed documents or Dockerized ingestion
+
+---
+
+## 20) docker-compose.yml (Reference)
+
+```
+version: '3.9'
+services:
+  db:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  llm:
+    image: vllm/vllm-openai:latest
+    command: [
+      "--model", "/models/gpt-oss-20b",
+      "--max-model-len", "8192",
+      "--tensor-parallel-size", "1"
+    ]
+    environment:
+      VLLM_WORKER_USE_AYNCIO: "1"
+    ports: ["8000:8000"]
+    volumes:
+      - ./models/gpt-oss-20b:/models/gpt-oss-20b
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+  api:
+    build: .
+    command: uvicorn src.api.app:app --host 0.0.0.0 --port 8001 --forwarded-allow-ips '*'
+    ports: ["8001:8001"]
+    env_file: .env
+    depends_on:
+      - db
+      - redis
+      - llm
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+
+  worker:
+    build: .
+    command: python -m src.ingestion.tasks run --batch /app/docs
+    env_file: .env
+    depends_on:
+      - db
+      - redis
+      - llm
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+
+volumes:
+  db_data:
+```
+
+Ollama alternative
+```
+services:
+  llm:
+    image: ollama/ollama:latest
+    ports: ["11434:11434"]
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+# then: docker exec -it <llm> ollama pull gemma2:2b
+```
+
+---
+
+## 21) Makefile (Reference)
+
+```
+SHELL := /bin/bash
+help: ## Show help
+	@grep -E '^[a-zA-Z_-]+:.*?##' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
+
+bootstrap: ## Setup venv, install deps
+	python -m venv .venv && . .venv/bin/activate && pip install -U pip wheel && \
+	pip install -r requirements.txt || true
+
+up: ## Start stack
+	docker compose up -d --build
+
+down: ## Stop stack (remove volumes with -v)
+	docker compose down
+
+logs: ## Tail logs
+	docker compose logs -f --tail=200
+
+migrate: ## Create migration
+	alembic revision --autogenerate -m "update"
+
+upgrade: ## Apply migrations
+	alembic upgrade head
+
+downgrade: ## Revert last migration
+	alembic downgrade -1
+
+ingest: ## Run ingestion once
+	docker compose run --rm worker python -m src.ingestion.tasks run --batch /app/docs
+
+test: ## Run tests
+	pytest -q
+```
+
+---
+
+## 22) Alembic Setup
+
+alembic.ini
+```
+[alembic]
+script_location = alembic
+sqlalchemy.url = postgresql+psycopg2://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+```
+
+env.py (snippet)
+```
+from sqlalchemy import engine_from_config, pool
+from alembic import context
+from src.models.entities import Base
+
+target_metadata = Base.metadata
+```
+
+Initial revision commands
+```
+alembic init alembic
+alembic revision --autogenerate -m "v8 baseline"
+alembic upgrade head
+```
+
+---
+
+## 23) LangExtract Schemas (Examples)
+
+ProtocolStep
+```
+{
+  "type": "protocol_step",
+  "step_number": 1,
+  "action": "Activate STEMI team",
+  "timing_min": 10,
+  "evidence": {"page": 1, "span": [120, 185], "text": "..."}
+}
+```
+
+Dosage
+```
+{
+  "type": "dosage",
+  "drug": "heparin",
+  "dose": "60 units/kg",
+  "route": "IV",
+  "frequency": null,
+  "evidence": {"page": 2, "span": [30, 72]}
+}
+```
+
+Contact
+```
+{
+  "type": "contact",
+  "name": "Cardiology Fellow",
+  "role": "fellow",
+  "phone": "(212) 555-1234",
+  "pager": "123-4567",
+  "coverage": "on-call",
+  "evidence": {"page": 1, "span": [300, 345]}
+}
+```
+
+Storage mapping
+- `extracted_entities.payload` stores the full JSON; `entity_type` is a top-level discriminator; `span`/`page_no` duplicated for indexing.
+
+---
+
+## 24) API Security & Headers
+
+CORS
+- Allowlist configured via env, default localhost ports only
+
+Security headers (examples)
+- X-Content-Type-Options: nosniff
+- X-Frame-Options: DENY
+- Referrer-Policy: no-referrer
+- Content-Security-Policy: default-src 'self'
+
+Trusted hosts
+- Env-configured; default `localhost,127.0.0.1`
+
+---
+
+## 25) Logging & PHI Scrubbing
+
+- Structured JSON logs with fields: ts, level, service, route, latency_ms, user/session, query_type
+- PHI scrubbing regex: phone, MRN, SSN patterns; redact before persistence
+- Audit log on content processing: document_id, entity counts, warnings
+
+---
+
+## 26) CI Outline
+
+- Lint/type: ruff, mypy (optional), black check
+- Unit tests with mocked LLM client
+- Ingestion golden tests on tiny fixture set (no GPU required)
+- API smoke tests: /health, form PDF endpoint, /query on fixture docs
+- CI artifacts: coverage.xml, junit.xml
+
+GitHub Actions example jobs
+- build-and-test (push/PR): matrix python 3.11/3.12
+- nightly-gpu (manual/cron): optional performance and extraction regression suite
+
+---
+
+## 27) Verification Checklists
+
+Pre-merge
+- [ ] FORM queries return PDFs and include PDF tags
+- [ ] Citations present for all responses
+- [ ] HIPAA scrubbing confirmed in logs
+- [ ] Health endpoints green (db/redis/llm)
+- [ ] p50 latency within target in dev
+
+Pre-prod
+- [ ] Model weights pinned; serving params recorded
+- [ ] Disaster recovery: DB backup/restore tested
+- [ ] Rollback plan validated (alembic downgrade)
+- [ ] Security headers and allowlists verified 

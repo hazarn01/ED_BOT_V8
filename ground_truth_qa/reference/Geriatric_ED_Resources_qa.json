@@ -1,0 +1,42 @@
+{
+  "document": "Geriatric ED Resources.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the phone number for the Weill Cornell Institute of Geriatric Psychiatry Wright Center on Aging?",
+      "answer": "(212) 746-1417",
+      "source_section": "Weill Cornell Institute of Geriatric Psychiatry",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "What services does the NYU Center for Cognitive Neurology provide?",
+      "answer": "Neurology, Primary Care and Mental Health services for Alzheimer's disorder, age-related memory issues, and other cognitive disorders",
+      "source_section": "NYU Center for Cognitive Neurology",
+      "question_type": "services"
+    },
+    {
+      "id": 3,
+      "question": "What is the phone number for NYC Elder Abuse Center?",
+      "answer": "Call 311",
+      "source_section": "Hotlines/Websites",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What are the eligibility criteria for Weill Cornell geriatric services?",
+      "answer": "Must be over 65 years old and Medicare/Managed Care Plans are accepted",
+      "source_section": "Weill Cornell Institute of Geriatric Psychiatry",
+      "question_type": "criteria"
+    },
+    {
+      "id": 5,
+      "question": "What is the phone number for CaringKind?",
+      "answer": "(646) 744-2900",
+      "source_section": "Hotlines/Websites",
+      "question_type": "contact"
+    }
+  ]
+}

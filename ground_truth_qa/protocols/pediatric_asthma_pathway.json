@@ -1,0 +1,107 @@
+{
+  "document_name": "Pediatric Asthma Pathway",
+  "document_type": "Clinical Pathway",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/Pediatric Asthma Pathway.pdf",
+  "qa_pairs": [
+    {
+      "question": "What are the five components of the Pediatric Respiratory Assessment Measure (PRAM) and their scoring ranges?",
+      "answer": "The PRAM assesses: 1) Suprasternal Retractions (0=absent, 2=present), 2) Scalene Muscle Contraction (0=absent, 2=present), 3) Air Entry (0=normal, 1=decreased at base, 2=diffusely decreased, 3=absent/minimal), 4) Wheezing (0=absent, 1=expiratory only, 2=inspiratory and expiratory, 3=audible without stethoscope/air entry absent or minimal), 5) Oxygen Saturation (0=≥95% RA and no O2, 1=92-94% RA and no O2, 3=<92% RA or on O2).",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the weight-based albuterol dosing guidelines for pediatric patients?",
+      "answer": "Albuterol dosing: <15kg: 4 puffs MDI or 2.5 mg nebulized; 15-25kg: 6 puffs MDI or 5mg nebulized; ≥25 kg: 8 puffs MDI or 7.5 mg nebulized.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the continuous albuterol dosing for pediatric patients?",
+      "answer": "Continuous albuterol via nebulizer: <20 kg: 10 mg/hr; ≥20 kg: 15 mg/hr.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the ipratropium bromide dosing for pediatric asthma patients?",
+      "answer": "Ipratropium bromide: 500 mcg nebulized (standard dose regardless of weight).",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the dexamethasone dosing guidelines and steroid equivalency?",
+      "answer": "Dexamethasone (oral/IM): 0.6 mg/kg (max 16mg). 2 days of dexamethasone is equivalent to 5 days of prednisone/prednisolone.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the prednisone/prednisolone dosing regimen for pediatric asthma?",
+      "answer": "Prednisone or Prednisolone (oral): 1st dose: 2 mg/kg/day (max dose 60 mg/day) followed by 1-2 mg/kg/day for 3-5 days.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the methylprednisolone IV dosing for pediatric patients?",
+      "answer": "Methylprednisolone (IV): First dose: 2 mg/kg (max 60mg) followed by 1 mg/kg IV q6h (max 125 mg/day).",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the inclusion and exclusion criteria for the pediatric asthma pathway?",
+      "answer": "Include: Patients treated for asthma in ED, ≥2 years of age. Exclude: children <2 years, bronchiolitis, pneumonia, chronic lung disease, airway anomalies, history of arrhythmias or heart disease, immune disorder, sickle cell disease.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the initial treatment approach based on PRAM scores in the ED?",
+      "answer": "PRAM 1-3: Albuterol + ipratropium (max 3 doses back to back), consider corticosteroid. PRAM 4-7: Albuterol + ipratropium (max 3 doses back to back), corticosteroid. PRAM 8-12: Albuterol + ipratropium (3 doses back to back), continuous or q1H albuterol, corticosteroid, magnesium, consider terbutaline/epinephrine/BiPAP/HFNC.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the disposition criteria after ED Phase 1b reassessment?",
+      "answer": "PRAM 1-3: Discharge with albuterol, consider corticosteroid. PRAM 4-7: Admit to Floor. PRAM 8-12: Admit to PICU. If on continuous albuterol or q1H treatment, admit to PICU. If albuterol at q2H, admit to floor. Consider BI Short Stay Unit for admissions anticipated to last <48h.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the magnesium sulfate dosing for pediatric asthma patients?",
+      "answer": "Magnesium sulfate (IV): 50-75 mg/kg (max 2g) over 20 minutes.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the terbutaline dosing guidelines for different age groups?",
+      "answer": "Terbutaline (SQ): <12y: 0.005-0.01 mg/kg/dose (max 0.4 mg/dose) q20 min x 3 doses; >12y: 0.25 mg/dose q20 min x 3 doses (max total dose 0.75mg). Terbutaline (IV): Bolus: 2-10mcg/kg over 10 min (if >50kg, max 5mcg/kg), followed by continuous 0.08-0.4mcg/kg/min. May titrate every 30 min.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the epinephrine dosing for severe pediatric asthma?",
+      "answer": "Epinephrine (1:1000 = 1 mg/ml): 0.01 mg/kg (max 0.4 mg) given SQ or IM q10-20min.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What are the criteria for ED observation admission and exclusions?",
+      "answer": "Observation Admission Criteria: ED Arrival after 7PM, PRAM 4-7 after ED Phase 1a. Exclusion: O2 Requirement or clinically unlikely to improve by next morning.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "Describe the ED observation pathway phases and albuterol frequency.",
+      "answer": "Phase 2: Albuterol q2h, Phase 3: Albuterol q3H, Phase 4: Albuterol q4H. Patients progress through phases based on PRAM scores, with reassessment at each phase interval. Consider admission if on ED Observation >9:00 AM.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What should be included in the ED discharge checklist for asthma patients?",
+      "answer": "Nebulizer/MDI frequency doable at home, consider step-up therapy, prescriptions, recommended appointments and contact numbers (PMD, Pulmonology/Chest Clinic if needed), place asthma action plan in AVS (.pedsasthmaplaneng or .pedsasthmaplanspan), consider completing asthma MAF, consider referral to AIRnyc (718-577-2794), tobacco smoke exposure referral to NY State Quitline (1-800-697-8487).",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is the inpatient floor admission checklist for asthma patients?",
+      "answer": "History (ED visits, hospitalization, ICU, intubated, corticosteroid use in past year, atopy, family history), Triggers (tobacco smoke exposure, weather, illness, exercise, animals), Use orderset 'Pediatric Asthma Admission MSH IP', Order IP Consult to Pediatric Environmental Medicine and Public Health.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What defines the escalation pathway for severe asthma on the floor?",
+      "answer": "Escalation Pathway: Albuterol + Ipratropium: 3 doses q20mins over 1 hour, reassess after interventions, if PRAM still ≥8 call RRT, consider Magnesium if accepted to PICU.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "What is included in the PICU admission checklist for asthma patients?",
+      "answer": "History (ED visits, hospitalization, ICU, intubated, corticosteroid use in past year, atopy, family history), Triggers (tobacco smoke exposure, weather, illness, exercise, animals), Use orderset 'Pediatric ICU Asthma Admission MSH IP', Order IP Consult to Pediatric Environmental Medicine and Public Health, Consider Pulmonology consult.",
+      "source": "Pediatric Asthma Pathway"
+    },
+    {
+      "question": "Describe the PICU weaning pathway criteria and process.",
+      "answer": "Enter weaning pathway when PRAM 1-5. Wean continuous albuterol to 10 mg/hr for 2 hrs then stop if PRAM ≤5 and use intermittent albuterol. Wean terbutaline by 50% q1hr x 2 then turn off. Switch IV methylprednisolone to oral if off assisted ventilation and on PO. Transfer to floor when PRAM 1-5 and weaned off continuous therapies.",
+      "source": "Pediatric Asthma Pathway"
+    }
+  ]
+}

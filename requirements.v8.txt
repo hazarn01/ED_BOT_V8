@@ -1,0 +1,27 @@
+fastapi~=0.112.0
+uvicorn[standard]~=0.30.0
+pydantic~=2.8.0
+pydantic-settings~=2.4.0
+python-dotenv~=1.0.1
+SQLAlchemy[asyncio]~=2.0.25
+alembic~=1.13
+psycopg2-binary~=2.9
+asyncpg>=0.29.0
+redis~=5.0
+rq~=1.15
+pgvector~=0.2
+elasticsearch~=8.11
+httpx~=0.27
+requests~=2.32
+# Document processing
+unstructured[pdf,ocr]>=0.15.0
+pytesseract>=0.3.10
+pdf2image>=1.17.0
+PyMuPDF>=1.24.0  # For precise PDF position tracking (PRP 17)
+# Structured extraction
+langextract>=1.0.4
+# ML/Utils
+numpy~=1.26
+scipy~=1.12
+scikit-learn~=1.5
+prometheus_client~=0.20.0 

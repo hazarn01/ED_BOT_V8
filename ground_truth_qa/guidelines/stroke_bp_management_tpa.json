@@ -1,0 +1,85 @@
+{
+  "document_name": "BP Guidelines for Stroke Patients Receiving tPA.pdf",
+  "document_type": "guideline",
+  "complexity": "high",
+  "focus_areas": [
+    "Pre-tPA blood pressure thresholds",
+    "Post-tPA blood pressure monitoring",
+    "Escalation protocols",
+    "IV access requirements",
+    "Safety parameters",
+    "Clinical decision points"
+  ],
+  "qa_pairs": [
+    {
+      "id": "stroke_bp_001",
+      "question": "What are the blood pressure targets for stroke patients before tPA administration and during/after tPA infusion?",
+      "answer": "Pre-tPA bolus target: BP < 185/110 mmHg. During infusion and post-tPA target: BP < 180/105 mmHg. These targets are critical for safe tPA administration and must be achieved before initiating thrombolytic therapy.",
+      "category": "BP_THRESHOLDS",
+      "complexity": "high",
+      "clinical_context": "Stroke patients receiving IV alteplase require strict blood pressure control to minimize hemorrhagic risk."
+    },
+    {
+      "id": "stroke_bp_002", 
+      "question": "What is the blood pressure monitoring schedule for stroke patients receiving tPA?",
+      "answer": "BP checks every 15 minutes for 2 hours, then every 30 minutes for 6 hours, then hourly for 16 hours. This intensive monitoring ensures early detection of blood pressure changes that could increase bleeding risk.",
+      "category": "MONITORING_PROTOCOL",
+      "complexity": "high",
+      "clinical_context": "Frequent BP monitoring is essential during and after tPA administration to ensure patient safety."
+    },
+    {
+      "id": "stroke_bp_003",
+      "question": "What should be done if a stroke patient's blood pressure is above target during tPA treatment?",
+      "answer": "If BP is above target, recheck in 5 minutes. If the repeat measurement is still above target, escalate immediately to the Resus Resident and ED attending. The Resus Resident will then page the Stroke Team for urgent bedside consultation.",
+      "category": "ESCALATION_PROTOCOL",
+      "complexity": "high", 
+      "clinical_context": "Elevated BP during tPA treatment significantly increases intracranial hemorrhage risk and requires immediate intervention."
+    },
+    {
+      "id": "stroke_bp_004",
+      "question": "At what systolic blood pressure threshold should the MD be called for a stroke patient on tPA?",
+      "answer": "Call the MD if systolic BP drops below 90 mmHg. Hypotension can compromise cerebral perfusion and worsen stroke outcomes, requiring immediate medical attention and potential intervention.",
+      "category": "SAFETY_THRESHOLD",
+      "complexity": "high",
+      "clinical_context": "Hypotension in stroke patients can lead to decreased cerebral perfusion and extension of the infarct."
+    },
+    {
+      "id": "stroke_bp_005",
+      "question": "What are the IV access requirements for stroke patients receiving tPA?",
+      "answer": "All patients with tPA MUST have 2 good working IVs. If unable to maintain or obtain 2 IVs after two attempts, escalate to Resus Resident, ED attending, and Stroke team. Consider ultrasound-guided IV insertion early for patients with difficult access.",
+      "category": "IV_ACCESS",
+      "complexity": "high",
+      "clinical_context": "Dual IV access is critical for tPA administration and emergency medication access if complications arise."
+    },
+    {
+      "id": "stroke_bp_006",
+      "question": "What should be done if the Stroke Team doesn't respond to pages during a tPA case?",
+      "answer": "If the page to the Stroke team is unanswered, activate a Stroke Code on 33333. If you feel you're not getting adequate support to safely care for your patient, escalate to ED nursing leadership immediately.",
+      "category": "COMMUNICATION_ESCALATION",
+      "complexity": "medium",
+      "clinical_context": "Timely stroke team response is critical for managing tPA complications and making real-time treatment decisions."
+    },
+    {
+      "id": "stroke_bp_007",
+      "question": "What is the protocol when there are concerns about a stroke patient's care during tPA treatment?",
+      "answer": "Escalate to Resus Resident and Stroke Team, requesting a bedside huddle to address concerns and develop a plan. The guideline emphasizes: 'do not hesitate or delay escalation. Early escalation is always the best.'",
+      "category": "CLINICAL_ESCALATION",
+      "complexity": "medium",
+      "clinical_context": "Stroke care during tPA administration is time-sensitive and requires immediate collaborative decision-making for any concerns."
+    },
+    {
+      "id": "stroke_bp_008",
+      "question": "What should be done if reliable blood pressure measurements cannot be obtained in a stroke patient receiving tPA?",
+      "answer": "If unable to obtain reliable BP measurements, escalate immediately using the same protocol as for elevated BP: notify Resus Resident and ED attending, who will page the Stroke Team for bedside consultation to address the monitoring issue.",
+      "category": "MONITORING_ISSUES",
+      "complexity": "high",
+      "clinical_context": "Reliable BP monitoring is essential for safe tPA administration; inability to monitor BP creates a critical safety concern requiring immediate intervention."
+    }
+  ],
+  "metadata": {
+    "total_pairs": 8,
+    "creation_date": "2025-08-20",
+    "phase": "4B-2",
+    "cumulative_total": "16/26 pairs for Phase 4B"
+  }
+}

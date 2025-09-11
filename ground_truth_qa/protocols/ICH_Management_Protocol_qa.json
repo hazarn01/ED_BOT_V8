@@ -1,0 +1,112 @@
+{
+  "document": "ICH Management Protocol CSC-4.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "How do you activate the acute stroke page for ICH patients?",
+      "answer": "Activate Acute Stroke Page via 33333",
+      "source_section": "I. At initial presentation to the Emergency Department (ED)",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What is the target systolic blood pressure for ICH patients?",
+      "answer": "Target SBP = 140 mm Hg. Blood pressure goal should be attained within 30 minutes of diagnostic CT of the head.",
+      "source_section": "Hypertension section",
+      "question_type": "criteria"
+    },
+    {
+      "id": 3,
+      "question": "What is the first-line antihypertensive for ICH?",
+      "answer": "First line: Nicardipine drip 5 to 15 mg/h",
+      "source_section": "Hypertension - IV antihypertensives",
+      "question_type": "medication"
+    },
+    {
+      "id": 4,
+      "question": "What is the alternative to nicardipine for blood pressure control?",
+      "answer": "Alternative: Clevidipine Infusion. Initial Dose 1 to 2 mg/hr, Double the dose every 90 seconds until desired blood pressure goal, Maximum dose 32 mg/hr for short term use",
+      "source_section": "Hypertension - IV antihypertensives",
+      "question_type": "medication"
+    },
+    {
+      "id": 5,
+      "question": "What reversal agent is used for warfarin-associated ICH?",
+      "answer": "Vitamin K 10 mg IV (10 mg in 10 ml IV push) over 10 minutes (monitor for hypotension/anaphylaxis) AND Four-Factor PCC (Kcentra): INR 2 to <4 or unknown (25 Units/Kg, max 2500 Units), INR 4 to 6 (35 Units/Kg, max 3500 Units), INR >5 (50 Units/Kg, max 5000 Units)",
+      "source_section": "II. Coagulopathy - Warfarin",
+      "question_type": "medication"
+    },
+    {
+      "id": 6,
+      "question": "What is the ICH score and when should it be documented?",
+      "answer": "Document ICH score within 6 hours of presentation",
+      "source_section": "Exam section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 7,
+      "question": "What seizure management is recommended for ICH patients?",
+      "answer": "Treat any patient with seizure with Ativan 0.1 mg/kg (max: 8 mg) & Fosphenytoin (or phenytoin equivalent) 20 mg/kg IV load or Levetiracetam (Keppra) 1 g /IV. See status epilepticus protocol if patient continues to seize.",
+      "source_section": "Seizure Management",
+      "question_type": "medication"
+    },
+    {
+      "id": 8,
+      "question": "What reversal is recommended for antiplatelet agents in ICH?",
+      "answer": "For any patient with antiplatelet (Aspirin, Aggrenox, GPIIbIIIa or Clopidogrel) use in last 24 hours and ICH onset within 3 days: DDAVP 0.3 mcg/kg x 1 (20 mcg in 50 cc NS over 15-30 minutes) & Consider one apheresis platelet unit",
+      "source_section": "Reversal of Platelet Dysfunction",
+      "question_type": "medication"
+    },
+    {
+      "id": 9,
+      "question": "What is the minimum systolic blood pressure to maintain for ICH patients?",
+      "answer": "Maintain SBP > 90; begin with isotonic fluid before starting vasopressors. Consider Neosynephrine or Phenylephrine 2–10 mg/kg/min",
+      "source_section": "Hypotension",
+      "question_type": "criteria"
+    },
+    {
+      "id": 10,
+      "question": "What is the reversal protocol for dabigatran (Pradaxa)?",
+      "answer": "Praxbind (idarucizumab) 5g IV given as bolus or IV infusion. Additional 5 g may be considered if coagulation parameters re-elevate and clinically relevant bleeding occurs or if a second emergency surgery/urgent procedure is required and patient has elevated coagulation parameters.",
+      "source_section": "Direct thrombin inhibitors - Dabigatran",
+      "question_type": "medication"
+    },
+    {
+      "id": 11,
+      "question": "What labs should be ordered for ICH patients in the ED?",
+      "answer": "PT, PTT, INR; Initial Type and Hold; CBC with platelets; Troponin I; Chem7, LFTs; Urine Toxicology screen; 18 and 20 gauge peripheral IVs should be placed",
+      "source_section": "Labs section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What imaging is required for ICH evaluation?",
+      "answer": "Stat Stroke Protocol Head CT w/ CTA (r/o Spot sign). Creatinine level is NOT necessary to give contrast for CTA unless there is a h/o CKD",
+      "source_section": "Imaging section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 13,
+      "question": "What are the Mount Sinai Neuro-ICU contact numbers?",
+      "answer": "1) Call 1-800-TO-SINAI to arrange urgent transfer to the MSH or MSR Neuro-ICU; 2) Mount Sinai Neuroemergency Hotline (on-call neuro-intensivist): 1-800-748-6445; 3) Mount Sinai Neuro-ICU: 212-241-2100; 4) Mount Sinai West Neuro-ICU: 212-523-2183",
+      "source_section": "III. Disposition",
+      "question_type": "contact"
+    },
+    {
+      "id": 14,
+      "question": "What is the treatment for intracranial hemorrhage after IV tPA?",
+      "answer": "Stop TPA; Check CBC, PT, PTT, platelets, fibrinogen, DDimer; 10 units of cryoprecipitate (0.15 units/kg); Consider epsilon-amino caproic acid 4g IV; If still bleeding at 1 hour and fibrinogen still <100 mg/dL repeat cryoprecipitate dose (0.15 units/kg)",
+      "source_section": "Treatment of Intracranial Hemorrhage after IV tPA",
+      "question_type": "medication"
+    },
+    {
+      "id": 15,
+      "question": "When should external ventricular drain placement be considered?",
+      "answer": "Assess for need for urgent external ventricular drain placement (Unable to follow commands or symptomatic hydrocephalus). If external ventricular drain placed, give Ancef 1 g IV prior to drain insertion and one dose 8 hours later",
+      "source_section": "Treatment of Intracranial Hypertension",
+      "question_type": "criteria"
+    }
+  ]
+}

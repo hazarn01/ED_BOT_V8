@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What are the required criteria prior to RETU admission for TIA patients?",
+    "answer": "Required criteria: CT head, stroke consult, transient focal neurologic deficit thought to be of ischemic etiology, neurology has risk stratified patient with ABCD score ≥3, anti-platelet or anti-thrombotic initiated, and swallow study done by ED nurse or stroke consult.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "Which TIA patients are not appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: hemodynamic instability, ABCD score <3 (possible discharge from ED), focal neuro symptoms present, cardiac arrhythmias of immediate concern, symptoms occurrence >2 days prior, or uncontrolled BP >210/120 mmHg.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What initial laboratory testing should be performed for TIA patients in RETU?",
+    "answer": "Initial labs include: CBC, Chem 7, PT/PTT, glucose, lipid panel, HgbA1c (others as clinically indicated).",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What imaging studies are required for TIA patients in RETU?",
+    "answer": "Required imaging: CTA head/neck, TTE with bubble study if recommended by stroke consult.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for TIA patients in RETU?",
+    "answer": "Monitoring includes: telemetry and Q4 hour neuro checks.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What examination focus is required for TIA patients?",
+    "answer": "Examination focus should be: neuro and swallow study prior to PO intake.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should TIA patients be discussed with neurology for possible admission?",
+    "answer": "Discuss with neurology for possible admission if: recurrence of focal neuro symptoms, or studies reveal abnormal findings including carotid stenosis >50% or large vessel occlusion, TTE abnormalities, or significant abnormalities on telemetry.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for TIA patients?",
+    "answer": "Discharge criteria: no significant findings on imaging studies, no longer symptomatic from acute episode, discharge medications as per neurology recommendations, TIA education and stroke/TIA discharge package provided, and follow up scheduled for one week.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What follow-up should be arranged for TIA patients discharged from RETU?",
+    "answer": "Schedule follow up in Stroke Clinic within one week (stroke fellow can assist with expedited follow up). FPA: 212-241-7076, Stroke Clinic: 212-659-8570.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What is the required ABCD score threshold for RETU admission of TIA patients?",
+    "answer": "Neurology must have risk stratified the patient with ABCD score ≥3 for RETU admission. ABCD score <3 may be appropriate for discharge from the ED.",
+    "source": "RETU TIA Pathway New.pdf",
+    "category": "criteria"
+  }
+]

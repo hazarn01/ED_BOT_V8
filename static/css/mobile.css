@@ -1,0 +1,414 @@
+/* Mobile and Tablet Optimizations */
+@media (max-width: 768px) {
+    .chat-container {
+        height: 100vh;
+        height: 100dvh; /* Dynamic viewport height for mobile */
+    }
+
+    .chat-header {
+        padding: 1rem;
+    }
+
+    .header-content {
+        gap: 0.75rem;
+    }
+
+    .chat-header h1 {
+        font-size: 1.25rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .logo-placeholder {
+        height: 32px;
+        width: 32px;
+        font-size: 1.2rem;
+    }
+
+    .chat-messages {
+        padding: 0.75rem;
+    }
+
+    .user-message .message-content,
+    .bot-message .message-content {
+        max-width: 95%;
+        padding: 1rem;
+    }
+
+    .chat-input-container {
+        padding: 1rem;
+    }
+
+    .input-wrapper {
+        gap: 0.5rem;
+    }
+
+    #messageInput {
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 0.75rem;
+    }
+
+    .send-button {
+        min-width: 40px;
+        height: 40px;
+        padding: 0.75rem;
+    }
+
+    .quick-query-btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+        text-align: left;
+    }
+
+    .capability-list {
+        font-size: 0.9rem;
+    }
+
+    .source-header {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .source-content {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+
+    /* Touch-friendly interaction improvements */
+    .quick-query-btn:active {
+        transform: scale(0.98);
+    }
+
+    .send-button:active {
+        transform: scale(0.95);
+    }
+
+    .source-header:active {
+        background: var(--ms-gray);
+    }
+
+    /* Better spacing for mobile messages */
+    .message {
+        margin-bottom: 1rem;
+    }
+
+    /* Mobile-specific loading overlay */
+    .loading-overlay p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+    .chat-header {
+        padding: 0.75rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .logo-placeholder {
+        height: 28px;
+        width: 28px;
+        font-size: 1rem;
+    }
+
+    .chat-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .subtitle {
+        font-size: 0.75rem;
+    }
+
+    .chat-messages {
+        padding: 0.5rem;
+    }
+
+    .message-content {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .welcome-message h3 {
+        font-size: 1.1rem;
+    }
+
+    .capability-list li {
+        font-size: 0.85rem;
+        padding: 0.3rem 0;
+    }
+
+    .quick-queries h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .quick-query-btn {
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+        margin: 0.25rem 0;
+    }
+
+    .chat-input-container {
+        padding: 0.75rem;
+    }
+
+    #messageInput {
+        padding: 0.625rem 0.875rem;
+        font-size: 16px; /* iOS zoom prevention */
+        border-radius: 1rem;
+    }
+
+    .send-button {
+        min-width: 36px;
+        height: 36px;
+    }
+
+    .send-button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Better source display for small screens */
+    .sources-section {
+        margin-top: 1rem;
+        padding-top: 0.75rem;
+    }
+
+    .sources-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .source-item {
+        margin-bottom: 0.25rem;
+    }
+
+    .source-header {
+        padding: 0.5rem 0.625rem;
+        font-size: 0.75rem;
+    }
+
+    .source-content {
+        padding: 0.5rem 0.625rem;
+        font-size: 0.7rem;
+    }
+
+    .pdf-link {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    /* Stack messages closer on small screens */
+    .message {
+        margin-bottom: 0.75rem;
+    }
+
+    /* Adjust loading animation for small screens */
+    .loading-spinner {
+        width: 32px;
+        height: 32px;
+        border-width: 2px;
+    }
+}
+
+/* Replace current large screen styles with fluid approach */
+@media (min-width: 1200px) {
+    .chat-messages {
+        padding: clamp(2rem, 3vw, 4rem);
+    }
+    
+    .message-content {
+        font-size: clamp(1rem, 1.1vw, 1.2rem);
+    }
+    
+    .chat-input-container {
+        padding: clamp(1.5rem, 2.5vw, 3rem) clamp(2rem, 3vw, 4rem);
+    }
+}
+
+/* Ultrawide Monitor Optimizations (21:9, 32:9, etc.) */
+@media (min-width: 2560px) {
+    /* Full width utilization for ultrawide displays */
+    .chat-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0 clamp(2rem, 4vw, 6rem);
+    }
+    
+    /* Optimize message widths for ultrawide */
+    .user-message .message-content {
+        max-width: min(60%, 900px);
+        margin-left: auto;
+    }
+    
+    .bot-message .message-content {
+        max-width: min(80%, 1200px);
+    }
+    
+    /* Enhanced header for ultrawide */
+    .chat-header {
+        padding: 1.5rem clamp(2rem, 4vw, 6rem);
+    }
+    
+    /* Better input area spacing */
+    .chat-input-container {
+        padding: clamp(1.5rem, 2vw, 2rem) clamp(2rem, 4vw, 6rem);
+    }
+    
+    /* Larger input for ultrawide */
+    #messageInput {
+        font-size: clamp(1rem, 1.2vw, 1.1rem);
+        padding: clamp(1rem, 1.5vw, 1.25rem);
+    }
+}
+
+/* Super ultrawide (32:9 and wider) */
+@media (min-width: 3840px) {
+    .chat-container {
+        padding: 0 clamp(4rem, 6vw, 10rem);
+    }
+    
+    /* Even wider content for super ultrawide */
+    .bot-message .message-content {
+        max-width: min(85%, 1600px);
+    }
+    
+    .user-message .message-content {
+        max-width: min(65%, 1200px);
+    }
+    
+    /* Scale up fonts for super ultrawide */
+    html {
+        font-size: clamp(16px, 1.8vw, 20px);
+    }
+    
+    .chat-header {
+        padding: 2rem clamp(4rem, 6vw, 10rem);
+    }
+    
+    .chat-header h1 {
+        font-size: clamp(1.75rem, 2.2vw, 2rem);
+    }
+    
+    .subtitle {
+        font-size: clamp(1rem, 1.3vw, 1.1rem);
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+    .chat-header {
+        padding: 0.75rem 1rem;
+    }
+
+    .header-content {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .chat-header h1 {
+        font-size: 1.1rem;
+    }
+
+    .subtitle {
+        display: none; /* Hide subtitle in landscape on short screens */
+    }
+
+    .chat-messages {
+        padding: 0.5rem;
+    }
+
+    .welcome-message .message-content {
+        padding: 1rem;
+    }
+
+    .capability-list li {
+        padding: 0.25rem 0;
+    }
+
+    .quick-query-btn {
+        padding: 0.4rem 0.8rem;
+        margin: 0.2rem 0.3rem 0.2rem 0;
+        display: inline-block;
+        width: auto;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-placeholder {
+        /* Sharper rendering for high DPI */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark mode considerations (system preference) */
+@media (prefers-color-scheme: dark) {
+    /* Keep Mount Sinai colors but adjust contrast if needed */
+    :root {
+        --shadow: rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .quick-query-btn,
+    .send-button,
+    .source-header {
+        transition: none;
+    }
+
+    .loading-spinner {
+        animation: none;
+    }
+
+    .loading-dots span {
+        animation: none;
+    }
+}
+
+/* Focus management for mobile */
+@media (max-width: 768px) {
+    /* Ensure keyboard doesn't cover input */
+    .chat-input-container {
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    /* Better focus styles for touch */
+    #messageInput:focus {
+        border-color: var(--ms-cerulean);
+        box-shadow: 0 0 0 3px rgba(6, 171, 235, 0.2);
+    }
+
+    .quick-query-btn:focus,
+    .send-button:focus {
+        outline: 2px solid var(--ms-cerulean);
+        outline-offset: 2px;
+    }
+}
+
+/* Ensure safe areas on newer mobile devices */
+@supports (padding: max(0px)) {
+    .chat-container {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+
+    .chat-input-container {
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+}

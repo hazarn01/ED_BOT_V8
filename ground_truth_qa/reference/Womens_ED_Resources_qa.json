@@ -1,0 +1,42 @@
+{
+  "document": "Women's ED Resources.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the phone number for Mount Sinai Women's Mental Health Clinics?",
+      "answer": "(212) 305-6001 Press 1, Press 3, Press 2",
+      "source_section": "Mount Sinai Women's Mental Health Clinics",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "What are the eligibility criteria for Weill Cornell's Women's Program?",
+      "answer": "Must be over 19 years old, must be uninsured, resident of NYC, and income less than 400% of Poverty Level",
+      "source_section": "Weill Cornell's Women's Program",
+      "question_type": "criteria"
+    },
+    {
+      "id": 3,
+      "question": "What is the Postpartum Support International hotline number?",
+      "answer": "1-800-944-4773",
+      "source_section": "Hotlines/Websites",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What services does The Motherhood Center of New York provide?",
+      "answer": "Medication management during pregnancy and breastfeeding, individual therapy, classes/groups, and day program",
+      "source_section": "The Motherhood Center of New York",
+      "question_type": "services"
+    },
+    {
+      "id": 5,
+      "question": "What are the walk-in pregnancy test hours at Mount Sinai Women's Mental Health Clinics?",
+      "answer": "E Level Clinic, 8:30AM - 3:30PM",
+      "source_section": "Mount Sinai Women's Mental Health Clinics",
+      "question_type": "hours"
+    }
+  ]
+}

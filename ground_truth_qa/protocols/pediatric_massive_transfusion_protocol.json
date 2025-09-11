@@ -1,0 +1,107 @@
+{
+  "document_name": "Pediatric Massive Transfusion Protocol",
+  "document_type": "Clinical Protocol",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/Pediatric Massive Transfusion Protocol.pdf",
+  "qa_pairs": [
+    {
+      "question": "What are the two criteria that define massive transfusion in pediatric patients?",
+      "answer": "Massive transfusion can be defined as: 1) Transfusion of blood components equaling one or more blood volumes within a 24-hour period, OR 2) Half a blood volume in 3-12 hours.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What are the age-specific blood volume calculations for pediatric patients?",
+      "answer": "Blood volumes by age: Premature neonates: 100 mL/kg, Mature neonates: 90 mL/kg, Infants: 80 mL/kg, Children: 70-80 mL/kg.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What are the four main criteria for activation of the Massive Transfusion Protocol?",
+      "answer": "1) Hemodynamic instability with large blood loss in <4 hours, 2) Large blood volume loss with ongoing blood loss, 3) Major gastrointestinal or surgical bleeding, 4) Severe thoracic, abdominal, pelvic, or multiple long bone trauma, and/or major head trauma.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "Who can initiate the Massive Transfusion Protocol and what are the requirements?",
+      "answer": "Only a physician or physician appointed designee can initiate MTP. The designee must be a licensed medical practitioner (MD, RN, NP, PA) and a criterion for MTP activation must be anticipated or met.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What information must be provided to Blood Bank when activating MTP?",
+      "answer": "Patient name, MRN, and location; Weight if <25 kg; Initiating physician (who will sign the blood bank form), designee name, and contact number.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What is the blood product ratio for pediatric MTP packs and how are they packaged?",
+      "answer": "Blood products are provided at a 1:1:1 ratio of PRBC:FFP:Platelets. For <25 kg: 2 units PRBC, 2 units FFP, 1 apheresis platelet per pack. For ≥25 kg: 5 units PRBC, 5 units FFP, 1 apheresis platelet per pack.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "When is cryoprecipitate included in pediatric MTP packs?",
+      "answer": "Cryoprecipitate (1 pooled unit) is thawed immediately after MTP activation and issued when ready. For <25 kg patients, it's included starting with Pack 1. For ≥25 kg patients, it's included in Packs 1 and 2.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What laboratory tests should be sent during MTP and how frequently?",
+      "answer": "Send arterial blood gas, hematocrit, electrolytes, fibrinogen, platelets, PT, and PTT. These should be monitored regularly to guide component therapy and assess electrolyte abnormalities.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What are the target hemoglobin levels during pediatric massive transfusion?",
+      "answer": "Maintain hemoglobin 7-8 g/dL for children, but 9-10 g/dL for neonates.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What are the target coagulation parameters during MTP?",
+      "answer": "Maintain: Fibrinogen 150-200 mg/dL, PT/PTT <1.5x normal, Platelets 50,000-100,000.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "How should hypocalcemia be treated during pediatric MTP?",
+      "answer": "For hypocalcemia (Ca++ <1.14 mmol/L): Calcium chloride 10-20 mg/kg OR Calcium gluconate 30-50 mg/kg.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What is the treatment protocol for hyperkalemia during pediatric MTP?",
+      "answer": "For hyperkalemia (K+ >5.5 mEq/L + ECG changes or K+ >6 mEq/L): 1) Calcium gluconate 50-100 mg/kg, 2) Sodium bicarbonate 1 mEq/L, 3) Insulin regular 0.1 U/kg, 4) D50 1 mL/kg.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "When should sodium bicarbonate be considered and what is the pediatric dosing?",
+      "answer": "Consider sodium bicarbonate for acidosis (pH <7.2). Dose: 1-2 mEq/kg/dose.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What is the pediatric dosing for magnesium replacement during MTP?",
+      "answer": "For hypomagnesemia (Mg <1.5 mg/dL): Magnesium sulfate 50 mg/kg.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What is the tranexamic acid dosing for pediatric patients during MTP?",
+      "answer": "Tranexamic acid: 10-30 mg/kg bolus (maximum 2g), followed by 5-10 mg/kg/h infusion.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "How are subsequent MTP packs requested and delivered?",
+      "answer": "Pack 2 is set up immediately after Pack 1 is delivered. Subsequent packs are sent when a phone request is received, which usually occurs when previously issued products are nearly exhausted. Products are sent via pneumatic tube or runner pickup.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What steps are required to discontinue the Massive Transfusion Protocol?",
+      "answer": "1) Initiating physician or designee notifies Blood Bank by phone, 2) Unused blood components should be returned immediately to the Blood Bank.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What key elements should be reviewed during the post-MTP debriefing?",
+      "answer": "The initiating physician/designee and Blood Bank physician should review: 1) Any delays in receiving blood products, 2) Any issues with blood components, 3) Whether all appropriate forms and requests were completed, 4) Any improvements that can be made in the process.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What additional considerations are important during pediatric massive transfusion?",
+      "answer": "Important considerations include: Maintain normothermia, anticipate and correct electrolyte abnormalities, consider tranexamic acid, and monitor for coagulopathy with regular laboratory assessment.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    },
+    {
+      "question": "What is the blood bank contact number for MTP activation?",
+      "answer": "Contact Blood Bank at extension 46101 (x46101) to activate the Massive Transfusion Protocol.",
+      "source": "Pediatric Massive Transfusion Protocol"
+    }
+  ]
+}

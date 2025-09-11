@@ -1,0 +1,112 @@
+{
+  "document": "Protocol for the Initial Evaluation of stroke CSC-2.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "How do you activate the stroke code?",
+      "answer": "Activate stroke code via 33333. If stroke is suspected and if last known well less than 12 hours, activate stroke code via 33333.",
+      "source_section": "Initial Nursing Triage",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What is the door-to-ED MD evaluation time target for stroke patients?",
+      "answer": "≤10 minutes",
+      "source_section": "Time Target Goals table",
+      "question_type": "timing"
+    },
+    {
+      "id": 3,
+      "question": "What is the door-to-stroke team assessment time target?",
+      "answer": "≤15 minutes",
+      "source_section": "Time Target Goals table",
+      "question_type": "timing"
+    },
+    {
+      "id": 4,
+      "question": "What is the door-to-CT performed time target?",
+      "answer": "≤25 minutes",
+      "source_section": "Time Target Goals table",
+      "question_type": "timing"
+    },
+    {
+      "id": 5,
+      "question": "What is the door-to-IV tPA administration time target?",
+      "answer": "≤60 minutes (if eligible)",
+      "source_section": "Time Target Goals table",
+      "question_type": "timing"
+    },
+    {
+      "id": 6,
+      "question": "What contact numbers are used for acute stroke team notification?",
+      "answer": "Call AMAC to activate acute stroke code or call stroke code operator via 33333. For specific services: Neurosurgery Consult Beeper 2009; Neuroradiology x44261 (Mon-Fri 8am-11pm, Sat & Sun 8am-5pm), off hours page radiology resident at Beeper 1490",
+      "source_section": "Acute Stroke Team Notification table",
+      "question_type": "contact"
+    },
+    {
+      "id": 7,
+      "question": "What is the time window for IV tPA eligibility?",
+      "answer": "Onset of acute stroke symptoms within 3 hours. Between 3 and 4.5 hours from symptom onset, selected patients may be eligible for treatment with IV alteplase, at the discretion of the treating vascular neurologist.",
+      "source_section": "IV tPA indications",
+      "question_type": "timing"
+    },
+    {
+      "id": 8,
+      "question": "What blood pressure parameters contraindicate IV tPA?",
+      "answer": "Systolic BP > 185 and Diastolic BP > 110 despite treatment",
+      "source_section": "IV tPA contraindications",
+      "question_type": "criteria"
+    },
+    {
+      "id": 9,
+      "question": "What is the tPA dosing regimen?",
+      "answer": "0.9 mg/kg (maximum of 90 mg) tPA (alteplase, Activase) infused over 60 minutes with 10% of the total dose administered as an initial intravenous bolus over 1 minute",
+      "source_section": "Management of the IV tPA-eligible Patient",
+      "question_type": "medication"
+    },
+    {
+      "id": 10,
+      "question": "What is the pharmacy hotline number for tPA preparation?",
+      "answer": "x7-8789 - Call the ED pharmacist or the pharmacy tPA hotline at x7-8789 for all cases requiring tPA preparation, regardless of patient location or time of day",
+      "source_section": "Prior to IV tPA administration",
+      "question_type": "contact"
+    },
+    {
+      "id": 11,
+      "question": "What are the vital sign monitoring requirements during tPA infusion?",
+      "answer": "Every 15 minutes x 2 hours (includes the hour of IV tPA administration), Then every 30 minutes x 6 hours, Then every 60 minutes x 16 hours",
+      "source_section": "Management of the IV tPA-eligible Patient",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What blood pressure targets should be maintained during tPA infusion?",
+      "answer": "Maintain blood pressure at or below systolic blood pressure 180 mm Hg or diastolic blood pressure 105 mm Hg. If systolic >185 or diastolic >110, give Labetalol 10-20 mg IV over 1-2 minutes (may repeat x1) OR Nicardipine 5 mg/hr IV infusion",
+      "source_section": "TABLE 1 - Eligible for thrombolytic therapy",
+      "question_type": "criteria"
+    },
+    {
+      "id": 13,
+      "question": "What should you do if angioedema is suspected during tPA?",
+      "answer": "Alert the physician for early discontinuation of the tPA infusion. Administer Benadryl 50 mg IV and Famotidine 20 mg IV. If tongue continues to enlarge, give Solumedrol 80-100 mg IV. If further enlargement, give epinephrine 0.1% 0.3 mL SC or 0.5 mL via nebulizer and call ENT, anesthesiology or other appropriate in-house service STAT.",
+      "source_section": "Assessment for and Management of Angioedema",
+      "question_type": "medication"
+    },
+    {
+      "id": 14,
+      "question": "What are the contraindications for IV tPA related to recent procedures?",
+      "answer": "Intracranial or spinal surgery, or serious head trauma within the last 3 months; Gastrointestinal Hemorrhage within the last 21 days",
+      "source_section": "IV tPA contraindications",
+      "question_type": "criteria"
+    },
+    {
+      "id": 15,
+      "question": "For patients NOT eligible for IV tPA, when should antihypertensive agents be avoided?",
+      "answer": "Antihypertensive agents should be avoided unless the Systolic BP is > 220 mm Hg or the MAP is > 100 mm Hg or treatment of co-morbid end-organ involvement, such as aortic dissection, AMI, pulmonary edema, or hypertensive encephalopathy, is needed",
+      "source_section": "Management of Patients NOT Eligible for IV tPA",
+      "question_type": "criteria"
+    }
+  ]
+}

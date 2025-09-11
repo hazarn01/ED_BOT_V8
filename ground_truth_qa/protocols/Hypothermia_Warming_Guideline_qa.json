@@ -1,0 +1,78 @@
+{
+  "document_name": "Hypothermia (Warming) Guideline.pdf",
+  "document_type": "protocol",
+  "domain": "emergency_medicine",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": "hypo_001",
+      "question": "How are the different degrees of hypothermia classified and what temperature measurement methods should be used?",
+      "answer": "Mild hypothermia: Core temperature 32-35°C. Moderate hypothermia: Core temperature 28-32°C. Severe hypothermia: Core temperature below 28°C. Temperatures in well-appearing patients should be measured rectally. In sicker patients or those undergoing invasive rewarming, esophageal temperature probes are preferred. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "assessment",
+      "subcategory": "temperature_classification"
+    },
+    {
+      "id": "hypo_002",
+      "question": "What are the initial assessment priorities for hypothermic patients in the ED?",
+      "answer": "Efforts should be made to identify why patients are hypothermic: environmental, CNS, septic, adrenal and thyroid-related causes should all be considered. Fingerstick glucose measurement, serum laboratory testing and ECG should be considered in all patients with mild hypothermia who otherwise do not appear well. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "assessment",
+      "subcategory": "initial_evaluation"
+    },
+    {
+      "id": "hypo_003",
+      "question": "What rewarming techniques are appropriate for different presentations of mild hypothermia?",
+      "answer": "Well-appearing patients with mild hypothermia benefit from warmed blankets. Sicker patients in mild hypothermia typically need more aggressive rewarming techniques such as forced air warming blankets (e.g. Bair Hugger device). Unwell-appearing patients should be undressed completely and placed in hospital gown. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "treatment",
+      "subcategory": "rewarming_techniques"
+    },
+    {
+      "id": "hypo_004",
+      "question": "What rewarming method is specifically contraindicated for hypothermic patients?",
+      "answer": "Under no circumstance should warmed IV fluid bags be placed on patients' skin or clothing in an attempt to rewarm patients. This method is specifically contraindicated and could cause burns or other complications. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "safety",
+      "subcategory": "contraindicated_techniques"
+    },
+    {
+      "id": "hypo_005",
+      "question": "What is the resuscitation approach for patients with moderate or severe hypothermia?",
+      "answer": "Depending on presenting circumstances, patients with moderate or severe hypothermia should be resuscitated including invasive rewarming techniques, ICU consultation consideration and CPR until they reach a temperature between 32 to 35°C. Continue resuscitation efforts until rewarming to this target range is achieved. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "critical_care",
+      "subcategory": "severe_hypothermia_management"
+    },
+    {
+      "id": "hypo_006",
+      "question": "What diagnostic studies should be prioritized in hypothermic patients who appear unwell?",
+      "answer": "In all patients with mild hypothermia who otherwise do not appear well, consider fingerstick glucose measurement, serum laboratory testing, and ECG. These tests help identify underlying causes and complications of hypothermia, including metabolic derangements and cardiac arrhythmias. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "diagnostic_workup",
+      "subcategory": "laboratory_studies"
+    },
+    {
+      "id": "hypo_007",
+      "question": "What underlying etiologies should be investigated in hypothermic patients?",
+      "answer": "Investigate multiple potential causes of hypothermia: environmental exposure, CNS causes (stroke, head trauma), septic causes (infection), adrenal insufficiency, and thyroid-related causes (hypothyroidism, myxedema coma). Comprehensive evaluation needed to identify and treat underlying conditions. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "differential_diagnosis",
+      "subcategory": "underlying_causes"
+    },
+    {
+      "id": "hypo_008",
+      "question": "What is the temperature goal for resuscitation efforts in moderate and severe hypothermia?",
+      "answer": "Continue resuscitation efforts including invasive rewarming techniques, ICU consultation, and CPR until patients reach a temperature between 32 to 35°C. This represents the transition from moderate/severe hypothermia back to the mild hypothermia range where patients have better physiologic reserve. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "treatment",
+      "subcategory": "temperature_goals"
+    },
+    {
+      "id": "hypo_009",
+      "question": "When should ICU consultation be considered for hypothermic patients?",
+      "answer": "ICU consultation should be considered for patients with moderate or severe hypothermia who require invasive rewarming techniques and intensive monitoring. This is particularly important for patients requiring active resuscitation measures and those with temperatures below 32°C. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "disposition",
+      "subcategory": "icu_consultation"
+    },
+    {
+      "id": "hypo_010",
+      "question": "What is the significance of the temperature measurement method in hypothermic patients?",
+      "answer": "Temperature measurement method matters based on patient acuity: well-appearing patients should have rectal temperatures for accuracy, while sicker patients or those undergoing invasive rewarming techniques should have esophageal temperature probes for continuous core temperature monitoring during active management. Source: Hypothermia (Warming) Guideline.pdf",
+      "category": "monitoring",
+      "subcategory": "temperature_monitoring"
+    }
+  ]
+}

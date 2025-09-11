@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Which pediatric patients are excluded from minimal sedation and must follow moderate sedation protocol?",
+    "answer": "Excluded patients (must follow moderate sedation protocol): Patients less than 1 year of age or less than 10 kg weight, ASA Class 3 or higher, Total dose of one medication exceeding the maximum dosage guidelines, and Any patient receiving multiple different sedatives. These exclusions identify higher-risk patients requiring enhanced monitoring and safety protocols.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What are the dosing guidelines for intranasal midazolam in pediatric minimal sedation?",
+    "answer": "Intranasal Midazolam (Versed): Usual dosage 0.2-0.3 mg/kg, Maximum dosage 10 mg, Onset of action 5-10 minutes, Duration of effect 30-60 minutes, Reversal agent is Flumazenil. This route provides rapid onset without the need for IV access, making it ideal for anxious pediatric patients undergoing procedures.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What monitoring and documentation requirements apply to pediatric minimal sedation?",
+    "answer": "Monitoring: Continuous pulse oximetry monitoring for all pediatric patients undergoing minimal sedation. Documentation: Nursing must document patient tolerance and SpO2 at the beginning and after the procedure, and every 15 minutes during the procedure. This ensures continuous safety monitoring throughout the sedation period.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What are the dosing guidelines for naloxone (Narcan) reversal in pediatric patients?",
+    "answer": "Naloxone (Narcan) reversal dosing: IV/IO/IM 0.1 mg/kg with maximum 2 mg/dose, repeat every 2-3 minutes PRN. Important note: IM Naloxone absorption may be delayed or erratic, requiring close monitoring and potential repeat doses every 20-60 minutes if the duration of action of the sedative is longer than naloxone.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What privilege requirements exist for ordering minimal sedation in pediatric patients?",
+    "answer": "Privilege requirement: Only those privileged in moderate sedation should order minimal sedation for pediatric patients. This ensures that clinicians ordering pediatric sedation have demonstrated competency in managing sedation complications and possess the advanced skills needed for safe sedation practice in children.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What are the onset times and duration of effects for oral sedation medications in pediatric patients?",
+    "answer": "Oral sedation timing: Midazolam PO (Versed) 0.5 mg/kg, max 20 mg - onset 20-30 minutes, duration 1-2 hours. Lorazepam PO (Ativan) 0.05 mg/kg, max 2 mg - onset 20-30 minutes, duration 6-8 hours. The longer duration of lorazepam requires extended monitoring compared to midazolam.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What is the dosing protocol for flumazenil (Romazicon) reversal in pediatric patients?",
+    "answer": "Flumazenil (Romazicon) dosing: IV 0.01 mg/kg, maximum 0.2 mg/dose, repeat every minute PRN to a maximum cumulative dose of 1 mg. This benzodiazepine reversal agent is used for midazolam or lorazepam overdose, with careful titration to avoid precipitating withdrawal or seizures in dependent patients.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "Minimal Sedation in Pediatric Patients"
+  },
+  {
+    "question": "What is the key difference between minimal and moderate sedation protocols for pediatric patients?",
+    "answer": "Key differences: Minimal sedation needs less monitoring than moderate sedation and does not require a huddle, consent, and other aspects of the moderate sedation protocol. However, it still requires continuous pulse oximetry monitoring and can only be ordered by providers privileged in moderate sedation. The reduced requirements allow for more efficient procedural sedation while maintaining safety standards.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Minimal Sedation in Pediatric Patients"
+  }
+]

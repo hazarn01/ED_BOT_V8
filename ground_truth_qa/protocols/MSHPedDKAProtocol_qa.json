@@ -1,0 +1,116 @@
+[
+  {
+    "question": "How is diabetic ketoacidosis defined in pediatric patients?",
+    "answer": "DKA is defined as: 1) Glucose >200mg/dL, 2) Moderate to large ketonuria/ketonemia, and 3) Venous pH <7.3 or HCO3 <15mEq/L.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "Who should be contacted for pediatric DKA management?",
+    "answer": "Contact the 24-hour Pediatric Endocrine Fellow and Attending on call via 212-241-6936 or pager listed on Amion. Each case needs individual assessment and frequent reassessment with the Diabetes Team.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "contact"
+  },
+  {
+    "question": "What history should be obtained for pediatric DKA patients?",
+    "answer": "Obtain history of: duration of illness, symptoms (polydipsia, polyphagia), assessment of fluid loss (polyuria, nocturia, vomiting), weight loss, abdominal pain, nausea and fatigue, medications (i.e. steroids). If known diabetes - review patient's home diabetes management, including insulin regimen, adherence and time of last insulin injection.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What physical examination findings should be assessed in pediatric DKA?",
+    "answer": "Physical examination should assess: Constitutional (weight loss, tachycardia), HEENT/Skin (level of dehydration - dry mucous membranes, skin turgor, capillary perfusion, peripheral pulses, fundoscopic exam), Respiratory (Kussmaul respirations, fruity odor breath), Neurologic (level of consciousness, mental status, GCS).",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What initial labs should be obtained for pediatric DKA?",
+    "answer": "Initial labs: Point of Care Testing (POCT) blood glucose, VBG and urine dipstick; Start 2 large bore IV lines; Obtain chem10, CBC, HbA1C; Calculate anion gap [Na- (H2CO3+Cl)].",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What additional labs should be obtained if diabetes is not known?",
+    "answer": "If patient is not known to have Diabetes Mellitus, before starting insulin treatment also obtain: Total insulin, C-peptide, DM related autoantibodies (Insulin Ab, GAD Ab, IA2 Ab, Zinc Transporter 8 Ab).",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What is the initial fluid management for pediatric DKA?",
+    "answer": "Initial fluid management: Patient should be NPO; Normal Saline bolus (10cc/kg) over 1 hr; Reassess hydration status to determine need for 2nd bolus (10cc/kg); Start Insulin IV infusion at 0.1Units/kg/hr; Initiate 2 bag system at 1.5-2X maintenance rate.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "How should the 2-bag system be set up for pediatric DKA?",
+    "answer": "2-bag system: Bag 1: Normal Saline; Bag 2: Dextrose 10% ½ Normal Saline. Add dextrose to fluids when blood sugar <300mg/dL. Adjust fluid rates based on glucose and electrolytes.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When and how should potassium be added to IV fluids in pediatric DKA?",
+    "answer": "Add Potassium to fluids when serum K <5.0 mEq/L. Start with 20 mEq/L KCl and 20 mEq/L Kphos.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the goals for blood glucose management in pediatric DKA?",
+    "answer": "Goal is to decrease blood sugar by 50-100mg/dL/hr and to then maintain BG at 150-200 mg/dL. Do not stop insulin infusion. Insulin infusion should be continued until pH > 7.3 and/or serum bicarb > 18 and/or anion gap normalizes.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring schedule should be followed for pediatric DKA?",
+    "answer": "Monitoring schedule: Q1hr POCT glucose, Q2hr VBG, Q4hr chem10, Q1 hour vital signs and neuro checks, Urinalysis every void until ketones have cleared, Strict I&Os.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What complications should be monitored for in pediatric DKA?",
+    "answer": "Monitor for complications including hypoglycemia, hypokalemia, hypocalcemia, hypernatremia, fluid overload and hyperchloremic acidosis. Over-vigorous management can produce rapid changes in glucose, osmolality and pH.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What is the incidence and risk factors for cerebral edema in pediatric DKA?",
+    "answer": "Cerebral edema occurs in up to 1% of children with DKA and accounts for >50% of the mortality rate. Patients at highest risk are those who are newly diagnosed and age < 5 years. Peak incidence is around 8-12 hours after initiation of therapy.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What are the warning signs of cerebral edema in pediatric DKA?",
+    "answer": "Warning signs include abnormal response to pain, decorticate/decerebrate posture, cranial nerve palsy and/or abnormal respiratory pattern. If patient develops any of these symptoms or severe headache, mental status changes, bradycardia, or hypertension perform a complete neurological examination.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "How should suspected cerebral edema be managed in pediatric DKA?",
+    "answer": "If cerebral edema is suspected, consider empiric treatment with elevation of HOB, decreasing IVF rate, and mannitol IV. This is a medical emergency requiring immediate intervention.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should transition from IV to subcutaneous insulin begin?",
+    "answer": "Transition when the child is stable, alert, ready to eat and parameters improved (pH > 7.3, serum bicarb > 18, anion gap closed). Insulin doses are individualized for each patient and must be discussed with the Pediatric Endocrinology Team.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What calculations are used to determine subcutaneous insulin dosing?",
+    "answer": "Once patient's food tray has arrived determine the total dose of short acting insulin (Lispro) using 2 calculations: Insulin sensitivity factor (ISF)- used to correct for high BG levels; Insulin carbohydrate factor (ICF)- used to cover carbohydrates consumed. The Pediatric Endocrine Team will provide both calculations.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What is the timing for subcutaneous insulin administration?",
+    "answer": "Administer subcutaneous injections of both long acting insulin (Lantus) and short acting (Lispro) insulin. Wait 20 minutes before discontinuing IV insulin. Allow patient to eat with regular diet and NO concentrated sweets.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What glucose monitoring is required after transition to subcutaneous insulin?",
+    "answer": "Once transitioned to subcutaneous insulin check POCT glucose premeal, bedtime, midnight, and 3am. Patient should not go >6 hours without a glucose check.",
+    "source": "MSHPedDKAProtocol11.5.2019.pdf",
+    "category": "protocol"
+  }
+]

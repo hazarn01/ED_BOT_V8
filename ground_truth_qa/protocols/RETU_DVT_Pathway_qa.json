@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for DVT patients?",
+    "answer": "Required testing includes: CBC, Chem 7, PT/INR, aPTT, Doppler US results, and pregnancy test (appropriate age female).",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "Which DVT patients are not appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: hemodynamic instability and/or hypoxia, patient at high risk for hemorrhage, limb-threatening thrombosis, thrombolysis or pharmacomechanical thrombectomy needed, IVC filter placement needed, pregnancy with delivery planned, or contraindication to outpatient use of anticoagulation medication.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What is the dosing for enoxaparin in DVT treatment?",
+    "answer": "Enoxaparin dosing: 1 mg/kg SC q12h or alternative 1.5 mg/kg SC daily.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "dosage"
+  },
+  {
+    "question": "What are the DOAC options and dosing for DVT treatment?",
+    "answer": "DOAC options: Rivaroxaban 15mg PO bid x21 days or Apixaban 10mg PO bid x7 days. Ensure insurance can fill medication by calling pharmacy after prescribing or involving social work.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "dosage"
+  },
+  {
+    "question": "What is the warfarin dosing protocol for DVT patients?",
+    "answer": "Warfarin: 2-5mg PO daily on day 1-2 of parenteral anticoagulation. Discharge with INR check in 2 days if on warfarin.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "dosage"
+  },
+  {
+    "question": "What monitoring is required for DVT patients in RETU?",
+    "answer": "Monitoring includes: vital signs q4h, vascular status, and pulmonary status.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What examination focus is required for DVT patients?",
+    "answer": "Examination focus should be: cardiopulmonary and vascular systems.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for DVT patients?",
+    "answer": "Discharge criteria: acceptable vital signs, no development of criteria for admission (as per exclusion criteria), lower extremity exam at baseline, pain absent or managed, and outpatient anticoagulation plan established.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should DVT patients be admitted to the hospital from RETU?",
+    "answer": "Admission criteria: unstable vital signs/other deterioration of clinical status, anticoagulation not tolerated (bleeding, allergic reaction), unable to satisfy follow-up requirements, or unsafe home environment/inability to adhere as determined by social work/case management.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What patient education is important before discharge on enoxaparin?",
+    "answer": "Place nursing communication for teaching if on enoxaparin and ensure patient or family member is comfortable with self-injecting.",
+    "source": "RETU DVT Pathway.pdf",
+    "category": "protocol"
+  }
+]

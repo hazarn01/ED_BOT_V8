@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What key information should be gathered for communication to the Neurosurgery Consultant when a SAH patient presents to the ED?",
+    "answer": "Essential information includes: HPI (history of present illness), patient age, date/time of SAH onset or last time seen normal, history of head trauma, seizure or syncope at onset. Past medical/social history should include prior stroke/MI/PVD and cocaine use history. Clinical exam should document SAH location, presence of hydrocephalus or IVH, presence of ICH, and evidence of trauma. Required lab findings include platelet count, PT/PTT/INR, and EKG findings.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What are the initial studies and medications recommended for SAH patients in the ED before transfer?",
+    "answer": "Initial studies: Head CT, CBC, chem 7, PT/PTT/INR, LFTs, Troponin, type and hold, EKG, CXR. Medications include: Fosphenytoin 20 mg/kg IV load or Levetiracetam (Keppra) 1g PO/IV for seizure prophylaxis. Nimodipine dosing: 60mg PO q4h for SBP≥140, 30mg for SBP 120-140, hold for SBP≤120. Consider Amicar 4g bolus and 1g/hour drip for rebleeding prevention.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What are the blood pressure management goals and preferred agents for SAH patients?",
+    "answer": "Keep SBP between ≤140 mmHg and ≥90 mmHg. For SBP control use Nicardipine drip (preferred), Clevidipine drip, or Labetalol drip. Avoid nitroprusside as it can raise ICP. For hypotension (SBP <90), use neosynephrine (phenylephrine). The goal is to prevent rebleeding while maintaining adequate cerebral perfusion pressure.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "When should mannitol or hypertonic saline be considered in SAH patients and what are the dosing guidelines?",
+    "answer": "Consider for suspected elevated intracranial pressure if patient is not following commands and/or CT suggests elevated ICP. Mannitol 20% 1-1.5 g/kg bolus (100g if weight unknown) OR 30cc 23% saline (must be pushed over 10-20 minutes via central line by MD). These agents help reduce intracranial pressure and should be used judiciously based on clinical and radiographic evidence of elevated ICP.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What are the key contact numbers for SAH patient transfers and neurosurgical consultation?",
+    "answer": "TRANSFER HOTLINE: 1-800-TO-SINAI, Neuroemergencies Hotline: 1-800-748-6445, Neurocritical Care fellow: 42100, MSH Neuroradiology: 44261, MSH CT: 47412. Contact the neurointensivist attending through 1-800-TO-SINAI or the Neuroemergencies Hotline at 1-800-748-6445 for urgent consultation and transfer coordination.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What urgent stabilization measures should be taken for SAH patients admitted to the NSICU on Day 1?",
+    "answer": "ABCs assessment first. Assess for emergent EVD placement (if non-command following exam). If EVD placed, give Ancef 1g prior to insertion then discontinue antibiotics. Assess for elevated ICP and consider mannitol or 23% saline as indicated. Angiogram/coiling/clipping of aneurysm should be scheduled and performed urgently. Patient must have 18 or 20 gauge arm IV; central line alone is inadequate.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What imaging studies are required for SAH patients and what are the timing requirements?",
+    "answer": "HCT baseline with follow-up CTA should be ordered between day 5-8. This MUST BE DONE AS SOON AS PATIENT IS STABILIZED. Call neuroradiology fellow if not done timely - delay in obtaining this study must not delay angiogram/definitive aneurysm treatment. For creatinine >1.0, give Mucomyst 600mg PO BID x 2 days and HCO3 drip (3 amps NaHCO3 in 1 liter D5W at 1cc/kg/h for 1 hour before and 6 hours after CT).",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What are the specific monitoring goals and procedures for SAH patients in the ICU?",
+    "answer": "CI goal >4.0, ICP goal <20 cm H2O, CPP goal ≥60 mmHg, Licox PbO2 goal ≥20 mmHg. Schedule daily TCDs (transcranial dopplers). If EVD in place, perform q1 hour ICP checks. Elevate HOB 30 degrees. Order compression boots. Place NGT if patient unable to take PO medications. NPO status initially maintained.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What medications and monitoring are required for SAH patients from ICU Day 2 onwards?",
+    "answer": "Continue phenytoin 300mg IV daily, check daily dilantin levels and free dilantin if on CYP450 medications. Consider D/C antiepileptics in good grade patients (Hunt-Hess 1-2) or switch to Keppra 1000mg IV BID. Start Lovenox 40mg SQ immediately after aneurysm coiling (or 48 hours after craniotomy). Daily EKG and troponin if on pressors. Start feeds per feeding protocol. If craniotomy performed, give Cefuroxime 1.5g q6h x 24h (or Vancomycin + Gentamycin if PCN allergy).",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "How should vasospasm be managed in SAH patients showing clinical deterioration?",
+    "answer": "For symptomatic vasospasm: Increase IVF or albumin dosing frequency, ensure Ins ≥ Outs. Trial phenylephrine or norepinephrine to increase SBP by 20-30 mmHg, recheck exam in 20-30 minutes for improvement. Titrate pressors per exam to max BP 220/110 mmHg. Check daily EKG and troponin on pressors. Obtain HCT, CTA/CTP and schedule angiogram. Rule out other causes (hydrocephalus, seizure, metabolic issues, fever). Hold nimodipine if patient receiving pressors.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What are the criteria for EVD management and removal in SAH patients?",
+    "answer": "EVD placement indicated for non-command following exam suggesting elevated ICP. If EVD placed, give Ancef 1g prior to insertion then discontinue prophylactic antibiotics. Perform q1 hour closed ICP checks. Check CSF cells and culture if EVD in place AND patient febrile or infection suspected. When ready to D/C EVD, give Ancef 1g IV prior to pulling. Consider screening HCT and LP after EVD discontinuation to assess for elevated ICP.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  },
+  {
+    "question": "What special considerations apply to SAH patients with hyponatremia or requiring renal replacement therapy?",
+    "answer": "For hyponatremia, ensure Ins ≥ Outs and replace salt and volume as this is most likely cerebral salt wasting. Options include salt tabs, hypertonic saline, and normal saline. For patients with chronic renal failure requiring dialysis, schedule CVVH or SLED (slow dialysis). If patient requires temperature management, assess for arctic sun if temp >38.3°C x 2 readings 2 hours apart and initiate normothermia protocol.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "SAH (Non-Traumatic) Management Protocol CSC-3"
+  }
+]

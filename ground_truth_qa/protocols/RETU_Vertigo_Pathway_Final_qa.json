@@ -1,0 +1,67 @@
+{
+  "document_name": "RETU Vertigo Pathway Final.pdf",
+  "document_type": "protocol",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What specific neurological assessment is required prior to RETU admission for vertigo patients?",
+      "answer": "Required neurological assessment includes: neuro exam focusing on cerebellar function, eye movements, and brainstem signs. Additionally, pregnancy test in women of childbearing age, ECG, and glucose are required.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What are the absolute contraindications for RETU admission in vertigo patients?",
+      "answer": "Patients should not be admitted to RETU if they have acute hearing loss, double vision, neurological deficits, severe headache or head trauma, hemodynamic instability, high clinical suspicion of central vertigo, or fever/sepsis.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What examination components are essential for distinguishing central from peripheral vertigo?",
+      "answer": "The neurological examination should focus on cerebellar function, eye movements, and brainstem signs. This helps identify central vertigo features such as nystagmus patterns, coordination deficits, and cranial nerve abnormalities.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "What are the medication precautions for elderly patients with vertigo in RETU?",
+      "answer": "Avoid anticholinergics in elderly patients due to increased risk of confusion and falls. Use caution with benzodiazepine dosage in elderly patients to prevent oversedation and increased fall risk.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "medication_management"
+    },
+    {
+      "question": "What are the first-line treatment options for vertigo in RETU?",
+      "answer": "Treatment options include anticholinergics (such as meclizine), benzodiazepines, antiemetics (such as Zofran or Reglan), and IV hydration as appropriate for symptom management and hydration support.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What monitoring parameters are essential for vertigo patients in RETU?",
+      "answer": "Essential monitoring includes serial neurological examinations to detect any changes, monitoring hydration status to prevent dehydration-related worsening, and monitoring PO status to ensure adequate intake.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "When should neurology consultation and neuroimaging be obtained for vertigo patients?",
+      "answer": "Neurology consultation and neuroimaging should be obtained when there are concerning findings or persistent symptoms despite appropriate treatment, suggesting possible central vertigo or other serious pathology.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "consultation_criteria"
+    },
+    {
+      "question": "What are the specific discharge criteria for vertigo patients from RETU?",
+      "answer": "Patients can be discharged when they have acceptable vital signs, clinical improvement, ability to ambulate and care for themselves safely at home, and are tolerating PO intake adequately.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "discharge_criteria"
+    },
+    {
+      "question": "What clinical findings would necessitate hospital admission for a vertigo patient?",
+      "answer": "Hospital admission is required for unacceptable vital signs or clinical condition (such as stroke), significant laboratory or imaging abnormalities, inability to tolerate PO or care for self at home, or new inability to ambulate.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What is the follow-up plan for patients discharged from RETU with vertigo?",
+      "answer": "Patients should be discharged with appropriate follow-up arrangements including ENT, neurology, or primary care provider depending on the suspected etiology and clinical presentation of their vertigo.",
+      "source": "RETU Vertigo Pathway Final.pdf",
+      "category": "discharge_criteria"
+    }
+  ]
+}

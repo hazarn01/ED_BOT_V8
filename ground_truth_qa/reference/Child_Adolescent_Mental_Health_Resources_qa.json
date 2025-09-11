@@ -1,0 +1,42 @@
+{
+  "document": "Child Adolescent Mental Heath Resources.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the phone number for Mount Sinai Child, Adolescent, and Family Services?",
+      "answer": "(212) 241-7175",
+      "source_section": "Mount Sinai Child, Adolescent, and Family Services",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "Where is the Northside Center located and what is their phone number?",
+      "answer": "1301 5th Avenue at 110th Street, phone number (212) 426-3400",
+      "source_section": "Northside Center",
+      "question_type": "contact"
+    },
+    {
+      "id": 3,
+      "question": "What is the main phone number for Jewish Board of Family and Children's Services (JBFCS)?",
+      "answer": "(212) 397-4250",
+      "source_section": "Jewish Board of Family and Children's Services",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What is the phone number for Harlem Hospital Child and Adolescent Psychiatry?",
+      "answer": "(212) 523-3059",
+      "source_section": "Harlem Hospital Child and Adolescent Psychiatry",
+      "question_type": "contact"
+    },
+    {
+      "id": 5,
+      "question": "How many child and adolescent mental health clinics are listed in this Manhattan resource guide?",
+      "answer": "Ten clinics are listed: Mount Sinai Child/Adolescent/Family Services, Northside Center, JBFCS, Johnson Center, Metropolitan Center for Mental Health, Harlem Hospital, St. Luke's/Roosevelt Hospital, Upper Manhattan Mental Health Services, North General Hospital, and Ackerman Institute for the Family",
+      "source_section": "Complete document listing",
+      "question_type": "resources"
+    }
+  ]
+}

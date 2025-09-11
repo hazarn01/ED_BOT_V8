@@ -1,0 +1,86 @@
+[
+  {
+    "question": "What testing is required prior to RETU admission for GI bleed patients?",
+    "answer": "Required testing includes: CBC, PT/PTT, EKG in elderly or comorbidities, troponin in elderly or comorbidities, and rectal/guaiac exam.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What patients with GI bleed are not appropriate for RETU?",
+    "answer": "Not appropriate for RETU: hemodynamic instability, ongoing active bleeding (drop in Hg/Hct), coagulopathy (advanced liver disease, irreversible anticoagulation), significant active comorbid disease (symptomatic heart failure, COPD), suspected/known ischemic colitis, previous aortic graft placement or known aortic aneurysm, signs of intestinal obstruction or peritonitis, high-risk low platelet count, anemia with findings suggesting inadequate perfusion (persistent tachycardia, abnormal orthostatics, AMS, heart failure, chest pain, exertion dyspnea).",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What should be the examination focus for GI bleed patients in RETU?",
+    "answer": "Examination focus should be: Abdominal/rectal, Cardiovascular, and Mental status.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What initial testing should be performed for GI bleed patients in RETU?",
+    "answer": "Initial testing includes: Labs - CBC (q3-6h), BMP, PT/PTT (others as clinically indicated); Imaging - CT imaging (as indicated).",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What monitoring is required for GI bleed patients in RETU?",
+    "answer": "Monitoring includes: continuous telemetry monitoring (as indicated), serial CBC, and monitor bowel movements.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "When should GI consult be obtained for RETU GI bleed patients?",
+    "answer": "GI consult should be obtained as indicated based on clinical assessment.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "How often should CBC be checked for GI bleed patients in RETU?",
+    "answer": "CBC should be checked every 3-6 hours for GI bleed patients in RETU.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What should be discussed with patient and nursing regarding monitoring for GI bleeding?",
+    "answer": "Discuss with patient and nursing to monitor bowel movements for evidence of ongoing bleeding.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the discharge criteria from RETU for GI bleed patients?",
+    "answer": "Discharge criteria include: hemodynamically stable, stable serial CBC, no further evidence of bleeding, and no endoscopy or colonoscopy indicated (per GI).",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What follow-up is required when discharging GI bleed patients from RETU?",
+    "answer": "Patients should be discharged with GI follow-up arranged.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What are the admission criteria for GI bleed patients?",
+    "answer": "Admission criteria include: deterioration of clinical condition, hemodynamic instability, declining Hgb/Hct, continued bleeding, or per specialist request.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "What treatment should be initiated when admitting a GI bleed patient?",
+    "answer": "When admitting: appropriately resuscitate, consult GI, and consider PPI/octreotide.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "protocol"
+  },
+  {
+    "question": "What indicates ongoing bleeding in RETU GI bleed patients?",
+    "answer": "Ongoing bleeding is indicated by drop in CBC and/or evidence of ongoing bleeding during monitoring.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "criteria"
+  },
+  {
+    "question": "When should patients with GI bleeding be discharged versus admitted?",
+    "answer": "Discharge if serial CBC stable and no active bleeding. Admit if drop in CBC and/or evidence of ongoing bleeding.",
+    "source": "RETU GI Bleed Pathway.pdf",
+    "category": "criteria"
+  }
+]

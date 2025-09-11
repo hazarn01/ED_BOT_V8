@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrawide Validation Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f0f0f0;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .resolution-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .test-link {
+            display: inline-block;
+            background: #06ABEB;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 10px 10px 10px 0;
+        }
+        .test-link:hover {
+            background: #0891c7;
+        }
+        .recommendations {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #06ABEB;
+        }
+    </style>
+</head>
+<body>
+    <h1>🖥️ Ultrawide Monitor Validation</h1>
+    <div class="test-container">
+        <h2>Screen Resolution Detection</h2>
+        <div class="resolution-info" id="resolution">Detecting screen resolution...</div>
+        <div id="ultrawide-status">Checking ultrawide compatibility...</div>
+    </div>
+
+    <div class="test-container">
+        <h2>ED Bot v8 Ultrawide Test</h2>
+        <p>Click the link below to test the ED Bot v8 interface on your ultrawide monitor:</p>
+        <a href="http://localhost:8001" class="test-link" target="_blank">🚀 Open ED Bot v8</a>
+    </div>
+
+    <div class="test-container">
+        <h2>What to Look For:</h2>
+        <ul>
+            <li>✅ No horizontal deadspace or white bars on the sides</li>
+            <li>✅ Content spans the full width of your ultrawide display</li>
+            <li>✅ Messages are appropriately sized (not too wide to read comfortably)</li>
+            <li>✅ Header and input areas utilize the full screen width</li>
+            <li>✅ Google Fonts load without CSP errors in console</li>
+        </ul>
+    </div>
+
+    <div class="recommendations">
+        <h3>Ultrawide Optimizations Applied:</h3>
+        <ul>
+            <li><strong>2560px+ width:</strong> Full width container, optimized message sizing</li>
+            <li><strong>3840px+ width:</strong> Enhanced padding and font scaling</li>
+            <li><strong>Dynamic padding:</strong> Responsive edge spacing using clamp()</li>
+            <li><strong>Message width limits:</strong> Comfortable reading widths (60-85% max)</li>
+        </ul>
+    </div>
+
+    <script>
+        // Detect screen resolution and ultrawide status
+        function updateScreenInfo() {
+            const width = screen.width;
+            const height = screen.height;
+            const ratio = (width / height).toFixed(2);
+            
+            document.getElementById('resolution').textContent = 
+                `Screen Resolution: ${width}x${height} (${ratio}:1 aspect ratio)`;
+            
+            const statusEl = document.getElementById('ultrawide-status');
+            
+            if (width >= 5120) {
+                statusEl.innerHTML = '🖥️ <strong>Super Ultrawide Detected!</strong> (32:9+) - Enhanced optimizations active';
+                statusEl.style.color = '#059669';
+            } else if (width >= 3840) {
+                statusEl.innerHTML = '🖥️ <strong>Ultra-wide Detected!</strong> (24:10+) - Full optimizations active';
+                statusEl.style.color = '#0891c7';
+            } else if (width >= 2560) {
+                statusEl.innerHTML = '🖥️ <strong>Ultrawide Detected!</strong> (21:9) - Optimizations active';
+                statusEl.style.color = '#2563eb';
+            } else {
+                statusEl.innerHTML = '📱 Standard display - Default responsive layout active';
+                statusEl.style.color = '#6b7280';
+            }
+        }
+        
+        updateScreenInfo();
+        
+        // Update on resize (for testing)
+        window.addEventListener('resize', updateScreenInfo);
+    </script>
+</body>
+</html>

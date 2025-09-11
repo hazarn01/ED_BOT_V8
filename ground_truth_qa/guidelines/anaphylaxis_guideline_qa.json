@@ -1,0 +1,112 @@
+{
+  "document": "Anaphylaxis Guideline_Final_6_6_24.pdf",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the first-line treatment for anaphylaxis in adults?",
+      "answer": "Epinephrine 1mg/mL (1:1000) injection, 0.5mg IM",
+      "source_section": "First-Line Treatment",
+      "question_type": "medication"
+    },
+    {
+      "id": 2,
+      "question": "What is the pediatric dosing for epinephrine in anaphylaxis?",
+      "answer": "0.01mg/kg IM",
+      "source_section": "First-Line Treatment Pediatric Dosing",
+      "question_type": "medication"
+    },
+    {
+      "id": 3,
+      "question": "What are the two main diagnostic criteria for anaphylaxis?",
+      "answer": "1. Acute onset illness with skin/mucosal involvement plus respiratory compromise, reduced BP, or severe GI symptoms. 2. Acute onset hypotension/bronchospasm/laryngeal involvement after known allergen exposure, even without skin involvement",
+      "source_section": "Diagnostic criteria section",
+      "question_type": "criteria"
+    },
+    {
+      "id": 4,
+      "question": "What second-line treatments should be given for anaphylaxis?",
+      "answer": "Anti-histamine (Benadryl/Diphenhydramine), Steroid (Prednisone or Methylprednisolone), and H2 Blocker (Famotidine)",
+      "source_section": "Second-Line Treatment",
+      "question_type": "medication"
+    },
+    {
+      "id": 5,
+      "question": "What additional treatment should be given if wheezing is present?",
+      "answer": "Albuterol nebulization",
+      "source_section": "IF Wheezing present",
+      "question_type": "medication"
+    },
+    {
+      "id": 6,
+      "question": "What should be given for hypotension in anaphylaxis?",
+      "answer": "Sodium Chloride 0.9% injection (IV fluids)",
+      "source_section": "IF Hypotension",
+      "question_type": "medication"
+    },
+    {
+      "id": 7,
+      "question": "When should you initiate an epinephrine drip for refractory anaphylaxis?",
+      "answer": "For persistent problems with airway, breathing, circulation despite appropriate epinephrine dosing and symptom-directed medical management. Initial reaction must be treated with two or more doses of IM epinephrine",
+      "source_section": "Refractory Anaphylaxis",
+      "question_type": "criteria"
+    },
+    {
+      "id": 8,
+      "question": "What is the epinephrine drip dose for refractory anaphylaxis?",
+      "answer": "0.1 mcg/kg/min",
+      "source_section": "Refractory Anaphylaxis dosing",
+      "question_type": "medication"
+    },
+    {
+      "id": 9,
+      "question": "What medication should be considered for patients on beta-blockers with anaphylaxis?",
+      "answer": "Glucagon",
+      "source_section": "Refractory Anaphylaxis considerations",
+      "question_type": "medication"
+    },
+    {
+      "id": 10,
+      "question": "How long should patients be monitored after epinephrine administration?",
+      "answer": "Consider monitoring for 4-6 hours, though some literature suggests this may not be necessary if symptoms have resolved",
+      "source_section": "Post-treatment monitoring",
+      "question_type": "timing"
+    },
+    {
+      "id": 11,
+      "question": "What should be prescribed at discharge for anaphylaxis patients?",
+      "answer": "3-day course of prednisone (if received steroids), antihistamine, EpiPen, and referral to allergist",
+      "source_section": "Upon discharge recommendations",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What order set should be used for anaphylaxis patients?",
+      "answer": "Anaphylaxis orderset (can also be found using search term 'allergic reaction')",
+      "source_section": "Order set recommendation",
+      "question_type": "workflow"
+    },
+    {
+      "id": 13,
+      "question": "When should early intubation be considered in anaphylaxis?",
+      "answer": "If there is airway involvement (stridor) or significant edema of tongue, oropharynx, or voice alteration",
+      "source_section": "Refractory Anaphylaxis airway management",
+      "question_type": "criteria"
+    },
+    {
+      "id": 14,
+      "question": "What is the timeframe for anaphylaxis symptom onset?",
+      "answer": "Acute onset (minutes to several hours)",
+      "source_section": "Diagnostic criteria timing",
+      "question_type": "timing"
+    },
+    {
+      "id": 15,
+      "question": "Why is early recognition and treatment critical in anaphylaxis?",
+      "answer": "Roughly one-half of anaphylactic-related fatalities occur within the first hour of symptom onset",
+      "source_section": "Early recognition importance",
+      "question_type": "clinical_pearls"
+    }
+  ]
+}

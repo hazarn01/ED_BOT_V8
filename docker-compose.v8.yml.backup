@@ -1,0 +1,183 @@
+services:
+  db:
+    image: ankane/pgvector:latest
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  # vLLM service for GPT-OSS 20B (GPU profile)
+  llm:
+    image: ${VLLM_IMAGE:-vllm/vllm-openai:latest}
+    command: [
+      "--model", "/models/gpt-oss-20b",
+      "--max-model-len", "8192",
+      "--tensor-parallel-size", "1"
+    ]
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models/gpt-oss-20b:/models/gpt-oss-20b
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    profiles: ["gpu"]
+
+  # vLLM service for GPT-OSS 20B (GPU profile)
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: edbotv8-vllm
+    profiles: ["gpt-oss"]
+    environment:
+      - VLLM_LOGGING_LEVEL=INFO
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+    command: [
+      "--model", "microsoft/DialoGPT-medium",
+      "--dtype", "auto",
+      "--gpu-memory-utilization", "0.8",
+      "--disable-log-requests"
+    ]
+    volumes:
+      - vllm-cache:/root/.cache/huggingface
+    ports:
+      - "8000:8000"
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    profiles: ["cpu"]
+
+  ollama-pull:
+    image: ollama/ollama:latest
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_DEFAULT_MODEL=${OLLAMA_DEFAULT_MODEL}
+    # Run via the image's default entrypoint ("ollama") to execute: `ollama pull <model>`
+    command: ["pull", "${OLLAMA_DEFAULT_MODEL:-mistral:7b-instruct}"]
+    depends_on:
+      - ollama
+    profiles: ["cpu"]
+
+  elasticsearch:
+    image: elasticsearch:8.11.1
+    container_name: edbot-elasticsearch
+    profiles: ["search"]  # Optional profile
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false  # Dev only
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - cluster.name=edbot-cluster
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/_cluster/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.v8
+    command: uvicorn src.api.app:app --host 0.0.0.0 --port 8001 --forwarded-allow-ips '*'
+    ports:
+      - "8001:8001"
+    env_file: EDBOTv8.env.example
+    environment:
+      - LLM_BACKEND=${LLM_BACKEND}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL}
+      - VLLM_BASE_URL=${VLLM_BASE_URL}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.v8
+    command: python -m src.ingestion.tasks run --batch /app/docs
+    env_file: EDBOTv8.env.example
+    environment:
+      - LLM_BACKEND=${LLM_BACKEND}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL}
+      - VLLM_BASE_URL=${VLLM_BASE_URL}
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./:/app
+      - ./docs:/app/docs
+
+  streamlit:
+    build: ./streamlit_app
+    container_name: edbot-streamlit
+    profiles: ["ui"]  # Optional profile - only runs when explicitly requested
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    depends_on:
+      - api
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  db_data:
+  ollama_data:
+  es_data:
+  vllm-cache: 

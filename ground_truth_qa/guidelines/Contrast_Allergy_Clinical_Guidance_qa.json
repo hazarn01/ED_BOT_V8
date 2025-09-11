@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What are the pre-medication timing requirements for patients with mild or moderate previous contrast reactions based on imaging urgency?",
+    "answer": "For Low urgency imaging (e.g. CT Chest for malignancy): 13 hour pre-medication for both mild and moderate previous reactions. For Medium urgency imaging (e.g. CT A/P for acute abdominal pain): 5 hour pre-medication for both mild and moderate reactions. For High urgency imaging (e.g. CTA Lower Extremity for acute limb ischemia): 1 hour pre-medication for both mild and moderate reactions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What is the recommended approach for patients with severe/anaphylaxis previous contrast reactions?",
+    "answer": "For patients with severe/anaphylaxis previous contrast reactions, the recommendation across all imaging urgency levels (Low, Medium, High) is to 'Consider alternate modality.' If the decision is made to continue with contrast, it requires accompaniment by a provider to CT and appropriate monitoring in the post-injection period.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "How are mild contrast reactions classified according to the ACR scheme?",
+    "answer": "Mild contrast reactions include: Limited urticaria/pruritis, Limited cutaneous edema, Limited 'itchy'/'scratchy' throat, and Nasal congestion. These reactions are generally localized and do not involve significant systemic symptoms or hemodynamic compromise.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What characterizes moderate contrast reactions according to the ACR classification?",
+    "answer": "Moderate contrast reactions include: Diffuse urticaria/pruritis, Diffuse erythema with stable vital signs, Facial edema without dyspnea, Throat tightness or hoarseness without dyspnea, and Wheezing/bronchospasm with mild or no hypoxia. These are more widespread but without severe respiratory or cardiovascular compromise.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What defines severe/anaphylaxis contrast reactions in the ACR classification system?",
+    "answer": "Severe/Anaphylaxis reactions include: Diffuse edema, or facial edema with dyspnea, Diffuse erythema with hypotension, Laryngeal edema with stridor and/or hypoxia, Wheezing/bronchospasm with significant hypoxia, and Anaphylactic shock (hypotension + tachycardia). These reactions involve significant respiratory distress and/or cardiovascular compromise.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What special precautions are required when giving contrast to patients with previous severe reactions?",
+    "answer": "For patients with previous severe/anaphylaxis reactions who receive contrast, the decision requires: Accompaniment by a provider to CT, and Appropriate monitoring in the post-injection period. This ensures immediate medical intervention is available if a severe reaction occurs during or after contrast administration.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What are examples of different imaging urgency levels used in contrast allergy pre-medication decisions?",
+    "answer": "Low urgency example: CT Chest for malignancy (allows 13-hour pre-medication). Medium urgency example: CT A/P for acute abdominal pain (allows 5-hour pre-medication). High urgency example: CTA Lower Extremity for acute limb ischemia (allows only 1-hour pre-medication). The urgency level determines the available time for pre-medication protocols.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  },
+  {
+    "question": "What is the key difference in management approach between mild/moderate and severe previous contrast reactions?",
+    "answer": "For mild and moderate previous reactions, pre-medication protocols are used with timing based on imaging urgency (1, 5, or 13 hours). For severe/anaphylaxis previous reactions, the primary recommendation is to consider alternate imaging modality rather than proceeding with contrast. If contrast is still used, it requires provider accompaniment and intensive post-injection monitoring.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "Contrast Allergy Clinical Guidance (2024-12)"
+  }
+]

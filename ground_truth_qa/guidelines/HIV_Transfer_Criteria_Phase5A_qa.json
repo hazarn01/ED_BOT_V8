@@ -1,0 +1,60 @@
+{
+  "document_name": "HIV Transfer Criteria.pdf",
+  "document_type": "guideline",
+  "qa_pairs": [
+    {
+      "question": "What are the three levels of HIV transfer criteria and their basic actions?",
+      "answer": "Level 1: Offer transfer to patient, no approval needed. Level 2: Consider transfer but obtain consult from HIV attending. Level 3: Do NOT approach for transfer.",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "What clinical criteria qualify an HIV patient for Level 1 transfer without approval?",
+      "answer": "Patient has well controlled HIV (CD4 >200, undetectable viral load) and is being admitted for an unrelated issue such as: cellulitis, CHF, fluid overload, osteomyelitis, chronic ulcer/wound infection, or bacterial community acquired pneumonia.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "Under what conditions should you consider transfer but obtain HIV attending consultation (Level 2)?",
+      "answer": "When CD4 <200 at risk for opportunistic infection, including: ESRD with suspected line infection, decompensated cirrhosis, immunosuppressive therapy (high dose steroids, biologics for autoimmune diseases), suspected PCP pneumonia, or suspected viral or fungal pneumonia.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "Which HIV patients should absolutely NOT be approached for transfer?",
+      "answer": "Patients unstable or at high risk for decompensation, high suspicion for opportunistic infection requiring ID consult at another facility, age under 18, pregnant patients (must be cleared by OB prior to transfer), HIV transplant patients regardless of timing, patients on MSH clinical trials, or those closely followed by specialty services with contraindications for transfer.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "What CD4 count threshold is used to differentiate Level 1 from Level 2 transfer criteria?",
+      "answer": "CD4 >200 qualifies for Level 1 (offer transfer without approval), while CD4 <200 requires Level 2 (consider transfer with HIV attending consultation).",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "Are HIV transplant patients ever appropriate for transfer?",
+      "answer": "No, HIV transplant patients are Level 3 (do NOT approach for transfer) regardless of when they received the transplant. Note that patients who received an organ transplant within the past two years are admitted to the transplant team.",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "What infectious conditions make HIV patients appropriate for Level 1 transfer?",
+      "answer": "Bacterial community acquired pneumonia is listed as appropriate for Level 1 transfer in well-controlled HIV patients (CD4 >200, undetectable viral load).",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "When should you suspect PCP pneumonia in the context of HIV transfer decisions?",
+      "answer": "Suspected PCP pneumonia is a Level 2 criterion, meaning you should consider transfer but obtain consult from HIV attending, particularly when CD4 <200 and patient is at risk for opportunistic infections.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "How do pregnancy and pediatric age affect HIV transfer decisions?",
+      "answer": "Both are Level 3 criteria (do NOT approach for transfer). Pregnant HIV patients must be cleared by OB prior to any transfer consideration, and patients under 18 years old should not be approached for transfer.",
+      "complexity": "medium",
+      "source_page": 1
+    }
+  ]
+}

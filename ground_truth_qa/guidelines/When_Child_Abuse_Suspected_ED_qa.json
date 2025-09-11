@@ -1,0 +1,50 @@
+[
+  {
+    "question": "What are the initial steps to take at Mount Sinai when child abuse is suspected in the Emergency Department?",
+    "answer": "Initial steps: 1) Take a thorough history and physical exam (see attached documents), 2) Call the Social Worker covering the Pediatric ED (found at the top of the EPIC track-board under Social Work link; during business hours Tues/Wed/Thu reach Christine Franz at 347-852-037, call On-Call Social Worker after-hours), 3) Call Dr. Grimm, Mount Sinai Child Abuse Attending, at 917-751-4066 (or covering MD via AMION), but complete history, physical, and involve SW prior to contacting Dr. Grimm.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What are the contact numbers and protocols for sexual assault cases in the Emergency Department?",
+    "answer": "For Sexual Assault within last 72-96 hours: Search 'ED SAFE/SAVI program' on AMION to reach SAFE provider for specimen collection (patients 13+ yo). For patients <13 years, 'SAFE Troubleshooter' on AMION can guide process. 'SAFE Advocate' can sit with patients of any age. Specimen kits in SAFE cabinet in Adult ED with printed 'Guide to SAFE Exam'. If trouble reaching someone: SAFE Coordinator Silva Sergenian 212-423-2150 (business hours), SAFE troubleshooter after-hours/weekends (via AMION).",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What is the mandatory reporting process for suspected child abuse cases?",
+    "answer": "Mandatory reporting process: Call New York State Child Abuse Hotline at 1-800-635-1522 (SW will usually help). Reporting can be done 24/7. Be specific and have them read back exactly what they wrote down. Make sure caller ID#, name of worker, time, date, and allegations are clearly documented in medical record. Additionally, FORM LDSS-2221A must be filled out and mailed to ACS within 48 hours, also email to aleshia.smith@mountsinai.org (SW will usually help).",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What is the TEN-4 FACES rule for evaluating concerning bruising in children?",
+    "answer": "TEN-4 FACES rule - Be concerned for non-accidental trauma if: Any bruising in infant <4 months of age, OR bruising in following areas in child <4 years of age: Torso, Ears, Neck, Frenulum, Angle of jaw, Cheeks, Eyelids, Subconjunctival hemorrhage. Consider labs: CBC + platelets, PT, INR, aPTT, VWF antigen, VWF activity, Factor VIII, Factor IX, LFTs. If intracranial bleeding, add Factor XIII, D-dimer, Fibrinogen.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "When should skeletal surveys be obtained and what follow-up is required?",
+    "answer": "Skeletal survey indications: If patient <2 years with abusive injuries or shares home with abused child, OR if patient <5 years and developmentally delayed or neurologically impaired. Repeat X-rays in 2 weeks (even if initial normal) excluding skull, pelvis, and spine. Consider labs to screen for metabolic bone disease: calcium, phosphorus, alkaline phosphatase, intact PTH, 25-OH Vitamin D. For male infant <6 years with fracture, consider Menkes disease: serum copper and ceruloplasmin.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What are the criteria for obtaining head CT in suspected child abuse cases?",
+    "answer": "Head CT criteria in suspected abuse: Child of any age with signs suggesting intracranial injury, Infant <6 months old regardless of physical findings, OR Infant 6-12 months old with external head injuries on exam OR skull fracture OR fracture highly suggestive of abuse (eg, rib fractures or metaphyseal fractures). If symptomatic neurologic injury, get MRI of cervical spine and brain 2 days later. Call Ophthalmology within 72 hours for children <5 years with strong suspicion for Abusive Head Trauma because retinal hemorrhages heal quickly.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What are the high specificity fracture types most concerning for child abuse?",
+    "answer": "High specificity fractures for child abuse: Classic metaphyseal lesions, Rib fractures (especially posterior), Spinous process fractures, Sternal fractures, Any infant with unexplained fractures. Moderate specificity: Multiple fractures (especially bilateral), Fractures of different ages, Epiphyseal separations, Vertebral body fractures and subluxations, Digital fractures, Complex skull fractures. These findings require immediate child abuse consultation and comprehensive evaluation.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "When Child Abuse is Suspected in the ED"
+  },
+  {
+    "question": "What abdominal trauma evaluation is indicated in suspected child abuse cases?",
+    "answer": "Abdominal trauma evaluation: Suspect in infant <6 months OR older child with bruising on trunk, signs of acute abdomen, or other significant injury. Consider labs: AST, ALT, Lipase. If AST or ALT >80, or lipase >100: obtain CT Abdomen with IV contrast (not oral contrast). This helps identify occult abdominal injuries that may not be clinically apparent but can be life-threatening in abuse cases.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "When Child Abuse is Suspected in the ED"
+  }
+]

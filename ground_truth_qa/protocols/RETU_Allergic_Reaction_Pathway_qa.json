@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What are the required assessments prior to RETU admission for allergic reaction patients?",
+    "answer": "Required testing prior to RETU admission includes: ENT consult and scope if symptoms of throat swelling or voice change, Observation in ED if given epinephrine, and Pulse oximetry monitoring. These assessments ensure that patients with potential airway involvement or severe reactions are properly evaluated before observation unit admission.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "Which allergic reaction patients are NOT appropriate for RETU admission?",
+    "answer": "Not appropriate for RETU: Pulmonary complaints or new hypoxia, Persistent hypotension, Persistent tachycardia, Stridor/respiratory distress/hoarseness present, EKG changes or suspicion of ACS (Acute Coronary Syndrome). These findings suggest severe systemic reactions or anaphylaxis requiring higher level of care and continuous monitoring.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What are the key examination focuses for allergic reaction patients in RETU?",
+    "answer": "Exam focus areas include: HEENT (Head, Eyes, Ears, Nose, Throat - to assess for angioedema, throat swelling), Pulmonary (to evaluate for wheezing, stridor, respiratory distress), and Skin (to assess for urticaria, rash, or other dermatologic manifestations of allergic reaction). These systems are most commonly affected in allergic reactions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What standard treatment interventions are used for allergic reactions in RETU?",
+    "answer": "Standard interventions include: Steroids (Prednisone PO, Methylprednisolone IV, or Dexamethasone PO/IV), PLUS H1 blocker (Diphenhydramine PO), PLUS H2 blocker (Famotidine PO/IV). This triple therapy approach addresses different aspects of the allergic response through anti-inflammatory and antihistamine mechanisms.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What monitoring is recommended for allergic reaction patients in RETU?",
+    "answer": "Monitoring as clinically indicated includes: Telemetry (for cardiac monitoring, especially if concerns about systemic reaction), and Continuous pulse oximetry (to monitor for respiratory compromise or hypoxia). The level of monitoring is tailored to the severity and type of allergic reaction.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What are the discharge criteria for allergic reaction patients from RETU?",
+    "answer": "Discharge criteria include: Resolution or improvement of symptoms, Stable vital signs, and Patient feels at baseline. All criteria must be met to ensure the allergic reaction has adequately resolved and the patient can safely return home without risk of delayed or biphasic reactions.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What are the specific vital sign parameters that would require hospital admission for allergic reaction patients?",
+    "answer": "Abnormal vital signs requiring admission include: SBP <90 mmHg (hypotension suggesting systemic reaction), RR >24 bpm (tachypnea suggesting respiratory compromise), or hypoxia. Other admission criteria include worsening of symptoms, persistent wheezing/stridor, inadequate response to therapy during observation, or inability to take PO medications.",
+    "query_type": "CRITERIA_CHECK",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What specific interventions are recommended for clinical worsening in allergic reaction patients?",
+    "answer": "For clinical worsening: Consult ENT for scope for throat symptoms, Albuterol for wheezing, and If concern for anaphylaxis, give epinephrine (1:1000 solution) 0.3mg SC/IM. These interventions address airway compromise, bronchospasm, and systemic anaphylactic reactions respectively.",
+    "query_type": "DOSAGE_LOOKUP",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What discharge medications and follow-up are recommended for allergic reaction patients?",
+    "answer": "Discharge interventions include: Ensure discontinuance of ACEI if on ACEI (as ACE inhibitors can cause angioedema), Prescribe prednisone, H1 + H2 blocker, consider EpiPen (for future severe reactions), and Arrange follow up with Allergy as indicated. This comprehensive approach prevents recurrence and provides emergency treatment options.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "When should ENT consultation be obtained for allergic reaction patients?",
+    "answer": "ENT consult should be obtained: For scope if symptoms of throat swelling or voice change (during initial evaluation), and For scope for throat symptoms if clinical worsening occurs during observation. ENT evaluation with direct laryngoscopy helps assess the degree of upper airway involvement and risk of airway compromise.",
+    "query_type": "CONTACT_LOOKUP",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What is the approach if there is no clinical improvement in an allergic reaction patient?",
+    "answer": "If no clinical improvement occurs, the pathway indicates to 'Re-dose interventions' - meaning repeat the standard treatment regimen of steroids, H1 blocker, and H2 blocker. If clinical worsening occurs after re-dosing, then more aggressive interventions including ENT consult, albuterol, and epinephrine should be considered.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  },
+  {
+    "question": "What specific laboratory tests may be indicated for allergic reaction patients in RETU?",
+    "answer": "Initial testing as clinically indicated includes: Labs such as CBC (Complete Blood Count), Basic Metabolic Panel, and pregnancy test. These tests are not routinely required for all allergic reactions but may be indicated based on the clinical presentation, suspected triggers, or need to rule out other conditions.",
+    "query_type": "PROTOCOL_STEPS",
+    "source": "RETU Allergic Reaction Pathway"
+  }
+]

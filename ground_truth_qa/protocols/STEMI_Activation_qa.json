@@ -1,0 +1,77 @@
+{
+  "document": "STEMI Activation.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the difference between CODE STEMI and STEMI ALERT?",
+      "answer": "CODE STEMI: Activate Cath Lab immediately (highly suspicious for true STEMI). STEMI ALERT: Review EKG first, check Online Medical Control STEMI email or faxed/ED EKG, then activate when in doubt or if EKG not included in FDNY Telemetry email.",
+      "source_section": "EMS Prenotification section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What are the contact numbers for STEMI activation during business hours?",
+      "answer": "7:00 am – 10:00 pm: Cardiac Cath Lab: x40935",
+      "source_section": "Activation table",
+      "question_type": "contact"
+    },
+    {
+      "id": 3,
+      "question": "What is the after-hours contact for STEMI activation?",
+      "answer": "10:00 pm – 7:00 am (or if no answer in Cath Lab): STEMI Pager: (917) 827-9725. Enter 10 digit callback number and add 911 if patient is an EMS notification.",
+      "source_section": "Activation table",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "Where is the Red Phone located for EMS notifications?",
+      "answer": "The Red Phone is located in Resus",
+      "source_section": "EMS Prenotification",
+      "question_type": "workflow"
+    },
+    {
+      "id": 5,
+      "question": "What should the attending check for after receiving EMS notification?",
+      "answer": "Attending checks for email from FDNY Telemetry which should include the EKG",
+      "source_section": "EMS Prenotification",
+      "question_type": "workflow"
+    },
+    {
+      "id": 6,
+      "question": "What is the key principle when deciding whether to activate for STEMI?",
+      "answer": "When in doubt, Activate. The STEMI pager mobilizes the Cardiac Cath Team and expect callback from Cath attending.",
+      "source_section": "Notes",
+      "question_type": "workflow"
+    },
+    {
+      "id": 7,
+      "question": "What medication order set should always be used for STEMI patients?",
+      "answer": "Always use the STEMI medication order set",
+      "source_section": "Notes",
+      "question_type": "medication"
+    },
+    {
+      "id": 8,
+      "question": "Who specifies CODE STEMI or STEMI ALERT designation?",
+      "answer": "Online Medical Control generally specifies CODE STEMI or STEMI ALERT",
+      "source_section": "EMS Prenotification",
+      "question_type": "workflow"
+    },
+    {
+      "id": 9,
+      "question": "What additional number should be added when paging for EMS notifications?",
+      "answer": "Add 911 if patient is an EMS notification when entering the 10 digit callback number",
+      "source_section": "Activation table notes",
+      "question_type": "contact"
+    },
+    {
+      "id": 10,
+      "question": "What should you do if there is no answer at the Cath Lab during business hours?",
+      "answer": "If no answer in Cath Lab during 7:00 am – 10:00 pm, use the STEMI Pager: (917) 827-9725",
+      "source_section": "Activation table",
+      "question_type": "contact"
+    }
+  ]
+}

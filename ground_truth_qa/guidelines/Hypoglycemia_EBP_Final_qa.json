@@ -1,0 +1,39 @@
+{
+  "document_name": "Hypoglycemia_EBP_Final_10_2024",
+  "document_type": "guideline",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What blood glucose level defines hypoglycemia and what constitutes symptomatic hypoglycemia?",
+      "answer": "Hypoglycemia is defined as blood glucose <70 mg/dL. Symptomatic hypoglycemia includes patients with hypoglycemia symptoms even with blood glucose 70-100 mg/dL."
+    },
+    {
+      "question": "What is the treatment for unconscious hypoglycemic patients without IV access?",
+      "answer": "Give Glucagon 1mg IM, which can be repeated once every 15 minutes. Simultaneously work to obtain IV access for definitive glucose administration."
+    },
+    {
+      "question": "What is the standard IV glucose treatment for conscious hypoglycemic patients with IV access?",
+      "answer": "Give 50mL (25g) D50 IV over 2-5 minutes. If point-of-care glucose (POCG) remains <100 after treatment, repeat as needed."
+    },
+    {
+      "question": "What oral treatment is recommended for conscious patients with hypoglycemia who are not NPO?",
+      "answer": "Give 15-20 grams of rapid-acting carbohydrates, which can be repeated twice every 15 minutes until POCG >100. Examples include 4 glucose tablets, 8 saltine crackers, 1/2 cup fruit juice, 1/2 can regular soda, or 1 tablespoon sugar."
+    },
+    {
+      "question": "What IV glucose alternative is recommended for patients who are NPO and difficult IV access?",
+      "answer": "If IV access is difficult to obtain in NPO patients, give 200mL of D10 over 15 minutes. If this is still difficult, give 50mL (25g) D50 IV over 2-5 minutes, then initiate D5 maintenance fluids."
+    },
+    {
+      "question": "What symptoms are associated with hypoglycemia?",
+      "answer": "Symptoms include shaking, sweating, nausea, vomiting, palpitations, dizziness, irritability, anxiety, tingling, lightheadedness, visual changes, slurred speech, confusion, loss of consciousness, and seizures."
+    },
+    {
+      "question": "What special considerations apply to malnourished patients with hypoglycemia?",
+      "answer": "In malnourished patients: (1) Glucagon may not work due to lack of glycogen stores, and (2) Add thiamine, but do not delay glucose administration. If refractory hypoglycemia occurs, consider IV glucocorticoid for adrenal insufficiency."
+    },
+    {
+      "question": "When should octreotide be initiated and what workup is needed for non-diabetic patients?",
+      "answer": "Octreotide should be initiated if sulfonylurea overdose is suspected. For non-diabetic patients, add serum glucose, serum insulin, c-peptide, and oral hypoglycemic agent screen in addition to other hypoglycemia workup."
+    }
+  ]
+}

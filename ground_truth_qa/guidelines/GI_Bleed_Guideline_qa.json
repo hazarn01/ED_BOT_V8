@@ -1,0 +1,39 @@
+{
+  "document_name": "GI Bleed Guideline",
+  "document_type": "guideline", 
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What is the shock index formula and what value is associated with poor outcomes in GI bleeding patients?",
+      "answer": "The shock index formula is Heart Rate divided by Systolic Blood Pressure. A shock index >0.8-0.9 is associated with poor outcomes in GI bleeding patients."
+    },
+    {
+      "question": "What are the recommended lab studies for evaluating GI bleeding patients?",
+      "answer": "Recommended lab studies include: CBC, CMP, LFT, type and screen, coagulation studies, cardiac markers (in patients with cardiovascular disease), and lactate/VBG (indicates perfusion status). Optional studies for chronic anemia concerns include serum iron concentration, total iron binding capacity, serum vitamin B-12, and serum folate."
+    },
+    {
+      "question": "What Glasgow-Blatchford Bleeding Score (GBS) threshold differentiates mild/stable from severe/unstable upper GI bleeding patients?",
+      "answer": "A Glasgow-Blatchford Bleeding Score (GBS) < 1 indicates mild/stable patients who may be considered for discharge with appropriate GI follow-up. A GBS > 1 indicates severe/unstable patients requiring admission."
+    },
+    {
+      "question": "What is the recommended PPI dosing for upper GI bleeding?",
+      "answer": "The recommended PPI dosing is 80mg bolus followed by continuous infusion for upper GI bleeding patients."
+    },
+    {
+      "question": "When should octreotide be administered and what is the dosing?",
+      "answer": "Octreotide should be given empirically if potential variceal bleeding is suspected. The dosing is 20-50 mcg bolus followed by continuous infusion of 25-50 mcg/hour."
+    },
+    {
+      "question": "What antibiotic is recommended for ALL cirrhotic patients with upper GI bleeding?",
+      "answer": "Ceftriaxone 1g IV is the first-line antibiotic recommended for ALL cirrhotic patients with upper GI bleeding, whether variceal or non-variceal."
+    },
+    {
+      "question": "What are the hemoglobin transfusion targets for patients with and without cardiac disease?",
+      "answer": "Patients with cardiac disease should have a higher hemoglobin target of 8-9 gm/dL. Patients without cardiac disease who are stable should be transfused to a hemoglobin target of 7 gm/dL."
+    },
+    {
+      "question": "When should massive transfusion protocol (MTP) be considered and what precaution applies to variceal bleeding?",
+      "answer": "MTP should be considered for worsening hypotension, vasopressor requirement, or persistent hemodynamic instability. However, use MTP with caution in patients with variceal bleeds, as MTP has been associated with poor outcomes in acute variceal bleeding."
+    }
+  ]
+}

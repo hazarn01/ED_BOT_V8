@@ -1,0 +1,60 @@
+# Claude Project Rules - ED Bot v8
+
+## Global Principles
+- Security and correctness over performance.
+- HIPAA by design: no PHI to external services by default; logs scrubbed; audit trails.
+- Reproducibility: Docker, Makefile, Alembic from day 0.
+- Determinism for clinical flows: constrain decoding, strict schemas, validations.
+- Incremental complexity: prove improvements with tests before layering.
+
+## Project Standards
+
+### Naming & Structure
+- Descriptive, consistent names; modules < 200 lines when feasible.
+- Match file names to primary exports/features.
+- Organize by responsibility: `api/`, `pipeline/`, `ingestion/`, `validation/`, `services/`, `ai/`.
+
+### Error Handling & Testing
+- Validate inputs at endpoints and early function boundaries.
+- No silent failures; structured errors with context.
+- Unit + integration + golden tests; ≥80% coverage; CI green required for merge.
+
+### Security & Compliance
+- Local LLM inference only unless explicitly configured; fallback is opt‑in.
+- Secrets loaded via dotenv; never committed.
+- PHI scrubbing middleware; compliance audit entries for content processing.
+
+### Performance & Caching
+- Pipeline targets: classification 100ms, retrieval 500ms, generation 400ms.
+- Redis caching by query type; bypass cache for forms; post‑inject PDF refs if needed.
+- Observability: latency, cache hit, tokens/sec; SLOs and alerts.
+
+### Documentation & Governance
+- Pin versions (LangExtract, Unstructured, serving stack, model weights).
+- Weekly upgrade window with regression tests; rollback plan documented.
+- README + runbook; .env.example provided; Makefile target descriptions.
+
+## Lessons Learned from v7
+- Forms must return actual PDFs; enforce bypass of caches for form queries.
+- Unstructured with hi_res + tables + OCR fixes extraction quality at the source.
+- Over‑engineered pipelines reduce quality; use intent‑aware 3‑step flow.
+- Maintain Amion contact integration with robust fallbacks and caching.
+- Add Alembic to avoid manual/fragile migrations.
+
+## Development Workflow
+1. Plan tasks in `EDBOTv8.txt`; update ADRs if decisions change.
+2. Implement infra first (Compose/Makefile/Alembic/.env.example).
+3. Build ingestion (Unstructured → LangExtract local) with tests and golden fixtures.
+4. Implement query pipeline and validators.
+5. Wire observability and security controls.
+6. Run full tests (unit/integration/perf) locally and in CI.
+
+## MCP / External Tools Usage
+- Use MCP tools only when they add clear value; prefer native integration.
+- Swagger/OpenAPI MCP acceptable for client generation if needed.
+- PostgreSQL MCP for complex schema analysis; otherwise use Alembic.
+
+## Commit & Review
+- Small, focused edits; descriptive commit messages.
+- No force pushes; preserve history.
+- Require code review with checklist: security, tests, performance, readability. 

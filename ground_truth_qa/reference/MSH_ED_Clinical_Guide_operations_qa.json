@@ -1,0 +1,78 @@
+{
+  "document_name": "MSH ED Clinical Guide (4).pdf",
+  "document_type": "reference",
+  "qa_pairs": [
+    {
+      "question": "What are the main ED zones and their primary functions at Mount Sinai Hospital?",
+      "answer": "The main ED zones are: Resuscitation (critical patients, codes, traumas), Acute 1 (high acuity medical patients), Acute 2 (cardiac monitoring, chest pain, syncope), Zone C (lower acuity patients, minor procedures), Zone G/Pediatrics (pediatric patients and low acuity adults), and Express Care (minor complaints, fast track).",
+      "complexity": "medium",
+      "source_page": 15
+    },
+    {
+      "question": "What is the standard communication protocol for patient updates and bed assignments?",
+      "answer": "Use Zoom for real-time communication between staff. For bed assignments, the charge nurse coordinates with bed control. Patient updates should be communicated through Epic messaging system and during structured bedside rounds. Critical changes require immediate verbal communication to the attending physician.",
+      "complexity": "medium",
+      "source_page": 28
+    },
+    {
+      "question": "What are the key contact numbers for ED operations and who should use them?",
+      "answer": "Security: x911 for emergencies, x6911 for non-emergencies. Pharmacy: x8-7900 for medication questions. Lab: x8-7800 for stat results. Radiology: x8-7600 for imaging questions. Social Work: x8-7500 for discharge planning. All ED staff should have these numbers readily available.",
+      "complexity": "medium",
+      "source_page": 82
+    },
+    {
+      "question": "What is the proper patient flow process from triage to disposition?",
+      "answer": "1) Triage assessment and ESI assignment, 2) Registration and room assignment, 3) Initial nursing assessment, 4) Provider evaluation, 5) Diagnostic workup as indicated, 6) Treatment and monitoring, 7) Disposition decision (discharge, admit, transfer), 8) Discharge planning or admission coordination.",
+      "complexity": "medium",
+      "source_page": 35
+    },
+    {
+      "question": "What safety protocols must be followed for high-risk medications in the ED?",
+      "answer": "High-risk medications require: 1) Independent double-check by two licensed providers, 2) Verification of patient identity using two identifiers, 3) Confirmation of correct dose and route, 4) Documentation of administration in Epic within 30 minutes, 5) Monitoring for adverse effects as per protocol.",
+      "complexity": "medium",
+      "source_page": 58
+    },
+    {
+      "question": "How should staff communicate with patients and families about wait times and delays?",
+      "answer": "Provide initial estimate upon arrival, update every 2 hours if delays occur, explain reasons for delays when possible (without violating HIPAA), offer comfort measures and resources, and ensure charge nurse or attending addresses concerns if wait exceeds 4 hours for non-urgent cases.",
+      "complexity": "medium",
+      "source_page": 45
+    },
+    {
+      "question": "What is the protocol for managing overcrowding and patient boarding?",
+      "answer": "1) Activate surge protocols when census reaches 85% capacity, 2) Open additional spaces (hallway beds, observation areas), 3) Expedite discharges through early morning rounds, 4) Coordinate with bed control for admitted patients, 5) Consider diversion if capacity exceeded and patient safety compromised.",
+      "complexity": "medium",
+      "source_page": 67
+    },
+    {
+      "question": "What are the required safety checks for procedures performed in the ED?",
+      "answer": "Pre-procedure: Patient identity verification, informed consent, timeout procedure. During procedure: Sterile technique, proper positioning, continuous monitoring. Post-procedure: Documentation in Epic, monitoring for complications, discharge instructions if applicable, follow-up arrangements.",
+      "complexity": "medium",
+      "source_page": 72
+    },
+    {
+      "question": "How should staff handle Epic system downtime and maintain continuity of care?",
+      "answer": "Activate downtime procedures: Use paper forms for orders and documentation, maintain medication reconciliation manually, ensure patient tracking via whiteboard, prioritize critical communications verbally, and update Epic immediately when system restored. Charge nurse coordinates downtime activities.",
+      "complexity": "medium",
+      "source_page": 89
+    },
+    {
+      "question": "What is the proper escalation pathway for clinical concerns or patient complaints?",
+      "answer": "Level 1: Direct discussion with primary nurse or provider. Level 2: Charge nurse involvement. Level 3: Nursing supervisor or ED attending. Level 4: ED medical director or nursing director. Level 5: Hospital administration. Document all escalations in Epic and incident reporting system.",
+      "complexity": "medium",
+      "source_page": 91
+    },
+    {
+      "question": "What communication tools and systems are used for shift changes and handoffs?",
+      "answer": "Use SBAR format (Situation, Background, Assessment, Recommendation) for patient handoffs. Structured bedside rounds occur at 7AM and 7PM. Epic messaging for non-urgent communications. Zoom for real-time coordination. Charge nurse briefs incoming shift on department status, high-risk patients, and resource availability.",
+      "complexity": "medium",
+      "source_page": 24
+    },
+    {
+      "question": "What are the key operational metrics tracked in the ED and how are they reported?",
+      "answer": "Key metrics include: door-to-provider time (<60 minutes), length of stay by acuity level, left without being seen rate (<5%), patient satisfaction scores, and throughput measures. Metrics are reviewed daily during leadership rounds and reported monthly to hospital administration.",
+      "complexity": "medium",
+      "source_page": 94
+    }
+  ]
+}

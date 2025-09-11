@@ -1,0 +1,67 @@
+{
+  "document_name": "RETU Hypoglycemia Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What comprehensive testing is required prior to RETU admission for hypoglycemia patients?",
+      "answer": "Required testing includes: EKG, venous blood gas, POC glucose, pregnancy test in women of childbearing age, and infectious workup if indicated. This helps identify precipitating causes and exclude serious complications.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What are the absolute contraindications for RETU admission in hypoglycemia patients?",
+      "answer": "Patients should not be admitted to RETU if they have hemodynamic instability, intentional overdose with hypoglycemic agent, severe or persistent altered mental status, severe infection, requirement for D5 or D10 drip to maintain euglycemia, or need for prolonged monitoring for recurrent hypoglycemia.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What critical medication history must be documented for hypoglycemia patients?",
+      "answer": "Record home insulin and/or oral hypoglycemic agent information including: type of medication, dose, and time of last dose. This information is essential for understanding the cause and duration of hypoglycemia risk.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "When is endocrine consultation mandatory for hypoglycemia patients?",
+      "answer": "Endocrine consultation is mandatory for all Type 1 diabetic patients with hypoglycemia due to the complexity of insulin management and increased risk of recurrent episodes.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "consultation_criteria"
+    },
+    {
+      "question": "What is the glucose monitoring protocol for hypoglycemia patients in RETU?",
+      "answer": "Perform serial POC glucose monitoring every 2-4 hours throughout the RETU stay. Also provide telemetry monitoring as indicated to detect any cardiac complications from hypoglycemia.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "monitoring_requirements"
+    },
+    {
+      "question": "How should refractory hypoglycemia be assessed and managed?",
+      "answer": "For refractory hypoglycemia, repeat POC glucose 15-20 minutes after treating hypoglycemia to confirm correction until glucose is >80mg/dL. If not corrected, continue the treatment process and strongly consider admission.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What interventions should be considered for patients with refractory hypoglycemia?",
+      "answer": "For refractory hypoglycemia requiring admission, consider: starting D5-D10 drip, non-contrast head CT, endocrine consultation, and expanding infectious workup to identify underlying causes.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "treatment_protocols"
+    },
+    {
+      "question": "What are the specific discharge criteria for hypoglycemia patients from RETU?",
+      "answer": "Patients can be discharged when they have resolution of symptoms, maintaining blood glucose >80mg/dL consistently, and the reason for hypoglycemia has been identified and addressed.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "discharge_criteria"
+    },
+    {
+      "question": "What conditions would necessitate hospital admission for hypoglycemia patients?",
+      "answer": "Hospital admission is required for deterioration of clinical condition, need for D5-D10 drip, continued hypoglycemia after 24 hours, or refractory altered mental status or neurological deficit.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "admission_criteria"
+    },
+    {
+      "question": "What discharge planning and follow-up is required for hypoglycemia patients?",
+      "answer": "Discharge planning must include: establishing a plan for oral hypoglycemic agents and/or insulin management, expediting follow-up by notifying primary care provider if Mount Sinai patient, or obtaining endocrine appointment if consultation was involved.",
+      "source": "RETU Hypoglycemia Pathway.pdf",
+      "category": "discharge_criteria"
+    }
+  ]
+}

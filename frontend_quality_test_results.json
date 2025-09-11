@@ -1,0 +1,57 @@
+[
+  {
+    "query": "STEMI protocol",
+    "success": true,
+    "response_length": 369,
+    "query_type": "protocol",
+    "confidence": 0.95,
+    "sources": 1,
+    "has_medical_content": true,
+    "processing_time": 0.000728607177734375,
+    "preview": "\ud83d\udea8 **STEMI Activation Protocol**\n\n\ud83d\udc8a **STEMI Pack Medications:**\n\u2022 ASA 324mg (chewed)\n\u2022 Brillinta 180m..."
+  },
+  {
+    "query": "sepsis",
+    "success": true,
+    "response_length": 540,
+    "query_type": "protocol",
+    "confidence": 0.95,
+    "sources": 1,
+    "has_medical_content": false,
+    "processing_time": 0.0022385120391845703,
+    "preview": "\ud83e\udda0 **ED Sepsis Protocol**\n\n\ud83d\udcca **Severity Criteria:**\n\u2022 **Severe Sepsis:** Lactate > 2.0 mmol/L\n\u2022 **Sep..."
+  },
+  {
+    "query": "what is STEMI protocol",
+    "success": true,
+    "response_length": 369,
+    "query_type": "protocol",
+    "confidence": 0.95,
+    "sources": 1,
+    "has_medical_content": true,
+    "processing_time": 0.004826545715332031,
+    "preview": "\ud83d\udea8 **STEMI Activation Protocol**\n\n\ud83d\udc8a **STEMI Pack Medications:**\n\u2022 ASA 324mg (chewed)\n\u2022 Brillinta 180m..."
+  },
+  {
+    "query": "ED sepsis pathway",
+    "success": true,
+    "response_length": 540,
+    "query_type": "protocol",
+    "confidence": 0.95,
+    "sources": 1,
+    "has_medical_content": false,
+    "processing_time": 0.0020372867584228516,
+    "preview": "\ud83e\udda0 **ED Sepsis Protocol**\n\n\ud83d\udcca **Severity Criteria:**\n\u2022 **Severe Sepsis:** Lactate > 2.0 mmol/L\n\u2022 **Sep..."
+  },
+  {
+    "query": "hypoglycemia protocol",
+    "success": true,
+    "response_length": 390,
+    "query_type": "protocol",
+    "confidence": 0.95,
+    "sources": 1,
+    "has_medical_content": false,
+    "processing_time": 0.002027750015258789,
+    "preview": "\ud83c\udf6f **Hypoglycemia Treatment Protocol**\n\n\ud83d\udc89 **TREATMENT:**\n\u2022 **IV Access:** 50mL (25g) D50 IV over 2-5 ..."
+  }
+]

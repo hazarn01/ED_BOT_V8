@@ -1,0 +1,319 @@
+{
+  "version": "1.0.0",
+  "description": "ED Bot v8 Groundtruth Test Dataset - Medical accuracy validation",
+  "created": "2025-01-10",
+  "test_cases": [
+    {
+      "id": "GT-001",
+      "category": "PROTOCOL",
+      "query": "what is the STEMI protocol",
+      "expected_response": {
+        "must_contain": [
+          "STEMI",
+          "917-827-9725",
+          "90 minutes",
+          "door-to-balloon",
+          "Cath Lab"
+        ],
+        "critical_values": {
+          "stemi_pager": "(917) 827-9725",
+          "cath_lab_ext": "x40935",
+          "door_to_balloon_time": "90 minutes",
+          "ekg_time": "10 minutes"
+        },
+        "medications": [
+          "ASA 324mg",
+          "Brillinta 180mg",
+          "Crestor 80mg",
+          "Heparin 4000 units"
+        ],
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-002",
+      "category": "DOSAGE",
+      "query": "standard levophed dosing",
+      "expected_response": {
+        "must_contain": [
+          "norepinephrine",
+          "mcg/kg/min",
+          "0.01-0.3",
+          "IV"
+        ],
+        "critical_values": {
+          "initial_dose": "0.01-0.05 mcg/kg/min",
+          "max_dose": "0.3 mcg/kg/min",
+          "route": "IV",
+          "concentration": "4mg in 250mL"
+        },
+        "confidence_min": 0.80
+      }
+    },
+    {
+      "id": "GT-003",
+      "category": "DOSAGE",
+      "query": "pediatric epinephrine dose for anaphylaxis",
+      "expected_response": {
+        "must_contain": [
+          "0.01",
+          "mg/kg",
+          "IM",
+          "1:1000"
+        ],
+        "critical_values": {
+          "dose": "0.01 mg/kg",
+          "concentration": "1:1000",
+          "route": "IM",
+          "max_dose": "0.5mg"
+        },
+        "confidence_min": 0.90
+      }
+    },
+    {
+      "id": "GT-004",
+      "category": "CRITERIA",
+      "query": "sepsis lactate criteria",
+      "expected_response": {
+        "must_contain": [
+          "lactate",
+          "2.0",
+          "4.0",
+          "sepsis",
+          "shock"
+        ],
+        "critical_values": {
+          "severe_sepsis": "> 2.0 mmol/L",
+          "septic_shock": "> 4.0 mmol/L",
+          "recheck_time": "3 hours"
+        },
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-005",
+      "category": "CONTACT",
+      "query": "who is on call for cardiology",
+      "expected_response": {
+        "must_contain": [
+          "cardiology",
+          "STEMI",
+          "917-827-9725"
+        ],
+        "critical_values": {
+          "stemi_pager": "(917) 827-9725",
+          "cath_lab": "x40935"
+        },
+        "confidence_min": 0.90
+      }
+    },
+    {
+      "id": "GT-006",
+      "category": "FORM",
+      "query": "show me the blood transfusion form",
+      "expected_response": {
+        "must_contain": [
+          "transfusion",
+          "consent",
+          "blood"
+        ],
+        "form_available": true,
+        "confidence_min": 0.75
+      }
+    },
+    {
+      "id": "GT-007",
+      "category": "PROTOCOL",
+      "query": "hypoglycemia treatment protocol",
+      "expected_response": {
+        "must_contain": [
+          "D50",
+          "50mL",
+          "25g",
+          "glucose",
+          "IV"
+        ],
+        "critical_values": {
+          "iv_treatment": "50mL (25g) D50 IV",
+          "administration_time": "2-5 minutes",
+          "oral_alternative": "15-20 grams carbohydrates"
+        },
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-008",
+      "category": "PROTOCOL",
+      "query": "ED sepsis protocol",
+      "expected_response": {
+        "must_contain": [
+          "antibiotics",
+          "1 hour",
+          "30mL/kg",
+          "fluid",
+          "lactate"
+        ],
+        "critical_values": {
+          "antibiotic_time": "within 1 hour",
+          "fluid_bolus": "30mL/kg",
+          "fluid_time": "within 3 hours",
+          "lactate_recheck": "3 hours"
+        },
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-009",
+      "category": "DOSAGE",
+      "query": "adult anaphylaxis epinephrine dose",
+      "expected_response": {
+        "must_contain": [
+          "0.5mg",
+          "IM",
+          "1:1000",
+          "epinephrine"
+        ],
+        "critical_values": {
+          "dose": "0.5mg",
+          "concentration": "1:1000",
+          "route": "IM",
+          "repeat_interval": "5-15 minutes"
+        },
+        "confidence_min": 0.90
+      }
+    },
+    {
+      "id": "GT-010",
+      "category": "CRITERIA",
+      "query": "RETU chest pain criteria",
+      "expected_response": {
+        "must_contain": [
+          "RETU",
+          "chest pain",
+          "return",
+          "emergency"
+        ],
+        "key_elements": [
+          "return to ED",
+          "chest pain pathway",
+          "risk stratification"
+        ],
+        "confidence_min": 0.70
+      }
+    },
+    {
+      "id": "GT-011",
+      "category": "DOSAGE",
+      "query": "heparin dosing for STEMI",
+      "expected_response": {
+        "must_contain": [
+          "heparin",
+          "4000",
+          "units",
+          "IV",
+          "bolus"
+        ],
+        "critical_values": {
+          "bolus_dose": "4000 units",
+          "route": "IV",
+          "indication": "STEMI"
+        },
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-012",
+      "category": "PROTOCOL",
+      "query": "trauma activation criteria",
+      "expected_response": {
+        "must_contain": [
+          "trauma",
+          "activation",
+          "criteria"
+        ],
+        "key_elements": [
+          "level 1 trauma",
+          "level 2 trauma",
+          "vital signs",
+          "mechanism of injury"
+        ],
+        "confidence_min": 0.75
+      }
+    },
+    {
+      "id": "GT-013",
+      "category": "SUMMARY",
+      "query": "how many RETU protocols are there",
+      "expected_response": {
+        "must_contain": [
+          "RETU",
+          "protocols",
+          "number"
+        ],
+        "response_type": "count",
+        "confidence_min": 0.70
+      }
+    },
+    {
+      "id": "GT-014",
+      "category": "CRITERIA",
+      "query": "stroke thrombolysis window",
+      "expected_response": {
+        "must_contain": [
+          "tPA",
+          "4.5 hours",
+          "stroke",
+          "thrombolysis"
+        ],
+        "critical_values": {
+          "time_window": "4.5 hours",
+          "drug": "tPA",
+          "contraindications": true
+        },
+        "confidence_min": 0.85
+      }
+    },
+    {
+      "id": "GT-015",
+      "category": "DOSAGE",
+      "query": "insulin drip protocol",
+      "expected_response": {
+        "must_contain": [
+          "insulin",
+          "units/hr",
+          "glucose",
+          "IV"
+        ],
+        "key_elements": [
+          "initial rate",
+          "glucose monitoring",
+          "adjustment protocol"
+        ],
+        "confidence_min": 0.80
+      }
+    }
+  ],
+  "evaluation_metrics": {
+    "minimum_accuracy": 0.80,
+    "critical_accuracy": 0.95,
+    "response_time_max_ms": 1500,
+    "confidence_threshold": 0.70
+  },
+  "regression_tests": [
+    {
+      "test": "STEMI pager number",
+      "expected": "(917) 827-9725",
+      "critical": true
+    },
+    {
+      "test": "Pediatric epi dose",
+      "expected": "0.01 mg/kg",
+      "critical": true
+    },
+    {
+      "test": "Sepsis lactate threshold",
+      "expected": "> 2.0 mmol/L",
+      "critical": true
+    }
+  ]
+}

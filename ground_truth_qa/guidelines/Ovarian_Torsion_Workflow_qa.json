@@ -1,0 +1,39 @@
+{
+  "document_name": "Ovarian Torsion Workflow_7_18_24",
+  "document_type": "guideline",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the high-risk features for ovarian torsion that should prompt urgent evaluation?",
+      "answer": "High-risk features include: ovary > 3x size of contralateral ovary without other explanation (e.g., endometrioma), ovarian cyst > 5cm, teratoma/dermoid cyst, and refractory pain with nausea + vomiting (present approximately 70% of the time)."
+    },
+    {
+      "question": "What is the first-line imaging study for suspected ovarian torsion and what findings suggest torsion?",
+      "answer": "The first-line study is formal transvaginal (TV) pelvic ultrasound with Doppler. Findings suggesting torsion include: no flow, indeterminate ovarian mass, or enlarged ovary."
+    },
+    {
+      "question": "When should CT with IV contrast be used instead of ultrasound for ovarian torsion evaluation?",
+      "answer": "CT with IV contrast should be used when TV ultrasound is not available and ovarian pathology is the most likely cause of symptoms, or when the differential includes ovarian torsion but alternative diagnoses are not easily made by clinical evaluation or rapid testing."
+    },
+    {
+      "question": "What special considerations apply to pediatric patients with suspected ovarian torsion?",
+      "answer": "Pediatric patients <18 years old should be transferred to a facility with ultrasound availability and should avoid CT imaging due to radiation exposure concerns."
+    },
+    {
+      "question": "What are the predisposing factors for ovarian torsion?",
+      "answer": "Predisposing factors for ovarian torsion include menarche, ovulation induction, or pregnancy."
+    },
+    {
+      "question": "When should MRI be preferred over CT for ovarian torsion evaluation?",
+      "answer": "MRI may be preferable to CT to avoid ionizing radiation. If easily available without delay to imaging, and ovarian pathology is more likely than GI pathology, MRI should be the test of choice. However, logistical constraints will generally require CT as the initial test."
+    },
+    {
+      "question": "What is the management approach when ultrasound shows normal-sized ovary with no concerns for follow-up?",
+      "answer": "When ultrasound shows normal-sized ovary with no concerns for follow-up, the patient should be reassessed and consultation/treatment should proceed as necessary depending on ongoing concerns/findings, with consideration of other diagnoses."
+    },
+    {
+      "question": "What steps should be taken for transfer process when high suspicion for ovarian torsion exists?",
+      "answer": "For high suspicion ovarian torsion: (1) Contact transfer center regarding transfer, (2) Confirm ultrasound availability at receiving facility, and if not available, transfer to closest ED with ultrasound and surgical availability, (3) Alert receiving ED, gynecology, and radiology regarding the case."
+    }
+  ]
+}

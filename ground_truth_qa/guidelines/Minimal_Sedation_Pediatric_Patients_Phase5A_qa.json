@@ -1,0 +1,60 @@
+{
+  "document_name": "Minimal Sedation in Pediatric Patients.pdf",
+  "document_type": "guideline",
+  "qa_pairs": [
+    {
+      "question": "What are the exclusion criteria that require moderate sedation protocol instead of minimal sedation?",
+      "answer": "Patients less than 1 year of age or less than 10 kg weight, ASA Class 3 or higher, total dose of one medication exceeding the maximum dosage, or any patient receiving multiple different sedatives.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "What monitoring is required for pediatric patients undergoing minimal sedation?",
+      "answer": "Pediatric patients undergoing minimal sedation should have continuous pulse oximetry monitoring.",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "What documentation requirements exist for minimal sedation in pediatric patients?",
+      "answer": "Nursing will document patient tolerance and SpO2 at the beginning and after the procedure, and every 15 minutes during the procedure.",
+      "complexity": "medium",
+      "source_page": 1
+    },
+    {
+      "question": "Who is privileged to order minimal sedation for pediatric patients?",
+      "answer": "Only those privileged in moderation sedation should order minimal sedation for pediatric patients.",
+      "complexity": "medium",
+      "source_page": 2
+    },
+    {
+      "question": "What is the usual and maximum dosage for intranasal fentanyl in pediatric minimal sedation?",
+      "answer": "Usual dosage is 1-2 micrograms/kg with a maximum dose of 60 micrograms. Onset is 5-10 minutes with 30-minute duration. Reversal agent is naloxone.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "Compare the onset and duration of intranasal versus oral midazolam for pediatric sedation.",
+      "answer": "Intranasal midazolam: 0.2-0.3 mg/kg (max 10mg), onset 5-10 minutes, duration 30-60 minutes. Oral midazolam: 0.5 mg/kg (max 20mg), onset 20-30 minutes, duration 1-2 hours. Both use flumazenil as reversal agent.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "What is the maximum concentration of nitrous oxide allowed for minimal sedation?",
+      "answer": "Nitrous oxide concentration should be ≤50% for minimal sedation, and it has no reversal agent.",
+      "complexity": "medium",
+      "source_page": 2
+    },
+    {
+      "question": "What is the naloxone dosing and administration guidance for opioid reversal?",
+      "answer": "Naloxone (Narcan) IV/IO/IM: 0.1 mg/kg max 2mg/dose, repeat every 2-3 minutes PRN. IM absorption may be delayed or erratic, so monitor closely and may need repeat doses every 20-60 minutes if sedative duration is longer than naloxone.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "How should flumazenil be dosed for benzodiazepine reversal in pediatric patients?",
+      "answer": "Flumazenil (Romazicon) IV: 0.01 mg/kg, max 0.2 mg/dose, repeat every minute PRN to a maximum cumulative dose of 1mg.",
+      "complexity": "high",
+      "source_page": 2
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "document_name": "RETU Seizure Pathway",
+  "document_type": "Observation Unit Pathway",
+  "file_path": "/mnt/d/Dev/EDbotv8/docs/RETU Seizure Pathway.pdf",
+  "qa_pairs": [
+    {
+      "question": "What testing is required prior to RETU admission for seizure patients?",
+      "answer": "Required testing includes: ECG, electrolytes, glucose, anticonvulsant level, pregnancy test in women of childbearing age. If new onset seizure: NCHCT and neurology consult.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What conditions make a seizure patient NOT appropriate for RETU admission?",
+      "answer": "Patients are not appropriate for RETU if they have: Hemodynamic instability, pregnancy, hypoxemia, CO exposure, DTs, status epilepticus or persistent postictal state, positive CT scan (CVA, SAH, mass, etc), persistent new neurological deficit on exam, concern for meningitis or stroke, or new EKG changes or significant arrhythmia.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What should be included in the RETU intake evaluation for seizure patients?",
+      "answer": "RETU intake evaluation includes: Exam Focus on Cardiac, Neuro, and Vascular systems, Initial Testing with Labs (CBC, Chem 7, others as clinically indicated), Imaging (NCHCT if new onset or persistent neuro deficit). Do not repeat testing if already done in ED.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What monitoring should be performed for seizure patients in RETU?",
+      "answer": "Monitoring includes: continuous telemetry monitoring, seizure precautions, and serial neuro exams.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "When should neurology consultation be obtained for seizure patients in RETU?",
+      "answer": "Neurology consultation should be obtained if the patient has new onset seizures.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What should be done if a seizure patient has a therapeutic anticonvulsant level?",
+      "answer": "If the patient has a therapeutic anticonvulsant level, proceed to assess if serial neuro exam is normal, patient is seizure free, and has returned to baseline mental status. If yes, discharge with neurology follow up. If no, consult neurology for admission.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What should be done if a seizure patient does NOT have a therapeutic anticonvulsant level?",
+      "answer": "If the anticonvulsant level is not therapeutic: dose home anticonvulsant and consult neurology for medication recommendation (if warranted).",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What important instruction is given regarding anticonvulsants if levels have not resulted?",
+      "answer": "If the level has not resulted, do not hold home doses of anticonvulsants.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What are the criteria for discharge from RETU for seizure patients?",
+      "answer": "Discharge criteria include: Hemodynamic stability, mental status baseline, therapeutic level of anticonvulsant (if indicated), no deterioration in clinical status, correction of clinically significant abnormal labs.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What are the criteria for admission to hospital from RETU for seizure patients?",
+      "answer": "Admission criteria include: Deterioration of clinical condition, mentation, neuro exam, vitals, or recurrence of seizures.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What three key clinical assessments must be normal before considering discharge for seizure patients?",
+      "answer": "The three key assessments are: 1) Serial neuro exam normal, 2) Seizure free, 3) Return to baseline mental status. All three must be met for discharge consideration.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What follow-up should be arranged for seizure patients discharged from RETU?",
+      "answer": "Patients should be discharged with neurology follow up.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What special precautions should be maintained for seizure patients in RETU?",
+      "answer": "Seizure precautions should be maintained throughout the RETU stay.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "When is NCHCT imaging required for seizure patients?",
+      "answer": "NCHCT is required for new onset seizures or if there is a persistent neurological deficit.",
+      "source": "RETU Seizure Pathway"
+    },
+    {
+      "question": "What should be done if a seizure patient has recurrent seizures while in RETU?",
+      "answer": "If a patient has recurrence of seizures while in RETU, they should be admitted to the hospital.",
+      "source": "RETU Seizure Pathway"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "document_name": "Pediatric Community Acquired Pneumonia Pathway",
+  "document_type": "guideline",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "A 6-month-old infant presents with suspected pneumonia. What exclusions would prevent using the pediatric CAP pathway and what alternative should be considered?",
+      "answer": "Exclusions include: <2 months old immunocompromised, IV antibiotics in last 2 weeks, risk for hospital-acquired pneumonia, tracheostomy, chronic lung disease (not asthma), and suspected sepsis. This 6-month-old would be eligible unless they have sepsis concerns, in which case follow the SEPSIS PATHWAY."
+    },
+    {
+      "question": "How do you clinically differentiate between mild, moderate, and severe pneumonia in pediatric patients for treatment decisions?",
+      "answer": "Mild: stable vital signs, normal oral intake, no concerns for follow-up, can be managed outpatient. Moderate (≥1 of following): Age <3 months, No retractions/grunting/nasal flaring, O2 saturation <90% RA, Not tolerating orals, Failure of appropriate antibiotic therapy for >48 hours, Concern for poor follow-up. Severe (≥1 of following): Severe retractions/grunting/nasal flaring, HFNC, Mechanical ventilator support, New/increased CPAP/BiPAP, Altered mental status, Hemodynamic instability, Large effusion, Effusion requiring emergent drainage."
+    },
+    {
+      "question": "For a 15kg child with moderate CAP and no β-lactam allergy, what are the antibiotic treatment options and weight-based dosing?",
+      "answer": "Treatment options: Amoxicillin 30 mg/kg/dose PO q8h (450mg for 15kg child, max 1000mg/dose); or Azithromycin: first dose 10 mg/kg (150mg for 15kg child, max 500mg), then 5 mg/kg/dose PO q24h (75mg for 15kg child, max 250mg) days 2-5. Alternative: Amoxicillin/clavulanate using ES-600 suspension: 240 kg (for ≤40 kg patients)."
+    },
+    {
+      "question": "When should imaging be considered in pediatric CAP cases and what tests should be ordered?",
+      "answer": "Consider imaging if concern for SEPSIS (follow SEPSIS PATHWAY). Testing may include: CXR +/- US or CT if large effusion suspected, CBC and CRP, MRSA nasal PCR (consider), respiratory culture if able, blood culture (consider). Imaging is not routinely required for uncomplicated mild CAP."
+    },
+    {
+      "question": "For a 20kg child with severe CAP requiring inpatient treatment, what are the IV antibiotic options and dosing?",
+      "answer": "Inpatient IV options: Amoxicillin/clavulanate ≤40 kg: 30-40 mg/kg/dose IV q8h using ES-600 suspension (600-800mg for 20kg child); Ceftriaxone (dose per pathway guidelines); If Mycoplasma suspected: add Azithromycin or Doxycycline. Consider Levofloxacin 6 months to <5 years: 10 mg/kg/dose PO q24h (200mg for 20kg child, max 375mg); ≥5 years: max 750mg."
+    },
+    {
+      "question": "What is the management approach for pediatric CAP with β-lactam allergy, and what specific antibiotics should be used?",
+      "answer": "Management depends on allergy type: If β-lactam allergy (not anaphylaxis): Levofloxacin. If Anaphylaxis to β-lactam: Levofloxacin only. If immunized against HIb and treatment failure after amoxicillin or severe: Amoxicillin. Alternative for non-anaphylactic allergy: Cefpodoxime. Dosing: Levofloxacin 6 months to <5 years: 10 mg/kg/dose PO q24h (max 375mg); ≥5 years: 10 mg/kg/dose PO q24h (max 750mg)."
+    },
+    {
+      "question": "What are the discharge criteria and follow-up requirements for pediatric CAP patients?",
+      "answer": "Discharge criteria: No oxygen requirement, tolerating PO intake, clinically stable. Discharge instructions: Moderate cases - antibiotics for 7d, Severe cases - antibiotics for 10d, follow up with PCP within 2-3 days. Additional note: Review cultures and antibiotic susceptibilities, tailor to narrowest appropriate therapy. Wean O2 and convert to PO medications before discharge."
+    }
+  ]
+}

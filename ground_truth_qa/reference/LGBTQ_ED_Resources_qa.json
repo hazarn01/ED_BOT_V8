@@ -1,0 +1,42 @@
+{
+  "document": "LGBTQ ED Resources.pdf",
+  "document_type": "reference",
+  "complexity": "low",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the phone number for Callen-Lorde Community Health Center in Manhattan?",
+      "answer": "(212) 271-7200",
+      "source_section": "Callen-Lorde Community Health Center",
+      "question_type": "contact"
+    },
+    {
+      "id": 2,
+      "question": "What services does the Center For Transgender Medicine and Surgery provide?",
+      "answer": "Medical services include primary care, hormone therapy, and gender affirming surgery. Mental Health services include medication management, individual therapy, and surgical clearance letters.",
+      "source_section": "Center For Transgender Medicine and Surgery",
+      "question_type": "services"
+    },
+    {
+      "id": 3,
+      "question": "What is the LGBT National Help Center Youth Hotline number?",
+      "answer": "1-800-246-7743",
+      "source_section": "Hotlines/Websites",
+      "question_type": "contact"
+    },
+    {
+      "id": 4,
+      "question": "What are the hours of operation for Gay Men's Health Crisis?",
+      "answer": "9AM - 6 PM Monday through Friday",
+      "source_section": "Gay Men's Health Crisis",
+      "question_type": "hours"
+    },
+    {
+      "id": 5,
+      "question": "What is The Trevor Project hotline number and text option?",
+      "answer": "Hotline: 1-866-488-7386 or Text: START to 678678",
+      "source_section": "Hotlines/Websites",
+      "question_type": "contact"
+    }
+  ]
+}

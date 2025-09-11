@@ -1,0 +1,39 @@
+{
+  "document_name": "Opioid overdose clinical guideline 11.13.20",
+  "document_type": "guideline",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "question": "What are the different monitoring durations required for opioid overdose patients after naloxone administration?",
+      "answer": "Monitor ≥1 hour (since EMS or ED arrival) for short-acting opioid without naloxone; ≥2 hours (since naloxone) for daytime setting with companion; ≥3 hours (since naloxone) for overnight setting, no companion, long-acting opioid use, or patients with sleep apnea or significant cardiopulmonary disease."
+    },
+    {
+      "question": "What discharge criteria must be met for opioid overdose patients?",
+      "answer": "Discharged patients must meet ALL of the following criteria: at baseline mobility, GCS 15, SpO2 ≥93% on room air, and respiratory rate 10-20."
+    },
+    {
+      "question": "What is the recommended naloxone dosing strategy for opioid overdose?",
+      "answer": "Use the lowest effective dose with a slow IV push of 0.04 mg/minute, using simultaneous Bag Valve Mask as needed. The goal is reversal of respiratory depression, not full reversal. Most patients respond to 0.4-0.8 mg IV or less. Consider alternate diagnoses if no response at 2-4 mg."
+    },
+    {
+      "question": "When should a naloxone infusion be started and what is the dosing?",
+      "answer": "If opioid toxicity recurs after a naloxone bolus, consider re-bolusing then starting a naloxone infusion at 2/3 the total bolus dose per hour."
+    },
+    {
+      "question": "What is the duration of naloxone's effect and when should clinicians be especially cautious?",
+      "answer": "Naloxone's effect duration is approximately 30-90 minutes (varies by route/dose). Be especially cautious with long-acting opioid overdose (e.g., methadone, OxyContin), concomitant sedative exposure (e.g., alcohol), or underlying sleep apnea or cardiopulmonary disease."
+    },
+    {
+      "question": "Do opioid overdose patients require routine 1:1 observation?",
+      "answer": "No, unless there is concern for suicidal ideation or other indications. However, ALL patients should be screened for suicidal ideation."
+    },
+    {
+      "question": "Where should opioid overdose patients be monitored in the ED?",
+      "answer": "There is no specifically designated area. Care in the Resuscitation zone is not routinely indicated after pre-hospital naloxone unless there is active respiratory depression, need for naloxone infusion, or other concerns that warrant resuscitation-level care."
+    },
+    {
+      "question": "Can patients leave before the recommended monitoring duration is complete?",
+      "answer": "After naloxone, patients should be encouraged to remain for the duration of monitoring. Patient capacity and understanding of risks should be documented. The treating clinician can choose regular discharge or Against Medical Advice discharge based on their assessment."
+    }
+  ]
+}

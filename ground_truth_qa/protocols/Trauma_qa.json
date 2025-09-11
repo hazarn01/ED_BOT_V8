@@ -1,0 +1,112 @@
+{
+  "document": "Trauma-10-2019.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What are the three tiers of the trauma activation system?",
+      "answer": "1. Trauma Code: Full trauma team activation based on potential immediate life threat; 2. Trauma Alert: Limited trauma team activation based on high-risk mechanism; 3. Trauma Consult: Surgical consultation necessary for evaluation, treatment, or disposition",
+      "source_section": "I. Trauma System",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What contact number is used to activate the trauma system at Mount Sinai Hospital?",
+      "answer": "Call hospital telecommunications (x47000) and state that a Trauma Team activation is required",
+      "source_section": "III. Trauma System Activation Procedure - The Mount Sinai Hospital",
+      "question_type": "contact"
+    },
+    {
+      "id": 3,
+      "question": "What are the age-specific vital sign parameters for shock in a neonate?",
+      "answer": "Respiratory Rate: 40 to 60/min, Heart Rate: 100 to 180, Systolic BP: 60 to 90",
+      "source_section": "Primary Survey vital signs table",
+      "question_type": "criteria"
+    },
+    {
+      "id": 4,
+      "question": "What mechanism qualifies for Trauma Code activation?",
+      "answer": "Traumatic arrest in the field or en route; Transfers receiving blood transfusions to maintain vital signs; Hanging; Drowning; Fall >20 feet; 3x height of child; Injured pregnant patient >20 weeks with vaginal bleeding; Attending emergency physician discretion",
+      "source_section": "II. Trauma System Activation Criteria - Trauma Code",
+      "question_type": "criteria"
+    },
+    {
+      "id": 5,
+      "question": "What are the primary survey components for trauma evaluation?",
+      "answer": "Airway: Instability/obstruction; requiring intubation or assisted ventilation. Breathing: Respiratory insufficiency (RR<10 or >29; hypoxia, grunting, distress). Circulation: Hypotension (SBP<90 for adults). Signs of poor perfusion in children. Blood pressure is an unreliable indicator of shock in children; tachycardia and signs of poor perfusion may be seen prior to BP changes in children.",
+      "source_section": "Primary Survey",
+      "question_type": "criteria"
+    },
+    {
+      "id": 6,
+      "question": "What defines unstable vital signs requiring Trauma Code activation?",
+      "answer": "Any trauma patient with unstable vital signs (hypotension with signs of poor perfusion/respiratory distress) IS A TRAUMA CODE!",
+      "source_section": "Trauma Alert criteria note",
+      "question_type": "criteria"
+    },
+    {
+      "id": 7,
+      "question": "What are examples of high-risk mechanisms for Trauma Alert?",
+      "answer": "Head trauma from fall from any height if age >70 or on anticoagulant or antiplatelet agent; Ejection from vehicle; Death of occupant of same passenger compartment; MVC with intrusion >12 inches; Rollover unrestrained passenger; Motorcyclist separated from vehicle or traveling >20 mph; Pedestrian or bicyclist struck by vehicle; Penetrating injuries to the proximal extremities",
+      "source_section": "Trauma Alert criteria",
+      "question_type": "criteria"
+    },
+    {
+      "id": 8,
+      "question": "How long does the in-house general or pediatric surgery consultant have to respond for Trauma Code?",
+      "answer": "The in-house general or pediatric surgery consultant must respond within 15 minutes of notification. For a Trauma Code, the general or pediatric surgery attending must also respond to the ED within 15 minutes.",
+      "source_section": "IV. Trauma System Response - The Mount Sinai Hospital",
+      "question_type": "timing"
+    },
+    {
+      "id": 9,
+      "question": "When should a Trauma Alert be upgraded to a Trauma Code?",
+      "answer": "If a hospital-wide response is required, a Trauma Alert can be upgraded to a Trauma Code at the discretion of the ED attending",
+      "source_section": "Trauma Alert - Mount Sinai Queens",
+      "question_type": "workflow"
+    },
+    {
+      "id": 10,
+      "question": "What is the response time requirement for Trauma Consult?",
+      "answer": "A Trauma Consult does not activate the hospital-wide Trauma System. The consultant(s) is expected to respond to the ED (The Mount Sinai Hospital) or by phone (Mount Sinai Queens) within 30 minutes of notification.",
+      "source_section": "Trauma Consult",
+      "question_type": "timing"
+    },
+    {
+      "id": 11,
+      "question": "What are the secondary survey findings that qualify for Trauma Code?",
+      "answer": "Open or depressed skull fracture; Penetrating injuries to the head, neck, chest, abdomen; Flail chest or disruption of chest wall; Unstable pelvic fracture; Two or more proximal long bone fractures; Threatened Limb: Mangled extremity and/or amputation above wrist or ankle; crush injury with vascular compromise; Paralysis or suspected spinal cord injury; Major Burn Injury or compromising perfusion or airway; Attending emergency physician discretion",
+      "source_section": "Secondary Survey",
+      "question_type": "criteria"
+    },
+    {
+      "id": 12,
+      "question": "Where should trauma patients be transferred from Mount Sinai Queens?",
+      "answer": "Patients with severe traumatic injuries presenting to MSQ ED will be stabilized and transferred to Mount Sinai St. Luke's (MSSL) or Elmhurst Medical Center if the injury requires the services of a 911 designated higher-level Trauma Center. If MSSL is unable to accept a trauma patient transfer, the patient can be transferred to other nearby trauma centers.",
+      "source_section": "VI. Trauma Patient Disposition - Mount Sinai Queens",
+      "question_type": "workflow"
+    },
+    {
+      "id": 13,
+      "question": "What is the GCS threshold for head injury in trauma criteria?",
+      "answer": "Deficit: Head Injury with GCS ≤ 13 with mechanism attributed to trauma",
+      "source_section": "Primary Survey criteria",
+      "question_type": "criteria"
+    },
+    {
+      "id": 14,
+      "question": "What are the age-specific heart rate parameters for a school-age child?",
+      "answer": "School-age: Respiratory Rate 18 to 32/min, Heart Rate 65 to 110, Systolic BP 97 to 112",
+      "source_section": "Primary Survey vital signs table",
+      "question_type": "criteria"
+    },
+    {
+      "id": 15,
+      "question": "What trauma patients should be admitted to surgical service versus medical service?",
+      "answer": "Adult trauma patients should be admitted to a surgical service unless the ED attending in consultation with the surgical and/or medical service(s) determines that trauma is a secondary problem and that a medical service is most appropriate. Medicine is available to follow patients as a consult service. Pediatric trauma patients should be admitted to the PICU unless the ED attending determines another service is most appropriate.",
+      "source_section": "VI. Trauma Patient Disposition - The Mount Sinai Hospital",
+      "question_type": "workflow"
+    }
+  ]
+}

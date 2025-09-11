@@ -1,0 +1,112 @@
+{
+  "document": "ED Code Team Process (1-25-24).pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "Who are the members of the ED Code Team?",
+      "answer": "ATTENDING: Mid Fast attending (7-3, 3-11, 11-7 shift) OR Pediatrics attending; MIDLEVEL: Acute 2 senior resident OR most senior PA on Acute 2 (Tues PM/Wed AM ONLY); NURSE: PITT RN Captain; ER TECH: PITT ERT 1",
+      "source_section": "ED Code Team members",
+      "question_type": "workflow"
+    },
+    {
+      "id": 2,
+      "question": "What equipment does the Senior Resident/PA secure for ED Code Team response?",
+      "answer": "Senior Resident/PA secures ED CODE TEAM BACKPACK, BVM, and portable glidescope",
+      "source_section": "Detailed Process step 2",
+      "question_type": "workflow"
+    },
+    {
+      "id": 3,
+      "question": "What does the RN secure for ED Code Team response?",
+      "answer": "RN secures RED BOX of medications and GLUCOMETER",
+      "source_section": "Detailed Process step 3",
+      "question_type": "workflow"
+    },
+    {
+      "id": 4,
+      "question": "Where is the EMS stretcher located?",
+      "answer": "EMS STRETCHER is located in Zone B alcove",
+      "source_section": "Detailed Process step 4",
+      "question_type": "workflow"
+    },
+    {
+      "id": 5,
+      "question": "Where does the ED Code Team assemble before proceeding to the incident location?",
+      "answer": "ED Code Team proceeds to security desk outside Acute 2 immediately and proceeds as a team to incident location",
+      "source_section": "Detailed Process step 5",
+      "question_type": "workflow"
+    },
+    {
+      "id": 6,
+      "question": "What smart phrase is used for ED Code Team documentation?",
+      "answer": ".EDCODETEAM",
+      "source_section": "Detailed Process step 10",
+      "question_type": "workflow"
+    },
+    {
+      "id": 7,
+      "question": "Where is the ED CODE TEAM BACKPACK stored?",
+      "answer": "ED CODE TEAM BACKPACK is located in cabinet in Zone B Alcove",
+      "source_section": "Equipment checklist section",
+      "question_type": "workflow"
+    },
+    {
+      "id": 8,
+      "question": "What airway equipment is included in the ED Code Team backpack?",
+      "answer": "Glidescope MAC 3 blade, Glidescope MAC 4 blade, Direct laryngoscopy MAC 3, LMA size 4.5, ETT sizes 6.5, 7.0, 7.5, Stylet (standard), 10 cc Syringe, Bougie, ETCO2 colorimetric detector, Lubricating jelly",
+      "source_section": "ED CODE TEAM BACKPACK EQUIPMENT CHECKLIST",
+      "question_type": "workflow"
+    },
+    {
+      "id": 9,
+      "question": "What IV access equipment is in the backpack?",
+      "answer": "IV start kit, 18G angiocath, 20G angiocath, 22G angiocath, Saline flushes",
+      "source_section": "ACCESS - IV section of equipment checklist",
+      "question_type": "workflow"
+    },
+    {
+      "id": 10,
+      "question": "Who leads the ED Code Team debrief?",
+      "answer": "Senior resident/PA leads the ED Code Team debrief",
+      "source_section": "Detailed Process step 9",
+      "question_type": "workflow"
+    },
+    {
+      "id": 11,
+      "question": "What areas does the ED Code Team respond to according to Hospital Policy GPP-215?",
+      "answer": "All areas of the first floor lobbies and halls of Guggenheim, Annenberg, Atrium, KCC, Klingenstein Pavilion, and 1184 5th Avenue; All areas of B1 (MC) level including halls and public areas; All areas of B2 (SC) Level; All areas of B3 Level of Atran Building; Annenberg Floors 9 and above, including the Levy Library; Annenberg Floors 1-3, 5; Hess Building (if activated by RESQ team after initial assessment complete)",
+      "source_section": "Hospital Policy GPP-215 note",
+      "question_type": "workflow"
+    },
+    {
+      "id": 12,
+      "question": "What should be done if ED Code Team backpack items are used?",
+      "answer": "If items used, midlevel disposes of items in used pack, places used pack in used pack shelf for restocking, and replaces with new pack from backup supply in closet to restock backpack",
+      "source_section": "Detailed Process step 11a",
+      "question_type": "workflow"
+    },
+    {
+      "id": 13,
+      "question": "When should the Senior resident/PA check supplies and complete team huddle?",
+      "answer": "At the beginning of shift, Senior resident/PA to check all supplies ready and team huddle complete",
+      "source_section": "Process Overview note",
+      "question_type": "workflow"
+    },
+    {
+      "id": 14,
+      "question": "What documentation is required if the patient is not registered?",
+      "answer": "If patient is not registered, no documentation needed",
+      "source_section": "Detailed Process step 10a",
+      "question_type": "workflow"
+    },
+    {
+      "id": 15,
+      "question": "How often does ED Operations team check the backpack supplies?",
+      "answer": "ED Operations team rounds daily to assure enough backup packets available and not expired, and checks backpack bimonthly to assure no packets in backpack have expiring items",
+      "source_section": "Detailed Process step 11b-c",
+      "question_type": "workflow"
+    }
+  ]
+}

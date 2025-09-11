@@ -1,0 +1,98 @@
+{
+  "document_name": "Pediatric Fever And Neutropenia Pathway.pdf",
+  "document_type": "protocol",
+  "complexity": "high",
+  "total_qa_pairs": 10,
+  "qa_pairs": [
+    {
+      "id": "PFNP_001",
+      "question": "What initial steps should the RN take when a pediatric patient at risk for neutropenia presents with fever?",
+      "answer": "The RN should: 1) Obtain history and PE (notify provider if history concerning for neutropenia), 2) Ensure central line and/or PIV access (blood cultures from every lumen of central line, periphery attempt), 3) Provider should order febrile neutropenia order set including CBC with platelet & differential, CRP, CMP, blood cultures, and antibiotics. Optional studies include VBG, IV fluids, antipyretics, and other studies as indicated.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "protocol_steps",
+      "subcategory": "initial_assessment"
+    },
+    {
+      "id": "PFNP_002",
+      "question": "What defines high-risk versus low-risk pediatric patients for neutropenia complications?",
+      "answer": "HIGH RISK: PICC, Broviac line OR Recent ANC < 500 OR History of SCT, BMT, CART. LOW RISK: Port or no line AND No history of SCT, BMT, CART (if recent ANC > 500). Risk stratification determines antibiotic choice between cefepime for high-risk vs ceftriaxone for low-risk patients.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "criteria",
+      "subcategory": "risk_stratification"
+    },
+    {
+      "id": "PFNP_003",
+      "question": "What is the cefepime dosing for a 25 kg pediatric patient with high-risk febrile neutropenia?",
+      "answer": "For a 25 kg pediatric patient, cefepime dosing is weight-based: >40 kg = 2g, 30-40 kg = 1.5g, 20-30 kg = 1g, 10-20 kg = 500 mg, <10 kg = 50mg/kg/dose. Therefore, a 25 kg patient would receive 1g of cefepime as the first dose.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "weight_based_antibiotics"
+    },
+    {
+      "id": "PFNP_004",
+      "question": "What is the ceftriaxone dosing protocol for low-risk pediatric patients, and what is the maximum daily dose?",
+      "answer": "Ceftriaxone dosing for low-risk patients is 50 mg/kg IV/IM with a maximum daily dose of 2g. For example, a 30 kg patient would receive 1.5g (30 kg × 50 mg/kg = 1,500 mg), while a 50 kg patient would receive the maximum dose of 2g despite the calculation yielding 2.5g.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "dosage",
+      "subcategory": "weight_based_antibiotics"
+    },
+    {
+      "id": "PFNP_005",
+      "question": "What blood culture requirements must be met for pediatric patients with suspected neutropenia?",
+      "answer": "Blood culture requirements: Obtain 2 cultures - 1 peripheral culture and a culture from 1 lumen of the CVC. If unable to get peripheral culture, draw 1 culture from each lumen of CVC (usually 2 total cultures). Additionally, draw 1-3 mL of blood from lumen(s) of central line and send culture in pediatric bottle(s).",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "monitoring",
+      "subcategory": "blood_culture_requirements"
+    },
+    {
+      "id": "PFNP_006",
+      "question": "What management steps should be taken if a pediatric patient has ANC < 500 after receiving the first dose of antibiotics?",
+      "answer": "If ANC < 500: Continue or transition to cefepime 50 mg/kg (max 2g) IV q8h and ADMIT TO INPATIENT. The patient requires inpatient monitoring and continued broad-spectrum antibiotic coverage due to severe neutropenia and high infection risk.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "protocol_steps",
+      "subcategory": "severe_neutropenia_management"
+    },
+    {
+      "id": "PFNP_007",
+      "question": "Under what conditions can a pediatric patient with ANC > 500 be discharged home after receiving antibiotics?",
+      "answer": "If ANC > 500 and patient is still well-appearing: Administer ceftriaxone if received cefepime in Step 3. Patient may be DISCHARGED HOME with outpatient follow-up in 24 hours if no other clinical concerns. This applies to low-risk patients who maintain clinical stability.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "protocol_steps",
+      "subcategory": "discharge_criteria"
+    },
+    {
+      "id": "PFNP_008",
+      "question": "What age-specific considerations apply for pediatric patients under 18 years old versus 18 years and above in the sepsis pathway?",
+      "answer": "For patients < 18 years old: STOP SEPSIS PEDIATRIC pathway. For patients 18 years and above: ED ADULT SEPSIS - Add vancomycin and zosyn (or gentamicin) along with cefepime, Admit patient, Consider ICU consult. Adult patients require more aggressive multi-antibiotic coverage and closer monitoring.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "criteria",
+      "subcategory": "age_specific_protocols"
+    },
+    {
+      "id": "PFNP_009",
+      "question": "What medical abbreviations are critical to understand in the neutropenia pathway, and what do SCT, BMT, and CART represent?",
+      "answer": "Critical abbreviations: SCT = Stem Cell Transplant, BMT = Bone Marrow Transplant, CART = Chimeric Antigen Receptor T-Cell Therapy. Recent history (within 30 days) of any of these procedures places patients in the high-risk category requiring more aggressive antibiotic coverage with cefepime.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "criteria",
+      "subcategory": "medical_terminology"
+    },
+    {
+      "id": "PFNP_010",
+      "question": "What are the key vital sign criteria that would trigger evaluation for possible sepsis in the pediatric neutropenia pathway?",
+      "answer": "The pathway includes a VS ALERT decision point that triggers evaluation for possible sepsis. If at any point the patient appears ill or has signs of shock/unstable vital signs, they should be placed on the appropriate sepsis pathway (PEDIATRIC for <18 years, ADULT SEPSIS for ≥18 years) with more aggressive interventions including admission and ICU consideration.",
+      "source": "Pediatric Fever And Neutropenia Pathway.pdf",
+      "page": 1,
+      "category": "monitoring",
+      "subcategory": "clinical_deterioration_criteria"
+    }
+  ]
+}

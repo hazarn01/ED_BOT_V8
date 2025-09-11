@@ -1,0 +1,247 @@
+{
+  "timestamp": 1756682754.943503,
+  "total_tests": 8,
+  "passed_tests": 3,
+  "failed_tests": 5,
+  "critical_failures": 0,
+  "overall_score": 0.375,
+  "test_results": [
+    {
+      "test_case": {
+        "query": "what is the STEMI protocol",
+        "clinical_context": "Emergency cardiac intervention",
+        "query_type": "protocol"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.6, keyword_matches=6, forbidden_matches=2, response_length=476, clinical_accuracy='high', issues_found=['Contains irrelevant content: 2 forbidden terms found'])",
+      "response_data": {
+        "response": "\ud83d\udea8 **STEMI Activation Protocol**\n\n\ud83d\udcde **CRITICAL CONTACTS:**\n\u2022 STEMI Pager: **(917) 827-9725**\n\u2022 Cath Lab Direct: **x40935**\n\u2022 Cardiology Fellow on call\n\n**Protocol Details:**\n1. **Query Processor Enhancement**\n   - Modified `_hierarchical_protocol_search()` in `src/pipeline/query_processor.py`\n   - Seamless integration with existing pipeline\n   - Only applies to PROTOCOL_STEPS query type\n\n2. **Relationship Configuration**\n   - Pre-defined relationships for critical proto...",
+        "query_type": "protocol",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "STEMI Protocol",
+            "filename": "PHASE_4_CONTEXT_ENHANCEMENT.md"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.00551915168762207,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [
+        "Contains irrelevant content: 2 forbidden terms found"
+      ],
+      "status": "WARNING",
+      "reason": "Marginally relevant but needs improvement"
+    },
+    {
+      "test_case": {
+        "query": "ED sepsis pathway",
+        "clinical_context": "Sepsis management in emergency department",
+        "query_type": "protocol"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.6000000000000001, keyword_matches=4, forbidden_matches=1, response_length=560, clinical_accuracy='high', issues_found=['Contains irrelevant content: 1 forbidden terms found'])",
+      "response_data": {
+        "response": "\ud83e\udda0 **ED Sepsis Protocol**\n\n\ud83d\udcca **Severity Criteria:**\n\u2022 **Severe Sepsis:** Lactate > 2.0 mmol/L\n\u2022 **Septic Shock:** Lactate > 4.0 mmol/L\n\n**Protocol Details:**\n1. **Query Processor Enhancement**\n   - Modified `_hierarchical_protocol_search()` in `src/pipeline/query_processor.py`\n   - Seamless integration with existing pipeline\n   - Only applies to PROTOCOL_STEPS query type\n\n2. **Relationship Configuration**\n   - Pre-defined relationships for critical protocols\n   - Extensible design for adding new protocol relationships\n   - Medical expert-validated rela...",
+        "query_type": "protocol",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "ED Sepsis Pathway",
+            "filename": "PHASE_4_CONTEXT_ENHANCEMENT.md"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.004216194152832031,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [
+        "Contains irrelevant content: 1 forbidden terms found"
+      ],
+      "status": "WARNING",
+      "reason": "Marginally relevant but needs improvement"
+    },
+    {
+      "test_case": {
+        "query": "blood transfusion form",
+        "clinical_context": "Blood product administration documentation",
+        "query_type": "form"
+      },
+      "relevance": "RelevanceResult(relevance_score=1.0, keyword_matches=5, forbidden_matches=0, response_length=271, clinical_accuracy='high', issues_found=[])",
+      "response_data": {
+        "response": "\ud83d\udcc4 **Medical Forms and Documents**\n\n**\ud83e\ude78 Blood Transfusion Forms:**\n\u2022 Blood Consent Form: Available in Epic\n\u2022 Transfusion Reaction Form: At nursing station\n\u2022 Type & Screen Order: In lab section\n\n\ud83d\udccb **Access:** Most forms available through Epic templates or nursing stations.",
+        "query_type": "form",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "Medical Forms Directory",
+            "filename": "ED_Forms.txt"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 7.295608520507812e-05,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [],
+      "status": "PASSED",
+      "reason": "Clinically relevant and accurate"
+    },
+    {
+      "test_case": {
+        "query": "who is on call for cardiology",
+        "clinical_context": "Emergency cardiac consultation",
+        "query_type": "contact"
+      },
+      "relevance": "RelevanceResult(relevance_score=1.0, keyword_matches=5, forbidden_matches=0, response_length=148, clinical_accuracy='high', issues_found=[])",
+      "response_data": {
+        "response": "\ud83d\udcde **Emergency Department Contacts**\n\n**\ud83d\udc93 Cardiology:**\n\u2022 STEMI Pager: **(917) 827-9725**\n\u2022 Cath Lab Direct: **x40935**\n\u2022 Cardiology Fellow on call\n\n",
+        "query_type": "contact",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "Emergency Contacts",
+            "filename": "ED_Contacts.txt"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 7.081031799316406e-05,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [],
+      "status": "PASSED",
+      "reason": "Clinically relevant and accurate"
+    },
+    {
+      "test_case": {
+        "query": "epinephrine dose anaphylaxis",
+        "clinical_context": "Emergency anaphylaxis treatment",
+        "query_type": "dosage"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.43333333333333335, keyword_matches=5, forbidden_matches=2, response_length=584, clinical_accuracy='medium', issues_found=['Contains irrelevant content: 2 forbidden terms found'])",
+      "response_data": {
+        "response": "\ud83d\udea8 **Anaphylaxis Treatment Protocol**\n\n\ud83d\udc89 **FIRST-LINE TREATMENT:**\n\u2022 **Adult:** Epinephrine 1mg/mL (1:1000) injection, 0.5mg IM\n\u2022 **Pediatric:** 0.01mg/kg IM\n\n**Treatment Details:**\n\nANAPHYLAXIS TREATMENT GUIDELINE\n\nDefinition:\nAcute, life-threatening, generalized or systemic severe allergic reaction\n\nFirst-Line Treatment:\n\u2022 Epinephrine 0.3-0.5mg IM (1:1000 concentration)\n\u2022 Administer in anterolateral thigh (vastus lateralis muscle)\n\u2022 Can repeat every 5-15 minutes as needed\n\u2022 No absolute contraindications in anaphylaxis\n\nSecond-Line Treatments:\n\u2022 H1 antihistamines: Diphenhydr...",
+        "query_type": "protocol",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "Anaphylaxis Treatment",
+            "filename": "Anaphylaxis_Guideline_Final_6_6_24.pdf"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.007643938064575195,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [
+        "Contains irrelevant content: 2 forbidden terms found"
+      ],
+      "status": "WARNING",
+      "reason": "Marginally relevant but needs improvement"
+    },
+    {
+      "test_case": {
+        "query": "criteria for severe sepsis",
+        "clinical_context": "Sepsis severity assessment",
+        "query_type": "criteria"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.6333333333333333, keyword_matches=5, forbidden_matches=1, response_length=560, clinical_accuracy='medium', issues_found=['Contains irrelevant content: 1 forbidden terms found'])",
+      "response_data": {
+        "response": "\ud83e\udda0 **ED Sepsis Protocol**\n\n\ud83d\udcca **Severity Criteria:**\n\u2022 **Severe Sepsis:** Lactate > 2.0 mmol/L\n\u2022 **Septic Shock:** Lactate > 4.0 mmol/L\n\n**Protocol Details:**\n1. **Query Processor Enhancement**\n   - Modified `_hierarchical_protocol_search()` in `src/pipeline/query_processor.py`\n   - Seamless integration with existing pipeline\n   - Only applies to PROTOCOL_STEPS query type\n\n2. **Relationship Configuration**\n   - Pre-defined relationships for critical protocols\n   - Extensible design for adding new protocol relationships\n   - Medical expert-validated rela...",
+        "query_type": "protocol",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "ED Sepsis Pathway",
+            "filename": "PHASE_4_CONTEXT_ENHANCEMENT.md"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.004486799240112305,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [
+        "Contains irrelevant content: 1 forbidden terms found"
+      ],
+      "status": "WARNING",
+      "reason": "Marginally relevant but needs improvement"
+    },
+    {
+      "test_case": {
+        "query": "L&D clearance",
+        "clinical_context": "Obstetric consultation clearance",
+        "query_type": "summary"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.25, keyword_matches=1, forbidden_matches=0, response_length=552, clinical_accuracy='low', issues_found=['Missing key medical terms: expected 4, found 1'])",
+      "response_data": {
+        "response": "\ud83d\udccb **Medical Information**\n\n**Relevant Content:**\n### 3-Oz Water Swallow Test\n1. Have patient sit upright at minimum 60-degree angle\n2. Administer 3 oz of water in a cup (if patient can hold) or via spoon if necessary\n3. Instruct patient to drink the entire amount continuously\n4. Observe for:\n   - Coughing during or within 1 minute after swallowing\n   - Wet/gurgling voice after swallowing\n   - Multiple swallows per bolus\n   - Delayed swallow (> 2 seconds)\n   - Incomplete oral clearance\n   - Drooling or loss of liquid from mouth\n\n### Documentati...",
+        "query_type": "summary",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "Medical Protocol",
+            "filename": "Dysphagia_Screening_Criteria.md"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.003922462463378906,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [
+        "Missing key medical terms: expected 4, found 1"
+      ],
+      "status": "FAILED",
+      "reason": "Insufficient relevance to medical query"
+    },
+    {
+      "test_case": {
+        "query": "hypoglycemia treatment",
+        "clinical_context": "Emergency glucose management",
+        "query_type": "dosage"
+      },
+      "relevance": "RelevanceResult(relevance_score=0.8, keyword_matches=4, forbidden_matches=0, response_length=591, clinical_accuracy='high', issues_found=[])",
+      "response_data": {
+        "response": "\ud83c\udf6f **Hypoglycemia Treatment Protocol**\n\n\ud83d\udc89 **TREATMENT:**\n\u2022 **IV Access:** 50mL (25g) D50 IV over 2-5 minutes\n\u2022 **Oral Route:** 15-20 grams rapid-acting carbohydrates\n\n**Protocol Details:**\n\nHYPOGLYCEMIA TREATMENT GUIDELINES\n\nDefinition:\nAdult patient presents to ED and found to be hypoglycemic (Blood Glucose <70 mg/dL)\nSymptomatic hypoglycemia includes patients with hypoglycemia symptoms even with blood glucose 70-100 mg/dL\n\nTreatment Algorithm:\n\nFor Conscious Patients:\n\u2022 If IV access available: Give 50mL (25g) D50 IV over 2-5 minutes\n\u2022 If POCG remains <100 after treatment, repeat a...",
+        "query_type": "dosage",
+        "confidence": 0.95,
+        "sources": [
+          {
+            "display_name": "Hypoglycemia Protocol",
+            "filename": "Hypoglycemia_EBP_Final_10_2024.pdf"
+          }
+        ],
+        "warnings": null,
+        "processing_time": 0.006279706954956055,
+        "pdf_links": null,
+        "highlighted_sources": null,
+        "viewer_url": null
+      },
+      "issues": [],
+      "status": "PASSED",
+      "reason": "Clinically relevant and accurate"
+    }
+  ],
+  "summary": {
+    "quality_assessment": "FAILING - Not suitable for medical use",
+    "critical_issues": [],
+    "improvement_areas": [
+      "Marginally relevant but needs improvement",
+      "Marginally relevant but needs improvement",
+      "Marginally relevant but needs improvement",
+      "Marginally relevant but needs improvement"
+    ],
+    "recommendation": "System needs improvement before clinical deployment"
+  }
+}

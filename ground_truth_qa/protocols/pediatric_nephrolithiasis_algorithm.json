@@ -1,0 +1,47 @@
+{
+  "document_name": "Pediatric Nephrolithiasis Algorithm",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "What is the initial workup required for a pediatric patient presenting with flank pain or suspected kidney stone?",
+      "answer": "The initial workup includes: making the patient NPO, checking UA/urine culture, providing pain control, and obtaining renal and bladder ultrasound. This comprehensive approach helps establish the diagnosis and assess for complications while ensuring appropriate supportive care."
+    },
+    {
+      "question": "When should nephrology consultation be obtained according to the pediatric nephrolithiasis algorithm?",
+      "answer": "Nephrology consultation should be obtained for: SONO (+) for hydronephrosis OR SONO (-) and high clinical suspicion. Additionally, nephrology should be consulted for any concerning findings such as AKI (acute kidney injury) or obstructing stone based on imaging results."
+    },
+    {
+      "question": "What criteria determine when a pediatric patient with nephrolithiasis requires urology consultation?",
+      "answer": "Urology consultation is indicated when there is a stone visible on imaging AND any of the following: stone ≥4mm, fever, elevated WBC, UA infectious, persistent pain, persistent N/V, or gross hematuria. The algorithm specifically notes 'YES TO ANY' of these criteria triggers urology consultation."
+    },
+    {
+      "question": "For a patient with SONO (-) and low clinical suspicion for nephrolithiasis, what is the recommended next step?",
+      "answer": "For patients with SONO (-) and low clinical suspicion, the recommendation is further evaluation of symptoms. This suggests considering alternative diagnoses and potentially additional diagnostic workup to identify the underlying cause of the patient's presentation."
+    },
+    {
+      "question": "What determines whether a pediatric nephrolithiasis patient can be discharged home versus requires admission?",
+      "answer": "Patients diagnosed with stone AND cleared for discharge should be sent home with: outpatient nephrology referral, urine strainer ('bring stone to clinic in Ziploc bag if caught'), instructions to push PO fluids, instructions to return if fever/chills, nausea/vomiting, severe pain, etc., and discussion of tamsulosin if appropriate."
+    },
+    {
+      "question": "When does the algorithm recommend immediate specialist consultation for AKI + obstructing stone?",
+      "answer": "When AKI + obstructing stone is identified, the algorithm shows this as a critical decision point leading to both nephrology and urology consultation. This represents a urological emergency requiring immediate intervention to prevent further kidney damage."
+    },
+    {
+      "question": "What specific discharge instructions should be provided to parents of a pediatric patient with confirmed nephrolithiasis?",
+      "answer": "Discharge instructions include: outpatient nephrology referral, urine strainer with instructions to 'bring stone to clinic in Ziploc bag if caught', instructions to push PO fluids, clear return precautions (fever/chills, nausea/vomiting, severe pain, etc.), and discussion of tamsulosin as appropriate for the clinical situation."
+    },
+    {
+      "question": "How does ultrasound findings influence the management pathway for pediatric nephrolithiasis?",
+      "answer": "Ultrasound results determine the pathway: Stone visible leads to assessment for high-risk features requiring urology consultation. SONO (+) for hydronephrosis or SONO (-) with high clinical suspicion leads to nephrology consultation. SONO (-) with low clinical suspicion leads to further symptom evaluation."
+    },
+    {
+      "question": "What pain management considerations are important for pediatric nephrolithiasis patients?",
+      "answer": "Pain control is specifically mentioned as part of the initial workup. The algorithm emphasizes making the patient NPO initially and providing appropriate pain management. The discharge criteria include discussion of tamsulosin, which can help with stone passage and associated discomfort."
+    },
+    {
+      "question": "What role does tamsulosin play in the management of pediatric nephrolithiasis according to this algorithm?",
+      "answer": "Tamsulosin discussion is mentioned as part of the discharge planning for patients with confirmed stones. This alpha-blocker can facilitate stone passage by relaxing smooth muscle in the ureter, potentially reducing pain and improving spontaneous stone passage rates in appropriate pediatric patients."
+    }
+  ]
+}

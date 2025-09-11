@@ -1,0 +1,60 @@
+{
+  "document_name": "When Child Abuse is Suspected in the ED.pdf",
+  "document_type": "guideline",
+  "qa_pairs": [
+    {
+      "question": "What are the key steps to take when child abuse is suspected at Mount Sinai?",
+      "answer": "1) Take thorough history and physical exam, 2) Call the Social Worker covering Pediatric ED, 3) Call Dr. Grimm (Mount Sinai Child Abuse Attending) at 917-751-4066, 4) For sexual assault within 72-96 hours search 'ED SAFE/SAVI program' on AMION, 5) Call NY State Child Abuse Hotline at 1-800-635-1522, 6) Fill out FORM LDSS-2221A and mail to ACS within 48 hours.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "When should you contact the SAFE provider and what age groups require different approaches?",
+      "answer": "For sexual assault within last 72-96 hours: contact SAFE provider for patients 13 yo or older. For patients younger than 13 years, the 'SAFE Troubleshooter' can walk you through the process. The 'SAFE Advocate' can sit with patients of any age.",
+      "complexity": "high",
+      "source_page": 1
+    },
+    {
+      "question": "What defines the TEN-4 FACES rule for concerning bruising patterns?",
+      "answer": "Be concerned for non-accidental trauma if there is: Any bruising in infant <4 months of age, OR bruising in child <4 years of age on Torso, Ears, Neck, Frenulum, Angle of jaw, Cheeks, Eyelids, or Subconjunctival hemorrhage.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "What laboratory tests should be considered when evaluating concerning bruising?",
+      "answer": "CBC + platelets, PT, INR, aPTT, VWF antigen, VWF activity, Factor VIII, Factor IX, LFTs. If there's intracranial bleeding, also consider Factor XIII, D-dimer, and Fibrinogen.",
+      "complexity": "high",
+      "source_page": 2
+    },
+    {
+      "question": "When should a skeletal survey be obtained in suspected child abuse cases?",
+      "answer": "If patient is <2 years and has abusive injuries or shares a home with an abused child, OR if patient is <5 years and developmentally delayed or neurologically impaired. Repeat X-rays should be done in 2 weeks (even if initial is normal) excluding skull, pelvis, and spine.",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "What fracture types have high specificity for child abuse?",
+      "answer": "High specificity fracture types include: Classic metaphyseal lesions, rib fractures (especially posterior), spinous process fractures, sternal fractures, and any infant with unexplained fractures.",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "When should abdominal trauma be suspected and what are the evaluation criteria?",
+      "answer": "Suspect in infant <6 months or older child with bruising on trunk, signs of acute abdomen, or other significant injury. Consider AST, ALT, Lipase. If AST or ALT >80 or lipase >100: obtain CT Abdomen with IV contrast (not oral contrast).",
+      "complexity": "high",
+      "source_page": 3
+    },
+    {
+      "question": "What are the indications for head CT in suspected abuse cases?",
+      "answer": "Child of any age with signs suggesting intracranial injury, infant <6 months old regardless of physical findings, OR infant 6-12 months old with external head injuries on examination OR skull fracture OR fracture highly suggestive of abuse (eg, rib fractures or metaphyseal fractures).",
+      "complexity": "high",
+      "source_page": 4
+    },
+    {
+      "question": "When should ophthalmology be consulted in suspected child abuse cases?",
+      "answer": "Call ophthalmology for child under 5 years where there is strong suspicion for Abusive Head Trauma or eye injury. Must call within 72 hours because retinal hemorrhages heal quickly.",
+      "complexity": "high",
+      "source_page": 4
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "document_type": "reference",
+  "complexity": "medium",
+  "source_document": "Ordering a Consult.pdf",
+  "qa_pairs": [
+    {
+      "id": 389,
+      "question": "How do I place a consult order in Epic?",
+      "answer": "To place a consult order in Epic, enter 'Consult to...' and the name of the service in the Orders field. You'll see an order appear. Click 'AMAC to Call' and enter the reason for the consult. You have the option to add a specific attending if known.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_workflow"
+    },
+    {
+      "id": 390,
+      "question": "What should I include when entering the reason for a consult?",
+      "answer": "When entering the reason for consult, provide a clear clinical indication. Epic requires verbal communication with a qualified clinician for ALL consults. Epic consult orders are for documentation only. You can also add your phone number in the comment field for additional contact information.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_documentation"
+    },
+    {
+      "id": 391,
+      "question": "Who handles consult orders after they are placed in Epic?",
+      "answer": "Consult orders are handled by the ED Referral Line (also called 'AMAC'). They monitor the Consult Trackboard, call consultants, and connect consultants to the ED provider who placed the consult order.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_workflow"
+    },
+    {
+      "id": 392,
+      "question": "What is the Consult Trackboard used for?",
+      "answer": "The Consult Trackboard is where consult orders appear after being placed. The ED Referral Line (AMAC) monitors this trackboard to track all active consults, their status, and progress through the consultation process.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_tracking"
+    },
+    {
+      "id": 393,
+      "question": "What are the status steps tracked for consults?",
+      "answer": "The ED Referral line tracks four main status steps: 1) Initial Consult Time, 2) Consult Order Placed, 3) Consult Connected, and 4) Who was consulted (and how many consults were ordered). These steps are continuously updated in the Status column.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_tracking"
+    },
+    {
+      "id": 394,
+      "question": "What should I do if I don't receive a callback within 10 minutes of placing a consult?",
+      "answer": "If no callback is received within 10 minutes, call the ED Referral Line at 212-241-3611. This ensures your consult request is being processed and addresses any potential delays in the consultation process.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_troubleshooting"
+    },
+    {
+      "id": 395,
+      "question": "Why is it important to enter my phone number at the start of my shift?",
+      "answer": "If you've properly entered your phone number at the start of your shift, AMAC will know how to find you when connecting consultants for callbacks. You can also consider entering your phone number in the comment field of the consult order for additional contact information.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_communication"
+    },
+    {
+      "id": 396,
+      "question": "Can I request a specific attending physician for a consult?",
+      "answer": "Yes, you have an option to add a specific attending physician if known when placing the consult order. This can be entered in the 'Specific Attending Request' field within the Epic consult order interface.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_workflow"
+    },
+    {
+      "id": 397,
+      "question": "What is the ED Referral Line phone number?",
+      "answer": "The ED Referral Line phone number is 212-241-3611. This is the number to call if you don't receive a callback within 10 minutes of placing a consult order, or if you need assistance with the consultation process.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_communication"
+    },
+    {
+      "id": 398,
+      "question": "What information appears in the Consult Trackboard display?",
+      "answer": "The Consult Trackboard displays key information including patient details, initial consult time, ordering provider/number, current status, and consult orders. It shows tracking information like '721 0219' for patient ID, provider names, and timestamps for when consults were ordered.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_tracking"
+    },
+    {
+      "id": 399,
+      "question": "What does 'AMAC to Call' mean in the Epic consult interface?",
+      "answer": "'AMAC to Call' is one of the method options in Epic for how the consultant will be contacted. AMAC refers to the ED Referral Line service that handles calling consultants and facilitating the connection between the consultant and the requesting ED provider.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_workflow"
+    },
+    {
+      "id": 400,
+      "question": "When was the ED Consults protocol created and who approved it?",
+      "answer": "The ED Consults protocol was created on 7/29/21, reviewed on 7/29/21, and approved by Nick Genes and Jolion McGreevy. This ensures the consultation workflow procedures are current and properly validated by ED leadership.",
+      "source": "Ordering a Consult.pdf",
+      "category": "consultation_documentation"
+    }
+  ],
+  "metadata": {
+    "total_pairs": 12,
+    "range": "389-400",
+    "completion_status": "Final batch - 400 target reached",
+    "document_focus": "Epic consultation ordering, AMAC workflow, tracking procedures",
+    "creation_date": "2025-08-21"
+  }
+}

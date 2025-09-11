@@ -1,0 +1,47 @@
+{
+  "document_name": "Pediatric Skin and Soft Tissue Infection Pathway",
+  "document_type": "protocol", 
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "question": "What are the key exclusion criteria that would prevent a pediatric patient from following the SSTI pathway?",
+      "answer": "Exclusion criteria include: <2 months old immunocompromised, hospitalization in last 2 weeks, peri-anal or peri-orbital abscess, lymphadenitis, surgical site infection, pressure injury, water immersion injury, associated septic joint or osteomyelitis, suspected necrotizing fasciitis, animal or human bite, and suspected sepsis. These patients require alternative management approaches."
+    },
+    {
+      "question": "For a febrile 15kg pediatric patient with a 6cm abscess requiring admission, what is the appropriate empiric antibiotic choice and dosing according to the SSTI pathway?",
+      "answer": "For moderate/severe SSTI in an admitted patient, the pathway recommends Clindamycin 10 mg/kg/dose IV q8h (max 600 mg/dose). For a 15kg patient, this would be 150mg IV every 8 hours. Alternatively, if beta-lactam allergy or concern for MRSA, consider Vancomycin 15 mg/kg/dose IV q6h (225mg for 15kg patient)."
+    },
+    {
+      "question": "What clinical severity criteria distinguish mild SSTI from moderate/severe SSTI in the pediatric pathway?",
+      "answer": "Mild SSTI has the following characteristics: afebrile, normal vital signs, improving erythema, and no concerns for follow-up. Moderate/severe SSTI includes: febrile, elevated heart rate or respiratory rate, rapid progression of infected area, failure of appropriate antibiotic therapy for >48 hours, not tolerating orals, and concern for poor follow-up."
+    },
+    {
+      "question": "For a 20kg child with mild SSTI and no drug allergies, what are the recommended oral antibiotic options and dosing?",
+      "answer": "For mild SSTI, first-line oral antibiotics include: Cephalexin 33 mg/kg/dose PO q8h (max 1000 mg/dose) = 660mg q8h for 20kg patient, or Clindamycin 10 mg/kg/dose PO q8h (max 450 mg/dose) = 200mg q8h for 20kg patient. TMP/SMX is an alternative option."
+    },
+    {
+      "question": "When is I&D (incision and drainage) indicated in pediatric SSTI, and what culture should be sent?",
+      "answer": "I&D is indicated when purulence is present or there is concern for fluctuance/collection. After I&D, send fluid for culture. The pathway emphasizes reviewing cultures and antibiotic susceptibilities to tailor therapy to the narrowest appropriate option."
+    },
+    {
+      "question": "For an 8kg toddler with moderate SSTI requiring IV antibiotics, what is the appropriate Cefazolin dosing?",
+      "answer": "For moderate/severe SSTI, Cefazolin is dosed at 33 mg/kg/dose IV q8h (max 2000 mg/dose). For an 8kg patient, this would be 264mg IV every 8 hours. This is appropriate for non-purulent cellulitis without concern for MRSA."
+    },
+    {
+      "question": "What specific discharge criteria must be met before sending a pediatric SSTI patient home?",
+      "answer": "Discharge criteria include: eating, drinking, voiding normally, and PO meds tolerated. Additionally, follow-up with PCP within 2 days if treating with antibiotics for 5d is required. The pathway emphasizes ensuring adequate oral intake and medication tolerance before discharge."
+    },
+    {
+      "question": "How does the inpatient SSTI pathway differ from the outpatient pathway in terms of antibiotic selection?",
+      "answer": "The inpatient pathway includes IV options like Cefazolin 33 mg/kg/dose IV q8h, Clindamycin 10 mg/kg/dose IV q8h, Vancomycin 15 mg/kg/dose IV q6h, and Doxycycline 2.2 mg/kg/dose IV q12h. It also includes specific guidance for rapid progression scenarios and consultation requirements, while outpatient focuses on oral antibiotics and close follow-up."
+    },
+    {
+      "question": "What are the key factors that determine whether a pediatric patient with SSTI should receive empiric MRSA coverage?",
+      "answer": "MRSA coverage should be considered for: purulent infections, previous MRSA infection, beta-lactam allergy, rapid progression, failure of previous antibiotic therapy, and when there's clinical suspicion for resistant organisms. The pathway includes specific decision points for Clindamycin vs other anti-MRSA agents."
+    },
+    {
+      "question": "For a 12kg child requiring TMP/SMX for SSTI, what is the appropriate dosing and what monitoring is recommended?",
+      "answer": "TMP/SMX is dosed at 5 mg/kg/dose of TMP component PO q12h (max 320 mg/dose of TMP). For a 12kg patient, this would be 60mg of TMP twice daily. The pathway notes this is an alternative option and emphasizes reviewing culture results to optimize therapy. Standard monitoring includes clinical response and potential side effects."
+    }
+  ]
+}
