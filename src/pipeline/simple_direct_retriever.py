@@ -49,9 +49,61 @@ class SimpleDirectRetriever:
         }
     
     def get_medical_response(self, query: str) -> Dict[str, Any]:
-        """Get medical response with enhanced multi-source retrieval."""
+        """Get medical response with LLM-based RAG retrieval system."""
         
-        # Use enhanced retrieval if available
+        # PRIMARY SYSTEM: LLM RAG with Ground Truth Validation
+        try:
+            from ..api.dependencies import get_llm_client
+            from .llm_rag_retriever import get_llm_rag_response
+            import concurrent.futures
+            import asyncio
+            
+            logger.info("🤖 Using LLM RAG retrieval system")
+            
+            # Use ThreadPoolExecutor to handle async in sync context
+            def run_llm_rag_sync():
+                async def async_rag():
+                    llm_client = await get_llm_client()
+                    return await get_llm_rag_response(query, self.db, llm_client)
+                
+                # Create new event loop in thread
+                loop = asyncio.new_event_loop()
+                asyncio.set_event_loop(loop)
+                try:
+                    return loop.run_until_complete(async_rag())
+                finally:
+                    loop.close()
+            
+            # Execute in thread pool to avoid event loop conflicts
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+                future = executor.submit(run_llm_rag_sync)
+                llm_response = future.result(timeout=10)  # 10 second timeout
+            
+            # If LLM RAG system finds a good answer, use it
+            if llm_response.get('has_real_content') and llm_response.get('confidence', 0) > 0.4:
+                logger.info(f"✅ LLM RAG retrieval successful (confidence: {llm_response.get('confidence', 0):.2%})")
+                return llm_response
+            
+        except Exception as e:
+            logger.error(f"LLM RAG retrieval failed, falling back: {e}")
+        
+        # FALLBACK 1: Bulletproof system with ground truth validation
+        try:
+            from .bulletproof_retriever import get_bulletproof_response
+            
+            logger.info("🛡️ Falling back to bulletproof retrieval system")
+            bulletproof_response = get_bulletproof_response(query, self.db)
+            
+            if bulletproof_response.get('has_real_content') or bulletproof_response.get('confidence', 0) > 0.6:
+                logger.info("✅ Bulletproof retrieval successful")
+                return bulletproof_response
+            
+        except Exception as e:
+            logger.error(f"Bulletproof retrieval failed: {e}")
+        
+        # FALLBACK 2: Basic medical response system
+        logger.info("⚠️ Falling back to basic medical response system")
+        
         if self.enhanced_mode:
             return self._get_enhanced_medical_response(query)
         else:

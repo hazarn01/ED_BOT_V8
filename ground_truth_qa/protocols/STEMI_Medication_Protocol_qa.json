@@ -1,0 +1,56 @@
+{
+  "document": "STEMI Medication Protocol",
+  "document_type": "protocol",
+  "complexity": "high",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "What is the dosage of aspirin required for acute MI?",
+      "answer": "For acute STEMI, aspirin (ASA) 324mg should be given immediately, chewed for rapid absorption. This is part of the standard STEMI pack medications along with Brillinta 180mg, Crestor 80mg, and Heparin 4000 units IV bolus.",
+      "source_section": "STEMI Activation Protocol - Medications",
+      "question_type": "dosage"
+    },
+    {
+      "id": 2,
+      "question": "What is the dosage of ecosprin required for acute MI?",
+      "answer": "Ecosprin (aspirin) 324mg should be given immediately for acute STEMI, chewed for rapid absorption. This high-dose aspirin is part of the emergency STEMI protocol to provide immediate antiplatelet therapy before catheterization.",
+      "source_section": "STEMI Activation Protocol - Emergency Medications",
+      "question_type": "dosage"
+    },
+    {
+      "id": 3,
+      "question": "What medications are included in the STEMI pack?",
+      "answer": "The STEMI pack includes: 1) ASA (Aspirin) 324mg (chewed), 2) Brillinta (Ticagrelor) 180mg, 3) Crestor (Rosuvastatin) 80mg, 4) Heparin 4000 units IV bolus. All should be administered immediately upon STEMI activation.",
+      "source_section": "STEMI Activation Protocol",
+      "question_type": "protocol"
+    },
+    {
+      "id": 4,
+      "question": "What is the STEMI activation protocol?",
+      "answer": "STEMI Activation: 1) Activate STEMI pager (917) 827-9725, 2) Contact Cath Lab x40935, 3) Administer STEMI pack medications (ASA 324mg chewed, Brillinta 180mg, Crestor 80mg, Heparin 4000 units IV), 4) Goal door-to-balloon time <90 minutes, 5) EKG within 10 minutes of arrival.",
+      "source_section": "STEMI Activation Protocol",
+      "question_type": "protocol"
+    },
+    {
+      "id": 5,
+      "question": "What are the contact numbers for STEMI activation?",
+      "answer": "STEMI contacts: STEMI Pager (917) 827-9725 for immediate activation, Cath Lab Direct x40935, Cardiology Fellow on call through operator. Activate immediately upon STEMI recognition.",
+      "source_section": "STEMI Contacts",
+      "question_type": "contact"
+    },
+    {
+      "id": 6,
+      "question": "What is the door-to-balloon time goal for STEMI?",
+      "answer": "The door-to-balloon time goal for STEMI is 90 minutes. EKG should be obtained within 10 minutes of arrival, and the cath lab should be activated immediately upon STEMI diagnosis.",
+      "source_section": "STEMI Timing Requirements",
+      "question_type": "criteria"
+    },
+    {
+      "id": 7,
+      "question": "Why should aspirin be chewed in acute MI?",
+      "answer": "Aspirin should be chewed in acute MI for rapid absorption and faster antiplatelet effect. Chewing aspirin (324mg) provides quicker onset of action compared to swallowing, which is critical in the first minutes of STEMI management.",
+      "source_section": "STEMI Medication Administration",
+      "question_type": "rationale"
+    }
+  ]
+}
