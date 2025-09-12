@@ -1,0 +1,47 @@
+{
+  "document": "Blood Transfusion Forms and Consent Documents",
+  "document_type": "form",
+  "complexity": "medium",
+  "qa_pairs": [
+    {
+      "id": 1,
+      "question": "Show me the blood transfusion form",
+      "answer": "The blood transfusion consent form is available as 'MSHS_Consent_for_Elective_Blood_Transfusion.pdf'. This form includes patient information, procedure details, risks and benefits, and signature sections. A Spanish version is also available as 'TransfusionConsentFormSpanish.pdf'. For emergency transfusions, refer to the 'RETU Transfusion Pathway.pdf'.",
+      "source_section": "Blood Transfusion Forms",
+      "question_type": "form_retrieval",
+      "pdf_path": "MSHS_Consent_for_Elective_Blood_Transfusion.pdf"
+    },
+    {
+      "id": 2,
+      "question": "What blood transfusion forms are available?",
+      "answer": "Available blood transfusion forms include: 1) MSHS_Consent_for_Elective_Blood_Transfusion.pdf (standard consent), 2) TransfusionConsentFormSpanish.pdf (Spanish version), 3) RETU Transfusion Pathway.pdf (emergency protocol), 4) Pediatric Massive Transfusion Protocol.pdf (pediatric emergencies), 5) EMS blood transfusion during transport Nursing Practice Alert v17.pdf (transport guidelines).",
+      "source_section": "Form Directory",
+      "question_type": "form_retrieval",
+      "pdf_path": "MSHS_Consent_for_Elective_Blood_Transfusion.pdf"
+    },
+    {
+      "id": 3,
+      "question": "I need the transfusion consent form",
+      "answer": "The transfusion consent form is 'MSHS_Consent_for_Elective_Blood_Transfusion.pdf'. This form requires patient consent for blood product administration and includes information about risks, benefits, and alternatives. A Spanish version is also available.",
+      "source_section": "Consent Forms",
+      "question_type": "form_retrieval",
+      "pdf_path": "MSHS_Consent_for_Elective_Blood_Transfusion.pdf"
+    },
+    {
+      "id": 4,
+      "question": "Where can I find blood consent forms?",
+      "answer": "Blood consent forms are located in the ED forms section and include: MSHS_Consent_for_Elective_Blood_Transfusion.pdf (English), TransfusionConsentFormSpanish.pdf (Spanish), and emergency transfusion protocols in the RETU Transfusion Pathway.pdf.",
+      "source_section": "Form Location",
+      "question_type": "form_retrieval",
+      "pdf_path": "MSHS_Consent_for_Elective_Blood_Transfusion.pdf"
+    },
+    {
+      "id": 5,
+      "question": "blood transfusion form",
+      "answer": "The blood transfusion form is 'MSHS_Consent_for_Elective_Blood_Transfusion.pdf'. This is the standard consent form for blood transfusions in the emergency department.",
+      "source_section": "Forms",
+      "question_type": "form_retrieval",
+      "pdf_path": "MSHS_Consent_for_Elective_Blood_Transfusion.pdf"
+    }
+  ]
+}
