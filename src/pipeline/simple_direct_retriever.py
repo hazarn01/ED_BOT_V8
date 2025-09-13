@@ -51,6 +51,22 @@ class SimpleDirectRetriever:
     def get_medical_response(self, query: str) -> Dict[str, Any]:
         """Get medical response with LLM-based RAG retrieval system."""
         
+        # CRITICAL MEDICAL SAFETY OVERRIDE: Use bulletproof system for life-critical queries
+        CRITICAL_MEDICAL_QUERIES = ['stemi', 'sepsis', 'anaphylaxis', 'stroke', 'cardiac arrest', 'overdose', 'trauma']
+        query_lower = query.lower()
+        
+        if any(critical_term in query_lower for critical_term in CRITICAL_MEDICAL_QUERIES):
+            logger.info(f"🚨 CRITICAL MEDICAL QUERY detected: {query}. Using bulletproof retrieval for safety.")
+            try:
+                from .bulletproof_retriever import get_bulletproof_response
+                bulletproof_response = get_bulletproof_response(query, self.db)
+                if bulletproof_response.get('has_real_content'):
+                    logger.info("✅ Bulletproof critical response successful")
+                    bulletproof_response['critical_override'] = True
+                    return bulletproof_response
+            except Exception as e:
+                logger.error(f"Bulletproof critical query failed: {e}")
+        
         # PRIMARY SYSTEM: LLM RAG with Ground Truth Validation
         try:
             from ..api.dependencies import get_llm_client
@@ -77,15 +93,19 @@ class SimpleDirectRetriever:
             # Execute in thread pool to avoid event loop conflicts
             with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
                 future = executor.submit(run_llm_rag_sync)
-                llm_response = future.result(timeout=10)  # 10 second timeout
+                llm_response = future.result(timeout=30)  # Increased timeout for complex medical queries
             
             # If LLM RAG system finds a good answer, use it
-            if llm_response.get('has_real_content') and llm_response.get('confidence', 0) > 0.4:
+            if llm_response.get('has_real_content') and llm_response.get('confidence', 0) > 0.7:
                 logger.info(f"✅ LLM RAG retrieval successful (confidence: {llm_response.get('confidence', 0):.2%})")
                 return llm_response
+            else:
+                logger.warning(f"⚠️ LLM RAG low confidence ({llm_response.get('confidence', 0):.2%}), falling back")
             
+        except (TimeoutError, concurrent.futures.TimeoutError) as e:
+            logger.error(f"🔥 LLM RAG timeout after 30s: {e}, falling back immediately")
         except Exception as e:
-            logger.error(f"LLM RAG retrieval failed, falling back: {e}")
+            logger.error(f"🔥 LLM RAG retrieval failed, falling back: {e}")
         
         # FALLBACK 1: Bulletproof system with ground truth validation
         try:

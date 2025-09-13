@@ -167,34 +167,55 @@ Response:"""
         """
         logger.info(f"🤖 Processing LLM RAG query: {query}")
         
+        # Enhanced debugging metrics
+        debug_metrics = {
+            'query': query,
+            'query_length': len(query),
+            'timestamp': import_module('datetime').datetime.now().isoformat()
+        }
+        
         try:
             # Step 1: Find relevant ground truth data
             ground_truth_matches = self._find_ground_truth_matches(query)
             
             # Step 2: Retrieve relevant document content from database
             doc_content = await self._retrieve_document_content(query)
+            debug_metrics['doc_content_count'] = len(doc_content)
+            logger.info(f"📄 Retrieved {len(doc_content)} documents")
             
             # Step 3: Determine query type for appropriate template
             query_type = self._classify_query_type(query)
+            debug_metrics['query_type'] = query_type
+            logger.info(f"🏷️ Query classified as: {query_type}")
             
             # Step 4: Build LLM prompt with ground truth validation
             prompt = self._build_llm_prompt(query, query_type, doc_content, ground_truth_matches)
+            debug_metrics['prompt_length'] = len(prompt)
+            logger.info(f"📝 Built prompt: {len(prompt)} characters")
             
             # Step 5: Call LLM API
             llm_response = await self._call_llm_api(prompt)
+            debug_metrics['llm_response_length'] = len(llm_response) if llm_response else 0
+            logger.info(f"🤖 LLM response: {len(llm_response) if llm_response else 0} characters")
             
             # Step 6: Validate response against ground truth
             validation_score = self._validate_response_quality(llm_response, ground_truth_matches)
+            debug_metrics['validation_score'] = validation_score
+            logger.info(f"✅ Validation score: {validation_score:.2%}")
             
             # Step 7: Format final response
             formatted_response = self._format_llm_response(
                 query, llm_response, validation_score, ground_truth_matches, doc_content
             )
             
+            # Final debug summary
+            logger.info(f"🏁 LLM RAG Complete: {debug_metrics}")
             return formatted_response
             
         except Exception as e:
-            logger.error(f"LLM RAG retrieval failed: {e}")
+            debug_metrics['error'] = str(e)
+            logger.error(f"🔥 LLM RAG retrieval failed: {e}")
+            logger.error(f"🔍 Debug context: {debug_metrics}")
             return self._get_error_response(query, str(e))
     
     def _find_ground_truth_matches(self, query: str) -> List[GroundTruthMatch]:
@@ -305,18 +326,18 @@ Response:"""
                          ground_truth_matches: List[GroundTruthMatch]) -> str:
         """Build comprehensive LLM prompt with context."""
         
-        # Prepare document content
+        # Prepare document content with larger context window for medical accuracy
         content_text = ""
-        for i, doc in enumerate(doc_content[:5], 1):  # Top 5 documents
+        for i, doc in enumerate(doc_content[:3], 1):  # Top 3 documents with more content each
             content_text += f"\n--- Document {i}: {doc['filename']} ---\n"
-            content_text += doc['content'][:800] + "\n"  # Limit content length
+            content_text += doc['content'][:2000] + "\n"  # Increased from 800 to 2000 chars for complete medical context
         
-        # Prepare ground truth context
+        # Prepare ground truth context with expanded answers
         ground_truth_text = ""
-        for i, match in enumerate(ground_truth_matches[:3], 1):  # Top 3 matches
+        for i, match in enumerate(ground_truth_matches[:2], 1):  # Top 2 matches with more detail
             ground_truth_text += f"\n--- Reference {i} (Score: {match.match_score:.2f}) ---\n"
             ground_truth_text += f"Q: {match.question}\n"
-            ground_truth_text += f"A: {match.answer[:400]}...\n"  # Limit length
+            ground_truth_text += f"A: {match.answer[:800]}\n"  # Increased from 400 to 800 chars
             ground_truth_text += f"Source: {match.source_document}\n"
         
         # Select appropriate template
@@ -329,14 +350,30 @@ Response:"""
             ground_truth=ground_truth_text or "No ground truth references found."
         )
         
-        # Add medical safety instructions
+        # Add medical safety instructions with Llama 3.1 13B specific formatting
         safety_instructions = """
-IMPORTANT MEDICAL SAFETY GUIDELINES:
-1. Only provide information that is explicitly supported by the retrieved documents
-2. Include proper source citations for all medical recommendations
-3. If dosage information is requested, ensure it includes patient population and safety considerations
-4. Flag any information that requires verification with current protocols
-5. Never guess or interpolate medical information not present in the sources
+LLAMA 3.1 13B MEDICAL RESPONSE INSTRUCTIONS:
+🏥 MEDICAL SAFETY REQUIREMENTS:
+1. Only provide information explicitly supported by retrieved documents
+2. Include source citations for ALL medical recommendations  
+3. For dosages: specify patient population (adult/pediatric) and safety warnings
+4. Flag information requiring verification with current protocols
+5. Never guess or interpolate medical information not in sources
+
+🤖 LLAMA 3.1 13B FORMATTING REQUIREMENTS:
+• Use bullet points for protocols and step-by-step procedures
+• Include specific numbers, dosages, timeframes, and contact information
+• Structure responses with clear headers and sections
+• Provide confidence assessment: "High confidence" or "Requires verification"
+• Use medical terminology appropriately with clear explanations
+• End with source citations in format: [Source: filename]
+
+📋 RESPONSE STRUCTURE:
+1. Direct answer to query
+2. Relevant clinical details
+3. Safety considerations
+4. Source citations
+5. Confidence assessment
 """
         
         return safety_instructions + "\n" + prompt
@@ -382,10 +419,12 @@ IMPORTANT MEDICAL SAFETY GUIDELINES:
                 overlap_score = overlap / len(ground_truth_terms)
                 validation_score += overlap_score * match_weight
         
-        if total_weight > 0:
-            return min(validation_score / total_weight, 1.0)
-        else:
-            return 0.5
+        final_score = min(validation_score / total_weight, 1.0) if total_weight > 0 else 0.5
+        
+        # Debug logging for confidence calculation
+        logger.info(f"🔍 Confidence Debug: total_weight={total_weight:.2f}, validation_score={validation_score:.2f}, final_score={final_score:.2f}")
+        
+        return final_score
     
     def _format_llm_response(self, query: str, llm_response: str, validation_score: float,
                            ground_truth_matches: List[GroundTruthMatch], 
