@@ -43,10 +43,16 @@ async def get_async_db() -> AsyncGenerator[AsyncSession, None]:
 def get_redis_client():
     """Dependency to get Redis client"""
     try:
-        # Use localhost for host development
-        client = redis.Redis(host="localhost", port=6379,
-                             db=0, decode_responses=True)
+        # Use settings-based configuration for proper Docker networking
+        settings = get_settings()
+        client = redis.Redis(
+            host=settings.redis_host,  # Uses 'redis' in Docker, 'localhost' locally
+            port=settings.redis_port,  # Uses 6379 internally
+            db=settings.redis_db,
+            decode_responses=True
+        )
         client.ping()
+        logger.info(f"Redis connected: {settings.redis_host}:{settings.redis_port}")
         return client
     except Exception as e:
         logger.error(f"Redis connection error: {e}")
