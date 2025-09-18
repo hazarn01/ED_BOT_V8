@@ -296,15 +296,25 @@ class EnhancedSettings(BaseSettings):
         description="GPT-OSS compatible model name"
     )
 
-    # Azure fallback settings
+    # Azure OpenAI settings
     use_azure_fallback: bool = Field(
         default=False,
         description="Enable Azure OpenAI fallback"
     )
 
+    azure_openai_endpoint: str = Field(
+        default="",
+        description="Azure OpenAI endpoint URL"
+    )
+
     azure_openai_api_key: str = Field(
         default="",
         description="Azure OpenAI API key"
+    )
+
+    azure_openai_deployment: str = Field(
+        default="",
+        description="Azure OpenAI deployment name"
     )
 
     # Additional compatibility settings

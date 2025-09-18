@@ -63,31 +63,73 @@ def get_redis_client():
 
 
 async def get_llm_client():
-    """Get LLM client - GPT-OSS only."""
+    """Get LLM client - supports Azure OpenAI as primary backend."""
     settings = get_settings()
 
-    # Always use GPT-OSS (remove backend switching logic)
-    from ..ai.gpt_oss_client import GPTOSSClient
-
-    client = GPTOSSClient(
-        base_url=settings.gpt_oss_url,
-        model=settings.gpt_oss_model
-    )
-
-    # Test connection on startup
-    try:
-        await client.health_check()
-        logger.info("GPT-OSS client initialized successfully")
-        return client
-    except Exception as e:
-        if settings.use_azure_fallback and settings.azure_openai_api_key:
-            logger.warning(f"GPT-OSS unavailable: {e}, falling back to Azure")
-            # Initialize Azure fallback
-            from ..ai.azure_client import AzureClient
-            return AzureClient(settings)
-        else:
-            logger.error(f"GPT-OSS unavailable and no fallback: {e}")
+    # Check LLM backend configuration
+    if settings.llm_backend == "azure":
+        logger.info("🔄 Using Azure OpenAI as primary LLM backend")
+        from ..ai.azure_fallback_client import AzureOpenAIClient
+        
+        client = AzureOpenAIClient(
+            endpoint=settings.azure_openai_endpoint,
+            api_key=settings.azure_openai_api_key,
+            deployment=settings.azure_openai_deployment
+        )
+        
+        # Test Azure connection
+        try:
+            health_ok = await client.health_check()
+            if health_ok:
+                logger.info("✅ Azure OpenAI client initialized successfully")
+                return client
+            else:
+                logger.error("❌ Azure OpenAI health check failed")
+                raise Exception("Azure OpenAI not available")
+        except Exception as e:
+            logger.error(f"❌ Azure OpenAI initialization failed: {e}")
             raise
+    
+    elif settings.llm_backend == "ollama":
+        logger.info("🔄 Using Ollama as LLM backend")
+        from ..ai.ollama_client import OllamaClient
+        
+        try:
+            client = OllamaClient()
+            await client.health_check()
+            logger.info("✅ Ollama client initialized successfully")
+            return client
+        except Exception as e:
+            logger.error(f"❌ Ollama unavailable: {e}")
+            raise
+    
+    else:  # Default to GPT-OSS for backward compatibility
+        logger.info("🔄 Using GPT-OSS as LLM backend")
+        from ..ai.gpt_oss_client import GPTOSSClient
+
+        client = GPTOSSClient(
+            base_url=settings.gpt_oss_url,
+            model=settings.gpt_oss_model
+        )
+
+        # Test connection on startup
+        try:
+            await client.health_check()
+            logger.info("✅ GPT-OSS client initialized successfully")
+            return client
+        except Exception as e:
+            if settings.use_azure_fallback and settings.azure_openai_api_key:
+                logger.warning(f"⚠️ GPT-OSS unavailable: {e}, falling back to Azure")
+                from ..ai.azure_fallback_client import AzureOpenAIClient
+                azure_client = AzureOpenAIClient(
+                    endpoint=settings.azure_openai_endpoint,
+                    api_key=settings.azure_openai_api_key, 
+                    deployment=settings.azure_openai_deployment
+                )
+                return azure_client
+            else:
+                logger.error(f"❌ GPT-OSS unavailable and no fallback: {e}")
+                raise
 
 
 async def get_query_processor(
