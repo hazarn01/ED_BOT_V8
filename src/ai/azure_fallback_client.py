@@ -2,7 +2,12 @@ from typing import Any, Dict, List, Optional
 
 import httpx
 
-from src.config import settings
+try:
+    from ..config.enhanced_settings import get_settings
+except ImportError:
+    from src.config import settings
+    get_settings = lambda: settings
+
 from src.utils.logging import get_logger
 from src.utils.observability import metrics, track_latency
 
@@ -19,6 +24,9 @@ class AzureOpenAIClient:
         deployment: Optional[str] = None,
         api_version: str = "2023-12-01-preview",
     ):
+        # Get settings instance
+        settings = get_settings()
+        
         self.endpoint = (endpoint or settings.azure_openai_endpoint or "").rstrip("/")
         self.api_key = api_key or settings.azure_openai_api_key
         self.deployment = deployment or settings.azure_openai_deployment
@@ -31,7 +39,7 @@ class AzureOpenAIClient:
             logger.warning("Azure OpenAI not configured - fallback disabled")
         else:
             self.enabled = True
-            logger.info("Azure OpenAI fallback client initialized")
+            logger.info(f"Azure OpenAI client initialized: {self.deployment} at {self.endpoint}")
 
     async def _get_client(self) -> httpx.AsyncClient:
         """Get or create HTTP client."""
@@ -54,18 +62,23 @@ class AzureOpenAIClient:
             return False
 
         # Check external calls policy
+        settings = get_settings()
         if settings.disable_external_calls:
             logger.warning("Azure OpenAI blocked by DISABLE_EXTERNAL_CALLS policy")
             return False
 
         try:
             client = await self._get_client()
-            # Test with a minimal request
-            url = f"{self.endpoint}/openai/deployments/{self.deployment}/completions"
+            # Test with a minimal chat completion request (GPT-4o-mini requires chat format)
+            url = f"{self.endpoint}/openai/deployments/{self.deployment}/chat/completions"
 
             response = await client.post(
                 url,
-                json={"prompt": "Test", "max_tokens": 1, "temperature": 0},
+                json={
+                    "messages": [{"role": "user", "content": "Hello"}],
+                    "max_tokens": 1,
+                    "temperature": 0
+                },
                 params={"api-version": self.api_version},
             )
 
@@ -78,7 +91,7 @@ class AzureOpenAIClient:
                 logger.debug("Azure OpenAI health check passed")
             else:
                 logger.warning(
-                    f"Azure OpenAI health check failed: {response.status_code}"
+                    f"Azure OpenAI health check failed: {response.status_code} - {response.text}"
                 )
 
             return is_healthy
@@ -100,6 +113,7 @@ class AzureOpenAIClient:
             raise Exception("Azure OpenAI not configured")
 
         # Check external calls policy
+        settings = get_settings()
         if settings.disable_external_calls:
             raise Exception("External calls disabled - cannot use Azure OpenAI")
 
@@ -193,6 +207,7 @@ class AzureOpenAIClient:
         if not self.enabled:
             raise Exception("Azure OpenAI not configured")
 
+        settings = get_settings()
         if settings.disable_external_calls:
             raise Exception("External calls disabled - cannot use Azure OpenAI")
 
@@ -237,3 +252,48 @@ class AzureOpenAIClient:
             logger.error(f"Azure OpenAI chat generation failed: {e}")
             metrics.record_error("azure_chat_failed", str(e))
             raise
+    
+    async def validate_response(self, response: str) -> Dict[str, Any]:
+        """
+        Validate LLM response for medical safety.
+        
+        Args:
+            response: Generated response text
+            
+        Returns:
+            Validation result with 'is_valid', 'warnings', and 'confidence'
+        """
+        validation = {"is_valid": True, "warnings": [], "confidence": 1.0}
+        
+        if not response or len(response.strip()) < 10:
+            validation["is_valid"] = False
+            validation["warnings"].append("Response too short")
+            validation["confidence"] = 0.0
+            return validation
+            
+        # Check for medical safety indicators
+        response_lower = response.lower()
+        
+        # Higher confidence for responses with sources/citations
+        if "source:" in response_lower or "citation:" in response_lower or "ref:" in response_lower:
+            validation["confidence"] *= 1.1
+            
+        # Check for medical disclaimers
+        medical_disclaimers = [
+            "consult", "doctor", "physician", "medical professional", 
+            "emergency", "911", "not medical advice"
+        ]
+        if any(disclaimer in response_lower for disclaimer in medical_disclaimers):
+            validation["confidence"] *= 1.05
+        
+        # Warn about potential medical advice without disclaimers
+        medical_terms = [
+            "dosage", "medication", "treatment", "diagnosis", "prescribe",
+            "administer", "inject", "dose"
+        ]
+        if any(term in response_lower for term in medical_terms):
+            if not any(disclaimer in response_lower for disclaimer in medical_disclaimers):
+                validation["warnings"].append("Medical content without disclaimer")
+                validation["confidence"] *= 0.9
+                
+        return validation

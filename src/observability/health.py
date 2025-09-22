@@ -437,15 +437,72 @@ class HealthMonitor:
     
     async def _check_azure_health(self, start_time: float) -> HealthCheck:
         """Check Azure OpenAI health"""
-        # For Azure, we'd need API key and endpoint from settings
-        # This is a simplified check
-        response_time = (asyncio.get_event_loop().time() - start_time) * 1000
-        return HealthCheck(
-            ComponentType.LLM_BACKEND,
-            HealthStatus.UNKNOWN,
-            response_time,
-            "Azure OpenAI health check not implemented"
-        )
+        try:
+            # Check if Azure settings are available
+            azure_endpoint = getattr(self.settings, 'azure_openai_endpoint', None)
+            azure_key = getattr(self.settings, 'azure_openai_api_key', None)
+            azure_deployment = getattr(self.settings, 'azure_openai_deployment', None)
+            
+            if not all([azure_endpoint, azure_key, azure_deployment]):
+                response_time = (asyncio.get_event_loop().time() - start_time) * 1000
+                return HealthCheck(
+                    ComponentType.LLM_BACKEND,
+                    HealthStatus.UNHEALTHY,
+                    response_time,
+                    "Azure OpenAI not configured properly"
+                )
+            
+            # Try to perform a health check via the Azure client
+            try:
+                from ..ai.azure_fallback_client import AzureOpenAIClient
+                client = AzureOpenAIClient(
+                    endpoint=azure_endpoint,
+                    api_key=azure_key,
+                    deployment=azure_deployment
+                )
+                
+                health_ok = await client.health_check()
+                response_time = (asyncio.get_event_loop().time() - start_time) * 1000
+                
+                if health_ok:
+                    details = {
+                        "backend_type": "azure",
+                        "deployment": azure_deployment,
+                        "endpoint": azure_endpoint.replace(azure_key, "***") if azure_key in azure_endpoint else azure_endpoint
+                    }
+                    
+                    return HealthCheck(
+                        ComponentType.LLM_BACKEND,
+                        HealthStatus.HEALTHY,
+                        response_time,
+                        f"Azure OpenAI healthy (deployment: {azure_deployment})",
+                        details
+                    )
+                else:
+                    return HealthCheck(
+                        ComponentType.LLM_BACKEND,
+                        HealthStatus.UNHEALTHY,
+                        response_time,
+                        "Azure OpenAI health check failed"
+                    )
+                    
+            except Exception as e:
+                response_time = (asyncio.get_event_loop().time() - start_time) * 1000
+                return HealthCheck(
+                    ComponentType.LLM_BACKEND,
+                    HealthStatus.UNHEALTHY,
+                    response_time,
+                    f"Azure OpenAI connection error: {str(e)[:100]}"
+                )
+                
+        except Exception as e:
+            response_time = (asyncio.get_event_loop().time() - start_time) * 1000
+            return HealthCheck(
+                ComponentType.LLM_BACKEND,
+                HealthStatus.UNHEALTHY,
+                response_time,
+                f"Azure health check error: {str(e)[:100]}"
+            )
     
     async def check_feature_flags_health(self) -> HealthCheck:
         """Check feature flag system health"""

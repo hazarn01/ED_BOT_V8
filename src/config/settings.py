@@ -174,10 +174,6 @@ class Settings(BaseSettings):
         description="Enable Streamlit demo UI (dev only)"
     )
 
-    model_config = SettingsConfigDict(
-        env_file=".env", env_file_encoding="utf-8", case_sensitive=False
-    )
-
     @property
     def database_url(self) -> str:
         """Construct PostgreSQL database URL (sync)."""
